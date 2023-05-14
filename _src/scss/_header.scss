@@ -14,7 +14,7 @@
 
         @include media-for (null, $sm){
             text-align: center;
-            font-size: 12;
+            font-size: 12px;
             padding: 10px 0;
         }
 
@@ -96,6 +96,7 @@
 
                 @include media-for (null, $sm){
                     overflow: hidden;
+                    overflow-x: scroll;
 
                 }
                 

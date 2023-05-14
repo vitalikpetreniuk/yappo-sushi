@@ -1,19 +1,21 @@
-html{
-    overflow-x: hidden !important;
-}
+// html{
+//     overflow-x: hidden;
+// }
 
 
 body{
     // font-family: 'DelaGothicOne';
     font-family: 'Open Sans', sans-serif;
     color: rgba($color: #000000, $alpha: .7);
-    position: relative;
     transition: all .2s ease-in;
+    position: relative;
+	overflow-x: hidden;
+
 
     &::-webkit-scrollbar {
         width: 0;
     }
-
+    
 
 
     @include media-for (null, $sm){
@@ -21,6 +23,8 @@ body{
     }
 }
 main{
+    position: relative;
+    overflow-x: hidden;
     transition: all .2s ease-in-out;
 
     &::before{
@@ -99,12 +103,17 @@ p{
 }
 
 .overflow{
-   
+    overflow: hidden;
+}
+
+.put-up{
+    
     &::before{
         left: 0;
         right: 0;
     }
 }
+
 
 
 .time-wrap{

@@ -30,11 +30,14 @@ $(function() {
 
 	$('.burger').on('click', function () {	
 		$('#menu').toggleClass('overlay');
-		$('main').toggleClass('overflow');
+		$('body').toggleClass('overflow');
+		$("main").toggleClass('put-up')
 		$(this).toggleClass('burger-active');
-		// if( $('#menu').hasClass('overlay') ){
-		// 	$('.widget-btns').css('display', 'none');
-		// }
+
+	})
+
+	$('main').on('click', function () {	
+		$(this).removeClass('burger-active');
 
 	})
 

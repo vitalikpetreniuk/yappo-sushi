@@ -27,6 +27,10 @@
     .time-wrap{
         margin: 35px 0 50px;
 
+        @media (min-height: 0px) and (max-height: 843px){
+            margin: 17px 0 25px;
+        }
+
     }
 
     .top-nav{
@@ -51,6 +55,11 @@
     .social-wrap{
         margin: 68px 0 110px;
         
+        @media (min-height: 0px) and (max-height: 843px){
+            margin: 34px 0 55px;
+        }
+
+
         a{
             margin-right: 15px;
 
