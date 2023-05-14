@@ -1,0 +1,59 @@
+.section-pay{
+    text-align: center;
+
+    @include media-for (null, $sm){
+        padding-top: 70px;
+       
+    }
+
+    .section__title{
+        margin-bottom: 55px;
+        &:before,
+        &:after{
+          display: none;
+        }
+
+        @include media-for (null, $sm){
+            font-size: 18px;
+            padding: 0 55px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+           
+        }
+
+    }
+
+    .img-wrap{
+        position: relative;
+
+        h2{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media-for (null, $sm){
+                top: 2rem;
+                left: 10%;
+                transform: translateX(0%);
+                padding: 0;
+            }
+        }
+        img{
+            width: 100%;
+        }
+
+        
+    }
+
+    .img-wrap-card{
+        h2{
+            left: 5% !important;
+            transform: translateX(0%);
+
+            @include media-for (null, $sm){
+                left: 10% !important;
+            }
+        }
+    }
+}

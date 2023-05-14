@@ -1,0 +1,23 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@import 'config';
+@import 'media';
+@import 'general';
+@import 'header';
+@import 'footer';
+@import 'product';
+@import 'page-404';
+@import 'burger';
+@import 'menu-mob';
+
+// @import 'widget-btns';
+
+
+//include main
+
+@import 'include-for-main/top-slider';
+@import 'include-for-main/main-product';
+@import 'include-for-main/section-delivery';
+@import 'include-for-main/section-pay';
+

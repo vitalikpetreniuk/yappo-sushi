@@ -1,0 +1,191 @@
+html{
+    overflow-x: hidden !important;
+}
+
+
+body{
+    // font-family: 'DelaGothicOne';
+    font-family: 'Open Sans', sans-serif;
+    color: rgba($color: #000000, $alpha: .7);
+    position: relative;
+    transition: all .2s ease-in;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+
+
+    @include media-for (null, $sm){
+        overflow-x: hidden;
+    }
+}
+main{
+    transition: all .2s ease-in-out;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        right: -200%;
+        left: auto;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: .5);
+        z-index: 10;
+        transition: all .9s ease-in;
+    }
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    transition: all .2s ease-in-out;
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: $text-white;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    
+    &:hover{
+        color: $text-white;
+    }
+}
+
+.container{
+    max-width: 1530px !important;
+    width: 100%;
+   
+
+    @include media-for (null, $mid-desktop){
+        padding: 0 100px;
+    }
+
+    @include media-for (null, $desktop){
+        padding: 0 50px;
+    }
+
+    @include media-for (null, $sm){
+        padding: 0 15px;
+    }
+}
+
+svg{
+    transition: all .2s ease-in-out; 
+
+    path{
+        transition: all .2s ease-in-out;  
+    }
+    circle{
+        transition: all .2s ease-in-out;  
+    }
+    rect {
+        transition: all .2s ease-in-out;  
+    }
+}
+
+p{
+    margin: 0;  
+}
+
+.overflow{
+   
+    &::before{
+        left: 0;
+        right: 0;
+    }
+}
+
+
+.time-wrap{
+
+    span{
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    img{
+        width: 2.5rem;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+
+
+.section__title{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $accent;
+    margin-bottom: 60px;
+    font-family: 'DelaGothicOne';
+
+    @include media-for (null, $sm){
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    &:before,
+    &:after{
+      content: '';
+      height: 38px;
+      position: absolute;
+      background: url(../img/blue-fish.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 143px;
+
+      @include media-for (null, $sm){
+            height: 20px;
+            width: 72px;
+       }
+    }
+
+
+    &:before{
+        left: 110%;
+    }
+    &:after{
+        right: 104%;
+    }
+
+}
+
+
+.btn__wrapper{
+    text-align: center;
+}
+
+.btn-blue{
+    border-radius: 24px;
+    text-transform: uppercase;
+    color: $text-white;
+    padding: 24px 53px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $accent;
+
+    @include media-for (null, $sm){
+        font-size: 14px;
+        padding: 17px 50px;
+        border-radius: 20px;
+    }
+}

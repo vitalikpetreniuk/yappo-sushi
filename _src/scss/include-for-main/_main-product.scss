@@ -1,0 +1,22 @@
+.popular-product,.news-product,.rols-prosuct,.sets-prosuct{
+    padding: 60px 0 120px;
+    text-align: center;
+
+    @include media-for (null, $sm){
+        padding: 40px 0 30px;
+    }
+    
+    .btn-blue{
+        margin-top: 55px;
+
+        @include media-for (null, $sm){
+            margin-top: 28px;
+        }
+    }
+}
+
+.popular-product{
+    @include media-for (null, $sm){
+        padding-top: 20px;
+    }
+}
