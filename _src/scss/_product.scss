@@ -4,7 +4,7 @@
     display: block;
     border: 1px solid rgba($color: $accent, $alpha: .0);
     box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .0);
-    border-radius: 50px;
+    border-radius: 45px;
     padding-top: 35px;
     cursor: pointer;
     margin-bottom: 25px;
@@ -12,14 +12,14 @@
     background-color: $text-white;
 
 
-    @include media-for (null, $tablet){
-        border-radius: 40px;
+    @include media-for (null, 1025px){
+        border-radius: 32px;
         box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
     }
     
     @include media-for (null, $sm){
         margin-bottom: 10px;
-        border-radius: 35px;
+        border-radius: 30px;
     }
 
     &:hover{
@@ -35,20 +35,25 @@
     .product__image{
         border-radius: 50px 50px 0px 0px;
         text-align: center;
-        padding-bottom: 45px;
-        height: 235px;
         overflow: hidden;
         border-radius: 35px;
-
+        height: 215px;
+        margin-bottom: 40px;
 
         @include media-for (null, $sm){
             border-radius: 35px;
+            height: 131px;
+            margin-bottom: 30px;
         }
 
         img{
             width: 100%;
             // object-fit: cover;
             object-fit: contain;
+            height: 100%;
+            @include media-for (null, $sm){
+               
+            }
         }
 
     }
@@ -60,9 +65,11 @@
            font-weight: 700;
            font-size: 26px; 
            color: $accent;
+            margin-bottom: 11px;
 
            @include media-for (null, $sm){
-                margin: 0;
+                margin-bottom: 17px;
+                font-size: 16px;
             }
         }
 
@@ -103,6 +110,10 @@
                     font-weight: 700;
                     font-size: 24px; 
                     color: $accent;
+
+                    @include media-for (null, $sm){
+                        font-size: 16px;
+                    }
     
                 }
                 .regular-price{
@@ -110,6 +121,10 @@
                     font-size: 18px; 
                     color: $accent;
                     text-decoration: line-through;
+
+                    @include media-for (null, $sm){
+                        font-size: 14px;
+                    }
                 }
                 li{
                     color: rgba($color: #323549, $alpha: .7);
@@ -122,13 +137,18 @@
         .btn-primary{
             position: absolute;
             bottom: 25px;
-            right: 10px;
+            right: 20px;
             opacity: 0;
             z-index: -1;
-            transition: all .4s ease-in-out;
+            // transition: all .4s ease-in-out;
+            transition: all .2s ease-in;
 
-            @include media-for (null, $tablet){
+            @include media-for (null, 1025px){
                 opacity: 1;
+                z-index: 1;
+                right: 10px;
+                bottom: 10px;
+                padding-right: 0;
             }
         }
 
@@ -220,6 +240,11 @@
     width: 49px;
     height: 49px;
     background-color: $orange;
+
+    @include media-for (null, 1025px){
+        right: 10px;
+        top: 10px;
+    } 
 
     img{
         width: 2rem;

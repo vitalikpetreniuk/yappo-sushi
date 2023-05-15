@@ -97,7 +97,7 @@
         
 
         @include media-for (null, $sm){
-            .container{
+            .container-fluid{
                 padding-right: 0 !important;
             }
         } 
@@ -113,6 +113,11 @@
                 @include media-for (null, 950px){
                     overflow: hidden;
                     overflow-x: scroll;
+
+                    &::-webkit-scrollbar {
+                        width: 0;
+                        height: 0;
+                    }
 
                 }
                 
@@ -173,6 +178,11 @@
                         }
                     } 
 
+                    @include media-for (null, $sm){
+                        margin-right: 0rem;
+
+                    } 
+
                     .cotegory_img{
                         padding: 27px 0;
                         text-align: center;
@@ -218,7 +228,7 @@
                             padding: 0 0.3rem;
 
                             @include media-for (null, $sm){
-                                margin-left: .3rem;
+                                padding-left: 0;
                             } 
     
                             .сhat-bubbles-wrap{
@@ -384,6 +394,7 @@
         height: auto;
         top: 100%;
         z-index: 100;
+        
         div{
             display: flex;
         }

@@ -36,7 +36,7 @@ $(function() {
 			$('.header').removeClass('header-fixed');
 		}
 	
-		$("body").css("padding-top", headerHeight + 50 + "px");
+		$("body").css("padding-top", headerHeight + 34 + "px");
 	});
 
 
@@ -180,12 +180,12 @@ $(function() {
 
 	$(".discount-sale").parent(".product__item").css({
 		"border": "1px solid rgba(244, 89, 5, 0.4)",
-		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0.05)"
+		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0)"
 	});
 
 	$(".new-sale").parent(".product__item").css({
 		"border": "1px solid rgba(42, 26, 94, 0.4)",
-		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0.05)"
+		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0)"
 	});
 
 

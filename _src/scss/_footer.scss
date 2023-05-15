@@ -114,15 +114,15 @@
     }
 
     .visa{
-        @include media-for (null, 1025px){    
-              img{
-                width: 100%;
 
-                @include media-for (null, $sm){
-                    width: 27%;
-                }
-              }  
-        }
+        img{
+            width: 100%;
+
+            @include media-for (null, $sm){
+                width: 31%;
+            }
+        }  
+
     }
 
     .company{
