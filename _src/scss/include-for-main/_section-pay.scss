@@ -32,6 +32,12 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 26px;
+
+            @include media-for (null, 1025px){    
+                font-size: 20px;
+                top: 1rem;
+                left: 22%;
+            }
             
             @include media-for (null, $sm){
                 top: 1.5rem;
@@ -53,9 +59,14 @@
             left: 5% !important;
             transform: translateX(0%);
 
+            @include media-for (null, 1025px){    
+                
+            }
+
             @include media-for (null, $sm){
                 left: 10% !important;
             }
         }
     }
+
 }

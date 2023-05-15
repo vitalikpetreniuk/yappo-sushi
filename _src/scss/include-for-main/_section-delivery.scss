@@ -16,6 +16,10 @@
         font-size: 26px;
         font-family: 'DelaGothicOne';
 
+        @include media-for (null, $tablet){
+            font-size: 22px;
+        }
+
         @include media-for (null, $sm){
             font-size: 18px;
             text-align: center;

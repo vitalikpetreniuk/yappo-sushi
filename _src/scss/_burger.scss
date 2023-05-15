@@ -4,6 +4,7 @@
     width: 21px;
     height: 21px;
     display: none;
+    z-index: 100;
     @include media-for (null, $sm){
         display: block;
     }
@@ -30,6 +31,7 @@
 }
 
 .burger-active{
+    z-index: 100;
 
     span:first-child{
         transform: rotate(45deg);     

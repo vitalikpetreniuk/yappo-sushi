@@ -12,14 +12,24 @@
         padding-bottom: 35px;
         border-bottom: 1px solid $text-white;
 
+        @include media-for (null, 950px){
+            margin-bottom: 35px;
+        }
+
         @include media-for (null, $sm){
             border-bottom: none; 
+            margin-bottom: 0;
         }
 
         .logo{
             img{
+                @include media-for (null, 950){
+                    width: 100%;
+                }
+
                 @include media-for (null, $sm){
                     margin: auto;
+                    width: auto;
                 }
             }
         }
@@ -81,9 +91,21 @@
     p{
         font-size: 12px;
 
+        @include media-for (null, 950px){
+            text-align: center;
+        }
+
         @include media-for (null, $sm){
             margin-top: 25px;
         }
 
+    }
+
+    .visa{
+        @include media-for (null, 1025px){    
+              img{
+                width: 100%;
+              }  
+        }
     }
 }
