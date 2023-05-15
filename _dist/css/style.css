@@ -1932,6 +1932,7 @@ p {
   top: -300%;
   opacity: 0;
   height: 0;
+  z-index: -100;
 }
 
 .local-wrap .city-list h6 {
@@ -1943,9 +1944,7 @@ p {
 }
 
 .local-wrap .city-list div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .local-wrap .city-list div ul {
@@ -1960,12 +1959,20 @@ p {
   text-decoration: underline;
   color: #262730;
   font-weight: 600;
+  font-size: 13px;
 }
 
 .local-wrap .city-list-active {
   opacity: 1;
   height: auto;
   top: 100%;
+  z-index: 10;
+}
+
+.local-wrap .city-list-active div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .сhat-bubbles-wrap {
@@ -7694,6 +7701,14 @@ p {
 
   .local-wrap .city-list {
     top: -500%;
+  }
+
+  .local-wrap .city-list h6 {
+    font-size: 15px;
+  }
+
+  .local-wrap .city-list div ul li a {
+    font-size: 14px;
   }
 
   .local-wrap .city-list-active {

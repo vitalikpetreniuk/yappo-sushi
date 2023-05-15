@@ -330,6 +330,7 @@
         top: -300%;
         opacity: 0;
         height: 0;
+        z-index: -100;
 
         @include media-for (null, $tablet){
             padding: 16px 17px 2px 14px;
@@ -347,10 +348,14 @@
             text-transform: uppercase;
             margin-bottom: 18px;
             color: rgba($color: #323549, $alpha: .7);
+
+            @include media-for (null, $sm){
+                font-size: 15px;
+            }
         }
 
         div{
-            display: flex;
+            display: none;
 
             ul{
                 margin-right: 50px;
@@ -362,7 +367,12 @@
                         text-decoration: underline;
                         color: $text-black;
                         font-weight: 600;
+                        font-size: 13px;
                         // margin-right: 50px;
+
+                        @include media-for (null, $sm){
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -373,7 +383,10 @@
         opacity: 1;
         height: auto;
         top: 100%;
-
+        z-index: 10;
+        div{
+            display: flex;
+        }
         @include media-for (null, $sm){
             top: 100%;
         }
