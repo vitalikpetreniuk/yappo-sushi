@@ -60,11 +60,19 @@
         }
     }
 
+    .lang{
+        margin-top: 45px;
+
+        @media (min-height: 0px) and (max-height: 843px){
+            margin-top: 25px;
+        }
+    }
+
     .social-wrap{
-        margin: 68px 0 100px;
+        margin: 30px 0 60px;
         
         @media (min-height: 0px) and (max-height: 843px){
-            margin: 34px 0 35px;
+            margin: 24px 0 25px;
         }
 
 

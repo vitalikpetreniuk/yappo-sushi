@@ -2065,7 +2065,9 @@ p {
   display: block;
   padding: 0.2rem 0.3rem;
   color: #2A1A5E;
-  font-weight: 700;
+  font-family: "DelaGothicOne";
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .lang-desctop .lang-opener {
@@ -2468,8 +2470,12 @@ p {
   color: #F45905;
 }
 
+#menu .lang {
+  margin-top: 45px;
+}
+
 #menu .social-wrap {
-  margin: 68px 0 100px;
+  margin: 30px 0 60px;
 }
 
 #menu .social-wrap a {
@@ -8053,8 +8059,12 @@ p {
     margin-bottom: 20px;
   }
 
+  #menu .lang {
+    margin-top: 25px;
+  }
+
   #menu .social-wrap {
-    margin: 34px 0 35px;
+    margin: 24px 0 25px;
   }
 
   #menu .bottom-nav {
