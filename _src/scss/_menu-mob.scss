@@ -26,9 +26,13 @@
 
     .time-wrap{
         margin: 35px 0 50px;
+        
+        p{
+            font-size: 14px;
+        }
 
         @media (min-height: 0px) and (max-height: 843px){
-            margin: 17px 0 25px;
+            margin: 17px 0 20px;
         }
 
     }
@@ -44,6 +48,10 @@
                     margin-bottom: 25px;
                     display: block;
 
+                    @media (min-height: 0px) and (max-height: 843px){
+                        margin-bottom: 20px;
+                    }
+
                     &:hover{
                         color: $orange;
                     }
@@ -53,10 +61,10 @@
     }
 
     .social-wrap{
-        margin: 68px 0 110px;
+        margin: 68px 0 100px;
         
         @media (min-height: 0px) and (max-height: 843px){
-            margin: 34px 0 55px;
+            margin: 34px 0 35px;
         }
 
 
@@ -71,6 +79,11 @@
 
     .bottom-nav{
         margin-bottom: 35px;
+
+        @media (min-height: 0px) and (max-height: 843px){
+            margin-bottom: 20px;
+        }
+
         ul{
             li{
                 a{

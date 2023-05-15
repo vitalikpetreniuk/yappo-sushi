@@ -31,12 +31,14 @@
             top: 40px;
             left: 50%;
             transform: translateX(-50%);
-
+            font-size: 26px;
+            
             @include media-for (null, $sm){
-                top: 2rem;
-                left: 10%;
+                top: 1.5rem;
+                left: 7%;
                 transform: translateX(0%);
                 padding: 0;
+                font-size: 14px;
             }
         }
         img{

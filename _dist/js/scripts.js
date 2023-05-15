@@ -37,9 +37,28 @@ $(function() {
 	})
 
 	$('main').on('click', function () {	
-		$(this).removeClass('burger-active');
+		$(this).removeClass('put-up');
+		$('body').removeClass('overflow');
+		$('#menu').removeClass('overlay');
+		$('.burger').removeClass('burger-active')
+	})
+
+
+	//local in header
+
+	$('.local-wrap').on('click', function (e) {	
+		e.preventDefault();
+		$(".city-list").toggleClass('city-list-active');
+		$(this).css("background", "rgba(0, 0, 0, 0.2)");
 
 	})
+
+	$(document).on('click', function(e) {
+		if (!$(e.target).closest('.local-wrap').length) {
+			$(".city-list").removeClass('city-list-active');
+			// $().css("background", "rba (0,0,0 .2)");
+		}
+	});
 
 
 
