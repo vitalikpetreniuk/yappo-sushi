@@ -41,6 +41,13 @@
             padding: 17px 0;
         }
 
+        .social-wrap{
+            a{
+                width: 36px;
+                display: block;
+            }
+        }
+
         .cart{
             position: relative;
             cursor: pointer;
@@ -468,7 +475,7 @@
         width: 48%;
         transition: all .2s ease-in-out;
 
-        @include media-for (null, $tablet){
+        @include media-for (null, $sm){
             display: none;
         }
         
