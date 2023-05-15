@@ -2136,6 +2136,16 @@ p {
           transform: rotate(180deg);
 }
 
+.form-search-btn {
+  font-size: 0;
+  background: url(../img/icon-search.svg) no-repeat;
+  background-size: 100%;
+}
+
+.form-search {
+  position: relative;
+}
+
 .footer {
   color: #ffff;
   background-color: #2A1A5E;
@@ -8052,19 +8062,19 @@ p {
 
 @media (min-height: 0px) and (max-height: 843px) {
   #menu .time-wrap {
-    margin: 17px 0 20px;
+    margin: 14px 0 16px;
   }
 
   #menu .top-nav ul li a {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   #menu .lang {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   #menu .social-wrap {
-    margin: 24px 0 25px;
+    margin: 20px 0 20px;
   }
 
   #menu .bottom-nav {

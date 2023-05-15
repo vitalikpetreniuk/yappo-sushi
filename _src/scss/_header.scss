@@ -480,3 +480,13 @@
         transform: rotate(180deg);
     }
 }
+
+.form-search-btn {
+    font-size: 0;
+    background: url(../img/icon-search.svg) no-repeat;
+    background-size: 100%;
+}
+
+.form-search {
+    position: relative;
+}
