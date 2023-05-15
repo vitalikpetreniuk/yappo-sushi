@@ -1556,14 +1556,14 @@ main::before {
   content: "";
   width: 100%;
   height: 100%;
-  right: -200%;
-  left: auto;
+  left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
   -webkit-transition: all 0.9s ease-in;
   -o-transition: all 0.9s ease-in;
   transition: all 0.9s ease-in;
+  opacity: 0;
 }
 
 button {
@@ -1636,8 +1636,7 @@ p {
 }
 
 .put-up::before {
-  left: 0;
-  right: 0;
+  opacity: 1;
 }
 
 .time-wrap span {
@@ -2042,7 +2041,7 @@ p {
   opacity: 1;
   height: auto;
   top: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .local-wrap .city-list-active div {
@@ -2075,7 +2074,7 @@ p {
 }
 
 .lang-desctop .lang-desctop-wrap {
-  width: 70%;
+  width: auto;
   text-align: center;
 }
 
@@ -2084,7 +2083,7 @@ p {
 }
 
 .lang-desctop .arrow-wrap {
-  width: 48%;
+  width: 15%;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2772,6 +2771,7 @@ p {
 
 .section-pay .img-wrap {
   position: relative;
+  height: 100%;
 }
 
 .section-pay .img-wrap h2 {
@@ -2786,6 +2786,9 @@ p {
 
 .section-pay .img-wrap img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-pay .img-wrap-card h2 {
@@ -7630,6 +7633,12 @@ p {
   }
 }
 
+@media (max-width: 1024px) and (max-width: 575px) {
+  .footer .visa img {
+    width: 27%;
+  }
+}
+
 @media (max-width: 949px) {
   .header .header-top {
     text-align: center;
@@ -7715,6 +7724,15 @@ p {
     padding: 16px 17px 2px 14px;
     text-align: left;
     border-radius: 0 0 20px 20px;
+  }
+
+  .footer .footer-top {
+    margin-bottom: 0;
+  }
+
+  .footer .navigation a {
+    font-size: 13px;
+    padding: 25px 0 25px;
   }
 
   .product__item {
@@ -7834,7 +7852,6 @@ p {
 
   .footer .footer-top {
     border-bottom: none;
-    margin-bottom: 0;
   }
 
   .footer .footer-top .logo img {
@@ -7871,6 +7888,10 @@ p {
 
   .footer p {
     margin-top: 25px;
+  }
+
+  .footer .company {
+    margin-top: 2rem;
   }
 
   .product__item {

@@ -32,12 +32,12 @@ main{
         content: '';
         width: 100%;
         height: 100%;
-        right: -200%;
-        left: auto;
+        left: 0;
         top: 0;
         background-color: rgba($color: #000000, $alpha: .5);
         z-index: 10;
         transition: all .9s ease-in;
+        opacity: 0;
     }
 }
 
@@ -105,8 +105,7 @@ p{
 .put-up{
     
     &::before{
-        left: 0;
-        right: 0;
+        opacity: 1;
     }
 }
 

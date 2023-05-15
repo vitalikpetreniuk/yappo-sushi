@@ -16,9 +16,12 @@
             margin-bottom: 35px;
         }
 
+        @include media-for (null, $tablet){
+            margin-bottom: 0;
+        } 
+
         @include media-for (null, $sm){
             border-bottom: none; 
-            margin-bottom: 0;
         }
 
         .logo{
@@ -101,11 +104,30 @@
 
     }
 
+    .navigation{
+        a{
+            @include media-for (null, $tablet){
+                font-size: 13px;
+                padding: 25px 0 25px;
+            }  
+        }
+    }
+
     .visa{
         @include media-for (null, 1025px){    
               img{
                 width: 100%;
+
+                @include media-for (null, $sm){
+                    width: 27%;
+                }
               }  
+        }
+    }
+
+    .company{
+        @include media-for (null, $sm){
+            margin-top: 2rem;
         }
     }
 }
