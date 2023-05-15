@@ -7823,6 +7823,10 @@ p {
     top: 100%;
   }
 
+  .form-search .search-wrap form input {
+    width: 7rem;
+  }
+
   .footer {
     padding-bottom: 50px;
     text-align: center;

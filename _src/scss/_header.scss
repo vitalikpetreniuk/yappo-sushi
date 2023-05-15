@@ -433,10 +433,6 @@
     .arrow-wrap{
         width: 48%;
         transition: all .2s ease-in-out;
-
-        // @include media-for (null, $sm){
-        //     display: none;
-        // }
         
         svg{
             width: 100% !important;
@@ -481,9 +477,7 @@
     }
 }
 
-.form-search-btn {
-    
-}
+
 
 .form-search {
     position: relative;
@@ -505,10 +499,15 @@
         form{
             display: flex;
             height: 0;
+
             input{
                 border: none;
                 outline: none;
                 border-bottom: 1px solid $accent;
+
+                @include media-for (null, $sm){
+                    width: 7rem;
+                }
             }
         }
 
@@ -523,7 +522,7 @@
         opacity: 1;
         right: 0;
         z-index: 10;
-        
+
         form{
             height: auto;
         }
