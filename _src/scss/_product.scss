@@ -133,6 +133,79 @@
         }
 
     }
+
+
+
+    .сhat-bubbles-wrap{
+
+
+        @include media-for (null, 1025px){
+            left: 0%;
+            transform: translateX(-60%);
+        }
+    }
+    
+    .сhat-bubbles {
+
+        @include media-for (null, 1025px){
+            min-width: 6rem;
+        }
+
+        P{
+            @include media-for (null, 1025px){
+                
+            }
+        }
+    
+
+    
+        &:before{
+
+          @include media-for (null, 1025px){
+            right: 32px;
+            left: auto;
+            background-color: $bg-gray;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 50px;
+            transform: skew(-227deg, 0);
+          }
+        }
+        &:after{
+
+
+            @include media-for (null, 1025px){
+                left: auto;
+                right: 26px;
+                background-color: $bg-gray;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 100px;
+                transform: rotateY(-160deg);
+            }
+        }
+      
+
+        & >:first-child:before {
+
+          @include media-for (null, 1025px){
+            left: auto;
+            right: 26px;
+            width: 12px;
+            height: 1px;
+          }
+        }
+        & >:first-child:after {
+
+          @include media-for (null, 1025px){
+                left: auto;
+                right: 31px;
+                width: 5px;
+                height: 5px;
+                -webkit-transform: skew(45deg,0);
+                -ms-transform: skew(45deg,0);
+                transform: skew(-45deg,0);
+            }
+        }
+    }
 }
 
 .sale-badge{
