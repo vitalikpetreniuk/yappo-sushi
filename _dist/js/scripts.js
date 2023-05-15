@@ -61,6 +61,16 @@ $(function() {
 	})
 
 
+	//search
+	$('.form-search-btn').on('click', function () {	
+		$('.search-wrap').toggleClass('search-wrap-active');
+	})
+
+	$('.close-search').on('click', function () {	
+		$('.search-wrap').removeClass('search-wrap-active');
+	})
+
+
 	//local in header
 
 	$('.local-wrap').on('click', function (e) {	

@@ -482,11 +482,51 @@
 }
 
 .form-search-btn {
-    font-size: 0;
-    background: url(../img/search.svg) no-repeat;
-    background-size: 100%;
+    
 }
 
 .form-search {
     position: relative;
+
+    .search-wrap{
+        position: absolute;
+        right: 0;
+        height: 110%;
+        background-color: $text-white;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        transition: all .3s ease-in-out; 
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+
+        form{
+            display: flex;
+            height: 0;
+            input{
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $accent;
+            }
+        }
+
+        .close-search{
+            cursor: pointer;
+        }
+
+        
+    }
+
+    .search-wrap-active{
+        opacity: 1;
+        right: 0;
+        z-index: 10;
+        
+        form{
+            height: auto;
+        }
+    }
 }
+

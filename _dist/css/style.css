@@ -2136,14 +2136,56 @@ p {
           transform: rotate(180deg);
 }
 
-.form-search-btn {
-  font-size: 0;
-  background: url(../img/search.svg) no-repeat;
-  background-size: 100%;
-}
-
 .form-search {
   position: relative;
+}
+
+.form-search .search-wrap {
+  position: absolute;
+  right: 0;
+  height: 110%;
+  background-color: #ffff;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form-search .search-wrap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+}
+
+.form-search .search-wrap form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2A1A5E;
+}
+
+.form-search .search-wrap .close-search {
+  cursor: pointer;
+}
+
+.form-search .search-wrap-active {
+  opacity: 1;
+  right: 0;
+  z-index: 10;
+}
+
+.form-search .search-wrap-active form {
+  height: auto;
 }
 
 .footer {
