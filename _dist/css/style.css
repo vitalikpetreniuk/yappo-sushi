@@ -1695,6 +1695,10 @@ p {
   background-color: #2A1A5E;
 }
 
+.btn-blue:hover {
+  background-color: #736998;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -2163,10 +2167,15 @@ p {
   padding-top: 35px;
   cursor: pointer;
   margin-bottom: 25px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: #ffff;
+}
+
+.product__item:hover {
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
 .product__item:hover .btn-primary {
@@ -2255,6 +2264,9 @@ p {
   right: 10px;
   opacity: 0;
   z-index: -1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .sale-badge {

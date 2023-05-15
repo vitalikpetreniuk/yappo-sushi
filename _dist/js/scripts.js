@@ -49,7 +49,6 @@ $(function() {
 	$('.local-wrap').on('click', function (e) {	
 		e.preventDefault();
 		$(".city-list").toggleClass('city-list-active');
-		// $(this).css("background", "rgba(0, 0, 0, 0.2)");
 
 		if ($(".city-list").hasClass('city-list-active')) {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.2)");
