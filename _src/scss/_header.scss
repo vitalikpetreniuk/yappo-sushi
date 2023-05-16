@@ -491,7 +491,7 @@
     .search-wrap{
         position: absolute;
         right: 0;
-        height: 110%;
+        height: 100%;
         background-color: $text-white;
         top: 0;
         display: flex;
@@ -504,7 +504,6 @@
 
         form{
             display: flex;
-            height: 0;
 
             input{
                 border: none;
