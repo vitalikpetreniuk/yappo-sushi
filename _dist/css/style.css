@@ -1547,9 +1547,9 @@ body::-webkit-scrollbar {
 main {
   position: relative;
   overflow-x: hidden;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 main::before {
@@ -2345,16 +2345,34 @@ p {
 }
 
 .product__item .product__cart .product__cart-info-block .product__cart__info .regular-price {
-  font-weight: 700;
-  font-size: 18px;
-  color: #2A1A5E;
-  text-decoration: line-through;
+  display: none;
 }
 
 .product__item .product__cart .product__cart-info-block .product__cart__info li {
   color: rgba(50, 53, 73, 0.7);
   font-weight: 300;
   font-size: 14px;
+}
+
+.product__item .product__cart .product__cart__info-discount {
+  position: relative;
+  width: 10rem;
+  margin: auto;
+}
+
+.product__item .product__cart .product__cart__info-discount .price {
+  color: #F45905 !important;
+}
+
+.product__item .product__cart .product__cart__info-discount .regular-price {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(50, 53, 73, 0.7);
+  text-decoration: line-through;
+  display: block !important;
 }
 
 .product__item .product__cart .btn-primary {
@@ -7996,6 +8014,7 @@ p {
 @media (max-width: 575px) {
   body {
     overflow-x: hidden;
+    padding-top: 175px;
   }
 
   .container-fluid,
@@ -8041,6 +8060,10 @@ p {
 
   .header .header-center button {
     display: block;
+  }
+
+  .header .header-center-scroll {
+    margin-top: -75px;
   }
 
   .header .header-bottom .header__category ul a {
@@ -8091,7 +8114,7 @@ p {
     width: 84%;
   }
 
-  .form-search .search-wrap form input {
+  .form-search .search-wrap-active form input {
     width: 7rem;
   }
 
@@ -8176,8 +8199,13 @@ p {
     font-size: 16px;
   }
 
-  .product__item .product__cart .product__cart-info-block .product__cart__info .regular-price {
+  .product__item .product__cart .product__cart__info-discount {
+    width: 8rem;
+  }
+
+  .product__item .product__cart .product__cart__info-discount .regular-price {
     font-size: 14px;
+    top: 4%;
   }
 
   .product__item .product__cart .btn-primary {

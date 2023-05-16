@@ -132,14 +132,7 @@
     
                 }
                 .regular-price{
-                    font-weight: 700;
-                    font-size: 18px; 
-                    color: $accent;
-                    text-decoration: line-through;
-
-                    @include media-for (null, $sm){
-                        font-size: 14px;
-                    }
+                    display: none;
                 }
                 li{
                     color: rgba($color: #323549, $alpha: .7);
@@ -147,6 +140,37 @@
                     font-size: 14px;
                 }
             }
+        }
+
+        .product__cart__info-discount{
+            position: relative;
+            width: 10rem;
+            margin: auto;
+
+            @include media-for (null, $sm){
+                width: 8rem;
+            }
+
+            .price{
+                color: $orange !important;
+            }
+
+            .regular-price{
+                position: absolute;
+                top: 14%;
+                left: 0;
+                font-weight: 300;
+                font-size: 14px; 
+                color: rgba($color: #323549, $alpha: .7);
+                text-decoration: line-through;
+                display: block !important;
+
+                @include media-for (null, $sm){
+                    font-size: 14px;
+                    top: 4%;
+                }
+            }
+
         }
 
         .btn-primary{

@@ -22,18 +22,18 @@ $(function() {
 
 
 
-	$(window).on("scroll resize", function() {
-		var height = $(window).scrollTop();
-		var headerHeight = $('.header').outerHeight();
+	// $(window).on("scroll resize", function() {
+	// 	var height = $(window).scrollTop();
+	// 	var headerHeight = $('.header').outerHeight();
 	
-		if (height > 0) {
-			$('.header').addClass('header-fixed');
+	// 	if (height > 0) {
+	// 		$('.header').addClass('header-fixed');
 
-		} else {
-			$('.header').removeClass('header-fixed');
-		}
+	// 	} else {
+	// 		$('.header').removeClass('header-fixed');
+	// 	}
 	
-	});
+	// });
 
 
 
@@ -206,9 +206,13 @@ $(function() {
 	});
 
 
+	//discount-card
 
-
-
+	$(".product__item").each(function() {
+		if ($(this).find(".discount-sale").length > 0) {
+		  $(this).find(".product__cart__info").addClass("product__cart__info-discount");
+		}
+	});
 })
 
 
