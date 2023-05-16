@@ -176,6 +176,27 @@ $(function() {
 
 	
 
+	//scroll up
+
+	$(window).scroll(function() {
+		var scrollTop = $(this).scrollTop();
+		var lastScrollTop = $(this).data('lastScrollTop');
+	  
+		if (scrollTop > lastScrollTop) {
+
+		  $(".header-center").addClass("header-center-scroll");
+		} else {
+
+		  $(".header-center").removeClass("header-center-scroll");
+		}
+	  
+		$(this).data('lastScrollTop', scrollTop);
+	});
+
+
+
+
+
 	//products sale-badges
 
 	$(".discount-sale").parent(".product__item").css({
@@ -194,6 +215,8 @@ $(function() {
 
 })
 
+
+///product discription
 
 $(document).ready(function() {
 	var descriptionElement = $('.product-description');
