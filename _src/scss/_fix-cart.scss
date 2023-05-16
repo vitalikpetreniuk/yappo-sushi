@@ -1,0 +1,43 @@
+.fix-cart{
+    position: fixed;
+    bottom: calc(100vh - 325px);
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    background-color: $accent; 
+    border-radius: 27px;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-for (null, $sm){
+        width: 50px;
+        height: 50px;
+        bottom: calc(100vh - 240px);
+        border-radius: 19px;
+        right: 10px;
+    }
+}
+
+.cart{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    .mini-cart-count{
+        position: absolute;
+        bottom: 0px;
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        background-color: $orange;
+        color: $text-white;
+        transform: translate(120%, 40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+    }
+}
