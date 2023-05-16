@@ -235,12 +235,42 @@ $(function() {
 	$('.cursor-pointer').click(function() {
 		window.location.href = 'https://vitalikpetreniuk.github.io/yappo-sushi/';
 	});
+
+
+
+	//при посадці стерти,це тестове
+	var miniCartCount = $(".mini-cart-count");
+    miniCartCount.text("+");
+
+	$(".btn-primary").click(function() {
+		var miniCartCount = $(".mini-cart-count");
+		var randomNumber = Math.floor(Math.random() * 99) + 1;
+		miniCartCount.text(randomNumber);
+	});
+
+	$(".btn-primary").click(function() {
+		var miniCartCount = $(".mini-cart-count");
+		var count = parseInt(miniCartCount.text());
+		
+		if (count > 0) {
+			$(".speech").addClass("speech-active");
+		} else {
+			$(".speech").removeClass("speech-active");
+		}
+	});
+
+
+
 })
+
+
 
 
 ///product discription
 
 $(document).ready(function() {
+
+
 	var descriptionElement = $('.product-description');
 	var descriptionText = descriptionElement.text();
 
@@ -259,19 +289,21 @@ $(document).ready(function() {
 
 	//height page-404
 
-	window.addEventListener('resize', adjustContentHeight);
+	// window.addEventListener('resize', adjustContentHeight);
 
-	function adjustContentHeight() {
-		var headerHeight = document.querySelector('header').offsetHeight;
-		var footerHeight = document.querySelector('footer').offsetHeight;
-		var content = document.querySelector('page-404');
-		var windowHeight = window.innerHeight;
-		var contentHeight = windowHeight - headerHeight - footerHeight;
+	// function adjustContentHeight() {
+	// 	var headerHeight = document.querySelector('header').offsetHeight;
+	// 	var footerHeight = document.querySelector('footer').offsetHeight;
+	// 	var content = document.querySelector('page-404');
+	// 	var windowHeight = window.innerHeight;
+	// 	var contentHeight = windowHeight - headerHeight - footerHeight;
 
-		content.style.minHeight = contentHeight + 'px';
-	}
+	// 	content.style.minHeight = contentHeight + 'px';
+	// }
 
-	// Викликати функцію adjustContentHeight() після завантаження сторінки
-	window.addEventListener('load', adjustContentHeight);
+	// window.addEventListener('load', adjustContentHeight);
+
+
+
 
 });
