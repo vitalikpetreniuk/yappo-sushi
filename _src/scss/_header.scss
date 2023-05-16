@@ -298,6 +298,7 @@
         transition: all .2s ease-in-out;
         font-size: 13px;
         padding-left: 1.7rem;
+        white-space: nowrap;
 
         @include media-for (null, 950px){
             justify-content: center;

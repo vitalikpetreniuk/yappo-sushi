@@ -1992,6 +1992,7 @@ p {
   transition: all 0.2s ease-in-out;
   font-size: 13px;
   padding-left: 1.7rem;
+  white-space: nowrap;
 }
 
 .local-wrap .local span {
