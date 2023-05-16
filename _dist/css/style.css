@@ -1924,6 +1924,8 @@ p {
   top: 0;
   left: 0;
   opacity: 1;
+  height: auto;
+  z-index: 50 !important;
 }
 
 .header .header-bottom .header__category ul li:first-child a .сhat-bubbles-wrap .сhat-bubbles {
@@ -7985,6 +7987,12 @@ p {
 
   .header .header-bottom .header__category ul a {
     margin-right: 0rem;
+  }
+
+  .header .header-bottom .header__category ul a .сhat-bubbles-wrap {
+    opacity: 1;
+    height: auto;
+    z-index: 0;
   }
 
   .header .header-bottom .header__category ul a .cotegory_img {

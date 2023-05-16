@@ -160,6 +160,11 @@
                     @include media-for (null, $sm){
                         margin-right: 0rem;
 
+                        .сhat-bubbles-wrap{
+                            opacity: 1;
+                            height: auto;
+                            z-index: 0;
+                        }
                     } 
 
                     .cotegory_img{
@@ -220,7 +225,8 @@
                                 top: 0;
                                 left: 0;
                                 opacity: 1;
-                                
+                                height: auto;
+                                z-index: 50 !important;
 
                                 .сhat-bubbles {
                                     padding: 0;
@@ -237,6 +243,7 @@
                                     }
                                 }
                             }
+
                         }
 
                         p{
