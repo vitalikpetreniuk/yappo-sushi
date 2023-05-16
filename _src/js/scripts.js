@@ -57,6 +57,8 @@ $(function() {
 	})
 
 
+
+
 	//search
 	$('.form-search-btn').on('click', function () {	
 		$('.search-wrap').toggleClass('search-wrap-active');
@@ -65,6 +67,8 @@ $(function() {
 	$('.close-search').on('click', function () {	
 		$('.search-wrap').removeClass('search-wrap-active');
 	})
+
+
 
 
 	//local in header
@@ -112,6 +116,9 @@ $(function() {
 
 
 
+
+
+
 	//hover for svg
 
 	$('.hover-effect-svg').hover(function() {
@@ -121,6 +128,8 @@ $(function() {
 		$(this).find('[fill="#736998"]').attr('fill', '#2A1A5E');
 		$(this).find('[stroke="#736998"]').attr('stroke', '#2A1A5E');
 	});
+
+
 
 
 
@@ -172,6 +181,8 @@ $(function() {
 
 	
 
+
+
 	//scroll up
 
 	$(window).scroll(function() {
@@ -206,12 +217,23 @@ $(function() {
 	});
 
 
+
 	//discount-card
 
 	$(".product__item").each(function() {
 		if ($(this).find(".discount-sale").length > 0) {
 		  $(this).find(".product__cart__info").addClass("product__cart__info-discount");
 		}
+	});
+
+
+
+
+
+	//click in page-404
+
+	$('.cursor-pointer').click(function() {
+		window.location.href = 'https://vitalikpetreniuk.github.io/yappo-sushi/';
 	});
 })
 
@@ -232,4 +254,24 @@ $(document).ready(function() {
 		descriptionElement.text(descriptionText + '...');
 	  }
 	}
-  });
+
+
+
+	//height page-404
+
+	window.addEventListener('resize', adjustContentHeight);
+
+	function adjustContentHeight() {
+		var headerHeight = document.querySelector('header').offsetHeight;
+		var footerHeight = document.querySelector('footer').offsetHeight;
+		var content = document.querySelector('page-404');
+		var windowHeight = window.innerHeight;
+		var contentHeight = windowHeight - headerHeight - footerHeight;
+
+		content.style.minHeight = contentHeight + 'px';
+	}
+
+	// Викликати функцію adjustContentHeight() після завантаження сторінки
+	window.addEventListener('load', adjustContentHeight);
+
+});

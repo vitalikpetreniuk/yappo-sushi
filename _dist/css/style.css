@@ -2241,6 +2241,7 @@ p {
 
 .footer p {
   font-size: 12px;
+  text-align: center;
 }
 
 .footer .visa img {
@@ -2458,19 +2459,21 @@ p {
 
 .page-404 {
   text-align: center;
-  padding: 80px 0 115px;
+  padding: 50px 0 115px;
+  min-height: calc(100% - 150px);
 }
 
 .page-404 h1 {
   font-weight: 400;
   color: #F45905;
   font-family: "DelaGothicOne";
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
+  margin-bottom: 22px;
 }
 
 .page-404 h1 span {
-  font-size: 96px;
+  font-size: 48px;
   display: block;
 }
 
@@ -2478,16 +2481,26 @@ p {
   color: #262730;
   font-weight: 400;
   font-size: 14px;
-  margin: 35px 0 95px;
+  margin: 0 0 30px;
 }
 
 .page-404 .img-wrap {
+  position: relative;
   height: 285px;
 }
 
-.page-404 .img-wrap img {
+.page-404 .img-wrap svg {
   width: 100%;
   height: 100%;
+}
+
+.page-404 .img-wrap svg path {
+  cursor: pointer;
+}
+
+.page-404 .cursor-pointer {
+  cursor: pointer;
+  display: block;
 }
 
 .burger {
@@ -7882,6 +7895,11 @@ p {
     width: 26px;
   }
 
+  .page-404 {
+    min-height: 63vh;
+    height: 63vh;
+  }
+
   .section-pay .img-wrap h2 {
     font-size: 20px;
     top: 1rem;
@@ -7997,6 +8015,15 @@ p {
   .footer .navigation a {
     font-size: 13px;
     padding: 25px 0 25px;
+  }
+
+  .page-404 {
+    min-height: 60vh;
+    height: 60vh;
+  }
+
+  .page-404 .img-wrap {
+    height: 160px;
   }
 
   .popular-product,
@@ -8228,9 +8255,8 @@ p {
     margin: 35px 0 55px;
   }
 
-  .page-404 .img-wrap img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  .page-404 .img-wrap {
+    height: 70px;
   }
 
   .burger {

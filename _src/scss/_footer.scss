@@ -93,7 +93,7 @@
 
     p{
         font-size: 12px;
-
+        text-align: center;
         @include media-for (null, 950px){
             text-align: center;
         }
