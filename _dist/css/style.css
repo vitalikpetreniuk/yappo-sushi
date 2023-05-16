@@ -2178,6 +2178,10 @@ p {
   border: none;
   outline: none;
   border-bottom: 1px solid #2A1A5E;
+  width: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-search .search-wrap .close-search {
@@ -2192,6 +2196,10 @@ p {
 
 .form-search .search-wrap-active form {
   height: auto;
+}
+
+.form-search .search-wrap-active form input {
+  width: 13rem;
 }
 
 .footer {

@@ -2,10 +2,7 @@ var $ = jQuery;
 
 $(function() {
 // custom scripts
-
-
-	// $("body").css("padding-top", $(".header").outerHeight()  + "px");	
-	
+		
 	//scroll header
 
 	$(window).on("scroll",function() {

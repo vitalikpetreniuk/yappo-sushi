@@ -509,7 +509,9 @@
                 border: none;
                 outline: none;
                 border-bottom: 1px solid $accent;
-
+                width: 0;
+                transition: all .3s ease-in-out;
+                
                 @include media-for (null, $sm){
                     width: 7rem;
                 }
@@ -530,6 +532,10 @@
 
         form{
             height: auto;
+
+            input{
+                width: 13rem;
+            }
         }
     }
 }
