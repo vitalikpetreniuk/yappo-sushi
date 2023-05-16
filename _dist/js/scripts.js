@@ -242,13 +242,15 @@ $(function() {
 	var miniCartCount = $(".mini-cart-count");
     miniCartCount.text("+");
 
-	$(".btn-primary").click(function() {
+	$(".btn-primary").click(function(e) {
+		e.preventDefault();
 		var miniCartCount = $(".mini-cart-count");
 		var randomNumber = Math.floor(Math.random() * 99) + 1;
 		miniCartCount.text(randomNumber);
 	});
 
-	$(".btn-primary").click(function() {
+	$(".btn-primary").click(function(e) {
+		e.preventDefault();
 		var miniCartCount = $(".mini-cart-count");
 		var count = parseInt(miniCartCount.text());
 		
