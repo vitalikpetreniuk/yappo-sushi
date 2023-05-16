@@ -11,6 +11,10 @@
     transition: all .4s ease-in-out;
     background-color: $text-white;
 
+    @include media-for (null, $mid-desktop){
+        padding-top: 15px;
+    }
+
 
     @include media-for (null, 1025px){
         border-radius: 32px;
@@ -37,8 +41,14 @@
         text-align: center;
         overflow: hidden;
         border-radius: 35px;
+        width: 310px;
         height: 215px;
+        margin: auto;
         margin-bottom: 40px;
+
+        @include media-for (null, $mid-desktop){
+            margin-bottom: 20px;
+        }
 
         @include media-for (null, $sm){
             border-radius: 35px;
@@ -79,8 +89,10 @@
                color: #262730; 
                font-weight: 300;
                font-size: 14px;
-               height: 2.5rem;
+               height: 1.5rem;
+               white-space: nowrap;
                overflow: hidden;
+               text-overflow: ellipsis;
 
                @include media-for (null, $sm){
                     display: none;
@@ -94,6 +106,9 @@
         margin: 25px 0 40px;
         padding: 0 3rem;
 
+        @include media-for (null, $mid-desktop){
+            margin: 15px 0 15px;
+        }
 
         @include media-for (null, $sm){   
             margin: 15px 0 20px;
@@ -140,8 +155,19 @@
             right: 20px;
             opacity: 0;
             z-index: -1;
-            // transition: all .4s ease-in-out;
-            transition: all .2s ease-in;
+            transition: all .1s ease-in;
+            width: 64px;
+            height: 64px;
+            background-color: $orange;
+            border-radius: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+            &:hover{
+                background-color: #FF7937;
+            }
 
             @include media-for (null, 1025px){
                 opacity: 1;
@@ -149,6 +175,18 @@
                 right: 10px;
                 bottom: 10px;
                 padding-right: 0;
+            }
+
+            @include media-for (null, $sm){
+                width: 46px;
+                height: 46px;
+                border-radius: 19px;
+
+                img{
+                    width: 21px;
+                    height: 21px;
+                    display: block;
+                }
             }
         }
 
@@ -244,6 +282,14 @@
     @include media-for (null, 1025px){
         right: 10px;
         top: 10px;
+    } 
+
+    @include media-for (null, 1025px){
+        width: 36px;
+        height: 36px;
+        img{
+            width: 26px;
+        }
     } 
 
     img{

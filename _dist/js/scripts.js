@@ -190,4 +190,23 @@ $(function() {
 
 
 
+
+
 })
+
+
+$(document).ready(function() {
+	var descriptionElement = $('.product-description');
+	var descriptionText = descriptionElement.text();
+
+
+	var lineHeight = parseFloat(descriptionElement.css('line-height'));
+	var maxHeight = lineHeight * 1; 
+
+	if (descriptionElement.height() > maxHeight) {
+	  while (descriptionElement.height() > maxHeight) {
+		descriptionText = descriptionText.slice(0, -1);
+		descriptionElement.text(descriptionText + '...');
+	  }
+	}
+  });

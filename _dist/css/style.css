@@ -2270,7 +2270,9 @@ p {
   text-align: center;
   overflow: hidden;
   border-radius: 35px;
+  width: 310px;
   height: 215px;
+  margin: auto;
   margin-bottom: 40px;
 }
 
@@ -2300,8 +2302,11 @@ p {
   color: #262730;
   font-weight: 300;
   font-size: 14px;
-  height: 2.5rem;
+  height: 1.5rem;
+  white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .product__item .product__cart {
@@ -2348,9 +2353,27 @@ p {
   right: 20px;
   opacity: 0;
   z-index: -1;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  width: 64px;
+  height: 64px;
+  background-color: #F45905;
+  border-radius: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.product__item .product__cart .btn-primary:hover {
+  background-color: #FF7937;
 }
 
 .sale-badge {
@@ -7708,6 +7731,20 @@ p {
   }
 }
 
+@media (max-width: 1399px) {
+  .product__item {
+    padding-top: 15px;
+  }
+
+  .product__item .product__image {
+    margin-bottom: 20px;
+  }
+
+  .product__item .product__cart {
+    margin: 15px 0 15px;
+  }
+}
+
 @media (max-width: 1366px) {
   .widget-btns {
     top: calc(100vh - 200px);
@@ -7804,6 +7841,15 @@ p {
   .sale-badge {
     right: 10px;
     top: 10px;
+  }
+
+  .sale-badge {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sale-badge img {
+    width: 26px;
   }
 
   .section-pay .img-wrap h2 {
@@ -8120,6 +8166,18 @@ p {
     font-size: 14px;
   }
 
+  .product__item .product__cart .btn-primary {
+    width: 46px;
+    height: 46px;
+    border-radius: 19px;
+  }
+
+  .product__item .product__cart .btn-primary img {
+    width: 21px;
+    height: 21px;
+    display: block;
+  }
+
   .page-404 {
     padding: 50px 0;
   }
@@ -8152,6 +8210,7 @@ p {
     bottom: calc(100vh - 240px);
     border-radius: 19px;
     right: 10px;
+    display: none;
   }
 
   .top-slider {
@@ -8240,6 +8299,9 @@ p {
   .rols-prosuct .btn-blue,
   .sets-prosuct .btn-blue {
     margin-top: 28px;
+    width: 218px;
+    height: 49px;
+    padding: 14px 38px;
   }
 
   .popular-product {
