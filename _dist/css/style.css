@@ -1537,6 +1537,7 @@ body {
   transition: all 0.2s ease-in;
   position: relative;
   overflow-x: hidden;
+  padding-top: 240.5px;
 }
 
 body::-webkit-scrollbar {
@@ -1809,9 +1810,9 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   z-index: 100;
 }
 
@@ -1830,9 +1831,9 @@ p {
 
 .header .header-center {
   padding: 35px 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #ffff;
 }
 

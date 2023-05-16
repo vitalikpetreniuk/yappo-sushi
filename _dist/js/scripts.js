@@ -4,7 +4,7 @@ $(function() {
 // custom scripts
 
 
-	$("body").css("padding-top", $(".header").outerHeight()  + "px");	
+	// $("body").css("padding-top", $(".header").outerHeight()  + "px");	
 	
 	//scroll header
 
@@ -36,7 +36,6 @@ $(function() {
 			$('.header').removeClass('header-fixed');
 		}
 	
-		$("body").css("padding-top", headerHeight + 34 + "px");
 	});
 
 
