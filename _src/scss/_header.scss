@@ -1,5 +1,5 @@
 .header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,10 +7,12 @@
     z-index: 100;
 
     .header-top{
+        position: relative;
         background-color: $accent;
         color: $text-white;
         font-size: 13px;
         font-weight: 600;
+        z-index: 100;
 
         @include media-for (null, 950px){
             text-align: center;
@@ -61,11 +63,8 @@
     }
 
     .header-center-scroll{
-        height: 0;
-        padding: 0 !important;
-        position: relative;
-        z-index: -10;
-        opacity: 0;
+        margin-top: -118px;
+        z-index: -100;
     }
 
     .header-bottom{
