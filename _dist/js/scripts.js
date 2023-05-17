@@ -236,6 +236,10 @@ $(function() {
 		window.location.href = 'https://vitalikpetreniuk.github.io/yappo-sushi/';
 	});
 
+	if ($('.page-404').length > 0) {
+		$('.fix-cart').remove();
+	}
+
 
 
 	//при посадці стерти,це тестове

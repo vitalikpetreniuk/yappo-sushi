@@ -304,6 +304,7 @@
     width: 49px;
     height: 49px;
     background-color: $orange;
+    cursor: pointer;
 
     @include media-for (null, 1025px){
         right: 10px;

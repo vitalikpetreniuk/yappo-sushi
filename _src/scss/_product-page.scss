@@ -1,8 +1,14 @@
 .product-top{
+    position: relative;
     padding: 55px 0 70px;
 
     .breadcrumbs{
         margin-bottom: 15px;
+    }
+
+    .card-produc-block{
+        position: relative;
+        z-index: 10;
     }
 
     .product-img-wrap{
@@ -22,6 +28,10 @@
                 display: block;
                 margin: auto;
             }
+        }
+
+        .сhat-bubbles-wrap{
+            top: 84%;
         }
     }
 
@@ -133,6 +143,102 @@
             display: block;
             margin-left: auto;
         }
+    }
+
+
+
+
+    .storefront-product-pagination{
+
+
+        .next,.prev{
+            position: relative;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1100px;
+            opacity: .5;
+            z-index: 1;
+            transition: all .2s ease-in;
+
+        }
+
+        .card-produc-block{
+            z-index: 1;
+        }
+        .prev{
+            left: -51%;
+
+            .hover-box{
+                right: 100%;
+            }
+
+            &:hover{
+                opacity: 1;
+
+                .hover-box{
+                    right: -17%;
+                }
+            }
+        }
+        .next{
+            right: -51%;
+
+            .hover-box{
+                left: 100%;
+            }
+
+            &:hover{
+                opacity: 1;
+                
+                .hover-box{
+                    left: -17%;
+                }
+            }
+        }
+
+
+        .hover-box{
+            position: absolute;
+
+            bottom: 10%;
+            z-index: 12;
+            padding: 30px 20px;
+            border-radius: 50px;
+            background-color: $text-white;
+            transition: all .3s ease;
+            box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
+
+            img{
+                width: 195px;
+                height: 135px;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+                margin-bottom: 24px;
+
+            }
+
+            h4{
+                padding: 0 30px;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                max-width: 70%;
+                margin: auto;
+                color: $accent;
+                background-color: $text-white;
+            }
+
+
+            .link-next,.link-prev{
+                display: block;
+                
+            }
+        }
+
+        
     }
 
 }
