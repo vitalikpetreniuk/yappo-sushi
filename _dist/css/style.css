@@ -2603,10 +2603,12 @@ p {
 
 #menu .time-wrap {
   margin: 35px 0 50px;
+  color: #2A1A5E;
 }
 
 #menu .time-wrap p {
   font-size: 14px;
+  color: #2A1A5E;
 }
 
 #menu .top-nav ul li a {
