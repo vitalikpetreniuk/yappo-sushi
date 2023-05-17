@@ -1815,18 +1815,19 @@ p {
   position: relative;
   white-space: nowrap;
   margin-right: 14px;
+  color: rgba(38, 39, 48, 0.6);
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .breadcrumbs li:before {
-  content: "-";
+  content: "";
   position: absolute;
   top: 50%;
-  right: -13px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 14px;
+  right: -10px;
+  width: 5px;
   height: 1px;
+  background-color: rgba(38, 39, 48, 0.6);
 }
 
 .breadcrumbs li a {
@@ -3098,6 +3099,156 @@ p {
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.product-top {
+  padding: 55px 0 70px;
+}
+
+.product-top .breadcrumbs {
+  margin-bottom: 15px;
+}
+
+.product-top .product-img-wrap {
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 45px;
+  height: 100%;
+  height: 446px;
+  padding: 50px 25px;
+}
+
+.product-top .product-img-wrap a {
+  display: block;
+  text-align: center;
+}
+
+.product-top .product-img-wrap a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.product-top h1 {
+  margin-bottom: 30px;
+}
+
+.product-top h1::before,
+.product-top h1::after {
+  display: none;
+}
+
+.product-top .description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #262730;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.product-top .inform {
+  font-size: 14px;
+  font-weight: 300;
+  color: #262730;
+}
+
+.product-top .price {
+  font-size: 26px;
+  color: #2A1A5E;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.product-top .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0 30px;
+}
+
+.product-top .quantity input {
+  border: none;
+  outline: none;
+  width: 40px;
+  text-align: center;
+  color: #262730;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-top .quantity button {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #D9D9D9;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2A1A5E;
+}
+
+.product-top .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  background-color: #F45905;
+  padding: 15px 40px;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-top .button span {
+  padding-top: 0.2rem;
+}
+
+.product-top .button:hover {
+  background-color: #FF7937;
+}
+
+.product-top .column-right {
+  padding-left: 2.5rem;
+}
+
+.product-top .surprise {
+  margin-top: 3rem;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  height: 160px;
+  width: 182px;
+}
+
+.product-top .surprise h4 {
+  color: #F45905;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "DelaGothicOne";
+}
+
+.product-top .surprise img {
+  width: 110px;
+  display: block;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -8509,6 +8660,10 @@ p {
 
   .section-pay .img-wrap-card h2 {
     left: 10% !important;
+  }
+
+  .product-top .button {
+    border-radius: 20px;
   }
 }
 

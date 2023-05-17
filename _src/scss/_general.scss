@@ -318,30 +318,32 @@ p{
 .breadcrumbs{
     display: flex;
 
-
-
     li{
         position: relative;
         white-space: nowrap;
         margin-right: 14px;
+        color: rgba($color: #262730, $alpha: .6);
+        font-size: 12px;
+        font-weight: 300;
 
         @include media-for (null, $sm){
             
         }
         
         &:before {
-            content: '-';
+            content: '';
             position: absolute;
             top: 50%;
-            right: -13px;
-            transform: translateY(-50%);
-            width: 14px;
+            right: -10px;
+            width: 5px;
             height: 1px;
+            background-color: rgba($color: #262730, $alpha: .6);
         }
         a{
             color: rgba($color: #262730, $alpha: .6);
             font-size: 12px;
             font-weight: 300;
+
             @include media-for (null, $sm){
                 
             }
