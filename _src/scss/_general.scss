@@ -133,6 +133,9 @@ p{
 
 
 
+
+//title
+
 .section__title{
     position: relative;
     display: inline-block;
@@ -179,6 +182,9 @@ p{
 
 }
 
+
+//small fish on title
+
 .title-bg-two{
     &:before,
     &:after{
@@ -204,9 +210,13 @@ p{
 }
 
 
+
 .btn__wrapper{
     text-align: center;
 }
+
+
+//btn
 
 .btn-blue{
     border-radius: 24px;
@@ -229,6 +239,10 @@ p{
 }
 
 
+
+
+//сhat-bubbles
+
 .сhat-bubbles-wrap{
     position: absolute;
     left: 50%;
@@ -242,7 +256,7 @@ p{
 
 .сhat-bubbles {
     display: inline-block;
-    margin: 20px auto;
+    margin: 17px auto;
     padding: 10px;
     border: 1px solid $bg-gray;
     position: relative;
@@ -292,5 +306,52 @@ p{
       height: 5px;
       left: 23px;
       transform: skew(-45deg, 0);
+    }
+}
+
+
+
+
+
+//breadcrumbs
+
+.breadcrumbs{
+    display: flex;
+
+
+
+    li{
+        position: relative;
+        white-space: nowrap;
+        margin-right: 14px;
+
+        @include media-for (null, $sm){
+            
+        }
+        
+        &:before {
+            content: '-';
+            position: absolute;
+            top: 50%;
+            right: -13px;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 1px;
+        }
+        a{
+            color: rgba($color: #262730, $alpha: .6);
+            font-size: 12px;
+            font-weight: 300;
+            @include media-for (null, $sm){
+                
+            }
+        }
+
+
+        &:last-child{
+            &:before {
+                display: none;
+            }
+        }
     }
 }
