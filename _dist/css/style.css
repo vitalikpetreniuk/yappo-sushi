@@ -8133,9 +8133,9 @@ p {
 
   .header .header-center {
     padding: 17px 0;
-    -webkit-transition: 0;
-    -o-transition: 0;
-    transition: 0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
   }
 
   .header .header-center button {

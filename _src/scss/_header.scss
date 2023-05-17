@@ -41,7 +41,7 @@
 
         @include media-for (null, $sm){
             padding: 17px 0;
-            transition:  0;
+            transition: none;
         }
 
         .social-wrap{
