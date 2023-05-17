@@ -2561,8 +2561,7 @@ p {
   position: fixed;
   right: -200%;
   display: none;
-  height: 100%;
-  width: 70%;
+  width: 100%;
   background-color: #ffff;
   visibility: hidden;
   opacity: 0;
@@ -2571,10 +2570,31 @@ p {
   transition: all 0.5s ease-in-out;
   z-index: 100;
   padding-bottom: 24px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+#menu .time-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0 26px;
+}
+
+#menu .time-wrap div {
+  line-height: 1.1;
+}
+
+#menu .time-wrap div span {
+  font-size: 14px;
 }
 
 #menu .menu-body {
-  padding-left: 28px;
+  text-align: center;
 }
 
 #menu .menu-header {
@@ -2594,7 +2614,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   color: #2A1A5E;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   display: block;
 }
 
@@ -2603,11 +2623,12 @@ p {
 }
 
 #menu .lang {
-  margin-top: 45px;
+  margin: auto;
+  margin-top: 35px;
 }
 
 #menu .social-wrap {
-  margin: 20px 0 60px;
+  margin: 20px 0 50px;
 }
 
 #menu .social-wrap a {
@@ -8503,22 +8524,6 @@ p {
 
   .page-404 p {
     margin: 25px 0 30px;
-  }
-
-  #menu .time-wrap {
-    margin: 14px 0 16px;
-  }
-
-  #menu .top-nav ul li a {
-    margin-bottom: 10px;
-  }
-
-  #menu .lang {
-    margin-top: 20px;
-  }
-
-  #menu .social-wrap {
-    margin: 20px 0 20px;
   }
 
   #menu .bottom-nav {
