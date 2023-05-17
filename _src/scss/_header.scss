@@ -36,7 +36,7 @@
 
     .header-center{
         padding: 30px 0;
-        transition:  transform  .3s;
+        transition:  margin-top  .3s;
         background-color: $text-white;
 
         @include media-for (null, $sm){
@@ -64,11 +64,11 @@
     }
 
     .header-center-scroll{
-        transform: translateY(-108px);
+        margin-top: -108px;
         z-index: -100;
 
         @include media-for (null, $sm){
-            transform: translateY(-75px);
+            margin-top: -75px;
         } 
     }
 
