@@ -2,15 +2,24 @@
     position: relative;
     padding: 55px 0 70px;
 
+    @include media-for (null, $sm){
+        padding-bottom: 30px;
+    }
+
     .breadcrumbs{
         margin-bottom: 15px;
+
+        @include media-for (null, $sm){
+            display: none;
+        }
+
     }
 
     .card-produc-block{
         position: relative;
-        z-index: 10;
+        z-index: 1;
     }
-
+ 
     .product-img-wrap{
         position: relative;
         width: 100%;
@@ -19,6 +28,31 @@
         height: 100%;
         height: 446px;
         padding: 50px 25px;
+
+        @include media-for (null, 1200px){
+            height: 332px;
+        }
+
+        @include media-for (null, 993px){
+            height: auto;
+            margin-bottom: 4rem;
+
+        }
+
+        @include media-for (null, $sm){
+            margin-bottom: 1.5rem;
+        }
+
+        .sale-badge{
+            @include media-for (null, 993px){
+                top: 2rem;
+                right: 2rem;
+            }
+
+            @include media-for (null, 993px){
+                
+            }
+        }
         
         a{
             display: block;
@@ -27,17 +61,97 @@
                 object-fit: contain;
                 display: block;
                 margin: auto;
+                width: 100%;
             }
         }
 
         .сhat-bubbles-wrap{
             top: 84%;
         }
+
+
+        .сhat-bubbles-wrap{
+
+
+            @include media-for (null, 1025px){
+                left: 0%;
+                transform: translateX(-60%);
+            }
+        }
+        
+        .сhat-bubbles {
+    
+            @include media-for (null, 1025px){
+                min-width: 6rem;
+            }
+    
+            P{
+                @include media-for (null, 1025px){
+                    
+                }
+            }
+        
+    
+        
+            &:before{
+    
+              @include media-for (null, 1025px){
+                right: 32px;
+                left: auto;
+                background-color: $bg-gray;
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 50px;
+                transform: skew(-227deg, 0);
+              }
+            }
+            &:after{
+    
+    
+                @include media-for (null, 1025px){
+                    left: auto;
+                    right: 26px;
+                    background-color: $bg-gray;
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 100px;
+                    transform: rotateY(-160deg);
+                }
+            }
+          
+    
+            & >:first-child:before {
+    
+              @include media-for (null, 1025px){
+                left: auto;
+                right: 26px;
+                width: 12px;
+                height: 1px;
+              }
+            }
+            & >:first-child:after {
+    
+              @include media-for (null, 1025px){
+                    left: auto;
+                    right: 31px;
+                    width: 5px;
+                    height: 5px;
+                    -webkit-transform: skew(45deg,0);
+                    -ms-transform: skew(45deg,0);
+                    transform: skew(-45deg,0);
+                }
+            }
+        }
+
+        
     }
 
     h1{
         margin-bottom: 30px;
 
+        @include media-for (null, $sm){
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+    
         &::before,
         &::after{
             display: none;
@@ -58,17 +172,34 @@
         color: $text-black;
     }
 
+    .wraper{
+        @include media-for (null, $sm){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     .price{
         font-size: 26px;
         color: $accent;
         font-weight: 700;
         margin-bottom: 22px;
+
+        @include media-for (null, $sm){
+            margin: 0;
+            font-size: 20px;
+        }
     }
 
     .quantity{
         display: flex;
         align-items: center;
         margin: 25px 0 30px;
+
+        @include media-for (null, $sm){
+            margin: 25px 0 12px;
+        }
 
         input{
             border: none;
@@ -78,6 +209,11 @@
             color: $text-black;
             font-size: 14px;
             font-weight: 700;
+   
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
         }
 
         button{
@@ -91,6 +227,7 @@
             font-size: 14px;
             font-weight: 700;
             color: $accent;
+
         }
     }
 
@@ -103,6 +240,13 @@
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include media-for (null, $sm){
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+        }
 
         span{
             padding-top: 0.2rem;
@@ -119,6 +263,14 @@
 
     .column-right{
         padding-left: 2.5rem;
+
+        @include media-for (null, 14013px){
+            padding-left: 1rem;
+        }
+
+        @include media-for (null, $sm){
+            padding-left: 0rem;
+        }
     }
 
     .surprise{
@@ -131,11 +283,23 @@
         height: 160px;
         width: 182px; 
 
+        @include media-for (null, $sm){
+            width: 100%;
+            height: 89px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
         h4{
             color: $orange;
             font-weight: 400;
             font-size: 16px;
             font-family: 'DelaGothicOne';
+
+            @include media-for (null, $sm){
+                margin: 0;
+            }
         }
 
         img{
@@ -150,6 +314,9 @@
 
     .storefront-product-pagination{
 
+        @include media-for (null, 1128px){
+            display: none !important;
+        }
 
         .next,.prev{
             position: relative;
@@ -157,10 +324,12 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 1100px;
+            width: 62%;
             opacity: .5;
             z-index: 1;
             transition: all .2s ease-in;
+
+            
 
         }
 
@@ -168,7 +337,15 @@
             z-index: 1;
         }
         .prev{
-            left: -51%;
+            left: -55%;
+
+            @include media-for (null, 1367px){
+                left: -58%;
+            }
+
+            @include media-for (null, 1237px){
+                left: -58%;
+            }
 
             .hover-box{
                 right: 100%;
@@ -183,7 +360,7 @@
             }
         }
         .next{
-            right: -51%;
+            right: -55%;
 
             .hover-box{
                 left: 100%;
@@ -234,11 +411,18 @@
 
             .link-next,.link-prev{
                 display: block;
-                
+
             }
         }
 
         
     }
 
+}
+
+.prosuct-like {
+    text-align: center;
+    .title-bg-two:before {
+        left: 106%;
+    }
 }
