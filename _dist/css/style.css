@@ -8268,7 +8268,8 @@ p {
   }
 
   .page-404 {
-    padding: 50px 0;
+    padding: 50px 0 30px;
+    height: 80vh;
   }
 
   .page-404 p {
@@ -8495,6 +8496,15 @@ p {
 }
 
 @media (min-height: 0px) and (max-height: 843px) {
+  .page-404 {
+    padding: 15px 0 30px;
+    height: 100vh;
+  }
+
+  .page-404 p {
+    margin: 25px 0 30px;
+  }
+
   #menu .time-wrap {
     margin: 14px 0 16px;
   }
