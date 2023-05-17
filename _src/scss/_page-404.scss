@@ -59,6 +59,8 @@
 
         div{
             display: flex;
+            justify-content: center;
+            margin-bottom: .4rem;
         }
 
         @include media-for (null, $tablet){
