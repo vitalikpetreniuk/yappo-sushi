@@ -1836,6 +1836,10 @@ p {
   font-weight: 300;
 }
 
+.breadcrumbs li a:hover {
+  color: rgba(38, 39, 48, 0.4);
+}
+
 .breadcrumbs li:last-child:before {
   display: none;
 }
