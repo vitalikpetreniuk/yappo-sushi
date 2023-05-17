@@ -36,11 +36,12 @@
 
     .header-center{
         padding: 30px 0;
-        // transition:  margin-top  .3s;
+        transition:  margin-top  .3s;
         background-color: $text-white;
 
         @include media-for (null, $sm){
             padding: 17px 0;
+            transition:  margin-top  .1s;
         }
 
         .social-wrap{
