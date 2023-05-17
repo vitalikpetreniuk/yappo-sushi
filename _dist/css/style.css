@@ -1830,7 +1830,7 @@ p {
 }
 
 .header .header-center {
-  padding: 35px 0;
+  padding: 30px 0;
   -webkit-transition: margin-top 0.3s;
   -o-transition: margin-top 0.3s;
   transition: margin-top 0.3s;
@@ -1847,7 +1847,7 @@ p {
 }
 
 .header .header-center-scroll {
-  margin-top: -118px;
+  margin-top: -108px;
   z-index: -100;
 }
 
@@ -1879,7 +1879,7 @@ p {
 }
 
 .header .header-bottom .header__category ul a .cotegory_img {
-  height: 85px;
+  height: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2459,7 +2459,7 @@ p {
 
 .page-404 {
   text-align: center;
-  padding: 50px 0 115px;
+  padding: 50px 0 50px;
   min-height: calc(100% - 150px);
 }
 
@@ -7806,6 +7806,13 @@ p {
 
   .ps-xxl-5 {
     padding-left: 3rem !important;
+  }
+}
+
+@media (min-width: 2047px) {
+  .page-404 {
+    min-height: 65vh;
+    height: 65vh;
   }
 }
 

@@ -1,7 +1,13 @@
 .page-404{
     text-align: center;
-    padding: 50px 0 115px;
+    padding: 50px 0 50px;
     min-height: calc(100% - 150px);
+
+    @include media-for (2047px, null){
+        min-height: 65vh;
+        height: 65vh;
+        
+    }
 
     @include media-for (null, 1025px){
         min-height: 63vh;

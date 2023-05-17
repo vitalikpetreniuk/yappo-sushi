@@ -35,7 +35,7 @@
     }
 
     .header-center{
-        padding: 35px 0;
+        padding: 30px 0;
         transition:  margin-top  .3s;
         background-color: $text-white;
 
@@ -63,7 +63,7 @@
     }
 
     .header-center-scroll{
-        margin-top: -118px;
+        margin-top: -108px;
         z-index: -100;
 
         @include media-for (null, $sm){
@@ -171,7 +171,7 @@
                     } 
 
                     .cotegory_img{
-                        height: 85px;
+                        height: 58px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
