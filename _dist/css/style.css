@@ -1632,10 +1632,6 @@ p {
   margin: 0;
 }
 
-.overflow {
-  overflow: hidden;
-}
-
 .put-up::before {
   opacity: 1;
   height: 100%;
