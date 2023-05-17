@@ -8261,7 +8261,7 @@ p {
     border-radius: 19px;
   }
 
-  .product__item .product__cart .btn-primary img {
+  .product__item .product__cart .btn-primary svg {
     width: 21px;
     height: 21px;
     display: block;
