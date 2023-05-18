@@ -220,15 +220,22 @@ $(function() {
 
 	//products sale-badges
 
-	$(".discount-sale").parent(".product__item").css({
+	$(".discount-sale").parent(".sale-bage-wrap").parent(".product__item").css({
 		"border": "1px solid rgba(244, 89, 5, 0.4)",
 		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0)"
 	});
 
-	$(".new-sale").parent(".product__item").css({
+	$(".new-sale").parent(".sale-bage-wrap").parent(".product__item").css({
 		"border": "1px solid rgba(42, 26, 94, 0.4)",
 		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0)"
 	});
+
+	$(".no-product ").parent(".no-product-wrap").parent(" .product__item").css({
+		"pointer-events": "none",
+		"z-index": "0"
+	});
+
+	
 
 
 
