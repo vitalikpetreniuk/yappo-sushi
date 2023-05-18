@@ -2430,7 +2430,7 @@ p {
 }
 
 .product__item .product__cart .product__cart__info-discount .price {
-  color: #F45905 !important;
+  color: #FF671D !important;
 }
 
 .product__item .product__cart .product__cart__info-discount .regular-price {
@@ -2452,7 +2452,7 @@ p {
   z-index: -1;
   width: 64px;
   height: 64px;
-  background-color: #F45905;
+  background-color: #FF671D;
   border-radius: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2492,7 +2492,7 @@ p {
           justify-content: center;
   width: 49px;
   height: 49px;
-  background-color: #F45905;
+  background-color: #FF671D;
   cursor: pointer;
 }
 

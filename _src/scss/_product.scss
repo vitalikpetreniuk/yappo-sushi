@@ -152,7 +152,7 @@
             }
 
             .price{
-                color: $orange !important;
+                color: #FF671D !important;
             }
 
             .regular-price{
@@ -181,7 +181,7 @@
             z-index: -1;
             width: 64px;
             height: 64px;
-            background-color: $orange;
+            background-color: #FF671D;
             border-radius: 27px;
             display: flex;
             align-items: center;
@@ -303,7 +303,7 @@
     justify-content: center;
     width: 49px;
     height: 49px;
-    background-color: $orange;
+    background-color: #FF671D;
     cursor: pointer;
 
     @include media-for (null, 1025px){
