@@ -70,6 +70,20 @@ $(function() {
 
 
 
+	//filter
+
+	$('.filter-btn-open').on('click', function () {	
+		$('.filter-options').addClass('filter-options-active');
+		$('.filter-wrap').addClass('filter-wrap-active');
+	})
+
+	$('.close-filter').on('click', function () {	
+		$('.filter-options').removeClass('filter-options-active');
+		$('.filter-wrap').removeClass('filter-wrap-active');
+	})
+
+
+
 
 	//local in header
 

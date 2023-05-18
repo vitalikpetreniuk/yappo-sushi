@@ -3410,6 +3410,10 @@ p {
   padding: 0 0 28px;
 }
 
+.category-page .filter-wrap {
+  margin-bottom: 110px;
+}
+
 .category-page .filter-wrap .filter-btn-open {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3428,6 +3432,12 @@ p {
   position: relative;
   margin-bottom: 40px;
   z-index: 2;
+  -webkit-transition: margin-top 0.4s ease-out;
+  -o-transition: margin-top 0.4s ease-out;
+  transition: margin-top 0.4s ease-out;
+  opacity: 0;
+  margin-top: -100%;
+  z-index: -100;
 }
 
 .category-page .filter-wrap .filter-options label {
@@ -3532,6 +3542,16 @@ p {
   -webkit-transform: translate(-30%, -50%) rotate(180deg);
       -ms-transform: translate(-30%, -50%) rotate(180deg);
           transform: translate(-30%, -50%) rotate(180deg);
+}
+
+.category-page .filter-wrap .filter-options-active {
+  opacity: 1;
+  margin-top: 0% !important;
+  z-index: 10;
+}
+
+.category-page .filter-wrap-active {
+  margin-bottom: 0;
 }
 
 .category-page .line {
@@ -9239,8 +9259,13 @@ p {
     padding: 35px 0 0px;
   }
 
+  .category-page .filter-wrap {
+    margin-bottom: 100px;
+  }
+
   .category-page .filter-wrap .filter-options {
     margin-bottom: 30px;
+    margin-top: -200%;
   }
 
   .category-page .filter-wrap .filter-options .filter__title {

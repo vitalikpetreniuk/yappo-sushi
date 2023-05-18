@@ -15,8 +15,10 @@
     }
 
     .filter-wrap{
-
-
+        margin-bottom: 110px;
+        @include media-for (null, $sm){
+            margin-bottom: 100px;
+        } 
        
         .filter-btn-open{
             display: flex;
@@ -36,9 +38,15 @@
             position: relative;
             margin-bottom: 40px;
             z-index: 2;
+            transition: margin-top .4s ease-out;
+
+            opacity: 0;
+            margin-top: -100%;
+            z-index: -100;
 
             @include media-for (null, $sm){
                 margin-bottom: 30px;
+                margin-top: -200%;
              } 
 
             label{
@@ -197,6 +205,15 @@
                 }
             }
         }
+
+        .filter-options-active{
+            opacity: 1;
+            margin-top: 0% !important;
+            z-index: 10;
+        }
+    }
+    .filter-wrap-active{
+        margin-bottom: 0;
     }
 
 
