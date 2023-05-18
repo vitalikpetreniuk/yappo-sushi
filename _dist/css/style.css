@@ -3473,7 +3473,7 @@ p {
 }
 
 .category-page .filter-wrap .filter-options .filter__slider-control-group input {
-  width: 120px;
+  width: 115px;
   height: 23px;
   border: none;
   outline: none;
@@ -8810,6 +8810,10 @@ p {
     border-radius: 20px;
   }
 
+  .breadcrumbs {
+    display: none;
+  }
+
   .header .header-top {
     font-size: 12px;
     padding: 10px 0;
@@ -9229,6 +9233,81 @@ p {
 
   .product-top .surprise h4 {
     margin: 0;
+  }
+
+  .category-page {
+    padding: 35px 0 0px;
+  }
+
+  .category-page .filter-wrap .filter-options {
+    margin-bottom: 30px;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__title {
+    text-align: center;
+  }
+
+  .category-page .filter-wrap .filter-options .close-filter {
+    right: 0rem;
+  }
+
+  .category-page .filter-wrap .filter-options .radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .category-page .filter-wrap .filter-options .radio label {
+    margin-right: 1.5rem;
+    display: block;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__slider-control-group {
+    margin: 24px 0;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__slider-control-group input {
+    width: 120px;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__slider-control-group .filter__slider-control-column:first-child input {
+    margin-right: 30px;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__range-slider {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__properties-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .category-page .filter-wrap .filter-options .filter__properties-list .filter__checkgroup-link {
+    margin-right: 1rem;
+  }
+
+  .category-page .line {
+    margin-top: 30px;
+  }
+
+  .category-page .btn-blue {
+    margin-bottom: 13px !important;
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+  }
+
+  .category-page .btn-white {
+    display: block;
+    margin: auto;
+    padding: 15px 0;
   }
 }
 

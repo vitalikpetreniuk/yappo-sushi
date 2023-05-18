@@ -347,6 +347,10 @@ p{
 .breadcrumbs{
     display: flex;
 
+    @include media-for (null, $sm){
+        display: none;
+    }
+
     li{
         
         position: relative;

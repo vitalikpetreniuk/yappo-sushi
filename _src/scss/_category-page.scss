@@ -2,6 +2,9 @@
     text-align: center;
     padding: 50px 0 50px;
 
+    @include media-for (null, $sm){
+        padding: 35px 0 0px;
+     } 
 
     .section__title{
         margin: 0;
@@ -34,6 +37,10 @@
             margin-bottom: 40px;
             z-index: 2;
 
+            @include media-for (null, $sm){
+                margin-bottom: 30px;
+             } 
+
             label{
                 color: $text-black;
                 font-size: 14px;
@@ -49,18 +56,37 @@
                 color: $accent;
                 text-align: left;
                 margin-bottom: 30px;
+
+                @include media-for (null, $sm){
+                    text-align: center;
+                }
             }
 
             .close-filter{
                 position: absolute;
                 right: 1rem;
                 top: -1rem;
+                @include media-for (null, $sm){
+                    right: 0rem;
+                }   
             }
 
             .radio{
+
+                @include media-for (null, $sm){
+                    display: flex;
+                    margin-bottom: 25px;
+                }
+                label{
+                    @include media-for (null, $sm){
+                        margin-right: 1.5rem;
+                        display: block;
+                    }
+                }
                 div{
                     display: flex;
                     align-items: center;
+
                     input{
                         margin-right: 1rem;
                         margin-bottom: 17px;
@@ -72,15 +98,23 @@
             .filter__slider-control-group{
                 display: flex;
                 margin: 23px 0;
+
+                @include media-for (null, $sm){
+                    margin: 24px 0;
+                }
                  
                 input{
-                    width: 120px;
+                    width: 115px;
                     height: 23px;
                     border: none;
                     outline: none;
                     border-bottom: 1px solid $accent;
                     color: $text-black;
                     text-align: left;
+
+                    @include media-for (null, $sm){
+                        width: 120px;
+                    }
 
                 }
 
@@ -89,6 +123,9 @@
                     &:first-child{
                         input{
                             margin-right: 25px;
+                            @include media-for (null, $sm){
+                                margin-right: 30px;
+                            }
                         }
                     }
 
@@ -104,6 +141,10 @@
 
             .filter__range-slider{
                 max-width: 250px;
+                @include media-for (null, $sm){
+                    max-width: 100%;
+                    margin: 0 10px;
+                }
 
                 .ui-widget-content {
                     position: relative;
@@ -141,6 +182,20 @@
                     }
                 }
             }
+
+            .filter__properties-list{
+                @include media-for (null, $sm){
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 40px;
+                }
+
+                .filter__checkgroup-link{
+                    @include media-for (null, $sm){
+                        margin-right: 1rem;
+                    }   
+                }
+            }
         }
     }
 
@@ -149,12 +204,23 @@
 
     .line{
         margin-top: 40px;
+        @include media-for (null, $sm){
+            margin-top: 30px;
+         } 
+
     }
 
 
     .btn-blue{
         width: 211px;
         padding: 20px;
+
+        @include media-for (null, $sm){
+           margin-bottom: 13px !important;
+           display: block;
+           margin: auto;
+           padding: 15px 0;
+        }  
     }
 
     .btn-white{
@@ -165,6 +231,12 @@
         max-width: 262px;
         text-transform: none;
         padding: 20px;
+
+        @include media-for (null, $sm){
+            display: block;
+            margin: auto;
+            padding: 15px 0;
+         }  
     }
 }
 
