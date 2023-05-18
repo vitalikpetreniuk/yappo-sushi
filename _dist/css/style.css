@@ -1544,6 +1544,11 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 main {
   position: relative;
   overflow-x: hidden;
@@ -1727,6 +1732,21 @@ p {
   background-color: #1E114A;
 }
 
+.btn-white {
+  border-radius: 24px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 24px 53px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffff;
+}
+
+.btn-white:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+
 .сhat-bubbles-wrap {
   position: absolute;
   left: 50%;
@@ -1842,6 +1862,15 @@ p {
 
 .breadcrumbs li:last-child:before {
   display: none;
+}
+
+.line {
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(75%, #000), color-stop(75%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #000, #000 75%, transparent 75%, transparent 100%);
+  background-image: linear-gradient(90deg, #000, #000 75%, transparent 75%, transparent 100%);
+  background-size: 20px 1px;
+  border: none;
 }
 
 .header {
@@ -3198,11 +3227,6 @@ p {
   font-weight: 700;
 }
 
-.product-top .quantity input::-webkit-outer-spin-button,
-.product-top .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 .product-top .quantity button {
   border-radius: 100%;
   display: -webkit-box;
@@ -3371,6 +3395,263 @@ p {
 
 .prosuct-like .title-bg-two:before {
   left: 106%;
+}
+
+.category-page {
+  text-align: center;
+  padding: 50px 0 50px;
+}
+
+.category-page .section__title {
+  margin: 0;
+}
+
+.category-page .filter-btn-wrap {
+  padding: 0 0 28px;
+}
+
+.category-page .filter-wrap .filter-btn-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "DelaGothicOne";
+  color: #2A1A5E;
+}
+
+.category-page .filter-wrap .filter-options {
+  text-align: left;
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.category-page .filter-wrap .filter-options label {
+  color: #262730;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+.category-page .filter-wrap .filter-options .filter__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2A1A5E;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.category-page .filter-wrap .filter-options .close-filter {
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+}
+
+.category-page .filter-wrap .filter-options .radio div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category-page .filter-wrap .filter-options .radio div input {
+  margin-right: 1rem;
+  margin-bottom: 17px;
+}
+
+.category-page .filter-wrap .filter-options .filter__slider-control-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 23px 0;
+}
+
+.category-page .filter-wrap .filter-options .filter__slider-control-group input {
+  width: 120px;
+  height: 23px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2A1A5E;
+  color: #262730;
+  text-align: left;
+}
+
+.category-page .filter-wrap .filter-options .filter__slider-control-group .filter__slider-control-column:first-child input {
+  margin-right: 25px;
+}
+
+.category-page .filter-wrap .filter-options .filter__slider-control-group .filter__slider-control-column:last-child input {
+  text-align: right;
+}
+
+.category-page .filter-wrap .filter-options .filter__range-slider {
+  max-width: 250px;
+}
+
+.category-page .filter-wrap .filter-options .filter__range-slider .ui-widget-content {
+  position: relative;
+  border: 1px solid #2A1A5E;
+  background: #fff;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.category-page .filter-wrap .filter-options .filter__range-slider .ui-widget-content .ui-slider-range {
+  position: absolute;
+  top: 50% !important;
+  margin-top: -2.5px;
+  height: 5px !important;
+  background: #2A1A5E;
+}
+
+.category-page .filter-wrap .filter-options .filter__range-slider .ui-widget-content .ui-state-default {
+  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+  font-weight: 400;
+  width: 20px;
+  height: 33px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  -ms-touch-action: none;
+  touch-action: none;
+  left: 0;
+  -webkit-transform: translate(-80%, -50%);
+      -ms-transform: translate(-80%, -50%);
+          transform: translate(-80%, -50%);
+  top: 50%;
+}
+
+.category-page .filter-wrap .filter-options .filter__range-slider .ui-widget-content .ui-state-default:last-child {
+  -webkit-transform: translate(-30%, -50%) rotate(180deg);
+      -ms-transform: translate(-30%, -50%) rotate(180deg);
+          transform: translate(-30%, -50%) rotate(180deg);
+}
+
+.category-page .line {
+  margin-top: 40px;
+}
+
+.category-page .btn-blue {
+  width: 211px;
+  padding: 20px;
+}
+
+.category-page .btn-white {
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  max-width: 262px;
+  text-transform: none;
+  padding: 20px;
+}
+
+/* label container */
+
+.radio-button-container,
+.filter__checkgroup-title {
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radio-button-container input,
+.filter__checkgroup-title input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid #B3BCF3;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+
+.radio-button-container:hover input ~ .checkmark,
+.filter__checkgroup-title:hover input ~ .checkmark {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* When the radio button is checked */
+
+.radio-button-container input:checked ~ .checkmark,
+.filter__checkgroup-title input:checked ~ .checkmark {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #2A1A5E;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio-button-container input:checked ~ .checkmark:after,
+.filter__checkgroup-title input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-button-container input:checked ~ .checkmark:before,
+.filter__checkgroup-title input:checked ~ .checkmark:before {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.radio-button-container .checkmark:after,
+.filter__checkgroup-title .checkmark:after {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  height: 13px;
+  width: 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 4px solid #2A1A5E;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (min-width: 576px) {
@@ -8518,6 +8799,12 @@ p {
   }
 
   .btn-blue {
+    font-size: 14px;
+    padding: 17px 50px;
+    border-radius: 20px;
+  }
+
+  .btn-white {
     font-size: 14px;
     padding: 17px 50px;
     border-radius: 20px;

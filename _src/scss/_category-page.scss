@@ -1,0 +1,285 @@
+.category-page{
+    text-align: center;
+    padding: 50px 0 50px;
+
+
+    .section__title{
+        margin: 0;
+    }
+
+    .filter-btn-wrap{
+        padding: 0 0 28px;
+    }
+
+    .filter-wrap{
+
+
+       
+        .filter-btn-open{
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'DelaGothicOne';
+            color: $accent;
+        }
+
+
+
+
+
+        .filter-options{
+            text-align: left;
+            position: relative;
+            margin-bottom: 40px;
+            z-index: 2;
+
+            label{
+                color: $text-black;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 17px;
+            }
+
+
+
+            .filter__title{
+                font-size: 14px;
+                font-weight: 700;
+                color: $accent;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .close-filter{
+                position: absolute;
+                right: 1rem;
+                top: -1rem;
+            }
+
+            .radio{
+                div{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        margin-right: 1rem;
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+
+
+            .filter__slider-control-group{
+                display: flex;
+                margin: 23px 0;
+                 
+                input{
+                    width: 120px;
+                    height: 23px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $accent;
+                    color: $text-black;
+                    text-align: left;
+
+                }
+
+                .filter__slider-control-column{
+
+                    &:first-child{
+                        input{
+                            margin-right: 25px;
+                        }
+                    }
+
+                    &:last-child{
+                        input{
+                            text-align: right;
+                        }
+                    }
+
+                }
+            }
+
+
+            .filter__range-slider{
+                max-width: 250px;
+
+                .ui-widget-content {
+                    position: relative;
+                    border: 1px solid $accent;
+                    background: #fff;
+                    height: 6px;
+                    border-radius: 10px;
+
+                    .ui-slider-range {
+                        position: absolute;
+                        top: 50% !important;
+                        margin-top: -2.5px;
+                        height: 5px!important;
+                        background: $accent;
+                    }
+
+                    .ui-state-default{
+                        background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+                        font-weight: 400;
+                        width: 20px;
+                        height: 33px;
+                        display: block;
+                        position: absolute;
+                        z-index: 2;
+                        cursor: pointer;
+                        -ms-touch-action: none;
+                        touch-action: none;
+                        left: 0;
+                        transform: translate(-80%, -50%);
+                        top: 50%;
+
+                        &:last-child{
+                            transform:translate(-30%, -50%) rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+
+    .line{
+        margin-top: 40px;
+    }
+
+
+    .btn-blue{
+        width: 211px;
+        padding: 20px;
+    }
+
+    .btn-white{
+        margin-right: 0;
+        margin-left: auto;
+        display: block;
+        text-align: center;
+        max-width: 262px;
+        text-transform: none;
+        padding: 20px;
+    }
+}
+
+
+
+
+  
+
+  
+  
+  /* label container */
+  .radio-button-container,.filter__checkgroup-title {
+    color: rgba(0,0,0,0.75);
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-button-container,.filter__checkgroup-title {
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 50%;
+    border: 1px solid #B3BCF3;
+    transition: all 0.3s;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-button-container,.filter__checkgroup-title{
+    &:hover input ~ .checkmark {
+        border-color: rgba(0,0,0,.5);
+      }
+  }
+  
+  /* When the radio button is checked */
+  .radio-button-container,.filter__checkgroup-title{
+    input:checked ~ .checkmark {
+        background-color: rgba(0,0,0,0);
+        border-color: $accent;
+      }
+  }
+  
+  
+  
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkmark:before {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-button-container,.filter__checkgroup-title{
+    input:checked ~ .checkmark:after {
+        display: block;
+      }
+  }
+
+  .radio-button-container,.filter__checkgroup-title {
+    input:checked ~ .checkmark:before {
+        display: block;
+      }
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-button-container,.filter__checkgroup-title {
+    .checkmark:after {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        height: 13px;
+        width: 13px;
+        background-color: rgba(0,0,0,0);
+        border-radius: 50%;
+        border: 4px solid $accent;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+      }
+  }
+
+//   .radio-button-container .checkmark:before{
+//     top: 3px;
+//     left: 3px;
+//     width: 5px;
+//     height: 5px;
+//     border-radius: 50%;
+//     background: #ffff;
+//     z-index: 1;
+//   }

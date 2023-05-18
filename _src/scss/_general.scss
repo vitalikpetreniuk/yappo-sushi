@@ -24,6 +24,13 @@ body{
         padding-top: 175px;
     }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
 main{
     position: relative;
     overflow-x: hidden;
@@ -216,7 +223,7 @@ p{
 }
 
 
-//btn
+//btns
 
 .btn-blue{
     border-radius: 24px;
@@ -235,6 +242,28 @@ p{
         font-size: 14px;
         padding: 17px 50px;
         border-radius: 20px;
+    }
+}
+
+
+.btn-white{
+    border-radius: 24px;
+    text-transform: uppercase;
+    color: rgba($color: #000000, $alpha: .25);
+    border: 1px solid rgba($color: #000000, $alpha: .25);
+    padding: 24px 53px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $text-white;
+
+    @include media-for (null, $sm){
+        font-size: 14px;
+        padding: 17px 50px;
+        border-radius: 20px;
+    }
+
+    &:hover{
+        color: rgba($color: #000000, $alpha: .25);
     }
 }
 
@@ -363,3 +392,14 @@ p{
         }
     }
 }
+
+
+
+//line
+
+.line{
+    height: 1px;
+    background-image: linear-gradient(90deg, #000, #000 75%, transparent 75%, transparent 100%);
+    background-size: 20px 1px;
+    border: none;
+  }
