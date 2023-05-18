@@ -15,7 +15,7 @@
     }
 
     @include media-for (null, $sm){
-        top: calc(100vh - 260px);
+        top: calc(100vh - 220px);
         display: block;
     }
 

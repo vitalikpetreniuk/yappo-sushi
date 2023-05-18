@@ -177,6 +177,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-direction: row-reverse;
         }
     }
 
@@ -198,7 +199,7 @@
         margin: 25px 0 30px;
 
         @include media-for (null, $sm){
-            margin: 25px 0 12px;
+            margin: 20px 0 12px;
         }
 
         input{
@@ -258,6 +259,7 @@
             align-items: center;
             justify-content: center;
             height: 50px;
+            font-size: 14px;
         }
 
         span{
@@ -311,6 +313,7 @@
 
             @include media-for (null, $sm){
                 margin: 0;
+                font-size: 14px;
             }
         }
 
@@ -448,5 +451,9 @@
     }
     .title-bg-two:before {
         left: 106%;
+    }
+
+    .btn-blue{
+        margin-top: 20px;
     }
 }
