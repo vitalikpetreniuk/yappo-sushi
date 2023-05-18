@@ -8432,6 +8432,18 @@ p {
   }
 }
 
+@media (max-width: 1699px) {
+  .header .header-bottom .header__category ul a {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 1529px) {
+  .header .header-bottom .header__category ul a {
+    width: 6rem;
+  }
+}
+
 @media (max-width: 1406px) {
   .header .header-bottom .header__category ul a {
     width: 5.5rem;
