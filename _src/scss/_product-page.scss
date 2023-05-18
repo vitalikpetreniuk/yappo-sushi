@@ -224,14 +224,29 @@
             font-size: 14px;
             font-weight: 700;
             color: $accent;
+            padding: 0;
+            
 
+            &:hover{
+                background-color: #F5F5F5;
+            }
+        }
+
+        .plus{
+            padding-bottom: 0px;
+            @include media-for (null, $sm){
+                padding-bottom: 2px;
+            }
+        }
+        .minus{
+            padding-bottom: 3px;
         }
     }
 
     .button{
         display: flex;
         border-radius: 20px;
-        background-color: $orange;
+        background-color: #FF671D;
         padding: 15px 40px;
         color: $text-white;
         font-size: 16px;
@@ -289,7 +304,7 @@
         }
 
         h4{
-            color: $orange;
+            color: #FF671D;
             font-weight: 400;
             font-size: 16px;
             font-family: 'DelaGothicOne';
@@ -419,6 +434,18 @@
 
 .prosuct-like {
     text-align: center;
+    padding-bottom: 60px;
+
+    @include media-for (null, $sm){
+        padding-bottom: 40px;
+    }
+    .title-bg-two{
+        span{
+            @include media-for (null, $sm){
+                display: none;
+            }
+        }
+    }
     .title-bg-two:before {
         left: 106%;
     }

@@ -1722,7 +1722,7 @@ p {
   border-radius: 24px;
   text-transform: uppercase;
   color: #ffff;
-  padding: 24px 53px;
+  padding: 19px 51px;
   font-size: 16px;
   font-weight: 700;
   background-color: #2A1A5E;
@@ -3301,6 +3301,19 @@ p {
   font-size: 14px;
   font-weight: 700;
   color: #2A1A5E;
+  padding: 0;
+}
+
+.product-top .quantity button:hover {
+  background-color: #F5F5F5;
+}
+
+.product-top .quantity .plus {
+  padding-bottom: 0px;
+}
+
+.product-top .quantity .minus {
+  padding-bottom: 3px;
 }
 
 .product-top .button {
@@ -3308,7 +3321,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
-  background-color: #F45905;
+  background-color: #FF671D;
   padding: 15px 40px;
   color: #ffff;
   font-size: 16px;
@@ -3341,7 +3354,7 @@ p {
 }
 
 .product-top .surprise h4 {
-  color: #F45905;
+  color: #FF671D;
   font-weight: 400;
   font-size: 16px;
   font-family: "DelaGothicOne";
@@ -3448,6 +3461,7 @@ p {
 
 .prosuct-like {
   text-align: center;
+  padding-bottom: 60px;
 }
 
 .prosuct-like .title-bg-two:before {
@@ -9297,6 +9311,10 @@ p {
     margin: 25px 0 12px;
   }
 
+  .product-top .quantity .plus {
+    padding-bottom: 2px;
+  }
+
   .product-top .button {
     width: 100%;
     -webkit-box-align: center;
@@ -9330,6 +9348,14 @@ p {
 
   .product-top .surprise h4 {
     margin: 0;
+  }
+
+  .prosuct-like {
+    padding-bottom: 40px;
+  }
+
+  .prosuct-like .title-bg-two span {
+    display: none;
   }
 
   .category-page {
