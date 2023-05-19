@@ -2273,33 +2273,26 @@ p {
 .footer {
   color: #ffff;
   background-color: #2A1A5E;
-  padding-top: 30px;
+  padding: 24px 0 28px;
 }
 
-.footer .footer-top {
-  padding-bottom: 35px;
-  border-bottom: 1px solid #ffff;
-}
-
-.footer .footer-top .social-wrap {
-  width: 70%;
-  margin-right: 0;
-  margin-left: auto;
+.footer .logo {
+  text-align: center;
 }
 
 .footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.footer ul li {
+  white-space: nowrap;
 }
 
 .footer ul li a {
   font-weight: 400;
-  font-size: 16px;
-  padding: 25px 0 35px;
+  font-size: 12px;
   display: block;
 }
 
@@ -2307,13 +2300,31 @@ p {
   color: #F45905;
 }
 
+.footer .ul-one {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .ul-one li:first-child {
+  padding-left: 1rem;
+  padding-right: 0.7rem;
+}
+
+.footer .ul-two {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .ul-two li:last-child {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+}
+
 .footer p {
   font-size: 12px;
   text-align: center;
-}
-
-.footer .visa img {
-  width: 100%;
 }
 
 .product__item {
@@ -8817,18 +8828,6 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
-  .footer .footer-top {
-    margin-bottom: 35px;
-  }
-
-  .footer .footer-top .logo img {
-    width: 100%;
-  }
-
-  .footer p {
-    text-align: center;
-  }
 }
 
 @media (max-width: 821px) {
@@ -8847,13 +8846,43 @@ p {
     border-radius: 0 0 20px 20px;
   }
 
-  .footer .footer-top {
-    margin-bottom: 0;
+  .footer .ul-one {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .footer .navigation a {
-    font-size: 13px;
-    padding: 25px 0 25px;
+  .footer .ul-one li:first-child {
+    padding: 0;
+  }
+
+  .footer .ul-two {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer .ul-two li:last-child {
+    padding: 0;
+  }
+
+  .footer .social-wrap {
+    width: 10rem;
+    margin: 22px auto 40px;
   }
 
   .page-404 {
@@ -8998,56 +9027,11 @@ p {
   }
 
   .footer {
-    padding-bottom: 30px;
     text-align: center;
   }
 
-  .footer .footer-top {
-    border-bottom: none;
-  }
-
-  .footer .footer-top .logo img {
-    margin: auto;
-    width: auto;
-  }
-
-  .footer .footer-top .time-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin: 22px 0 30px;
-    font-size: 16px;
-  }
-
-  .footer .footer-top .time-wrap img {
-    margin-top: 7px;
-  }
-
-  .footer .footer-top .time-wrap span {
-    font-size: 16px;
-  }
-
-  .footer .footer-top .time-wrap p {
-    margin: 0;
-    font-size: 16px;
-  }
-
-  .footer .footer-top .social-wrap {
-    margin: auto;
-    width: 40%;
-  }
-
-  .footer p {
-    margin-top: 25px;
-  }
-
-  .footer .visa img {
-    width: 31%;
-  }
-
-  .footer .company {
-    margin-top: 2rem;
+  .footer .social-wrap {
+    width: 8rem;
   }
 
   .product__item {

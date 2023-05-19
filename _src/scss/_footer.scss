@@ -1,91 +1,73 @@
 .footer{
     color: $text-white;
     background-color: $accent;
-    padding-top: 30px;
+    padding: 24px 0 28px;
 
-    @include media-for (null, $sm){
-        padding-bottom: 30px;
+    @include media-for (null, $sm){  
         text-align: center;
     }
 
-    .footer-top{
-        padding-bottom: 35px;
-        border-bottom: 1px solid $text-white;
 
-        @include media-for (null, 950px){
-            margin-bottom: 35px;
-        }
 
-        @include media-for (null, $tablet){
-            margin-bottom: 0;
-        } 
-
-        @include media-for (null, $sm){
-            border-bottom: none; 
-        }
-
-        .logo{
-            img{
-                @include media-for (null, 950){
-                    width: 100%;
-                }
-
-                @include media-for (null, $sm){
-                    margin: auto;
-                    width: auto;
-                }
-            }
-        }
-
-        .time-wrap{
-            @include media-for (null, $sm){
-                flex-direction: column-reverse;
-                margin: 22px 0 30px;
-                font-size: 16px;
-
-                img{
-                    margin-top: 7px;
-                }
-
-                span{
-                    font-size: 16px; 
-                }
-
-                p{
-                    margin: 0;
-                    font-size: 16px;
-                   
-                }
-
-            }
-            
-        }
-
-        .social-wrap{
-            width: 70%;
-            margin-right: 0;
-            margin-left: auto;
-
-            @include media-for (null, $sm){
-                margin: auto;
-                width: 40%;
-            }
-        }
+    .logo{
+        text-align: center;
     }
 
     ul{
         display: flex;
-        justify-content: space-between;
         
         li{
+            white-space: nowrap;
+            
             a{
                 font-weight: 400;
-                font-size: 16px;
-                padding: 25px 0 35px;
+                font-size: 12px;
                 display: block;
 
                 &:hover{
                     color: $orange;
+                }
+            }
+
+
+        }
+    }
+
+    .ul-one{
+        justify-content: flex-start;
+
+        @include media-for (null, 822px){
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+        }
+        li{
+            &:first-child{
+                padding-left: 1rem;
+                padding-right: .7rem;
+
+                @include media-for (null, 822px){
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .ul-two{
+        justify-content: flex-end;
+
+        @include media-for (null, 822px){
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+        }
+        li{
+            &:last-child{
+                padding-left: .7rem;
+                padding-right: 1rem;
+
+                @include media-for (null, 822px){
+                    padding: 0;
                 }
             }
         }
@@ -94,40 +76,21 @@
     p{
         font-size: 12px;
         text-align: center;
-        @include media-for (null, 950px){
-            text-align: center;
+    }
+
+
+    .social-wrap {
+        @include media-for (null, 822px){
+           width: 10rem;
+           margin: 22px auto 40px;
         }
 
         @include media-for (null, $sm){
-            margin-top: 25px;
-        }
-
+            width: 8rem;
+         }
     }
 
-    .navigation{
-        a{
-            @include media-for (null, $tablet){
-                font-size: 13px;
-                padding: 25px 0 25px;
-            }  
-        }
-    }
+    .copmpany{
 
-    .visa{
-
-        img{
-            width: 100%;
-
-            @include media-for (null, $sm){
-                width: 31%;
-            }
-        }  
-
-    }
-
-    .company{
-        @include media-for (null, $sm){
-            margin-top: 2rem;
-        }
     }
 }
