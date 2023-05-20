@@ -1,0 +1,205 @@
+.filter-btn-wrap{
+    padding: 0 0 28px;
+}
+
+.filter-wrap{
+    margin-bottom: 110px;
+    @include media-for (null, $sm){
+        margin-bottom: 100px;
+    } 
+   
+    .filter-btn-open{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'DelaGothicOne';
+        color: $accent;
+    }
+
+
+
+
+
+    .filter-options{
+        text-align: left;
+        position: relative;
+        margin-bottom: 40px;
+        z-index: 2;
+        transition: margin-top .4s ease-out;
+
+        opacity: 0;
+        margin-top: -100%;
+        z-index: -100;
+
+        @include media-for (null, $sm){
+            margin-bottom: 30px;
+            margin-top: -200%;
+         } 
+
+        label{
+            color: $text-black;
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 17px;
+        }
+
+
+
+        .filter__title{
+            font-size: 14px;
+            font-weight: 700;
+            color: $accent;
+            text-align: left;
+            margin-bottom: 30px;
+
+            @include media-for (null, $sm){
+                text-align: center;
+            }
+        }
+
+        .close-filter{
+            position: absolute;
+            right: 1rem;
+            top: -1rem;
+            @include media-for (null, $sm){
+                right: 0rem;
+            }   
+        }
+
+        .radio{
+
+            @include media-for (null, $sm){
+                display: flex;
+                margin-bottom: 25px;
+            }
+            label{
+                @include media-for (null, $sm){
+                    margin-right: 1.5rem;
+                    display: block;
+                }
+            }
+            div{
+                display: flex;
+                align-items: center;
+
+                input{
+                    margin-right: 1rem;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+
+
+        .filter__slider-control-group{
+            display: flex;
+            margin: 23px 0;
+
+            @include media-for (null, $sm){
+                margin: 24px 0;
+            }
+             
+            input{
+                width: 115px;
+                height: 23px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $accent;
+                color: $text-black;
+                text-align: left;
+
+                @include media-for (null, $sm){
+                    width: 120px;
+                }
+
+            }
+
+            .filter__slider-control-column{
+
+                &:first-child{
+                    input{
+                        margin-right: 25px;
+                        @include media-for (null, $sm){
+                            margin-right: 30px;
+                        }
+                    }
+                }
+
+                &:last-child{
+                    input{
+                        text-align: right;
+                    }
+                }
+
+            }
+        }
+
+
+        .filter__range-slider{
+            max-width: 250px;
+            @include media-for (null, $sm){
+                max-width: 100%;
+                margin: 0 10px;
+            }
+
+            .ui-widget-content {
+                position: relative;
+                border: 1px solid $accent;
+                background: #fff;
+                height: 6px;
+                border-radius: 10px;
+
+                .ui-slider-range {
+                    position: absolute;
+                    top: 50% !important;
+                    margin-top: -2.5px;
+                    height: 5px!important;
+                    background: $accent;
+                }
+
+                .ui-state-default{
+                    background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+                    font-weight: 400;
+                    width: 20px;
+                    height: 33px;
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    cursor: pointer;
+                    -ms-touch-action: none;
+                    touch-action: none;
+                    left: 0;
+                    transform: translate(-80%, -50%);
+                    top: 50%;
+
+                    &:last-child{
+                        transform:translate(-30%, -50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .filter__properties-list{
+            @include media-for (null, $sm){
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+            }
+
+            .filter__checkgroup-link{
+                @include media-for (null, $sm){
+                    margin-right: 1rem;
+                }   
+            }
+        }
+    }
+
+    .filter-options-active{
+        opacity: 1;
+        margin-top: 0% !important;
+        z-index: 10;
+    }
+}
+.filter-wrap-active{
+    margin-bottom: 0;
+}
