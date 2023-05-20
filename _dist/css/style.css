@@ -3110,6 +3110,107 @@ p {
   margin-bottom: 0;
 }
 
+/* label container */
+
+.radio-button-container,
+.filter__checkgroup-title {
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radio-button-container input,
+.filter__checkgroup-title input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid #B3BCF3;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+
+.radio-button-container:hover input ~ .checkmark,
+.filter__checkgroup-title:hover input ~ .checkmark {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* When the radio button is checked */
+
+.radio-button-container input:checked ~ .checkmark,
+.filter__checkgroup-title input:checked ~ .checkmark {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #2A1A5E;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio-button-container input:checked ~ .checkmark:after,
+.filter__checkgroup-title input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-button-container input:checked ~ .checkmark:before,
+.filter__checkgroup-title input:checked ~ .checkmark:before {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.radio-button-container .checkmark:after,
+.filter__checkgroup-title .checkmark:after {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  height: 13px;
+  width: 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 4px solid #2A1A5E;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .top-slider .swiper {
   max-width: 100% !important;
 }
@@ -3657,105 +3758,40 @@ p {
   padding: 20px;
 }
 
-/* label container */
+.category-page .col-two .filter__properties-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
 
-.radio-button-container,
-.filter__checkgroup-title {
-  color: rgba(0, 0, 0, 0.75);
+.category-page .col-two label {
+  border: 1px solid #2A1A5E;
+  width: 170px;
+  height: 70px;
   display: block;
-  position: relative;
-  padding-left: 25px;
-  line-height: 25px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 18px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  padding: 14px 15px;
+  font-family: "DelaGothicOne";
+  font-size: 13px;
+  font-weight: 400;
+  color: #2A1A5E;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0.8;
 }
 
-/* Hide the browser's default radio button */
-
-.radio-button-container input,
-.filter__checkgroup-title input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom radio button */
-
-.checkmark {
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  height: 13px;
-  width: 13px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border: 1px solid #B3BCF3;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* On mouse-over, add a grey background color */
-
-.radio-button-container:hover input ~ .checkmark,
-.filter__checkgroup-title:hover input ~ .checkmark {
-  border-color: rgba(0, 0, 0, 0.5);
-}
-
-/* When the radio button is checked */
-
-.radio-button-container input:checked ~ .checkmark,
-.filter__checkgroup-title input:checked ~ .checkmark {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #2A1A5E;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkmark:before {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-
-.radio-button-container input:checked ~ .checkmark:after,
-.filter__checkgroup-title input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.radio-button-container input:checked ~ .checkmark:before,
-.filter__checkgroup-title input:checked ~ .checkmark:before {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-
-.radio-button-container .checkmark:after,
-.filter__checkgroup-title .checkmark:after {
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  height: 13px;
-  width: 13px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border: 4px solid #2A1A5E;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.category-page .col-two .filter__properties-item {
+  margin-right: 0.2rem;
 }
 
 @media (min-width: 576px) {

@@ -203,3 +203,116 @@
 .filter-wrap-active{
     margin-bottom: 0;
 }
+
+
+
+
+  
+  /* label container */
+  .radio-button-container,.filter__checkgroup-title {
+    color: rgba(0,0,0,0.75);
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-button-container,.filter__checkgroup-title {
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 50%;
+    border: 1px solid #B3BCF3;
+    transition: all 0.3s;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-button-container,.filter__checkgroup-title{
+    &:hover input ~ .checkmark {
+        border-color: rgba(0,0,0,.5);
+      }
+  }
+  
+  /* When the radio button is checked */
+  .radio-button-container,.filter__checkgroup-title{
+    input:checked ~ .checkmark {
+        background-color: rgba(0,0,0,0);
+        border-color: $accent;
+      }
+  }
+  
+  
+  
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkmark:before {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-button-container,.filter__checkgroup-title{
+    input:checked ~ .checkmark:after {
+        display: block;
+      }
+  }
+
+  .radio-button-container,.filter__checkgroup-title {
+    input:checked ~ .checkmark:before {
+        display: block;
+      }
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-button-container,.filter__checkgroup-title {
+    .checkmark:after {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        height: 13px;
+        width: 13px;
+        background-color: rgba(0,0,0,0);
+        border-radius: 50%;
+        border: 4px solid $accent;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+      }
+  }
+
+//   .radio-button-container .checkmark:before{
+//     top: 3px;
+//     left: 3px;
+//     width: 5px;
+//     height: 5px;
+//     border-radius: 50%;
+//     background: #ffff;
+//     z-index: 1;
+//   }
