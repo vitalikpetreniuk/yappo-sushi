@@ -11,9 +11,9 @@
     transition: box-shadow .3s;
     background-color: $text-white;
 
-    @include media-for (null, $mid-desktop){
-        padding-top: 15px;
-    }
+    // @include media-for (null, $mid-desktop){
+    //     padding-top: 15px;
+    // }
 
 
     @include media-for (null, 1025px){
@@ -47,6 +47,7 @@
 
         @include media-for (null, $mid-desktop){
             margin-bottom: 20px;
+            height: 200px;
         }
 
         @include media-for (null, $sm){

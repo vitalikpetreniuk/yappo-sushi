@@ -308,6 +308,26 @@ $(function() {
 		}
 	  });
 
+
+
+
+
+	//   function moveElement() {
+	// 	var windowWidth = $(window).width();
+	
+	// 	if (windowWidth <= 991) {
+	// 	  $('categories-business-lunch .col-lg-8').appendTo('.row');
+	// 	} else {
+	// 	  $('categories-business-lunch .col-lg-8').prependTo('.row');
+	// 	}
+	//   }
+	
+	//   moveElement(); // Викликати функцію при завантаженні сторінки
+	
+	//   $(window).resize(function() {
+	// 	moveElement(); // Викликати функцію при зміні розміру вікна
+	//   }); 
+
 })
 
 

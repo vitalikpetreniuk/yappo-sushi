@@ -3879,6 +3879,28 @@ p {
   width: 60%;
 }
 
+.categories-business-lunch {
+  text-align: center;
+  padding: 50px 0 80px;
+}
+
+.categories-business-lunch .card-info {
+  color: #2A1A5E;
+}
+
+.categories-business-lunch .card-info h3 {
+  text-align: start;
+  color: #2A1A5E;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "DelaGothicOne";
+  margin-top: 85px;
+}
+
+.categories-business-lunch .card-info .img-wrap img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -8656,12 +8678,9 @@ p {
 }
 
 @media (max-width: 1399px) {
-  .product__item {
-    padding-top: 15px;
-  }
-
   .product__item .product__image {
     margin-bottom: 20px;
+    height: 200px;
   }
 
   .product__item .product__cart {
@@ -9030,6 +9049,14 @@ p {
 
   .section-delivery h3 {
     font-size: 22px;
+  }
+
+  .categories-business-lunch .card-info {
+    margin-bottom: 30px;
+  }
+
+  .categories-business-lunch .card-info h3 {
+    margin-top: 30px;
   }
 }
 
@@ -9564,6 +9591,23 @@ p {
   .category-page .cheked-wrap .chaked-box {
     height: 50px;
     border-radius: 20px;
+  }
+
+  .categories-business-lunch .card-info {
+    margin-bottom: 55px;
+  }
+
+  .categories-business-lunch .card-info h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .categories-business-lunch .card-info .img-wrap img {
+    width: 70%;
+  }
+
+  .categories-business-lunch {
+    padding: 35px 0 0px;
   }
 }
 
