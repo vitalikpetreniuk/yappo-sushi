@@ -1689,7 +1689,7 @@ p {
 }
 
 .section__title:before {
-  left: 116%;
+  left: 110%;
 }
 
 .section__title:after {
@@ -3801,30 +3801,76 @@ p {
   margin-top: 20px;
 }
 
-.category-page {
+.category-page,
+.resault-search {
   text-align: center;
   padding: 50px 0 50px;
 }
 
-.category-page .section__title:after {
+.category-page .section__title:after,
+.resault-search .section__title:after {
   right: 104%;
 }
 
-.category-page .section__title {
+.category-page .section__title,
+.resault-search .section__title {
   margin: 0;
 }
 
-.category-page .line {
+.category-page .line,
+.resault-search .line {
   margin-top: 40px;
 }
 
-.category-page .btn-blue {
+.category-page .btn-blue,
+.resault-search .btn-blue {
   margin-top: 40px;
   width: 211px;
   padding: 20px;
 }
 
-.category-page .cheked-wrap {
+.category-page .info-message,
+.resault-search .info-message {
+  text-align: center;
+  color: #2A1A5E;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+.category-page .info-message h3,
+.resault-search .info-message h3 {
+  font-weight: 400;
+  font-size: 26px;
+  font-family: "DelaGothicOne";
+}
+
+.category-page .info-message p,
+.resault-search .info-message p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 30%;
+}
+
+.category-page .info-message .btn-blue,
+.resault-search .info-message .btn-blue {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 277px;
+  height: 62px;
+}
+
+.category-page .cheked-wrap,
+.resault-search .cheked-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3836,7 +3882,8 @@ p {
   margin-bottom: 3rem;
 }
 
-.category-page .cheked-wrap .chaked-box {
+.category-page .cheked-wrap .chaked-box,
+.resault-search .cheked-wrap .chaked-box {
   border: 1px solid #2A1A5E;
   height: 70px;
   display: -webkit-box;
@@ -3857,7 +3904,8 @@ p {
   margin-bottom: 0.6rem;
 }
 
-.category-page .cheked-wrap .chaked-box .close-btn-wrap {
+.category-page .cheked-wrap .chaked-box .close-btn-wrap,
+.resault-search .cheked-wrap .chaked-box .close-btn-wrap {
   width: 28px;
   height: 28px;
   cursor: pointer;
@@ -3875,7 +3923,8 @@ p {
           justify-content: center;
 }
 
-.category-page .cheked-wrap .chaked-box .close-btn-wrap img {
+.category-page .cheked-wrap .chaked-box .close-btn-wrap img,
+.resault-search .cheked-wrap .chaked-box .close-btn-wrap img {
   width: 60%;
 }
 
@@ -8883,7 +8932,8 @@ p {
     transform: skew(-45deg, 0);
   }
 
-  .category-page .section__title:after {
+  .category-page .section__title:after,
+  .resault-search .section__title:after {
     right: 98%;
   }
 }
@@ -9049,6 +9099,11 @@ p {
 
   .section-delivery h3 {
     font-size: 22px;
+  }
+
+  .category-page .info-message p,
+  .resault-search .info-message p {
+    width: 45%;
   }
 
   .categories-business-lunch .card-info {
@@ -9569,26 +9624,48 @@ p {
     display: none;
   }
 
-  .category-page {
+  .category-page,
+  .resault-search {
     padding: 35px 0 0px;
   }
 
-  .category-page .line {
+  .category-page .line,
+  .resault-search .line {
     margin-top: 30px;
   }
 
-  .category-page .btn-blue {
+  .category-page .btn-blue,
+  .resault-search .btn-blue {
     margin-bottom: 3rem !important;
     display: block;
     margin: auto;
     padding: 15px 0;
   }
 
-  .category-page .cheked-wrap {
-    margin-top: -50px;
+  .category-page .info-message,
+  .resault-search .info-message {
+    margin-top: 10px;
   }
 
-  .category-page .cheked-wrap .chaked-box {
+  .category-page .info-message h3,
+  .resault-search .info-message h3 {
+    font-size: 14px;
+  }
+
+  .category-page .info-message p,
+  .resault-search .info-message p {
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .category-page .cheked-wrap,
+  .resault-search .cheked-wrap {
+    margin-top: -10px;
+  }
+
+  .category-page .cheked-wrap .chaked-box,
+  .resault-search .cheked-wrap .chaked-box {
     height: 50px;
     border-radius: 20px;
   }

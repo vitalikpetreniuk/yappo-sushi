@@ -1,4 +1,4 @@
-.category-page{
+.category-page, .resault-search{
     text-align: center;
     padding: 50px 0 50px;
 
@@ -45,7 +45,52 @@
         }  
     }
 
+    .info-message{
+        text-align: center;
+        color: $accent;
+        margin-top: 45px;
+        margin-bottom: 70px;
 
+        @include media-for (null, $sm){
+            margin-top: 10px;
+         } 
+        h3{
+            font-weight: 400;
+            font-size: 26px;
+            font-family: 'DelaGothicOne';
+
+            @include media-for (null, $sm){
+                font-size: 14px;
+             } 
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            margin: auto;
+            margin-bottom: 25px;
+            width: 30%;
+
+            @include media-for (null, $tablet){
+                width: 45%;
+             }  
+
+             @include media-for (null, $sm){
+                width: 85%;
+                margin-bottom: 30px;
+                margin-top: 15px;
+             } 
+        }
+
+        .btn-blue{
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            width: 277px;
+            height: 62px;
+        }
+    }
 
     .cheked-wrap{
         display: flex;
@@ -54,7 +99,7 @@
         margin-bottom: 3rem;
 
         @include media-for (null, $sm){
-            margin-top: -50px;
+            margin-top: -10px;
          } 
 
         .chaked-box{
