@@ -82,6 +82,9 @@ $(function() {
 		$('.filter-wrap').removeClass('filter-wrap-active');
 	})
 
+	$('.filter__checkgroup-title').on('click', function () {
+		$(this).addClass('label-active');
+	  });
 
 
 
@@ -305,8 +308,6 @@ $(function() {
 		}
 	  });
 
-
-
 })
 
 
@@ -330,26 +331,4 @@ $(document).ready(function() {
 		descriptionElement.text(descriptionText + '...');
 	  }
 	}
-
-
-
-	//height page-404
-
-	// window.addEventListener('resize', adjustContentHeight);
-
-	// function adjustContentHeight() {
-	// 	var headerHeight = document.querySelector('header').offsetHeight;
-	// 	var footerHeight = document.querySelector('footer').offsetHeight;
-	// 	var content = document.querySelector('page-404');
-	// 	var windowHeight = window.innerHeight;
-	// 	var contentHeight = windowHeight - headerHeight - footerHeight;
-
-	// 	content.style.minHeight = contentHeight + 'px';
-	// }
-
-	// window.addEventListener('load', adjustContentHeight);
-
-
-
-
 });
