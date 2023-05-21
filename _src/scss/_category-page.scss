@@ -2,6 +2,18 @@
     text-align: center;
     padding: 50px 0 50px;
 
+
+    .section__title{
+    
+        &:after{
+            right: 104%;
+            @include media-for (null, 1025px){
+                right: 98%;
+             } 
+        }
+    
+    }
+
     @include media-for (null, $sm){
         padding: 35px 0 0px;
      } 
@@ -26,11 +38,60 @@
         padding: 20px;
 
         @include media-for (null, $sm){
-           margin-bottom: 13px !important;
+           margin-bottom: 3rem!important;
            display: block;
            margin: auto;
            padding: 15px 0;
         }  
+    }
+
+
+
+    .cheked-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @include media-for (null, $sm){
+            margin-top: -50px;
+         } 
+
+        .chaked-box{
+            border: 1px solid $accent;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 15px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $accent;
+            margin-right: .4rem;
+            margin-bottom: .6rem;
+
+            @include media-for (null, $sm){
+                height: 50px;
+                border-radius: 20px;
+             }  
+
+            .close-btn-wrap{
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+                border: 1px solid $accent;
+                border-radius: 100%;
+                margin-left: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img{
+                    width: 60%;
+                }
+            }
+        }
     }
 
 }

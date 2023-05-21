@@ -3164,62 +3164,11 @@ p {
 .filter-wrap .col-two .label-active {
   border: 1px solid #FF671D;
   background: #FF671D;
-  color: #ffff;
+  color: #ffff !important;
 }
 
 .filter-wrap .col-two .filter__properties-item {
   margin-right: 0.5rem;
-}
-
-.filter-wrap .cheked-wrap {
-  margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.filter-wrap .cheked-wrap .chaked-box {
-  border: 1px solid #2A1A5E;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 14px 15px;
-  border-radius: 24px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #2A1A5E;
-}
-
-.filter-wrap .cheked-wrap .chaked-box .close-btn-wrap {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  border: 1px solid #2A1A5E;
-  border-radius: 100%;
-  margin-left: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.filter-wrap .cheked-wrap .chaked-box .close-btn-wrap img {
-  width: 60%;
 }
 
 .label-active {
@@ -3857,6 +3806,10 @@ p {
   padding: 50px 0 50px;
 }
 
+.category-page .section__title:after {
+  right: 104%;
+}
+
 .category-page .section__title {
   margin: 0;
 }
@@ -3869,6 +3822,61 @@ p {
   margin-top: 40px;
   width: 211px;
   padding: 20px;
+}
+
+.category-page .cheked-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.category-page .cheked-wrap .chaked-box {
+  border: 1px solid #2A1A5E;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 15px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2A1A5E;
+  margin-right: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.category-page .cheked-wrap .chaked-box .close-btn-wrap {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border: 1px solid #2A1A5E;
+  border-radius: 100%;
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-page .cheked-wrap .chaked-box .close-btn-wrap img {
+  width: 60%;
 }
 
 @media (min-width: 576px) {
@@ -8797,6 +8805,10 @@ p {
     height: 63vh;
   }
 
+  .filter-wrap .filter-options {
+    margin-top: -300%;
+  }
+
   .section-pay .img-wrap h2 {
     font-size: 20px;
     top: 1rem;
@@ -8850,6 +8862,10 @@ p {
     -webkit-transform: skew(45deg, 0);
     -ms-transform: skew(45deg, 0);
     transform: skew(-45deg, 0);
+  }
+
+  .category-page .section__title:after {
+    right: 98%;
   }
 }
 
@@ -9152,7 +9168,7 @@ p {
 
   .product__item .product__image {
     border-radius: 35px;
-    height: 131px;
+    height: 145px;
   }
 
   .product__item .product__detail h3 {
@@ -9237,7 +9253,7 @@ p {
 
   .filter-wrap .filter-options {
     margin-bottom: 30px;
-    margin-top: -200%;
+    margin-top: -1000%;
   }
 
   .filter-wrap .filter-options .filter__title {
@@ -9286,8 +9302,13 @@ p {
     margin-bottom: 40px;
   }
 
-  .filter-wrap .filter-options .filter__properties-list .filter__checkgroup-link {
-    margin-right: 1rem;
+  .filter-wrap .filter-options .line {
+    margin-top: 0;
+  }
+
+  .filter-wrap .col-two label {
+    padding: 12px 10px;
+    width: 164px;
   }
 
   .top-slider {
@@ -9530,10 +9551,19 @@ p {
   }
 
   .category-page .btn-blue {
-    margin-bottom: 13px !important;
+    margin-bottom: 3rem !important;
     display: block;
     margin: auto;
     padding: 15px 0;
+  }
+
+  .category-page .cheked-wrap {
+    margin-top: -50px;
+  }
+
+  .category-page .cheked-wrap .chaked-box {
+    height: 50px;
+    border-radius: 20px;
   }
 }
 
