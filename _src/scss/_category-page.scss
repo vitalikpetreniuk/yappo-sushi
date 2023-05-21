@@ -21,6 +21,7 @@
 
 
     .btn-blue{
+        margin-top: 40px;
         width: 211px;
         padding: 20px;
 
@@ -55,6 +56,7 @@
 
         .filter__properties-list{
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
         }
@@ -75,10 +77,47 @@
             align-items: center;
             line-height: .8;
 
+
+        }
+
+        .category-offers{
+            label{
+                .img-wrap{
+                    border: 1px solid #fff;
+                    border-radius: 100%;
+                }
+            }
+
+            .filter__properties-item{
+                &:nth-of-type(2){
+                    label{
+                        border: 1px solid #FF671D;
+                        color: #FF671D;
+                    }
+                }
+                &:nth-of-type(3){
+                    label{
+                        border: 1px solid $green;
+                        color: $green;
+                    }
+                }
+                &:nth-of-type(4){
+                    label{
+                        border: 1px solid $red;
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        .label-active{
+            border: 1px solid #FF671D;
+            background: #FF671D;
+            color: $text-white;
         }
 
         .filter__properties-item{
-            margin-right: .2rem;
+            margin-right: .5rem;
         }
     }
 }
