@@ -49,7 +49,7 @@
         text-align: center;
         color: $accent;
         margin-top: 45px;
-        margin-bottom: 70px;
+        margin-bottom: 78px;
 
         @include media-for (null, $sm){
             margin-top: 10px;
@@ -69,7 +69,11 @@
             font-size: 14px;
             margin: auto;
             margin-bottom: 25px;
-            width: 30%;
+            width: 26%;
+
+            @include media-for ( null, $mid-desktop){
+                width: 30%;
+             }  
 
             @include media-for (null, $tablet){
                 width: 45%;

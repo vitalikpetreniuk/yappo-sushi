@@ -3834,7 +3834,7 @@ p {
   text-align: center;
   color: #2A1A5E;
   margin-top: 45px;
-  margin-bottom: 70px;
+  margin-bottom: 78px;
 }
 
 .category-page .info-message h3,
@@ -3850,7 +3850,7 @@ p {
   font-size: 14px;
   margin: auto;
   margin-bottom: 25px;
-  width: 30%;
+  width: 26%;
 }
 
 .category-page .info-message .btn-blue,
@@ -8734,6 +8734,11 @@ p {
 
   .product__item .product__cart {
     margin: 15px 0 15px;
+  }
+
+  .category-page .info-message p,
+  .resault-search .info-message p {
+    width: 30%;
   }
 }
 
