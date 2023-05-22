@@ -150,9 +150,9 @@ $(function() {
 		$(this).find('[stroke="#736998"]').attr('stroke', '#2A1A5E');
 	});
 
-	
 
-	//menu-page
+
+	//menu-page //hover for svg
 
 	$('.menu-item').hover(function() {
 		$(this, ".hover-effect-menu-page").find('[fill="#2A1A5E"]').attr('fill', '#FF671D');
@@ -162,6 +162,16 @@ $(function() {
 		$(this, ".hover-effect-menu-page").find('[stroke="#FF671D"]').attr('stroke', '#2A1A5E');
 	});
 
+
+	//contacts //hover for svg
+
+	$('.contacts a').hover(function() {
+		$(this, ".hover-effect-svg-local").find('[fill="#2A1A5E"]').attr('fill', '#736998');
+		$(this, ".hover-effect-svg-local").find('[stroke="#2A1A5E"]').attr('stroke', '#736998');
+	}, function() {
+		$(this, ".hover-effect-svg-local").find('[fill="#736998"]').attr('fill', '#2A1A5E');
+		$(this, ".hover-effect-svg-local").find('[stroke="#736998"]').attr('stroke', '#2A1A5E');
+	});
 
 
 
@@ -304,6 +314,17 @@ $(function() {
 			$(".speech").removeClass("speech-active");
 		}
 	});
+	////
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -326,23 +347,22 @@ $(function() {
 
 
 
+	  
+
+	//select-custom
 
 
-	//   function moveElement() {
-	// 	var windowWidth = $(window).width();
+	$('.select-dropdown__button').on('click', function(){
+		$(this).siblings('.select-dropdown__list').toggleClass('active');
+	});
 	
-	// 	if (windowWidth <= 991) {
-	// 	  $('categories-business-lunch .col-lg-8').appendTo('.row');
-	// 	} else {
-	// 	  $('categories-business-lunch .col-lg-8').prependTo('.row');
-	// 	}
-	//   }
-	
-	//   moveElement(); // Викликати функцію при завантаженні сторінки
-	
-	//   $(window).resize(function() {
-	// 	moveElement(); // Викликати функцію при зміні розміру вікна
-	//   }); 
+	$('.select-dropdown__list-item').on('click', function(){
+		var itemValue = $(this).data('value');
+		console.log(itemValue);
+		var parentDropdown = $(this).closest('.select-dropdown');
+		parentDropdown.find('.select-dropdown__button span').text($(this).text()).parent().attr('data-value', itemValue);
+		parentDropdown.find('.select-dropdown__list').toggleClass('active');
+	});
 
 })
 
