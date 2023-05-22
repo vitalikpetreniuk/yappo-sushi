@@ -25,7 +25,11 @@
     .img-wrap{
         margin: auto;
         margin-top: 5rem;
+        width: 80%;
 
+        @include media-for (null, $sm){
+            width: 100%;
+        } 
         img{
             width: 100%;
         }

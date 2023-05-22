@@ -3972,6 +3972,7 @@ p {
 .about-us .img-wrap {
   margin: auto;
   margin-top: 5rem;
+  width: 80%;
 }
 
 .about-us .img-wrap img {
@@ -9744,6 +9745,10 @@ p {
   }
 
   .about-us p {
+    width: 100%;
+  }
+
+  .about-us .img-wrap {
     width: 100%;
   }
 }
