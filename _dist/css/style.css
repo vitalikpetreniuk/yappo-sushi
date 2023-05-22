@@ -4246,6 +4246,20 @@ p {
   list-style: inside;
 }
 
+.public-offer p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.public-offer ul li {
+  margin-bottom: 5px;
+}
+
+.public-offer h5 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -10136,6 +10150,10 @@ p {
 
   .return-policy .section__title::before {
     left: 81%;
+  }
+
+  .public-offer .section__title {
+    font-size: 16px;
   }
 }
 

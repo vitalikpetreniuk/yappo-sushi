@@ -91,3 +91,28 @@
         }
     }
 }
+
+
+.public-offer{
+
+    .section__title{
+        @include media-for (null, $sm){
+            font-size: 16px;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    ul{
+        li{
+            margin-bottom: 5px;
+        }
+    }
+
+    h5{
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+}
