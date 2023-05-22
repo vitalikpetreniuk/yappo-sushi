@@ -4187,6 +4187,35 @@ p {
   transition: all ease-in-out 0.3s;
 }
 
+.privacy-policy,
+.return-policy,
+.public-offer {
+  text-align: center;
+  padding: 50px 0 150px;
+  color: #262730;
+}
+
+.privacy-policy .content,
+.return-policy .content,
+.public-offer .content {
+  width: 80%;
+  margin: auto;
+}
+
+.privacy-policy ul li,
+.return-policy ul li,
+.public-offer ul li {
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.privacy-policy ul li ul li,
+.return-policy ul li ul li,
+.public-offer ul li ul li {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -8986,6 +9015,12 @@ p {
   .resault-search .info-message p {
     width: 30%;
   }
+
+  .privacy-policy .section__title,
+  .return-policy .section__title,
+  .public-offer .section__title {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -9411,6 +9446,18 @@ p {
 
   .contacts .form-wrap {
     margin: 100px 0px 45px;
+  }
+
+  .privacy-policy,
+  .return-policy,
+  .public-offer {
+    padding: 50px 0 50px;
+  }
+
+  .privacy-policy .content,
+  .return-policy .content,
+  .public-offer .content {
+    width: 90%;
   }
 }
 
@@ -10021,6 +10068,18 @@ p {
 
   .contacts .form-wrap .select-dropdown__button {
     width: 155px;
+  }
+
+  .privacy-policy,
+  .return-policy,
+  .public-offer {
+    padding: 35px 0 50px;
+  }
+
+  .privacy-policy .content,
+  .return-policy .content,
+  .public-offer .content {
+    width: 100%;
   }
 }
 

@@ -1,0 +1,50 @@
+.privacy-policy,.return-policy,.public-offer{
+    text-align: center;
+    padding: 50px 0 150px;
+    color: $text-black;
+
+    @include media-for (null, $tablet){
+        padding: 50px 0 50px;
+    }
+
+    @include media-for (null, $sm){
+        padding: 35px 0 50px;
+    }
+
+    .section__title{
+        @include media-for (null, $mid-desktop){
+            font-size: 22px;
+        }
+    }
+
+    // .breadcrumbs{
+    //     @include media-for (null, $tablet){
+    //         display: none;
+    //     }
+    // }
+    .content{
+        width: 80%;
+        margin: auto;
+
+        @include media-for (null, $tablet){
+            width: 90%;
+        }
+
+        @include media-for (null, $sm){
+            width: 100%;
+        }
+    }
+
+    ul{
+        li{
+            font-size: 14px;
+            margin-bottom: 25px;
+            font-weight: 300;
+            ul{
+                li{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
