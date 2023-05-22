@@ -396,18 +396,35 @@
 
     .no-product{
         position: absolute;
+        width: 293px;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
         background-color: #FF671D;
-        padding: 10px 45px 12px;
+        padding: 10px 0px 12px;
         font-size: 16px;
         font-weight: 400;
         font-family: 'DelaGothicOne';
         text-align: center;
-        border-radius: 0 0 43px 43px;
+        border-radius: 0 0 48px 48px;
         z-index: 10;
         
-        
+
+        @include media-for (null, $mid-desktop){
+            width: 260px;
+        }
+
+        @include media-for (null, 1295px){
+            width: 250px;
+            font-size: 14px;
+        }
+
+        @include media-for (null, 1025px){
+            border-radius: 0 0 32px 32px;
+        }
+
+        @include media-for (null, $sm){
+            font-size: 14px;
+        }
     }
 }
