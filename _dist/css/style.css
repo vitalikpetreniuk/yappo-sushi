@@ -3951,6 +3951,33 @@ p {
   width: 100%;
 }
 
+.about-us {
+  text-align: center;
+  padding: 50px 0 150px;
+}
+
+.about-us .breadcrumbs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.about-us p {
+  font-size: 14px;
+  font-weight: 300px;
+  width: 80%;
+  margin: auto;
+}
+
+.about-us .img-wrap {
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.about-us .img-wrap img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -9710,6 +9737,14 @@ p {
 
   .categories-business-lunch {
     padding: 35px 0 0px;
+  }
+
+  .about-us {
+    padding: 35px 0 50px;
+  }
+
+  .about-us p {
+    width: 100%;
   }
 }
 

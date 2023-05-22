@@ -1,0 +1,33 @@
+.about-us{
+    text-align: center;
+    padding: 50px 0 150px;
+
+
+    @include media-for (null, $sm){
+        padding: 35px 0 50px;
+    } 
+
+    .breadcrumbs{
+        align-items: start;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300px;
+        width: 80%;
+        margin: auto;
+
+        @include media-for (null, $sm){
+            width: 100%;
+        } 
+    }
+
+    .img-wrap{
+        margin: auto;
+        margin-top: 5rem;
+
+        img{
+            width: 100%;
+        }
+    }
+}
