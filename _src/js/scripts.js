@@ -60,6 +60,7 @@ $(function() {
 
 
 	//search
+
 	$('.form-search-btn').on('click', function () {	
 		$('.search-wrap').toggleClass('search-wrap-active');
 	})
@@ -85,7 +86,8 @@ $(function() {
 	$('.filter__checkgroup-title input').on('change', function () {
 		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
 		console.log('click')
-	  });
+	});
+
 
 
 
@@ -109,6 +111,7 @@ $(function() {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.0)");
 		}
 	});
+
 
 
 
@@ -145,6 +148,18 @@ $(function() {
 	}, function() {
 		$(this).find('[fill="#736998"]').attr('fill', '#2A1A5E');
 		$(this).find('[stroke="#736998"]').attr('stroke', '#2A1A5E');
+	});
+
+	
+
+	//menu-page
+
+	$('.menu-item').hover(function() {
+		$(this, ".hover-effect-menu-page").find('[fill="#2A1A5E"]').attr('fill', '#FF671D');
+		$(this, ".hover-effect-menu-page").find('[stroke="#2A1A5E"]').attr('stroke', '#FF671D');
+	}, function() {
+		$(this, ".hover-effect-menu-page").find('[fill="#FF671D"]').attr('fill', '#2A1A5E');
+		$(this, ".hover-effect-menu-page").find('[stroke="#FF671D"]').attr('stroke', '#2A1A5E');
 	});
 
 

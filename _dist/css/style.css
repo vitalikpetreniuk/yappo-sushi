@@ -3979,6 +3979,47 @@ p {
   width: 100%;
 }
 
+.menu-page {
+  text-align: center;
+  padding: 50px 0 150px;
+  min-height: calc(100% - 150px);
+}
+
+.menu-page .breadcrumbs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.menu-page .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "DelaGothicOne";
+  font-weight: 400;
+  font-size: 26px;
+  border-radius: 50px;
+  border: 1px solid rgba(42, 26, 94, 0.4);
+  color: #2A1A5E;
+  margin-bottom: 18px;
+  padding: 25px 0;
+}
+
+.menu-page .menu-item .img-wrap {
+  margin-left: 15px;
+}
+
+.menu-page .menu-item:hover {
+  border: 1px solid #FF671D;
+  color: #FF671D;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -8729,6 +8770,11 @@ p {
     min-height: 65vh;
     height: 65vh;
   }
+
+  .menu-page {
+    min-height: 72vh;
+    height: 72vh;
+  }
 }
 
 @media (max-width: 14012px) {
@@ -8985,6 +9031,11 @@ p {
   .resault-search .section__title:after {
     right: 98%;
   }
+
+  .menu-page {
+    min-height: 72vh;
+    height: 72vh;
+  }
 }
 
 @media (max-width: 992px) {
@@ -9130,6 +9181,11 @@ p {
     margin: 22px auto 40px;
   }
 
+  .footer .copmpany img {
+    display: block;
+    margin: auto;
+  }
+
   .page-404 {
     min-height: 60vh;
     height: 60vh;
@@ -9161,6 +9217,17 @@ p {
 
   .categories-business-lunch .card-info h3 {
     margin-top: 30px;
+  }
+
+  .menu-page {
+    min-height: 60vh;
+    height: 60vh;
+  }
+
+  .menu-page .menu-item {
+    font-size: 16px;
+    padding: 20px 0;
+    height: 68px;
   }
 }
 
@@ -9750,6 +9817,11 @@ p {
 
   .about-us .img-wrap {
     width: 100%;
+  }
+
+  .menu-page {
+    height: 100%;
+    padding: 35px 0 50px;
   }
 }
 

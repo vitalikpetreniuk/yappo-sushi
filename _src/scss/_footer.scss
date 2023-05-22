@@ -91,6 +91,12 @@
     }
 
     .copmpany{
-
+        img{
+            @include media-for (null, $tablet){
+                display: block;
+                margin: auto;
+            }
+        }
+        
     }
 }
