@@ -156,6 +156,10 @@ p{
     font-family: 'DelaGothicOne';
 
 
+    @include media-for (null, $tablet){
+        font-size: 20px;
+    }
+
     @include media-for (null, $sm){
         font-size: 14px;
         margin-bottom: 28px;
