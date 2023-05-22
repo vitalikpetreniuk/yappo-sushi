@@ -82,8 +82,9 @@ $(function() {
 		$('.filter-wrap').removeClass('filter-wrap-active');
 	})
 
-	$('.filter__checkgroup-title').on('click', function () {
-		$(this).addClass('label-active');
+	$('.filter__checkgroup-title input').on('change', function () {
+		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
+		console.log('click')
 	  });
 
 
