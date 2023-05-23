@@ -4260,6 +4260,143 @@ p {
   margin-bottom: 5px;
 }
 
+.news-blogs {
+  text-align: center;
+  padding: 50px 0 150px;
+}
+
+.news-blogs .grid-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[4];
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 90px;
+}
+
+.news-blogs .grid-container .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+}
+
+.news-blogs .grid-container .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/span 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/span 3;
+}
+
+.news-blogs .grid-container .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+}
+
+.news-blogs .grid-container .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/span 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/span 2;
+}
+
+.news-blogs .grid-container .item5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/span 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/span 2;
+}
+
+.news-blogs .grid-container .item6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+}
+
+.news-blogs .grid-container .item7 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/span 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/span 3;
+}
+
+.news-blogs .grid-container .item8 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+}
+
+.news-blogs .grid-container .item9 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/span 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/span 3;
+}
+
+.news-blogs .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 315px;
+  border-radius: 80px;
+}
+
+.news-blogs .item .img-wrap {
+  height: 100%;
+}
+
+.news-blogs .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-blogs .item .info-wrap {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  text-align: left;
+}
+
+.news-blogs .item .info-wrap .data-span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.news-blogs .item .info-wrap h4 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "DelaGothicOne";
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -9005,6 +9142,17 @@ p {
   }
 }
 
+@media (min-width: 1600px) {
+  .news-blogs .container-fluid,
+  .news-blogs .container-sm,
+  .news-blogs .container-md,
+  .news-blogs .container-lg,
+  .news-blogs .container-xl,
+  .news-blogs .container-xxl {
+    padding: 0 200px;
+  }
+}
+
 @media (min-width: 2000px) {
   .product__item .product__image {
     height: 360px;
@@ -9070,6 +9218,14 @@ p {
   .return-policy .section__title,
   .public-offer .section__title {
     font-size: 22px;
+  }
+
+  .news-blogs .grid-container {
+    gap: 15px;
+  }
+
+  .news-blogs .item {
+    height: 250px;
   }
 }
 
@@ -9293,6 +9449,11 @@ p {
   .return-policy .breadcrumbs,
   .public-offer .breadcrumbs {
     display: none;
+  }
+
+  .news-blogs .item {
+    height: 210px;
+    border-radius: 60px;
   }
 }
 
@@ -9526,6 +9687,14 @@ p {
 
   .return-policy .section__title::before {
     left: 93%;
+  }
+
+  .news-blogs {
+    padding: 50px 0 50px;
+  }
+
+  .news-blogs .grid-container {
+    margin-top: 0px;
   }
 }
 
@@ -10160,6 +10329,20 @@ p {
 
   .public-offer .section__title {
     font-size: 16px;
+  }
+
+  .news-blogs {
+    padding: 35px 0 50px;
+  }
+
+  .news-blogs .grid-container {
+    gap: 6px;
+    margin-top: 50px;
+  }
+
+  .news-blogs .item {
+    height: 100px;
+    border-radius: 32px;
   }
 }
 
