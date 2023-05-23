@@ -45,6 +45,10 @@
         margin: auto;
         margin-bottom: 18px;
 
+        @include media-for (2000px, null){
+            height: 360px;
+        }
+
         @include media-for (null, $mid-desktop){
             margin-bottom: 20px;
             height: 200px;

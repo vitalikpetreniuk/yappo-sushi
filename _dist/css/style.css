@@ -9005,6 +9005,12 @@ p {
   }
 }
 
+@media (min-width: 2000px) {
+  .product__item .product__image {
+    height: 360px;
+  }
+}
+
 @media (min-width: 2047px) {
   .page-404 {
     min-height: 65vh;
