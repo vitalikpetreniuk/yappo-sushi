@@ -347,7 +347,7 @@ p{
 
 .breadcrumbs{
     display: flex;
-
+    list-style: none !important;
     @include media-for (null, $sm){
         display: none;
     }
