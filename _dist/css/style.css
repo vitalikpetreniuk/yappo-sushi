@@ -9696,6 +9696,11 @@ p {
   .news-blogs .grid-container {
     margin-top: 0px;
   }
+
+  .news-blogs .item .info-wrap {
+    left: 35px;
+    bottom: 35px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -10343,6 +10348,19 @@ p {
   .news-blogs .item {
     height: 100px;
     border-radius: 32px;
+  }
+
+  .news-blogs .item .info-wrap {
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .news-blogs .item .info-wrap .data-span {
+    font-size: 12px;
+  }
+
+  .news-blogs .item .info-wrap h4 {
+    font-size: 12px;
   }
 }
 

@@ -129,15 +129,33 @@
             bottom: 50px;
             text-align: left;
 
+            @include media-for (null, $tablet){
+                left: 35px;
+                bottom: 35px;
+            }
+
+            @include media-for (null, $sm){
+                left: 15px;
+                bottom: 15px;
+            }
+
             .data-span{
                 font-weight: 400;
                 font-size: 14px;
+
+                @include media-for (null, $sm){
+                    font-size: 12px;
+                }
             }
 
             h4{
                 font-weight: 400;
                 font-size: 16px;
                 font-family: 'DelaGothicOne';
+
+                @include media-for (null, $sm){
+                    font-size: 12px;
+                }
             }
         }
         
