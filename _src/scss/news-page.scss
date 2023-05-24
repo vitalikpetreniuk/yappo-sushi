@@ -20,8 +20,8 @@
         border-radius: 80px;
 
         @include media-for (null, $sm){
-            height: 150px;
-            border-radius: 30px;
+            height: 120px;
+            border-radius: 20px;
         }
 
         .img-wrap{
@@ -145,7 +145,8 @@
             }
 
             @include media-for (null, $sm){
-                height: 150px;
+                height: 120px;
+                border-radius: 20px;
             }
         }
     }

@@ -10652,8 +10652,8 @@ p {
   }
 
   .news-page .img-wrap-top {
-    height: 150px;
-    border-radius: 30px;
+    height: 120px;
+    border-radius: 20px;
   }
 
   .news-page .grid-container {
@@ -10675,7 +10675,8 @@ p {
   }
 
   .news-page .news-other .item {
-    height: 150px;
+    height: 120px;
+    border-radius: 20px;
   }
 }
 
