@@ -410,7 +410,7 @@
         font-weight: 400;
         font-family: 'DelaGothicOne';
         text-align: center;
-        border-radius: 0 0 48px 48px;
+        border-radius: 0 0 55px 55px;
         z-index: 10;
         
 
@@ -424,11 +424,12 @@
         }
 
         @include media-for (null, 1025px){
-            border-radius: 0 0 32px 32px;
+            border-radius: 0 0 42px 42px;
         }
 
         @include media-for (null, $sm){
             font-size: 14px;
+            border-radius: 0 0 45px 45px;
         }
     }
 }

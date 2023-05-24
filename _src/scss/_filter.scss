@@ -247,7 +247,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            line-height: .8;
+            line-height: 1.2;
 
             @include media-for (null, $sm){
                 padding: 12px 10px;
@@ -258,7 +258,6 @@
         .category-offers{
             label{
                 .img-wrap{
-                    border: 1px solid #fff;
                     border-radius: 100%;
                 }
             }
@@ -286,7 +285,7 @@
         }
 
         .label-active{
-            border: 1px solid #FF671D;
+            border: 1px solid #FF671D !important;
             background: #FF671D;
             color: $text-white !important;
         }
@@ -302,7 +301,7 @@
 }
 
 .label-active{
-    border: 1px solid #FF671D;
+    border: 1px solid #FF671D !important;
     background: #FF671D;
     color: $text-white;
 }
