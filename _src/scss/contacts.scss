@@ -1,7 +1,7 @@
 
 .contacts{
     text-align: center;
-    padding: 50px 0 150px;
+    padding: 50px 0 94px;
 
 
     @include media-for (null, $tablet){
@@ -31,6 +31,7 @@
         text-align: left;
         margin-bottom: 30px;
 
+
         h5{
             color: $accent;
             font-weight: 700;
@@ -45,9 +46,15 @@
             white-space: nowrap;
         }
 
-        svg{
+        .svg-wrap{
             margin-right: 10px;
+            width: 30px;
+
+            svg{
+                
+            }
         }
+        
     }
 
     .tel{
@@ -73,7 +80,11 @@
 
 
     .form-wrap{
-        margin: 240px 20px 95px;
+        margin: 240px 20px 30px;
+
+        @include media-for (null, 1417px){
+            margin: 240px 0px 30px;
+        }
 
         @include media-for (null, $tablet){
             margin: 100px 0px 45px;
@@ -168,5 +179,14 @@
                 transition: all ease-in-out .3s;
             }
         }
+
+        .form-bottom{
+            .select-dropdown{
+                @include media-for (null, $sm){
+                    margin-bottom: 7rem;
+                }
+            }
+        }
+
     }
 }

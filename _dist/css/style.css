@@ -4024,7 +4024,7 @@ p {
 
 .contacts {
   text-align: center;
-  padding: 50px 0 150px;
+  padding: 50px 0 94px;
 }
 
 .contacts .img-wrap-map img {
@@ -4057,8 +4057,9 @@ p {
   white-space: nowrap;
 }
 
-.contacts .local-block-contacts svg {
+.contacts .local-block-contacts .svg-wrap {
   margin-right: 10px;
+  width: 30px;
 }
 
 .contacts .tel {
@@ -4088,7 +4089,7 @@ p {
 }
 
 .contacts .form-wrap {
-  margin: 240px 20px 95px;
+  margin: 240px 20px 30px;
 }
 
 .contacts .form-wrap .form-top {
@@ -9328,6 +9329,12 @@ p {
   }
 }
 
+@media (max-width: 1416px) {
+  .contacts .form-wrap {
+    margin: 240px 0px 30px;
+  }
+}
+
 @media (max-width: 1406px) {
   .header .header-bottom .header__category ul a {
     width: 5.5rem;
@@ -10476,6 +10483,10 @@ p {
 
   .contacts .form-wrap .select-dropdown__button {
     width: 155px;
+  }
+
+  .contacts .form-wrap .form-bottom .select-dropdown {
+    margin-bottom: 7rem;
   }
 
   .privacy-policy,
