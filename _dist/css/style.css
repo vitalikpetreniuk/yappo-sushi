@@ -4192,7 +4192,7 @@ p {
 .return-policy,
 .public-offer {
   text-align: center;
-  padding: 50px 0 150px;
+  padding: 50px 0 94px;
   color: #262730;
 }
 
@@ -4247,6 +4247,11 @@ p {
   list-style: inside;
 }
 
+.return-policy a {
+  color: #262730;
+  text-decoration: underline;
+}
+
 .public-offer p {
   font-size: 14px;
   font-weight: 300;
@@ -4263,6 +4268,7 @@ p {
 
 .privacy-policy a {
   color: #262730;
+  text-decoration: underline;
 }
 
 .privacy-policy p {
@@ -10459,12 +10465,10 @@ p {
   }
 
   .return-policy .section__title::after {
-    right: 81%;
     display: none;
   }
 
   .return-policy .section__title::before {
-    left: 81%;
     display: none;
   }
 

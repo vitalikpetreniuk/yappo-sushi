@@ -1,6 +1,6 @@
 .privacy-policy,.return-policy,.public-offer{
     text-align: center;
-    padding: 50px 0 150px;
+    padding: 50px 0 94px;
     color: $text-black;
 
     @include media-for (null, $tablet){
@@ -91,6 +91,7 @@
 }
 
 .return-policy{
+
     .section__title{
         @include media-for (null, $tablet){
             margin-bottom: 30px;
@@ -100,7 +101,6 @@
                 right: 90%;
             }
             @include media-for (null, $sm){
-                right: 81%;
                 display: none;
             }
         }
@@ -109,10 +109,14 @@
                 left: 93%;
             }
             @include media-for (null, $sm){
-                left: 81%;
                 display: none;
             }
         }
+    }
+
+    a{
+        color: $text-black;
+        text-decoration: underline;
     }
 }
 
@@ -145,14 +149,10 @@
 .privacy-policy{
     a{
         color: $text-black;
+        text-decoration: underline;
     }
     p{
         font-weight: 300 !important;
     }
 
-    // h1{
-    //     @include media-for (null, $sm){
-    //         font-size: 16px;
-    //     }
-    // }
 }
