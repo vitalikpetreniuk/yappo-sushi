@@ -3971,6 +3971,11 @@ p {
   margin: auto;
 }
 
+.about-us a {
+  text-decoration: underline;
+  color: #262730;
+}
+
 .about-us .img-wrap {
   margin: auto;
   margin-top: 5rem;

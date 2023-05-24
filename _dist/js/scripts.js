@@ -286,7 +286,7 @@ $(function() {
 		window.location.href = 'https://vitalikpetreniuk.github.io/yappo-sushi/';
 	});
 
-	if ($('.page-404').length > 0) {
+	if ($('.page-404,.contacts,.about-us,.privacy-policy,.return-policy,.public-offer').length > 0) {
 		$('.fix-cart').remove();
 	}
 
