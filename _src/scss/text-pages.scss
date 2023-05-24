@@ -101,6 +101,7 @@
             }
             @include media-for (null, $sm){
                 right: 81%;
+                display: none;
             }
         }
         &::before{
@@ -109,6 +110,7 @@
             }
             @include media-for (null, $sm){
                 left: 81%;
+                display: none;
             }
         }
     }

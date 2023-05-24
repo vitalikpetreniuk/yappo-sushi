@@ -10460,10 +10460,12 @@ p {
 
   .return-policy .section__title::after {
     right: 81%;
+    display: none;
   }
 
   .return-policy .section__title::before {
     left: 81%;
+    display: none;
   }
 
   .news-blogs {
