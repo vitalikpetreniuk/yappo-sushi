@@ -5435,6 +5435,14 @@ p {
   }
 }
 
+@media (min-width: 576px) and (orientation: landscape) {
+  .section__title:before,
+  .section__title:after {
+    height: 28px;
+    width: 107px;
+  }
+}
+
 @media (min-width: 768px) {
   .container-md,
   .container-sm,

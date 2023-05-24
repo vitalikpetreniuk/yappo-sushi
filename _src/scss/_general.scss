@@ -162,6 +162,8 @@ p{
         margin-bottom: 28px;
     }
 
+
+
     &:before,
     &:after{
       content: '';
@@ -177,6 +179,10 @@ p{
       @include media-for (null, $sm){
             height: 20px;
             width: 72px;
+       }
+       @media (min-width: 576px) and (orientation: landscape) {
+        height: 28px;
+        width: 107px;
        }
     }
 
