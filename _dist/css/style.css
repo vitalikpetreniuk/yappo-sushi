@@ -10455,7 +10455,7 @@ p {
   .privacy-policy .section__title::before,
   .return-policy .section__title::before,
   .public-offer .section__title::before {
-    left: 100%;
+    left: 105%;
   }
 
   .return-policy .section__title::after {
