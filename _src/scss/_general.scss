@@ -364,7 +364,7 @@ p{
         white-space: nowrap;
         margin-right: 14px;
         color: rgba($color: #262730, $alpha: .6);
-        font-size: 12px;
+        font-size: 12px !important;
         font-weight: 300;
 
         @include media-for (null, $sm){

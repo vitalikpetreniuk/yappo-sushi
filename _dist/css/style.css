@@ -1837,7 +1837,7 @@ p {
   white-space: nowrap;
   margin-right: 14px;
   color: rgba(38, 39, 48, 0.6);
-  font-size: 12px;
+  font-size: 12px !important;
   font-weight: 300;
 }
 
