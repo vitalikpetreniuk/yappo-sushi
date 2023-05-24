@@ -1855,6 +1855,7 @@ p {
   color: rgba(38, 39, 48, 0.6);
   font-size: 12px;
   font-weight: 300;
+  text-decoration: none !important;
 }
 
 .breadcrumbs li a:hover {
@@ -4194,6 +4195,12 @@ p {
   text-align: center;
   padding: 50px 0 94px;
   color: #262730;
+}
+
+.privacy-policy .breadcrumbs a,
+.return-policy .breadcrumbs a,
+.public-offer .breadcrumbs a {
+  text-decoration: none;
 }
 
 .privacy-policy .content,
@@ -9801,7 +9808,7 @@ p {
   }
 
   .info-wrap {
-    left: 35px;
+    left: 25px;
     bottom: 35px;
   }
 
@@ -10495,16 +10502,16 @@ p {
   }
 
   .info-wrap {
-    left: 15px;
+    left: 10px;
     bottom: 15px;
   }
 
   .info-wrap .data-span {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .info-wrap h4 {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .news-page {

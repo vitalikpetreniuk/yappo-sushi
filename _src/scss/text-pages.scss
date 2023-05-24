@@ -21,6 +21,10 @@
         @include media-for (null, 1025px){
             display: none;
         }
+
+        a{
+            text-decoration: none;
+        }
     }
     .content{
         width: 80%;

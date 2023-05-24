@@ -385,6 +385,7 @@ p{
             color: rgba($color: #262730, $alpha: .6);
             font-size: 12px;
             font-weight: 300;
+            text-decoration: none !important;
 
             @include media-for (null, $sm){
                 
