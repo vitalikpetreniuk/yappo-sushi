@@ -66,6 +66,28 @@
     .list-style{
         list-style: inside;
     }
+
+    .section__title{
+        @include media-for (null, $sm){
+            font-size: 16px;
+        }
+        &::after{
+            // @include media-for (null, $tablet){
+            //     right: 90%;
+            // }
+            @include media-for (null, $sm){
+                right: 100%;
+            }
+        }
+        &::before{
+            // @include media-for (null, $tablet){
+            //     left: 93%;
+            // }
+            @include media-for (null, $sm){
+                left: 100%;
+            }
+        }
+    }
 }
 
 .return-policy{
@@ -95,11 +117,11 @@
 
 .public-offer{
 
-    .section__title{
-        @include media-for (null, $sm){
-            font-size: 16px;
-        }
-    }
+    // .section__title{
+    //     @include media-for (null, $sm){
+    //         font-size: 16px;
+    //     }
+    // }
     p{
         font-size: 14px;
         font-weight: 300;
@@ -115,4 +137,20 @@
         margin-top: 30px;
         margin-bottom: 5px;
     }
+}
+
+
+.privacy-policy{
+    a{
+        color: $text-black;
+    }
+    p{
+        font-weight: 300 !important;
+    }
+
+    // h1{
+    //     @include media-for (null, $sm){
+    //         font-size: 16px;
+    //     }
+    // }
 }
