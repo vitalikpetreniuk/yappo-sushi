@@ -245,11 +245,8 @@ $(function() {
 
 	$(window).scroll(function() {
 		var scrollTop = $(this).scrollTop();
-		var windowHeight = $(window).height();
-		var documentHeight = $(document).height();
-		var scrollBottom = documentHeight - (scrollTop + windowHeight);
 	
-		if (scrollTop > 10 || scrollBottom === 0) {
+		if (scrollTop > 10) {
 			$(".header-center").addClass("header-center-scroll");
 		} else {
 			$(".header-center").removeClass("header-center-scroll");
