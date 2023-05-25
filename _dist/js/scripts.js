@@ -76,11 +76,13 @@ $(function() {
 	$('.filter-btn-open').on('click', function () {	
 		$('.filter-options').addClass('filter-options-active');
 		$('.filter-wrap').addClass('filter-wrap-active');
+		$('.widget-btns').css("left", "-100%");
 	})
 
 	$('.close-filter').on('click', function () {	
 		$('.filter-options').removeClass('filter-options-active');
 		$('.filter-wrap').removeClass('filter-wrap-active');
+		$('.widget-btns').css("left", "0%");
 	})
 
 	$('.filter__checkgroup-title input').on('change', function () {
@@ -268,8 +270,6 @@ $(function() {
 
 	
 
-
-
 	//discount-card
 
 	$(".product__item").each(function() {
@@ -290,6 +290,7 @@ $(function() {
 
 	if ($('.page-404,.contacts,.about-us,.privacy-policy,.return-policy,.public-offer').length > 0) {
 		$('.fix-cart').remove();
+		$('.widget-btns').remove();
 	}
 
 

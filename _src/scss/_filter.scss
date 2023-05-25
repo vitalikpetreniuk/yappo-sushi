@@ -1,9 +1,14 @@
 .filter-btn-wrap{
     padding: 0 0 28px;
+
+    @include media-for (null, $sm){
+        padding: 0 0 8px;
+    } 
 }
 
 .filter-wrap{
     margin-bottom: 110px;
+
     @include media-for (null, $sm){
         margin-bottom: 100px;
     } 
@@ -185,6 +190,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 40px;
+                justify-content: space-between;
             }
 
             // .filter__checkgroup-link{
@@ -253,6 +259,14 @@
                 padding: 12px 10px;
                 width: 164px;
             }   
+
+            @include media-for (null, 415px){
+                width: 182px;
+            } 
+
+            @include media-for (null, 400px){
+                width: 166px;
+            } 
         }
 
         .category-offers{
@@ -292,6 +306,10 @@
 
         .filter__properties-item{
             margin-right: .5rem;
+
+            @include media-for (null, $sm){
+                margin-right: .0rem;
+            }
         }
     }
 
