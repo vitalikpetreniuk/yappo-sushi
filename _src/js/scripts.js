@@ -321,32 +321,6 @@ $(function() {
 
 
 
-
-
-
-
-
-		// hover  on header menu
-		// var originalPaths = [];
-		// $('.link-category .image-category').each(function() {
-		// 	originalPaths.push($(this).attr('src'));
-		// });
-		
-
-		// $('.link-category').hover(
-		// 	function() {
-		// 	var index = $('.link-category').index(this);
-			
-		// 	$(this).find('.image-category').attr('src', originalPaths[index].replace('.svg', '-orange.svg'));
-		// 	},
-		// 	function() {
-		// 	var index = $('.link-category').index(this);
-		
-		// 	$(this).find('.image-category').attr('src', originalPaths[index]);
-		// 	}
-		// );
-
-
 	  // click  on header menu
 	  var originalPaths = [];
 	  var selectedElement = null;
