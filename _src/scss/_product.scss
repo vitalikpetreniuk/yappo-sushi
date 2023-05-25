@@ -328,8 +328,8 @@
     margin-bottom: 13px;
 
     @include media-for (null, 1025px){
-        right: 10px;
-        top: 10px;
+        right: 0px;
+        top: 0px;
     } 
 
     @include media-for (null, 1025px){
