@@ -9462,9 +9462,25 @@ p {
   }
 }
 
+@media (max-width: 1629px) {
+  .local-wrap .city-list div ul {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 1529px) {
   .header .header-bottom .header__category ul a {
     width: 6rem;
+  }
+
+  .local-wrap .city-list {
+    padding: 16px 55px 10px 25px;
+  }
+}
+
+@media (max-width: 1459px) {
+  .local-wrap .local {
+    padding-left: 1rem;
   }
 }
 
@@ -9481,6 +9497,14 @@ p {
 }
 
 @media (max-width: 1399px) {
+  .local-wrap .local {
+    padding-left: 1.7rem;
+  }
+
+  .local-wrap .city-list {
+    padding: 16px 55px 18px 40px;
+  }
+
   .product__item .product__image {
     margin-bottom: 20px;
     height: 200px;
