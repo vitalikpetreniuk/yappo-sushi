@@ -1919,6 +1919,7 @@ p {
 .header .header-center-scroll {
   margin-top: -108px;
   z-index: -100;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .header .header-bottom {
@@ -10095,9 +10096,6 @@ p {
 
   .header .header-center {
     padding: 17px 0;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
   }
 
   .header .header-center button {

@@ -41,7 +41,7 @@
 
         @include media-for (null, $sm){
             padding: 17px 0;
-            transition: none;
+            // transition: none;
         }
 
         .social-wrap{
@@ -66,6 +66,7 @@
     .header-center-scroll{
         margin-top: -108px;
         z-index: -100;
+        -webkit-transform: translate3d(0, 0, 0);
 
         @include media-for (null, $sm){
             margin-top: -75px;
