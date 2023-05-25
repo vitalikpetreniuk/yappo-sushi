@@ -77,6 +77,7 @@ $(function() {
 		$('.filter-options').addClass('filter-options-active');
 		$('.filter-wrap').addClass('filter-wrap-active');
 		$('.widget-btns').css("left", "-100%");
+		$('.cheked-wrap').css("margin-top", "3rem");
 	})
 
 
@@ -84,6 +85,7 @@ $(function() {
 		$('.filter-options').removeClass('filter-options-active');
 		$('.filter-wrap').removeClass('filter-wrap-active');
 		$('.widget-btns').css("left", "0%");
+		$('.cheked-wrap').css("margin-top", "6rem");
 	})
 
 
