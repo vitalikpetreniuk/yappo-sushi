@@ -180,10 +180,10 @@ p{
             height: 20px;
             width: 72px;
        }
-       @media (min-width: 576px) and (orientation: landscape) {
-        height: 28px;
-        width: 107px;
-       }
+        @media (min-width: 576px) and (orientation: landscape) and (max-device-width: 1024px) {
+            height: 28px;
+            width: 107px;
+        }
     }
 
 
@@ -210,6 +210,10 @@ p{
       width: 77px;
 
       @include media-for (null, $sm){
+            height: 20px;
+            width: 35px;
+        }
+        @media (min-width: 576px) and (orientation: landscape) and (max-device-width: 1024px) {
             height: 20px;
             width: 35px;
         }

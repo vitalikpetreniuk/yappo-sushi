@@ -443,3 +443,40 @@
         }
     }
 }
+
+
+
+
+.pagination-wrap{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pagination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        a{
+            color: $accent;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .current{
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+
+    .btns-prew{
+        margin-right: 1rem;
+    }
+
+    .btns-next{
+        margin-left: 1rem;
+    }
+
+}

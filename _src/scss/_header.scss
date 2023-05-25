@@ -546,6 +546,7 @@
 
             input{
                 width: 13rem;
+                padding-top: 1rem;
 
                 @include media-for (null, $sm){
                     width: 7rem;
