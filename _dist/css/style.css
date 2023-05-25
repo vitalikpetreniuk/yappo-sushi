@@ -10102,8 +10102,8 @@ p {
   }
 
   .product__item .product__image {
-    border-radius: 35px;
-    height: 145px;
+    border-radius: 35px 35px 0 0;
+    height: 170px;
   }
 
   .product__item .product__detail h3 {
@@ -10142,6 +10142,16 @@ p {
     width: 21px;
     height: 21px;
     display: block;
+  }
+
+  .sale-bage-wrap {
+    top: 10px;
+    right: 10px;
+  }
+
+  .sale-badge {
+    right: 0;
+    top: 0;
   }
 
   .no-product-wrap {

@@ -55,8 +55,8 @@
         }
 
         @include media-for (null, $sm){
-            border-radius: 35px;
-            height: 145px;
+            border-radius: 35px 35px 0 0;
+            height: 170px;
             // margin-bottom: 30px;
         }
 
@@ -303,6 +303,11 @@
     right: 20px;
     display: flex;
     flex-direction: column;
+
+    @include media-for (null, $sm){
+        top: 10px;
+        right: 10px;
+    }
 }
 
 .sale-badge{
@@ -333,6 +338,11 @@
         img{
             width: 26px;
         }
+    } 
+
+    @include media-for (null, $sm){
+        right: 0;
+        top: 0;
     } 
 
     img{
