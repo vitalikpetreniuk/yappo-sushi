@@ -3017,10 +3017,6 @@ p {
   padding: 0 0 28px;
 }
 
-.filter-wrap {
-  margin-bottom: 110px;
-}
-
 .filter-wrap .filter-btn-open {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3037,11 +3033,10 @@ p {
 .filter-wrap .filter-options {
   text-align: left;
   position: relative;
-  margin-bottom: 40px;
   z-index: 2;
-  -webkit-transition: margin-top 0.4s ease-out;
-  -o-transition: margin-top 0.4s ease-out;
-  transition: margin-top 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
+  -o-transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
+  transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
   opacity: 0;
   margin-top: -100%;
   z-index: -100;
@@ -3929,6 +3924,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 6rem;
   margin-bottom: 3rem;
 }
 
@@ -10275,10 +10271,6 @@ p {
 
   .filter-btn-wrap {
     padding: 0 0 8px;
-  }
-
-  .filter-wrap {
-    margin-bottom: 100px;
   }
 
   .filter-wrap .filter-options {

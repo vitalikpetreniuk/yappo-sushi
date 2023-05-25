@@ -7,11 +7,12 @@
 }
 
 .filter-wrap{
-    margin-bottom: 110px;
+    
+    // margin-bottom: 110px;
 
-    @include media-for (null, $sm){
-        margin-bottom: 100px;
-    } 
+    // @include media-for (null, $sm){
+    //     margin-bottom: 100px;
+    // } 
    
     .filter-btn-open{
         display: flex;
@@ -26,10 +27,9 @@
     .filter-options{
         text-align: left;
         position: relative;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
         z-index: 2;
-        transition: margin-top .4s ease-out;
-
+        transition: opacity .4s ease, margin-top .4s ease, z-index .4s ease;
         opacity: 0;
         margin-top: -100%;
         z-index: -100;
@@ -327,7 +327,7 @@
 
 .filter-wrap-active{
     margin-bottom: 0;
-
+    // height: auto  !important;
 }
 
 

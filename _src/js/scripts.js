@@ -79,11 +79,14 @@ $(function() {
 		$('.widget-btns').css("left", "-100%");
 	})
 
+
 	$('.close-filter').on('click', function () {	
 		$('.filter-options').removeClass('filter-options-active');
 		$('.filter-wrap').removeClass('filter-wrap-active');
 		$('.widget-btns').css("left", "0%");
 	})
+
+
 
 	$('.filter__checkgroup-title input').on('change', function () {
 		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
