@@ -349,20 +349,26 @@ $(function() {
 
 	  // click  on header menu
 	  var originalPaths = [];
+	  var selectedElement = null;
+	  
 	  $('.link-category .image-category').each(function() {
 		originalPaths.push($(this).attr('src'));
 	  });
 	  
-
 	  $('.link-category').click(function() {
 		var index = $('.link-category').index(this);
 		var currentPath = $(this).find('.image-category').attr('src');
-		
+	  
+		if (selectedElement !== null) {
+		  var previousPath = $(selectedElement).find('.image-category').attr('src');
+		  $(selectedElement).find('.image-category').attr('src', previousPath.replace('-orange.svg', '.svg'));
+		}
+	  
 		if (currentPath === originalPaths[index]) {
-
 		  $(this).find('.image-category').attr('src', originalPaths[index].replace('.svg', '-orange.svg'));
+		  selectedElement = this;
 		} else {
-
+		  selectedElement = null;
 		  $(this).find('.image-category').attr('src', originalPaths[index]);
 		}
 	  });
