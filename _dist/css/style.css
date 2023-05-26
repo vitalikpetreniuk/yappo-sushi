@@ -9571,6 +9571,12 @@ p {
   }
 }
 
+@media (max-width: 1214px) {
+  .no-product-wrap .no-product {
+    width: 214px;
+  }
+}
+
 @media (max-width: 1199px) {
   .container-fluid,
   .container-sm,
@@ -10013,6 +10019,10 @@ p {
   .footer .copmpany img {
     display: block;
     margin: auto;
+  }
+
+  .no-product-wrap .no-product {
+    width: 250px;
   }
 
   .page-404 {
