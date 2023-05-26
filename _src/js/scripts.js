@@ -3,24 +3,46 @@ var $ = jQuery;
 $(function() {
 // custom scripts
 		
-	//scroll header
+		//scroll header
 
-	$(window).on("scroll",function() {
-		var height = $(window).scrollTop();		
+		// $(window).on("scroll",function() {
+		// 	var height = $(window).scrollTop();		
 
-		if(height > 0){			
-			// $('.header-center').addClass('header-center-scroll');
-			if ($("#menu").hasClass('overlay')) {
-				
-			}else{
-				$('.header-center').addClass('header-center-scroll');
+		// 	if(height > 0){			
+		// 		// $('.header-center').addClass('header-center-scroll');
+		// 		if ($("#menu").hasClass('overlay')) {
+					
+		// 		}else{
+		// 			$('.header-center').addClass('header-center-scroll');
+		// 		}
+
+					
+		// 	} else{				
+		// 		$('.header-center').removeClass('header-center-scroll');		
+		// 	}
+		// });
+
+
+		//scroll up
+
+		$(window).scroll(function() {
+			var scrollTop = $(this).scrollTop();
+			var lastScrollTop = $(this).data('lastScrollTop');
+		  
+			if (scrollTop > lastScrollTop) {
+	
+				if ($("#menu").hasClass('overlay')) {
+					
+				}else{
+					$('.header-center').addClass('header-center-scroll');
+				}
+			} else {
+	
+			  $(".header-center").removeClass("header-center-scroll");
 			}
-
-				
-		} else{				
-			$('.header-center').removeClass('header-center-scroll');		
-		}
-	});
+		  
+			$(this).data('lastScrollTop', scrollTop);
+		});
 
 
 
@@ -216,30 +238,6 @@ $(function() {
 	}
 
 	
-
-
-
-	//scroll up
-
-	$(window).scroll(function() {
-		var scrollTop = $(this).scrollTop();
-		var lastScrollTop = $(this).data('lastScrollTop');
-	  
-		if (scrollTop > lastScrollTop) {
-
-		  $(".header-center").addClass("header-center-scroll");
-		} else {
-
-		  $(".header-center").removeClass("header-center-scroll");
-		}
-	  
-		$(this).data('lastScrollTop', scrollTop);
-	});
-
-
-
-
-
 
 
 	//products sale-badges
