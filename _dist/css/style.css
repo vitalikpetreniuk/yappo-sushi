@@ -3858,7 +3858,7 @@ p {
 .category-page,
 .resault-search {
   text-align: center;
-  padding: 30px 0 115px;
+  padding: 30px 0 160px;
 }
 
 .category-page .section__title:after,
@@ -3888,7 +3888,6 @@ p {
   text-align: center;
   color: #2A1A5E;
   margin-top: 45px;
-  margin-bottom: 78px;
 }
 
 .category-page .info-message h3,
@@ -9749,6 +9748,11 @@ p {
     transform: skew(-45deg, 0);
   }
 
+  .category-page,
+  .resault-search {
+    padding: 30px 0 90px;
+  }
+
   .category-page .section__title:after,
   .resault-search .section__title:after {
     right: 98%;
@@ -10703,7 +10707,7 @@ p {
 
   .category-page .cheked-wrap,
   .resault-search .cheked-wrap {
-    margin-top: -10px;
+    margin-top: 3rem;
   }
 
   .category-page .cheked-wrap .chaked-box,

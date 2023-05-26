@@ -1,7 +1,10 @@
 .category-page, .resault-search{
     text-align: center;
-    padding: 30px 0 115px;
+    padding: 30px 0 160px;
 
+    @include media-for (null, 1025px){
+        padding: 30px 0 90px;
+    } 
 
     .section__title{
     
@@ -54,7 +57,6 @@
         text-align: center;
         color: $accent;
         margin-top: 45px;
-        margin-bottom: 78px;
 
         @include media-for (null, $sm){
             margin-top: 10px;
@@ -109,7 +111,7 @@
         margin-bottom: 3rem;
 
         @include media-for (null, $sm){
-            margin-top: -10px;
+            margin-top: 3rem ;
          } 
 
         .chaked-box{
