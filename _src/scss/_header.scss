@@ -39,6 +39,21 @@
         transition:  margin-top  .3s;
         background-color: $text-white;
 
+        @media screen and (prefers-reduced-motion: reduce) {
+            transition-duration: 400ms;
+            -moz-animation-duration: 400ms;
+            -webkit-animation-duration: 400ms;
+            transition-property: all;
+            -moz-transition-property: all;
+            -webkit-transition-property: all;
+            animation-duration: 400ms;
+            -moz-animation-duration: 400ms;
+            -webkit-animation-duration: 400ms;
+            animation-timing-function: ease-in-out;
+            -moz-animation-timing-function: ease-in-out;
+            -webkit-animation-timing-function: ease-in-out;
+        }
+
         @include media-for (null, $sm){
             padding: 17px 0;
             // transition: none;

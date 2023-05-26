@@ -10919,6 +10919,26 @@ p {
   }
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  .header .header-center {
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -moz-animation-duration: 400ms;
+    -webkit-animation-duration: 400ms;
+    -o-transition-property: all;
+    transition-property: all;
+    -moz-transition-property: all;
+    -webkit-transition-property: all;
+    animation-duration: 400ms;
+    -moz-animation-duration: 400ms;
+    -webkit-animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
 @media (min-height: 0px) and (max-height: 843px) {
   .page-404 {
     padding: 15px 0 30px;
