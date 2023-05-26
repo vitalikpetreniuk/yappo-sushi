@@ -9765,6 +9765,11 @@ p {
     right: 98%;
   }
 
+  .categories-business-lunch .card-info h3 {
+    margin-top: 0px;
+    font-size: 24px;
+  }
+
   .menu-page {
     min-height: 72vh;
     height: 72vh;
@@ -10062,6 +10067,7 @@ p {
 
   .categories-business-lunch .card-info h3 {
     margin-top: 30px;
+    font-size: 21px;
   }
 
   .menu-page {

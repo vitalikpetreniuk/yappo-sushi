@@ -20,9 +20,15 @@
             font-family: 'DelaGothicOne';
             margin-top: 85px;
             line-height: 150%;
+
+            @include media-for (null, 1025px){
+                margin-top: 0px;
+                font-size: 24px;
+            }
             
             @include media-for (null, $tablet){
                 margin-top: 30px;
+                font-size: 21px;
             }
 
             @include media-for (null, $sm){
