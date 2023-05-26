@@ -263,7 +263,11 @@
             @include media-for (null, $sm){
                 padding: 12px 10px;
                 width: 164px;
-            }   
+            } 
+            
+            @include media-for (415px, null){
+                width: 170px;
+            } 
 
             @include media-for (null, 415px){
                 width: 182px;

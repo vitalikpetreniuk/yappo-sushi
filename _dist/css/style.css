@@ -4667,6 +4667,12 @@ p {
   margin-bottom: 20px;
 }
 
+@media (min-width: 415px) {
+  .filter-wrap .col-two label {
+    width: 170px;
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
