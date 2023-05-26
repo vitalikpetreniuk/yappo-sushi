@@ -1641,6 +1641,11 @@ p {
   overflow: hidden;
 }
 
+.for-main-overflow {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .put-up::before {
   opacity: 1;
   height: 100%;
@@ -2757,6 +2762,8 @@ p {
   padding-bottom: 24px;
   text-align: center;
   overflow-x: scroll;
+  height: 100%;
+  padding-bottom: 4rem;
 }
 
 #menu .time-wrap {

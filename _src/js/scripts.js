@@ -23,7 +23,7 @@ $(function() {
 
 	$('.burger').on('click', function () {	
 		$('#menu').toggleClass('overlay');
-		$('main').toggleClass('overflow');
+		$('main').toggleClass('for-main-overflow');
 		$("main").toggleClass('put-up')
 		$(this).toggleClass('burger-active');
 
@@ -31,7 +31,7 @@ $(function() {
 
 	$('main').on('click', function () {	
 		$(this).removeClass('put-up');
-		$('main').removeClass('overflow');
+		$('main').removeClass('for-main-overflow');
 		$('#menu').removeClass('overlay');
 		$('.burger').removeClass('burger-active')
 	})

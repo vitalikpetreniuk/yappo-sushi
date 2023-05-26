@@ -11,7 +11,8 @@
     padding-bottom: 24px;
     text-align: center;
     overflow-x: scroll;
-    
+    height: 100%;
+    padding-bottom: 4rem;
 
     @include media-for (null, $sm){
         display: block;
