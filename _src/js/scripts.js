@@ -100,6 +100,7 @@ $(function() {
 
 	$('.filter-btn-open').on('click', function () {	
 		$('.filter-options').addClass('filter-options-active');
+		$('.filter-options').css('margin-bottom', '0')
 		$('.filter-wrap').addClass('filter-wrap-active');
 		$('.widget-btns').css("left", "-100%");
 		$('.cheked-wrap').css("margin-top", "3rem");
@@ -110,10 +111,10 @@ $(function() {
 		$('.filter-options').removeClass('filter-options-active');
 		$('.filter-wrap').removeClass('filter-wrap-active');
 		$('.widget-btns').css("left", "0%");
+		$('.filter-options').css('margin-bottom', '30px')
 
 		if( window.innerWidth >= 600){
 			$('.cheked-wrap').css("margin-top", "6rem");
-			
 		}
 		else{
 			$('.cheked-wrap').css("margin-top", "3rem");
