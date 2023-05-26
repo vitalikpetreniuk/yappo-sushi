@@ -5,25 +5,6 @@ $(function() {
 		
 		//scroll up
 
-		// $(window).scroll(function() {
-		// 	var scrollTop = $(this).scrollTop();
-		// 	var lastScrollTop = $(this).data('lastScrollTop');
-		  
-		// 	if (scrollTop > lastScrollTop) {
-	
-		// 		if ($("#menu").hasClass('overlay')) {
-					
-		// 		}else{
-		// 			$('.header-center').addClass('header-center-scroll');
-		// 		}
-		// 	} else {
-	
-		// 	  $(".header-center").removeClass("header-center-scroll");
-		// 	}
-		  
-		// 	$(this).data('lastScrollTop', scrollTop);
-		// });
-
 		$(window).scroll(function() {
 			var scrollTop = $(this).scrollTop();
 			var lastScrollTop = $(this).data('lastScrollTop');
@@ -117,7 +98,7 @@ $(function() {
 	$(".inp-regulation").click(function() {
         var input = $(this);
         var value = input.val();
-        input.val("").val(value); // Встановити пусте значення, а потім повернути початкове значення
+        input.val("").val(value); 
     });
 
 
@@ -302,6 +283,7 @@ $(function() {
 
 
 	//при посадці стерти,це тестове
+	
 	var miniCartCount = $(".mini-cart-count");
     miniCartCount.text("+");
 
