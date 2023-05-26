@@ -2469,8 +2469,7 @@ p {
   right: 20px;
   opacity: 0;
   z-index: -1;
-  width: 64px;
-  height: 64px;
+  width: 106px;
   background-color: #FF671D;
   border-radius: 27px;
   display: -webkit-box;
@@ -2482,7 +2481,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
+  padding: 16px 0;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
@@ -2492,6 +2491,14 @@ p {
 
 .product__item .product__cart .btn-primary:hover {
   background-color: #FF7937;
+}
+
+.product__item .product__cart .btn-primary span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffff;
+  font-weight: 700;
+  margin-right: 12px;
 }
 
 .sale-bage-wrap {
@@ -10321,9 +10328,8 @@ p {
   }
 
   .product__item .product__cart .btn-primary {
-    width: 46px;
-    height: 46px;
-    border-radius: 19px;
+    width: 89px;
+    border-radius: 24px;
   }
 
   .product__item .product__cart .btn-primary svg {
