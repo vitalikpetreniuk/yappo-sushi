@@ -9,8 +9,13 @@ $(function() {
 		var height = $(window).scrollTop();		
 
 		if(height > 0){			
-			$('.header-center').addClass('header-center-scroll');
-			
+			// $('.header-center').addClass('header-center-scroll');
+			if ($("#menu").hasClass('overlay')) {
+				
+			}else{
+				$('.header-center').addClass('header-center-scroll');
+			}
+
 				
 		} else{				
 			$('.header-center').removeClass('header-center-scroll');		
@@ -26,6 +31,7 @@ $(function() {
 		$('main').toggleClass('for-main-overflow');
 		$("main").toggleClass('put-up')
 		$(this).toggleClass('burger-active');
+		// header-center
 
 	})
 
