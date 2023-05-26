@@ -48,13 +48,13 @@ $(function() {
 			var scrollTop = $(this).scrollTop();
 			var lastScrollTop = $(this).data('lastScrollTop');
 			
-			if (scrollTop > lastScrollTop && scrollTop - lastScrollTop > 15) {
+			if (scrollTop > lastScrollTop && scrollTop - lastScrollTop > 10) {
 			  if ($("#menu").hasClass('overlay')) {
 				
 			  } else {
 				$('.header-center').addClass('header-center-scroll');
 			  }
-			} else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 15) {
+			} else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
 			}
 			
