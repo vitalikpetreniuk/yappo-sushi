@@ -19,6 +19,7 @@ body{
     @include media-for (null, $sm){
         overflow-x: hidden;
         padding-top: 175px;
+        overscroll-behavior-block: none;
     }
 }
 
@@ -32,7 +33,7 @@ main{
     position: relative;
     overflow-x: hidden;
     transition: all .2s ease;
-
+    overscroll-behavior-block: none;
     &::before{
         position: absolute;
         content: '';

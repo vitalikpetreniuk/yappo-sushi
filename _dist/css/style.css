@@ -1555,6 +1555,7 @@ main {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  overscroll-behavior-block: none;
 }
 
 main::before {
@@ -10052,6 +10053,7 @@ p {
   body {
     overflow-x: hidden;
     padding-top: 175px;
+    overscroll-behavior-block: none;
   }
 
   .container-fluid,
