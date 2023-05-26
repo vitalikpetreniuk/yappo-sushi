@@ -1642,7 +1642,7 @@ p {
 }
 
 .for-main-overflow {
-  height: 100vh;
+  height: 20vh;
   overflow: hidden;
 }
 
