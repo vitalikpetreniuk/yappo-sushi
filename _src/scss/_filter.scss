@@ -155,6 +155,10 @@
                 height: 6px;
                 border-radius: 10px;
 
+                @include media-for (null, $sm){
+                    width: 90%;
+                }
+
                 .ui-slider-range {
                     position: absolute;
                     top: 50% !important;
