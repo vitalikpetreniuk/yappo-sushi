@@ -107,13 +107,14 @@
              
             input{
                 width: 115px;
-                height: 23px;
+                height: 30px;
                 border: none;
                 outline: none;
                 border-bottom: 1px solid $accent;
                 color: $text-black;
                 text-align: left;
-
+                border-radius: 0;
+         
                 @include media-for (null, $sm){
                     width: 120px;
                 }

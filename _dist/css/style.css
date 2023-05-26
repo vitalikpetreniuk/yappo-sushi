@@ -3095,12 +3095,13 @@ p {
 
 .filter-wrap .filter-options .filter__slider-control-group input {
   width: 115px;
-  height: 23px;
+  height: 30px;
   border: none;
   outline: none;
   border-bottom: 1px solid #2A1A5E;
   color: #262730;
   text-align: left;
+  border-radius: 0;
 }
 
 .filter-wrap .filter-options .filter__slider-control-group .filter__slider-control-column:first-child input {
