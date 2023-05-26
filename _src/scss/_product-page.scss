@@ -45,8 +45,8 @@
 
         .sale-badge{
             @include media-for (null, 993px){
-                top: 2rem;
-                right: 2rem;
+                top: .8rem;
+                right: .8rem;
             }
 
             @include media-for (null, 993px){

@@ -9876,8 +9876,8 @@ p {
   }
 
   .product-top .product-img-wrap .sale-badge {
-    top: 2rem;
-    right: 2rem;
+    top: 0.8rem;
+    right: 0.8rem;
   }
 }
 

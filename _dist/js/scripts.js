@@ -365,20 +365,23 @@ $(function() {
 
 	//quantity-input
 	  
-	  $('.plus').click(function() {
-		var input = $('#quantity-input');
-		var value = parseInt(input.val());
-		input.val(value + 1);
-	  });
-	
-	  
-	  $('.minus').click(function() {
-		var input = $('#quantity-input');
-		var value = parseInt(input.val());
-		if (value > 1) {
-		  input.val(value - 1);
-		}
-	  });
+	var quantityInput = document.getElementById('quantity-input');
+	var increaseBtn = document.querySelector('.plus');
+	var decreaseBtn = document.querySelector('.minus');
+  
+	increaseBtn.addEventListener('click', function() {
+	  var currentValue = parseInt(quantityInput.value);
+	  quantityInput.value = currentValue + 1;
+	});
+  
+	decreaseBtn.addEventListener('click', function() {
+	  var currentValue = parseInt(quantityInput.value);
+	  if (currentValue > 1) {
+		quantityInput.value = currentValue - 1;
+	  }
+	});
+  
+	quantityInput.style.MozAppearance = 'textfield';
 
 
 
