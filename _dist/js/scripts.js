@@ -50,8 +50,12 @@ $(function() {
 		$('main').toggleClass('for-main-overflow');
 		$("main").toggleClass('put-up')
 		$(this).toggleClass('burger-active');
-		// header-center
 
+		if ($(this).hasClass('burger-active')) {
+			$("footer").css('display','none')
+		} else {
+			$("footer").css('display','block')
+		}
 	})
 
 	$('main').on('click', function () {	
