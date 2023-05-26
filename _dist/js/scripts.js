@@ -3,26 +3,6 @@ var $ = jQuery;
 $(function() {
 // custom scripts
 		
-		//scroll header
-
-		// $(window).on("scroll",function() {
-		// 	var height = $(window).scrollTop();		
-
-		// 	if(height > 0){			
-		// 		// $('.header-center').addClass('header-center-scroll');
-		// 		if ($("#menu").hasClass('overlay')) {
-					
-		// 		}else{
-		// 			$('.header-center').addClass('header-center-scroll');
-		// 		}
-
-					
-		// 	} else{				
-		// 		$('.header-center').removeClass('header-center-scroll');		
-		// 	}
-		// });
-
-
 		//scroll up
 
 		// $(window).scroll(function() {
@@ -127,6 +107,14 @@ $(function() {
 		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
 		console.log('click')
 	});
+
+
+
+	$(".inp-regulation").click(function() {
+        var input = $(this);
+        var value = input.val();
+        input.val("").val(value); // Встановити пусте значення, а потім повернути початкове значення
+    });
 
 
 
