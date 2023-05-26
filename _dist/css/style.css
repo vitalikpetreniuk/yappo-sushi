@@ -4667,12 +4667,6 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 415px) {
-  .filter-wrap .col-two label {
-    width: 170px !important;
-  }
-}
-
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -10459,7 +10453,7 @@ p {
 
   .filter-wrap .col-two label {
     padding: 12px 10px;
-    width: 164px;
+    width: 200px;
   }
 
   .filter-wrap .col-two .filter__properties-item {
@@ -10894,7 +10888,7 @@ p {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 423px) {
   .filter-wrap .col-two label {
     width: 182px;
   }
