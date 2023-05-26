@@ -14,6 +14,8 @@ $(function() {
 				
 			  } else {
 				$('.header-center').addClass('header-center-scroll');
+				$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
+				$('.burger-desck').removeClass('burger-active');
 			  }
 			} else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
@@ -127,6 +129,11 @@ $(function() {
 
 
 
+	$('.burger-desck').on('click', function () {	
+		$(this).toggleClass('burger-active');
+		$(".btns-wrap-header-menu").toggleClass('btns-wrap-header-menu-active');
+
+	})
 
 
 

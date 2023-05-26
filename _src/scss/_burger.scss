@@ -1,4 +1,4 @@
-.burger{
+.burger,.burger-desck{
     position: relative;
     cursor: pointer;
     width: 21px;
@@ -28,6 +28,13 @@
             width: 14px;
         }
     } 
+}
+.burger-desck{
+    display: block;
+    z-index: 3;
+    @include media-for (null, $sm){
+        display: none;
+    }
 }
 
 .burger-active{
