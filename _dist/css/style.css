@@ -4669,7 +4669,7 @@ p {
 
 @media (min-width: 415px) {
   .filter-wrap .col-two label {
-    width: 170px;
+    width: 170px !important;
   }
 }
 

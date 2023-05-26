@@ -266,7 +266,7 @@
             } 
             
             @include media-for (415px, null){
-                width: 170px;
+                width: 170px !important;
             } 
 
             @include media-for (null, 415px){
