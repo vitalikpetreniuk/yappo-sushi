@@ -606,12 +606,10 @@
     .search-wrap{
         position: absolute;
         right: 0;
-        height: 100%;
         background-color: $text-white;
         top: 0;
         display: flex;
         align-items: center;
-        padding-left: 1rem;
         transition: all .3s ease-in-out; 
         right: 0;
         opacity: 0;
@@ -648,7 +646,7 @@
 
             input{
                 width: 13rem;
-                padding-top: 1rem;
+      
 
                 @include media-for (null, $sm){
                     width: 7rem;

@@ -2266,7 +2266,6 @@ p {
 .form-search .search-wrap {
   position: absolute;
   right: 0;
-  height: 100%;
   background-color: #ffff;
   top: 0;
   display: -webkit-box;
@@ -2275,7 +2274,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2316,7 +2314,6 @@ p {
 
 .form-search .search-wrap-active form input {
   width: 13rem;
-  padding-top: 1rem;
 }
 
 .footer {
