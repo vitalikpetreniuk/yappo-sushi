@@ -10746,6 +10746,7 @@ p {
   .cart-modal {
     width: 86%;
     height: 80vh;
+    padding-bottom: 8rem;
   }
 
   .cart-modal .cart__preview-item .cart__detail .product__cart {
@@ -11427,6 +11428,11 @@ p {
   .cart-modal {
     height: 82vh;
   }
+
+  .cart-modal {
+    height: 82vh;
+    padding-bottom: 12rem;
+  }
 }
 
 @media (width: 375px) and (height: 667px) {
@@ -11438,6 +11444,13 @@ p {
 @media (width: 360px) and (height: 740px) {
   .cart-modal {
     height: 77vh;
+  }
+}
+
+@media (width: 390px) and (height: 844px) {
+  .cart-modal {
+    height: 80vh;
+    width: 100%;
   }
 }
 

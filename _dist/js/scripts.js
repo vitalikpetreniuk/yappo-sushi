@@ -447,6 +447,7 @@ $(document).ready(function() {
 		$('.cart-modal').toggleClass('cart-modal-active');
 		$('main').toggleClass('put-up');
 		$('body').toggleClass('overflow');
+		$('.header-center').removeClass('header-center-scroll');
 
 		if ($('.cart-modal').hasClass('cart-modal-active')) {
 			$('.widget-btns').css("left", "-100%");

@@ -60,6 +60,7 @@
     @include media-for (null, $sm){
         width: 86%;
         height: 80vh;
+        padding-bottom: 8rem;
 
     }
 
@@ -67,7 +68,10 @@
         height: 82vh;
     }
 
-
+    @media (width: 414px) and (height: 896px) {
+        height: 82vh;
+        padding-bottom: 12rem;
+    }
 
     @media (width: 375px) and (height: 667px) {
         height: 75vh;
@@ -75,6 +79,11 @@
 
     @media (width: 360px) and (height: 740px) {
         height: 77vh;
+    }
+
+    @media (width: 390px) and (height: 844px) {
+        height: 80vh;
+        width: 100%;
     }
 
     @media (width: 320px) and (height: 533px) {
