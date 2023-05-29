@@ -3086,6 +3086,7 @@ p {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 100;
 }
 
 .cart-modal h4 {
@@ -3095,6 +3096,59 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #2A1A5E;
+  margin-bottom: 32px;
+}
+
+.cart-modal .weight {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 13px;
+}
+
+.cart-modal .cart__preview-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-modal .cart__preview-item .cart__img {
+  width: 35%;
+}
+
+.cart-modal .cart__preview-item .cart__img img {
+  width: 100%;
+}
+
+.cart-modal .cart__preview-item .cart__detail {
+  width: 65%;
+}
+
+.cart-modal .cart__preview-item .cart__detail h5 {
+  font-size: 14px;
+  color: #2A1A5E;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.cart-modal .cart__preview-item .cart__detail .cart__detail__header {
+  position: relative;
+}
+
+.cart-modal .cart__preview-item .cart__detail .cart__detail__header .remove-button {
+  position: absolute;
+  right: 1rem;
+  top: 0rem;
+  cursor: pointer;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-modal .cart__preview-item .cart__detail .quantity {
+  margin: 0;
 }
 
 .cart-modal-active {
@@ -3723,58 +3777,6 @@ p {
   margin-bottom: 22px;
 }
 
-.product-top .quantity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 25px 0 30px;
-}
-
-.product-top .quantity input {
-  border: none;
-  outline: none;
-  width: 40px;
-  text-align: center;
-  color: #262730;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.product-top .quantity button {
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #D9D9D9;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #2A1A5E;
-  padding: 0;
-}
-
-.product-top .quantity button:hover {
-  background-color: #F5F5F5;
-}
-
-.product-top .quantity .plus {
-  padding-bottom: 0px;
-}
-
-.product-top .quantity .minus {
-  padding-bottom: 3px;
-}
-
 .product-top .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3916,6 +3918,58 @@ p {
 .product-top .storefront-product-pagination .hover-box .link-next,
 .product-top .storefront-product-pagination .hover-box .link-prev {
   display: block;
+}
+
+.quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0 30px;
+}
+
+.quantity input {
+  border: none;
+  outline: none;
+  width: 40px;
+  text-align: center;
+  color: #262730;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.quantity button {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #D9D9D9;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2A1A5E;
+  padding: 0;
+}
+
+.quantity button:hover {
+  background-color: #F5F5F5;
+}
+
+.quantity .plus {
+  padding-bottom: 0px;
+}
+
+.quantity .minus {
+  padding-bottom: 3px;
 }
 
 .prosuct-like {
@@ -10802,14 +10856,6 @@ p {
     font-size: 20px;
   }
 
-  .product-top .quantity {
-    margin: 20px 0 12px;
-  }
-
-  .product-top .quantity .plus {
-    padding-bottom: 2px;
-  }
-
   .product-top .button {
     width: 100%;
     -webkit-box-align: center;
@@ -10845,6 +10891,14 @@ p {
   .product-top .surprise h4 {
     margin: 0;
     font-size: 14px;
+  }
+
+  .quantity {
+    margin: 20px 0 12px;
+  }
+
+  .quantity .plus {
+    padding-bottom: 2px;
   }
 
   .prosuct-like {

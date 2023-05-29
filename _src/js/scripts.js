@@ -349,20 +349,26 @@ $(function() {
 
 	//quantity-input
 	  
-	var quantityInput = document.getElementById('quantity-input');
-	var increaseBtn = document.querySelector('.plus');
-	var decreaseBtn = document.querySelector('.minus');
-  
-	increaseBtn.addEventListener('click', function() {
-	  var currentValue = parseInt(quantityInput.value);
-	  quantityInput.value = currentValue + 1;
+	var quantityInputs = document.querySelectorAll('.quantity-input');
+	var increaseBtns = document.querySelectorAll('.plus');
+	var decreaseBtns = document.querySelectorAll('.minus');
+	
+	increaseBtns.forEach(function(btn) {
+	  btn.addEventListener('click', function() {
+		var quantityInput = this.parentNode.querySelector('.quantity-input');
+		var currentValue = parseInt(quantityInput.value);
+		quantityInput.value = currentValue + 1;
+	  });
 	});
-  
-	decreaseBtn.addEventListener('click', function() {
-	  var currentValue = parseInt(quantityInput.value);
-	  if (currentValue > 1) {
-		quantityInput.value = currentValue - 1;
-	  }
+	
+	decreaseBtns.forEach(function(btn) {
+	  btn.addEventListener('click', function() {
+		var quantityInput = this.parentNode.querySelector('.quantity-input');
+		var currentValue = parseInt(quantityInput.value);
+		if (currentValue > 1) {
+		  quantityInput.value = currentValue - 1;
+		}
+	  });
 	});
   
 	quantityInput.style.MozAppearance = 'textfield';

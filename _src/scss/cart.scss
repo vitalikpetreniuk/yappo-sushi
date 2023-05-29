@@ -9,6 +9,7 @@
     height: 100vh;
     border-top: 1px solid $bg-gray;
     transition: all .3s ease-in-out;
+    z-index: 100;
 
     h4{
         font-size: 14px;
@@ -17,6 +18,55 @@
         text-transform: uppercase;
         text-align: center;
         color: $accent;
+        margin-bottom: 32px;
+    }
+
+    .weight{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 13px;
+    }
+
+    .cart__preview-item{
+        display: flex;
+
+        .cart__img{
+            width: 35%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .cart__detail{
+            width: 65%;
+
+            h5{
+                font-size: 14px;
+                color: $accent;
+                font-weight: 700;
+                padding-top: 1rem;
+            } 
+
+            .cart__detail__header{
+                position: relative;
+
+                .remove-button{
+                    position: absolute;
+                    right: 1rem;
+                    top: 0rem;
+                    cursor: pointer;
+                }
+            }
+
+            .product__cart{
+                display: flex;
+            }
+
+            .quantity{
+                margin: 0;
+            }
+        }
     }
 }
 
