@@ -6,15 +6,80 @@
     right: -200%;
     padding-top: 25px;
     background-color: $text-white;
-    height: 81vh;
+    height: 82vh;
     border-top: 1px solid $bg-gray;
     transition: all .3s ease-in-out;
     z-index: 100;
     overflow-y: auto;
 
+    @media (width: 2580px) and (height: 1080px) {
+        height: 82vh;
+    }
+
+    @media (width: 2580px) and (height: 1440px) {
+        height: 84vh;
+    }
+
+    @media (width: 2048px) and (height: 1080px) {
+        height: 84vh;
+    }
+
+    @media (width: 2048px) and (height: 1152px) {
+        height: 86vh;
+    }
+
+    @media (width: 1920px) and (height: 1080px) {
+        height: 82vh;
+    }
+
+    @media (width: 1920px) and (height: 1200px) {
+        height: 84vh;
+    }
+
     @include media-for (null, 1367px){
         height: 74vh;
     }
+
+    @media (width: 1280px) and (height: 1024px) {
+        height: 81vh;
+    }
+
+    @media (width: 1280px) and (height: 800px) {
+        height: 75vh;
+    }
+
+    @include media-for (null, 913px){
+        height: 85vh;
+    }
+
+    @include media-for (null, 1025px){
+        height: 84vh;
+    }
+
+
+    @include media-for (null, $sm){
+        width: 86%;
+        height: 80vh;
+
+    }
+
+    @media (width: 414px) and (height: 896px) {
+        height: 82vh;
+    }
+
+    @media (width: 375px) and (height: 667px) {
+        height: 75vh;
+    }
+
+
+
+
+
+
+
+    
+
+
 
     h4{
         font-size: 14px;
@@ -114,12 +179,19 @@
                 display: flex;
                 justify-content: space-between;
                 padding-right: 1rem;
-
+                @include media-for (null, $sm){
+                    font-size: 12px;
+   
+                }
                 .product__cart__info{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
 
+                    @include media-for (null, $sm){
+                        margin-left: .5rem;
+       
+                    }
                     .price{
                         font-weight: 700;
                         font-size: 20px; 
@@ -150,7 +222,7 @@
 
         
                         @include media-for (null, $sm){
-                            font-size: 14px;
+                            font-size: 12px;
            
                         }
                     }
@@ -160,6 +232,13 @@
 
             .quantity{
                 margin: 0;
+
+                input{
+                    @include media-for (null, $sm){
+                        width: 30px;
+       
+                    }
+                }
             }
         }
 
@@ -193,12 +272,14 @@
 
 
     .local-wrap{
+        background-color: $text-white;
         color: rgba($color: #323549, $alpha: .7);
         margin-top: 10px;
         a{
             color: rgba($color: #323549, $alpha: .7); 
             text-align: center;
             display: block;
+            background-color: $text-white;
         }
     }
 }
