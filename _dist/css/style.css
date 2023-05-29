@@ -11428,7 +11428,9 @@ p {
   .cart-modal {
     height: 82vh;
   }
+}
 
+@media (width: 428px) and (height: 926px) {
   .cart-modal {
     height: 82vh;
     padding-bottom: 12rem;
