@@ -442,11 +442,16 @@ $(document).ready(function() {
 
 
 	//cart modal
-	$('.fix-cart').on('click', function() {
+
+	function toggleCart() {
 		$('.cart-modal').toggleClass('cart-modal-active');
 		$('main').toggleClass('put-up');
 		$('body').toggleClass('overflow');
-	});
+	  }
+	  
+	  $('.fix-cart').on('click', toggleCart);
+	  $('.cart-header').on('click', toggleCart);
+
 
 });
 
