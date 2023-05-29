@@ -1,6 +1,6 @@
 .cart-page{
     padding: 70px 0 120px;
-    
+
     .breadcrumbs{
         color: $accent;
     }
@@ -12,4 +12,127 @@
             display: none;
         }
     }
+
+    .title-step{
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'DelaGothicOne';
+        color: $accent;
+
+        span{
+            position: absolute;
+            left: -4%;
+            top: 50%;
+            width: 41px;
+            height: 41px;
+            transform: translateY(-50%);
+            background-color: #B3BCF3;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            
+            color: $accent;
+        }
+    }
+
+    input{
+        outline: none;
+        margin-top: 30px;
+        padding-bottom: .3rem;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: .25);
+    }
+
+    .quantity{
+        margin: 0;
+        input{
+            border: none;
+            width: 3rem;
+            margin: 0;
+        }
+    }
+
+    .quantity-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .select-wrap{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $accent;
+        border-radius: 24px;
+        margin: 30px 0 60px;
+        height: 84px;
+        padding-right: 26px;
+        cursor: pointer;
+
+        .img-wrap-local{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 70px;
+        }
+        .select-dropdown{
+            margin-bottom: 0;
+            position: initial;
+        }
+
+        .select-dropdown__button{
+            border-bottom: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .choose-city{
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba($color: #323549, $alpha: .7);
+        }
+
+        .city{
+            font-size: 16px;
+            font-weight: 700;
+            color: $accent;
+            display: block;
+        }
+
+        .region{
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba($color: #323549, $alpha: .7);
+            display: block;
+        }
+
+        .select-dropdown__list {
+            top: 101%;
+
+            .select-dropdown__list-item{
+                border-top: none;
+                border-bottom: 1px solid $accent;
+            }
+        }
+
+        .arrow-rotate{
+            transition: all .2s ease-in-out;
+        }
+
+        .arrow-active-rotate{
+            transform: rotate(90deg);
+        }
+    }
+
+
 }

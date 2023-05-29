@@ -411,6 +411,11 @@ $(function() {
 		$('.select-dropdown__list').removeClass('active');
 	});
 
+
+	$('.select-wrap').on('click', function() {
+		$(".select-dropdown__list").toggleClass('active');
+		$(".arrow-rotate").toggleClass('arrow-active-rotate');
+	});
 	
 
 })
