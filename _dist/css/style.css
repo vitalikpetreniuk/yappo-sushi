@@ -11434,3 +11434,16 @@ p {
     height: 75vh;
   }
 }
+
+@media (width: 360px) and (height: 740px) {
+  .cart-modal {
+    height: 77vh;
+  }
+}
+
+@media (width: 320px) and (height: 533px) {
+  .cart-modal {
+    height: 69vh;
+    width: 100%;
+  }
+}
