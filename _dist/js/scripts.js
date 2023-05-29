@@ -46,6 +46,7 @@ $(function() {
 		$('main').removeClass('for-main-overflow');
 		$('#menu').removeClass('overlay');
 		$('.burger').removeClass('burger-active')
+		$('.cart-modal').removeClass('cart-modal-active')
 	})
 
 

@@ -1537,7 +1537,7 @@ body {
   transition: all 0.2s ease-in;
   position: relative;
   overflow-x: hidden;
-  padding-top: 240.5px;
+  padding-top: 201.5px;
 }
 
 body::-webkit-scrollbar {
