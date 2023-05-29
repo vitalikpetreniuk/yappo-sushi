@@ -371,7 +371,7 @@ $(function() {
 	  });
 	});
   
-	quantityInputs.style.MozAppearance = 'textfield';
+	// quantityInputs.style.MozAppearance = 'textfield';
 
 
 
@@ -460,6 +460,9 @@ $(document).ready(function() {
 	  $('.cart-header').on('click', toggleCart);
 
 
+
+	  //jq-mask
+	  $("#phone-number-your").mask("(+380) 99-999-99-99", { placeholder: "(+380)"});
 });
 
 

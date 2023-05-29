@@ -1883,6 +1883,85 @@ p {
   border: none;
 }
 
+.select-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.select-dropdown__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0 10px 0;
+  background-color: #fff;
+  color: rgba(50, 53, 73, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+}
+
+.select-dropdown__button:focus {
+  outline: none;
+}
+
+.select-dropdown__button .zmdi-chevron-down {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.select-dropdown__list {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(1, 0);
+      -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+}
+
+.select-dropdown__list.active {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.select-dropdown__list-item {
+  display: block;
+  list-style-type: none;
+  padding: 10px 15px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  color: rgba(50, 53, 73, 0.7);
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -4295,84 +4374,11 @@ p {
 }
 
 .contacts .form-wrap .select-dropdown {
-  position: relative;
-  display: inline-block;
   width: 170px;
-  margin-bottom: 3rem;
 }
 
 .contacts .form-wrap .select-dropdown__button {
   width: 170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 0 10px 0;
-  background-color: #fff;
-  color: rgba(50, 53, 73, 0.7);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  text-align: left;
-  font-size: 14px;
-}
-
-.contacts .form-wrap .select-dropdown__button::focus {
-  outline: none;
-}
-
-.contacts .form-wrap .select-dropdown__button .zmdi-chevron-down {
-  position: absolute;
-  right: 10px;
-  top: 12px;
-}
-
-.contacts .form-wrap .select-dropdown__list {
-  position: absolute;
-  display: block;
-  left: 0;
-  right: 0;
-  max-height: 300px;
-  overflow: auto;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: scale(1, 0);
-      -ms-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-}
-
-.contacts .form-wrap .select-dropdown__list.active {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-
-.contacts .form-wrap .select-dropdown__list-item {
-  display: block;
-  list-style-type: none;
-  padding: 10px 15px;
-  background: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
-  font-size: 14px;
-  line-height: 1.4;
-  cursor: pointer;
-  color: rgba(50, 53, 73, 0.7);
-  -webkit-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
 }
 
 .privacy-policy,
@@ -4957,6 +4963,23 @@ p {
 
 .cart-modal-active {
   right: 0;
+}
+
+.cart-page {
+  padding: 70px 0 120px;
+}
+
+.cart-page .breadcrumbs {
+  color: #2A1A5E;
+}
+
+.cart-page .section__title {
+  margin: 0;
+}
+
+.cart-page .section__title::before,
+.cart-page .section__title::after {
+  display: none;
 }
 
 @media (min-width: 576px) {

@@ -1084,7 +1084,189 @@
 	<main class="main">
 
         <section class="cart-page">
-            
+
+            <div class="container-fluid">
+
+                <div class="row align-items-center mb-md-5 mb-4">
+
+                    <div class="col-12 d-flex align-items-center">
+						<ul class="breadcrumbs">
+							<li>
+								<a href="https://vitalikpetreniuk.github.io/yappo-sushi/">
+									<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.14173 1.14173L1.00008 7.09757L9.14173 13.3544" stroke="#2A1A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+								</a>
+							</li>
+		
+						</ul>
+
+                        <h1 class="section__title">
+                            ОФОРМЛЕННЯ ЗАМОВЛЕННЯ
+                        </h1>
+                    </div>
+
+                  
+
+                </div>
+
+                <form name="checkout" method="post" class="checkout woocommerce-checkout" action="https://yapposushi.com/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+
+                    <div class="title-step">
+                        <span>
+                            1
+                        </span>
+                        <h3>
+                            Ваші дані
+                        </h3>
+                    </div>
+
+                    <div class="inputs-wrap">
+
+                        <input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="Ім'я" value="" >
+
+                        <input id="phone-number-your" type="tel">
+
+                    </div>
+
+                    <div class="inputs-wrap">
+                        
+                        <div class="select-dropdown">
+                            <div role="button" data-value="" class="select-dropdown__button">
+                                <span>Місто</span> 
+                                <div class="img-wrap">
+                                    <img src="img/select-arrow.svg" alt="select-arrow">
+                                </div>
+                            </div>
+                            <ul class="select-dropdown__list">
+                                <li data-value="1" class="select-dropdown__list-item">Item 1</li>
+                                <li data-value="2" class="select-dropdown__list-item">Item 2</li>
+                                <li data-value="3" class="select-dropdown__list-item">Item 3</li>
+                                <li data-value="4" class="select-dropdown__list-item">Item 4</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    
+                            
+                            
+                            
+                        <h3 id="order_review_heading">Ваше замовлення</h3>
+                        
+                        
+                        <div id="order_review" class="woocommerce-checkout-review-order">
+                            <table class="shop_table woocommerce-checkout-review-order-table">
+                        <thead>
+                            <tr>
+                                <th class="product-name">Замовлення</th>
+                                <th class="product-total">Вартість</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                            <tr class="cart_item">
+                                        <td class="product-name">
+                                            Токіо&nbsp;						 <strong class="product-quantity">×&nbsp;1</strong>											</td>
+                                        <td class="product-total">
+                                            <span class="woocommerce-Price-amount amount"><bdi>549&nbsp;<span class="woocommerce-Price-currencySymbol">грн</span></bdi></span>					</td>
+                                    </tr>
+                                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            Cold Fish&nbsp;						 <strong class="product-quantity">×&nbsp;1</strong>											</td>
+                                        <td class="product-total">
+                                            <span class="woocommerce-Price-amount amount"><bdi>499&nbsp;<span class="woocommerce-Price-currencySymbol">грн</span></bdi></span>					</td>
+                                    </tr>
+                                        </tbody>
+                        <script>
+                            if (!checkoutstat) {
+                                dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+                                dataLayer.push({
+                                    event: "begin_checkout",
+                                    ecommerce: {
+                                        items: [{item_name: "Головна сторінка",item_id: 141,price: 549,item_category: "",item_list_name: "Checkout",item_list_id: "SR141",index: 0,quantity: 1}
+                    , {item_name: "Головна сторінка",item_id: 141,price: 499,item_category: "",item_list_name: "Checkout",item_list_id: "SR141",index: 1,quantity: 1}
+                    ]
+                                    }
+                                });
+                                var checkoutstat = true;
+                            }
+                        </script>
+                        <tfoot>
+                    
+                            <tr class="cart-subtotal">
+                                <th>Вартість</th>
+                                <td><span class="woocommerce-Price-amount amount"><bdi>1048&nbsp;<span class="woocommerce-Price-currencySymbol">грн</span></bdi></span></td>
+                            </tr>
+                    
+                            
+                            
+                                
+                                <tr class="woocommerce-shipping-totals shipping">
+                        <th>Доставка</th>
+                        <td data-title="Доставка">
+                                        <ul id="shipping_method" class="woocommerce-shipping-methods">
+                                                        <li>
+                                            <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate3" value="flat_rate:3" class="shipping_method" checked="checked"><label for="shipping_method_0_flat_rate3">Доставка кур'єром</label>					</li>
+                                                        <li>
+                                            <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup2" value="local_pickup:2" class="shipping_method"><label for="shipping_method_0_local_pickup2">Самовивіз</label>					</li>
+                                                </ul>
+                                            
+                            
+                                </td>
+                    </tr>
+                    
+                                
+                            
+                                        <tr class="fee">
+                                    <th>Пакування</th>
+                                    <td><span class="woocommerce-Price-amount amount"><bdi>5&nbsp;<span class="woocommerce-Price-currencySymbol">грн</span></bdi></span></td>
+                                </tr>
+                            
+                            
+                            
+                            <tr class="order-total">
+                                <th>Загалом</th>
+                                <td><strong><span class="woocommerce-Price-amount amount"><bdi>1053&nbsp;<span class="woocommerce-Price-currencySymbol">грн</span></bdi></span></strong> </td>
+                            </tr>
+                    
+                            
+                        </tfoot>
+                    </table>
+                    
+                    <div id="payment" class="woocommerce-checkout-payment">
+                                <ul class="wc_payment_methods payment_methods methods">
+                                <li class="wc_payment_method payment_method_cod">
+                        <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" checked="checked" data-order_button_text="" style="display: none;">
+                    
+                        <label for="payment_method_cod">
+                            Готівка при отриманні 	</label>
+                                <div class="payment_box payment_method_cod">
+                                <p>Оплата готівкою при отриманні.</p>
+                            </div>
+                        </li>
+                            </ul>
+                            <div class="form-row place-order">
+                            <noscript>
+                                Оскільки ваш браузер не підтримує JavaScript (або він вимкнений), будь ласка, натисніть кнопку <em>Оновлення підсумку</em> перед розміщенням замовлення. Інакше ви можете отримати рахунок на більшу суму, ніж очікуєте, якщо не зробите цього.			<br/><button type="submit" class="button alt wp-element-button" name="woocommerce_checkout_update_totals" value="Оновити підсумки">Оновити підсумки</button>
+                            </noscript>
+                    
+                                <div class="woocommerce-terms-and-conditions-wrapper">
+                            <div class="woocommerce-privacy-policy-text"><p>Ваші персональні дані будуть використовуватися для обробки вашого замовлення, підтримки вашого досвіду на цьому сайті та для інших цілей, описаних у нашій <a href="https://yapposushi.com/privacy-policy/" class="woocommerce-privacy-policy-link" target="_blank">політика конфіденційності</a>.</p>
+                    </div>
+                                </div>
+                        
+                            
+                            <button type="submit" class="button alt wp-element-button" name="woocommerce_checkout_place_order" id="place_order" value="Підтвердити замовлення" data-value="Підтвердити замовлення">Підтвердити замовлення</button>
+                            
+                            <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="3ee7f2c1de"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">	</div>
+                    </div>
+                    
+                        </div>
+                    
+                        
+                    </form>
+            </div>
+
         </section>
 
 

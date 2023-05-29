@@ -1,3 +1,15 @@
 .cart-page{
+    padding: 70px 0 120px;
     
+    .breadcrumbs{
+        color: $accent;
+    }
+
+    .section__title{
+        margin: 0;
+        &::before,
+        &::after{
+            display: none;
+        }
+    }
 }
