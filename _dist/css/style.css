@@ -3263,6 +3263,17 @@ p {
   white-space: nowrap;
 }
 
+.cart-modal .local-wrap {
+  color: rgba(50, 53, 73, 0.7);
+  margin-top: 10px;
+}
+
+.cart-modal .local-wrap a {
+  color: rgba(50, 53, 73, 0.7);
+  text-align: center;
+  display: block;
+}
+
 .cart-modal-active {
   right: 0;
 }
