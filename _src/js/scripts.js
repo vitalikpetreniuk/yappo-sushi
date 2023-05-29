@@ -429,4 +429,18 @@ $(document).ready(function() {
 	  }
 	}
 
+
+
+
+
+	//cart modal
+	$('.fix-cart').on('click', function() {
+		$('.cart-modal').toggleClass('cart-modal-active');
+		$('main').toggleClass('put-up');
+		$('body').toggleClass('overflow');
+	});
+
 });
+
+
+
