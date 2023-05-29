@@ -371,7 +371,7 @@ $(function() {
 	  });
 	});
   
-	quantityInput.style.MozAppearance = 'textfield';
+	quantityInputs.style.MozAppearance = 'textfield';
 
 
 
