@@ -13,7 +13,7 @@
 
 @import 'widget-btns';
 @import 'fix-cart-btn';
-@import 'cart';
+
 
 @import 'filter';
 
@@ -53,3 +53,8 @@
 
 
 @import 'discount-sale-page';
+
+
+//cart
+@import 'cart';
+@import 'cart-page.scss'; 
