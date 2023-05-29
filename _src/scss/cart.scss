@@ -32,14 +32,17 @@
 
         .cart__img{
             width: 35%;
+            margin-right: .5rem;
 
             img{
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
         .cart__detail{
-            width: 65%;
+            width: 64%;
 
             h5{
                 font-size: 14px;
@@ -61,6 +64,50 @@
 
             .product__cart{
                 display: flex;
+                justify-content: space-between;
+                padding-right: 1rem;
+
+                .product__cart__info{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .price{
+                        font-weight: 700;
+                        font-size: 20px; 
+                        color: $accent;
+    
+                        @include media-for (null, $sm){
+                            font-size: 16px;
+                        }
+        
+                    }
+                    .regular-price{
+                        display: none;
+                    }
+                }
+
+                .product__cart__info-discount{
+
+                    .price{
+                        color: #FF671D !important;
+                        margin-left: .5rem;
+                    }
+        
+                    .regular-price{
+                        display: block;
+                        font-weight: 300;
+                        font-size: 14px; 
+                        color: rgba($color: #323549, $alpha: .7);
+
+        
+                        @include media-for (null, $sm){
+                            font-size: 14px;
+           
+                        }
+                    }
+        
+                }
             }
 
             .quantity{

@@ -3113,14 +3113,18 @@ p {
 
 .cart-modal .cart__preview-item .cart__img {
   width: 35%;
+  margin-right: 0.5rem;
 }
 
 .cart-modal .cart__preview-item .cart__img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cart-modal .cart__preview-item .cart__detail {
-  width: 65%;
+  width: 64%;
 }
 
 .cart-modal .cart__preview-item .cart__detail h5 {
@@ -3145,6 +3149,44 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info .price {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2A1A5E;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info .regular-price {
+  display: none;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info-discount .price {
+  color: #FF671D !important;
+  margin-left: 0.5rem;
+}
+
+.cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info-discount .regular-price {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(50, 53, 73, 0.7);
 }
 
 .cart-modal .cart__preview-item .cart__detail .quantity {
@@ -10601,6 +10643,14 @@ p {
     bottom: calc(100vh - 240px);
     right: 10px;
     display: none;
+  }
+
+  .cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info .price {
+    font-size: 16px;
+  }
+
+  .cart-modal .cart__preview-item .cart__detail .product__cart .product__cart__info-discount .regular-price {
+    font-size: 14px;
   }
 
   .filter-btn-wrap {
