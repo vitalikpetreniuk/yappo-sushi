@@ -22,7 +22,7 @@
 
         span{
             position: absolute;
-            left: -4%;
+            left: -7%;
             top: 50%;
             width: 41px;
             height: 41px;
@@ -137,6 +137,17 @@
 
     .product-list-cart{
         margin: 30px 0 55px;
+
+        ul{
+            position: relative;
+
+            .first-li{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
     }
 
     .pay{
@@ -146,7 +157,17 @@
     .cart__preview-item{
         position: relative;
         display: flex;
-        padding-bottom: 1rem;
+    
+        .sale-bage-wrap{
+            top: auto;
+            bottom: 0rem;
+            left: 2rem;
+
+            .sale-badge{
+                width: 30px;
+                height: 30px;
+            }
+        }
 
         h5{
             font-size: 14px;
@@ -164,7 +185,7 @@
     
         
         .cart__img{
-            width: 30%;
+            width: 22%;
             margin-right: .5rem;
 
             img{
@@ -202,6 +223,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 7rem;
 
             @include media-for (null, $sm){
                 margin-left: .5rem;
@@ -243,6 +265,19 @@
                 }
             }
 
+        }
+
+        .product-subtotal{
+            font-size: 20px;
+            font-weight: 700;
+            color: $accent;
+            width: 6rem;
+        }
+
+        .text-span{
+            color: rgba($color: #323549, $alpha: .7);
+            font-size: 14px;
+            font-weight: 400;
         }
 
         &:hover{
