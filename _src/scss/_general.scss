@@ -271,6 +271,11 @@ p{
     margin-top: 27px;
     font-size: 16px;
     white-space: nowrap;
+    text-align: center;
+    padding: 19px 0;
+    &:hover{
+        background-color: #db591a; 
+    }
 }
 
 

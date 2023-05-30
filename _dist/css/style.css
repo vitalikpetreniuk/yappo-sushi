@@ -1747,6 +1747,12 @@ p {
   margin-top: 27px;
   font-size: 16px;
   white-space: nowrap;
+  text-align: center;
+  padding: 19px 0;
+}
+
+.orange-btn:hover {
+  background-color: #db591a;
 }
 
 .btn-white {
@@ -1989,6 +1995,13 @@ p {
   font-size: 13px;
   font-weight: 600;
   z-index: 100;
+}
+
+.header .header-top .tel-header-top {
+  color: #ffff;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .header .logo a img {
@@ -4793,7 +4806,7 @@ p {
 }
 
 .cart-modal h4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "DelaGothicOne";
   text-transform: uppercase;
@@ -4863,12 +4876,14 @@ p {
 .cart-modal .cart__preview-item .sale-bage-wrap {
   top: auto;
   bottom: 0.5rem;
-  left: 1.5rem;
+  left: 0.5rem;
+  width: 29%;
 }
 
 .cart-modal .cart__preview-item .sale-bage-wrap .sale-badge {
   width: 25px;
   height: 25px;
+  background-size: 56%;
 }
 
 .cart-modal .cart__preview-item .cart__img {

@@ -94,7 +94,7 @@
 
 
     h4{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         font-family: 'DelaGothicOne';
         text-transform: uppercase;
@@ -156,12 +156,13 @@
         .sale-bage-wrap{
             top: auto;
             bottom: 0.5rem;
-            left: 1.5rem;
-
+            left: .5rem;
+            width: 29%;
 
             .sale-badge{
                 width: 25px;
                 height: 25px;
+                background-size: 56%;
             }
         }
 
