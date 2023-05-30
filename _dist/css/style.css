@@ -11769,10 +11769,11 @@ p {
     left: -5%;
   }
 
-  .cart-page .quantity-wrap {
+  .cart-page .quantity {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 3rem;
   }
 
   .cart-page .cart__preview-item .sale-bage-wrap .sale-badge {
