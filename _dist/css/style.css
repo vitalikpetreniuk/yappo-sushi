@@ -10964,6 +10964,24 @@ p {
   .discount-sale-page .banner-slider__slide {
     height: 370px;
   }
+
+  .cart-page .title-step span {
+    left: -10%;
+  }
+
+  .cart-page .product-list-cart ul .first-li {
+    top: -10%;
+  }
+
+  .cart-page .cart__preview-item .sale-bage-wrap {
+    bottom: -0.5rem;
+    left: 1rem;
+  }
+
+  .cart-page .cart__preview-item .sale-bage-wrap .sale-badge {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 575px) {

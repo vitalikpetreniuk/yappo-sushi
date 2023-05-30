@@ -32,6 +32,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include media-for (null, $tablet){
+                left: -10%;
+            }
         }
         h3{
             
@@ -146,6 +150,10 @@
                 top: 0;
                 left: 0;
                 width: 100%;
+
+                @include media-for (null, $tablet){
+                    top: -10%;
+                }
             }
         }
     }
@@ -163,9 +171,19 @@
             bottom: 0rem;
             left: 2rem;
 
+            @include media-for (null, $tablet){
+                bottom: -0.5rem;
+                left: 1rem;
+            }
+
             .sale-badge{
                 width: 30px;
                 height: 30px;
+
+                @include media-for (null, $tablet){
+                    width: 25px;
+                    height: 25px;
+                }
             }
         }
 
