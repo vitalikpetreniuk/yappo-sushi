@@ -442,16 +442,20 @@ $(document).ready(function() {
 
 	function toggleCart() {
 		$('.cart-modal').toggleClass('cart-modal-active');
-		$('main').toggleClass('put-up');
 		$('body').toggleClass('overflow');
 		$('.header-center').addClass('header-center-scroll');
 		$('.btns-wrap-header-menu').removeClass('btns-wrap-header-menu-active');
 
 		if ($('.cart-modal').hasClass('cart-modal-active')) {
 			$('.widget-btns').css("left", "-100%");
-		  } else {
+			$('#menu').removeClass("overlay");
+			$('main').addClass('put-up');
+			$('main').removeClass('for-main-overflow ');
+		} else {
 			$('.widget-btns').css("left", "0");
-		  }
+			$('main').removeClass('put-up');
+		
+		}
 	  }
 	  
 	  $('.fix-cart').on('click', toggleCart);

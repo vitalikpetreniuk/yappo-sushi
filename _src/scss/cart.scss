@@ -61,6 +61,7 @@
         width: 86%;
         height: 80vh;
         padding-bottom: 8rem;
+        z-index: 101;
 
     }
 
@@ -83,12 +84,12 @@
 
     @media (width: 390px) and (height: 844px) {
         height: 80vh;
-        width: 100%;
+        width: 90%;
     }
 
     @media (width: 320px) and (height: 533px) {
         height: 69vh;
-        width: 100%;
+        width: 90%;
     }
 
 
