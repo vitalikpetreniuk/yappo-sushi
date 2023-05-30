@@ -384,18 +384,6 @@ $(function() {
 	//select-custom
 
 
-	// $('.select-dropdown__button').on('click', function(){
-	// 	$(this).siblings('.select-dropdown__list').toggleClass('active');
-	// });
-	
-	// $('.select-dropdown__list-item').on('click', function(){
-	// 	var itemValue = $(this).data('value');
-	// 	console.log(itemValue);
-	// 	var parentDropdown = $(this).closest('.select-dropdown');
-	// 	parentDropdown.find('.select-dropdown__button span').text($(this).text()).parent().attr('data-value', itemValue);
-	// 	parentDropdown.find('.select-dropdown__list').toggleClass('active');
-	// });
-
 	$('.select-dropdown__button').on('click', function() {
 		var dropdownList = $(this).siblings('.select-dropdown__list');
 		
@@ -456,7 +444,8 @@ $(document).ready(function() {
 		$('.cart-modal').toggleClass('cart-modal-active');
 		$('main').toggleClass('put-up');
 		$('body').toggleClass('overflow');
-		$('.header-center').removeClass('header-center-scroll');
+		$('.header-center').addClass('header-center-scroll');
+		$('.btns-wrap-header-menu').removeClass('btns-wrap-header-menu-active');
 
 		if ($('.cart-modal').hasClass('cart-modal-active')) {
 			$('.widget-btns').css("left", "-100%");
@@ -471,7 +460,7 @@ $(document).ready(function() {
 
 
 	  //jq-mask
-	  $("#phone-number-your").mask("(+380) 99-999-99-99", { placeholder: "(+380)"});
+	//   $("#phone-number-your").mask("(+380) 99-999-99-99", { placeholder: "(+380)"});
 });
 
 

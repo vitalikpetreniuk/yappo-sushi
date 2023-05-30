@@ -1544,6 +1544,21 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+body::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -10;
+  -webkit-transition: all 0.9s ease-in;
+  -o-transition: all 0.9s ease-in;
+  transition: all 0.9s ease-in;
+  opacity: 0;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1565,7 +1580,7 @@ main::before {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   z-index: -10;
   -webkit-transition: all 0.9s ease-in;
   -o-transition: all 0.9s ease-in;
@@ -1642,6 +1657,12 @@ p {
   overflow: hidden;
 }
 
+.overflow::before {
+  opacity: 1;
+  height: 100%;
+  z-index: 50;
+}
+
 .for-main-overflow {
   height: 20vh;
   opacity: 0;
@@ -1651,7 +1672,7 @@ p {
 .put-up::before {
   opacity: 1;
   height: 100%;
-  z-index: 50;
+  z-index: 70;
 }
 
 .time-wrap span {
