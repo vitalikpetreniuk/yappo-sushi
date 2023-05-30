@@ -184,6 +184,14 @@
                 left: 0;
                 width: 100%;
 
+                @include media-for (null, 1441px){
+                    top: -5%;
+                }
+
+                @include media-for (null, 1400px){
+                    top: -7%;
+                }
+
                 @include media-for (null, $tablet){
                     top: -10%;
                 }
@@ -201,8 +209,9 @@
     
         .sale-bage-wrap{
             top: auto;
-            bottom: 0rem;
+            bottom: 0.5rem;
             left: 2rem;
+            width: 20%;
 
             @include media-for (null, $tablet){
                 bottom: -0.5rem;
@@ -210,17 +219,18 @@
             }
 
             .sale-badge{
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
+                background-size: 56%;
 
                 @include media-for (null, $tablet){
-                    width: 25px;
-                    height: 25px;
+                    // width: 25px;
+                    // height: 25px;
                 }
 
                 @include media-for (null, $sm){
-                    width: 17px;
-                    height: 17px;
+                    // width: 17px;
+                    // height: 17px;
                 }
             }
         }
