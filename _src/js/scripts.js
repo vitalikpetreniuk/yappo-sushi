@@ -261,7 +261,11 @@ $(function() {
 
 	$(".no-product ").parent(".no-product-wrap").parent(" .product__item").css({
 		"pointer-events": "none",
-		"z-index": "0"
+		"z-index": "0",
+	});
+
+	$(".no-product ").parent(".no-product-wrap").parent(" .product__item").find('.btn-primary').css({
+		"display": "none",
 	});
 
 	
