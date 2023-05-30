@@ -11751,6 +11751,16 @@ p {
     width: 30px;
   }
 
+  .cart-page {
+    padding: 50px 0 60px;
+  }
+
+  .cart-page .section__title {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
   .cart-page .title-step {
     text-align: center;
   }
