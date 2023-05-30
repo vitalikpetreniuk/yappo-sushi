@@ -4474,6 +4474,10 @@ p {
   margin-bottom: 5px;
 }
 
+.public-offer a {
+  color: #262730;
+}
+
 .privacy-policy a {
   color: #262730;
   text-decoration: underline;
@@ -11660,6 +11664,10 @@ p {
 
   .return-policy .section__title::before {
     display: none;
+  }
+
+  .public-offer h5 {
+    font-size: 14px;
   }
 
   .news-blogs {
