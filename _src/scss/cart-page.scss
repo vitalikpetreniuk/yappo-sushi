@@ -364,8 +364,8 @@
 
         span{
            position: relative;
-           width: 19px;
-           height: 19px;
+           width: 21px;
+           height: 21px;
            display: block;
            border: 1px solid $accent;
            border-radius: 100%;
@@ -380,6 +380,10 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+
+            &::after{
+                transform: translate(-50%, -50%) rotate(90deg);
             }
         }
     }
