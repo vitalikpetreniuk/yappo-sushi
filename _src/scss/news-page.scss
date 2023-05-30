@@ -69,6 +69,10 @@
     ul{
         list-style: inside;
         text-align: left;
+
+        li{
+            font-size: 14px;
+        }
     }
 
     .grid-container {
@@ -82,6 +86,8 @@
 
         @include media-for (null, $sm){
             gap: 7px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
         }
     }
 
@@ -101,6 +107,45 @@
         @include media-for (null, $sm){
             height: 100px;
             border-radius: 20px;
+        }
+        
+    }
+
+    .item1{
+        @include media-for (null, $sm){
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 2;
+        }
+        
+    }
+
+    .item2{
+        @include media-for (null, $sm){
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+        }
+    }
+
+    .item3 {
+        @include media-for (null, $sm){
+          grid-row: 2 / span 1;
+          grid-column: 2 / span 1;
+        }
+  
+    }
+
+    .item4{
+        @include media-for (null, $sm){
+            grid-row: 3 / span 2;
+            grid-column: 1 / span 2;
+        }
+        
+    }
+
+    .item5{
+        @include media-for (null, $sm){
+            grid-row: 4 / span 2;
+            grid-column: 1 / span 2;
         }
         
     }
