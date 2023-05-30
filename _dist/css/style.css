@@ -4476,6 +4476,7 @@ p {
 
 .public-offer a {
   color: #262730;
+  text-decoration: underline;
 }
 
 .privacy-policy a {
