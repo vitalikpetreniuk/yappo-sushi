@@ -290,17 +290,36 @@
 
 
     .local-wrap{
-        background-color: $text-white;
+        background-color: #EFEFEF;
         color: rgba($color: #323549, $alpha: .7);
         margin-top: 10px;
         a{
             color: rgba($color: #323549, $alpha: .7); 
             text-align: center;
             display: block;
-            background-color: $text-white;
+            background-color: #EFEFEF;
         }
     }
 
 
-    
+    .resault-block{
+        background-color: #EFEFEF;
+        border-radius: 24px;
+        padding: 30px;
+
+        .text-span{
+            color: rgba($color: #323549, $alpha: .7);
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .product-total,.price-delivery{
+            font-size: 20px;
+            font-weight: 400;
+            color: $accent;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
