@@ -1888,7 +1888,7 @@ p {
   background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(75%, #000), color-stop(75%, transparent), to(transparent));
   background-image: -o-linear-gradient(left, #000, #000 75%, transparent 75%, transparent 100%);
   background-image: linear-gradient(90deg, #000, #000 75%, transparent 75%, transparent 100%);
-  background-size: 20px 1px;
+  background-size: 18px 1px;
   border: none;
 }
 
