@@ -307,6 +307,13 @@
         border-radius: 24px;
         padding: 30px;
 
+
+        h4{
+            font-size: 20px;
+            font-weight: 400;
+            color: $accent; 
+            font-family: 'DelaGothicOne';
+        }
         .text-span{
             color: rgba($color: #323549, $alpha: .7);
             font-size: 14px;
@@ -317,9 +324,22 @@
             font-weight: 400;
             color: $accent;
         }
+
+        .order-total{
+            font-size: 24px;
+            font-weight: 700;
+            color: $accent;
+        }
         div{
             display: flex;
             justify-content: space-between;
+        }
+        .orange-btn{
+            margin-top: 3rem;
+            padding: 19px 30px;
+        }
+        .local-wrap{
+            display: block;
         }
     }
 }

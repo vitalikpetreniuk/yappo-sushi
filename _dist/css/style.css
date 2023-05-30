@@ -5316,6 +5316,13 @@ p {
   padding: 30px;
 }
 
+.cart-page .resault-block h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2A1A5E;
+  font-family: "DelaGothicOne";
+}
+
 .cart-page .resault-block .text-span {
   color: rgba(50, 53, 73, 0.7);
   font-size: 14px;
@@ -5329,6 +5336,12 @@ p {
   color: #2A1A5E;
 }
 
+.cart-page .resault-block .order-total {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2A1A5E;
+}
+
 .cart-page .resault-block div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5336,6 +5349,15 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cart-page .resault-block .orange-btn {
+  margin-top: 3rem;
+  padding: 19px 30px;
+}
+
+.cart-page .resault-block .local-wrap {
+  display: block;
 }
 
 @media (min-width: 576px) {
