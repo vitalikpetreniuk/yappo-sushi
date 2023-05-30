@@ -5254,7 +5254,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 7rem;
+  width: 6rem;
 }
 
 .cart-page .cart__preview-item .product__cart__info .price {
@@ -5361,6 +5361,54 @@ p {
 
 .cart-page .resault-block .local-wrap {
   display: block;
+}
+
+.cart-page .promocode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #EFEFEF;
+  border-radius: 24px;
+  height: 62px;
+  padding: 0 20px 0 30px;
+  margin-bottom: 22px;
+}
+
+.cart-page .promocode h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2A1A5E;
+  font-family: "DelaGothicOne";
+  margin: 0;
+}
+
+.cart-page .promocode span {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  display: block;
+  border: 1px solid #2A1A5E;
+  border-radius: 100%;
+}
+
+.cart-page .promocode span::before,
+.cart-page .promocode span:after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 1px;
+  background-color: #2A1A5E;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 576px) {

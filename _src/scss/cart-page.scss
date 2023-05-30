@@ -223,7 +223,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 7rem;
+            width: 6rem;
 
             @include media-for (null, $sm){
                 margin-left: .5rem;
@@ -341,6 +341,46 @@
         }
         .local-wrap{
             display: block;
+        }
+    }
+
+    .promocode{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #EFEFEF;
+        border-radius: 24px;
+        height: 62px;
+        padding: 0 20px 0 30px;
+        margin-bottom: 22px;
+
+        h4{
+            font-size: 16px;
+            font-weight: 400;
+            color: $accent; 
+            font-family: 'DelaGothicOne';
+            margin: 0;
+        }
+
+        span{
+           position: relative;
+           width: 19px;
+           height: 19px;
+           display: block;
+           border: 1px solid $accent;
+           border-radius: 100%;
+
+            &::before,
+            &:after{
+                position: absolute;
+                content: '';
+                width: 11px;
+                height: 1px;
+                background-color: $accent;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }
