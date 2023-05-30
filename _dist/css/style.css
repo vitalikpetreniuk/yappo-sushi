@@ -11666,6 +11666,10 @@ p {
     padding: 35px 0 50px;
   }
 
+  .news-blogs .section__title {
+    margin-bottom: 0;
+  }
+
   .grid-container {
     gap: 6px;
     margin-top: 50px;

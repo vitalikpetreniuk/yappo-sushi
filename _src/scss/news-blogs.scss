@@ -10,6 +10,12 @@
         padding: 35px 0 50px;
     }
 
+    .section__title{
+        @include media-for (null, $sm){
+            margin-bottom: 0;
+        } 
+    }
+
     .container-fluid{
         @include media-for (1600px, null){
             padding: 0 200px;
