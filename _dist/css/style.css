@@ -4817,7 +4817,7 @@ p {
   right: -200%;
   padding-top: 25px;
   background-color: #ffff;
-  height: 82vh;
+  height: 100vh;
   border-top: 1px solid #D9D9D9;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -10372,7 +10372,11 @@ p {
   }
 
   .cart-modal {
-    height: 74vh;
+    height: 90vh;
+  }
+
+  .cart-modal .cart-list {
+    height: 20rem;
   }
 }
 
@@ -10714,7 +10718,7 @@ p {
   }
 
   .cart-modal {
-    height: 84vh;
+    height: 94vh;
   }
 }
 
@@ -10808,7 +10812,7 @@ p {
 
 @media (max-width: 912px) {
   .cart-modal {
-    height: 85vh;
+    height: 92vh;
   }
 }
 
@@ -11844,7 +11848,7 @@ p {
 
   .cart-modal {
     width: 86%;
-    height: 80vh;
+    height: 90vh;
     padding-bottom: 8rem;
     z-index: 101;
   }
@@ -12030,89 +12034,68 @@ p {
   }
 }
 
-@media (width: 2580px) and (height: 1080px) {
-  .cart-modal {
-    height: 82vh;
-  }
-}
-
-@media (width: 2580px) and (height: 1440px) {
-  .cart-modal {
-    height: 84vh;
-  }
-}
-
-@media (width: 2048px) and (height: 1080px) {
-  .cart-modal {
-    height: 84vh;
-  }
-}
-
-@media (width: 2048px) and (height: 1152px) {
-  .cart-modal {
-    height: 86vh;
-  }
-}
-
-@media (width: 1920px) and (height: 1080px) {
-  .cart-modal {
-    height: 82vh;
-  }
-}
-
-@media (width: 1920px) and (height: 1200px) {
-  .cart-modal {
-    height: 84vh;
-  }
-}
-
 @media (width: 1280px) and (height: 1024px) {
   .cart-modal {
-    height: 81vh;
+    height: 91vh;
   }
 }
 
 @media (width: 1280px) and (height: 800px) {
   .cart-modal {
-    height: 75vh;
+    height: 89vh;
   }
 }
 
 @media (width: 414px) and (height: 896px) {
   .cart-modal {
-    height: 82vh;
+    height: 90vh;
   }
 }
 
 @media (width: 428px) and (height: 926px) {
   .cart-modal {
-    height: 82vh;
+    height: 90vh;
     padding-bottom: 12rem;
   }
 }
 
 @media (width: 375px) and (height: 667px) {
   .cart-modal {
-    height: 75vh;
+    height: 86vh;
+  }
+
+  .cart-modal .cart-list {
+    height: 14rem;
   }
 }
 
 @media (width: 360px) and (height: 740px) {
   .cart-modal {
-    height: 77vh;
+    height: 88vh;
+  }
+
+  .cart-modal .cart-list {
+    height: 14rem;
   }
 }
 
 @media (width: 390px) and (height: 844px) {
   .cart-modal {
-    height: 80vh;
-    width: 90%;
+    height: 89vh;
+  }
+
+  .cart-modal .cart-list {
+    height: 20rem;
   }
 }
 
 @media (width: 320px) and (height: 533px) {
   .cart-modal {
-    height: 69vh;
+    height: 83vh;
     width: 90%;
+  }
+
+  .cart-modal .cart-list {
+    height: 13rem;
   }
 }

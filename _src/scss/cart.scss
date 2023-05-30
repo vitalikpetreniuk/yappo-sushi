@@ -6,90 +6,108 @@
     right: -200%;
     padding-top: 25px;
     background-color: $text-white;
-    height: 82vh;
+    height: 100vh;
     border-top: 1px solid $bg-gray;
     transition: all .3s ease-in-out;
     z-index: 100;
     overflow-y: auto;
 
-    @media (width: 2580px) and (height: 1080px) {
-        height: 82vh;
-    }
+    // @media (width: 2580px) and (height: 1080px) {
+    //     height: 100vh;
+    // }
 
-    @media (width: 2580px) and (height: 1440px) {
-        height: 84vh;
-    }
+    // @media (width: 2580px) and (height: 1440px) {
+    //     height: 100vh;
+    // }
 
-    @media (width: 2048px) and (height: 1080px) {
-        height: 84vh;
-    }
+    // @media (width: 2048px) and (height: 1080px) {
+    //     height: 100vh;
+    // }
 
-    @media (width: 2048px) and (height: 1152px) {
-        height: 86vh;
-    }
+    // @media (width: 2048px) and (height: 1152px) {
+    //     height: 100vh;
+    // }
 
-    @media (width: 1920px) and (height: 1080px) {
-        height: 82vh;
-    }
+    // @media (width: 1920px) and (height: 1080px) {
+    //     height: 100vh;
+    // }
 
-    @media (width: 1920px) and (height: 1200px) {
-        height: 84vh;
-    }
+    // @media (width: 1920px) and (height: 1200px) {
+    //     height: 100vh;
+    // }
 
     @include media-for (null, 1367px){
-        height: 74vh;
+        height: 90vh;
+
+        .cart-list{
+            height: 20rem;
+        }
     }
 
     @media (width: 1280px) and (height: 1024px) {
-        height: 81vh;
+        height: 91vh;
     }
 
     @media (width: 1280px) and (height: 800px) {
-        height: 75vh;
+        height: 89vh;
     }
 
-    @include media-for (null, 913px){
-        height: 85vh;
+    @include media-for (null, 913px){   
+        height: 92vh;
     }
 
     @include media-for (null, 1025px){
-        height: 84vh;
+        height: 94vh;
     }
 
 
     @include media-for (null, $sm){
         width: 86%;
-        height: 80vh;
+        height: 90vh;
         padding-bottom: 8rem;
         z-index: 101;
 
     }
 
     @media (width: 414px) and (height: 896px) {
-        height: 82vh;
+        height: 90vh;
     }
 
     @media (width: 428px) and (height: 926px) {
-        height: 82vh;
+        height: 90vh;
         padding-bottom: 12rem;
     }
 
     @media (width: 375px) and (height: 667px) {
-        height: 75vh;
+        height: 86vh;
+
+        .cart-list{
+            height: 14rem;
+        }
     }
 
     @media (width: 360px) and (height: 740px) {
-        height: 77vh;
+        height: 88vh;
+
+        .cart-list{
+            height: 14rem;
+        }
     }
 
     @media (width: 390px) and (height: 844px) {
-        height: 80vh;
-        width: 90%;
+        height: 89vh;
+
+        .cart-list{
+            height: 20rem;
+        }
     }
 
     @media (width: 320px) and (height: 533px) {
-        height: 69vh;
+        height: 83vh;
         width: 90%;
+        .cart-list{
+            height: 13rem;
+        }
     }
 
 
