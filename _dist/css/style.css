@@ -1740,6 +1740,15 @@ p {
   background-color: #1E114A;
 }
 
+.orange-btn {
+  background-color: #FF671D;
+  display: block;
+  margin: auto;
+  margin-top: 27px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
 .btn-white {
   border-radius: 24px;
   text-transform: uppercase;
@@ -4951,13 +4960,7 @@ p {
 }
 
 .cart-modal .orange-btn {
-  background-color: #FF671D;
-  display: block;
-  margin: auto;
-  margin-top: 27px;
   max-width: 277px;
-  font-size: 16px;
-  white-space: nowrap;
 }
 
 .cart-modal .local-wrap {
@@ -5292,6 +5295,19 @@ p {
 
 .cart-page .cart__preview-item:hover .remove-button {
   opacity: 1 !important;
+}
+
+.cart-page .local-wrap {
+  background-color: #ffff;
+  color: rgba(50, 53, 73, 0.7);
+  margin-top: 10px;
+}
+
+.cart-page .local-wrap a {
+  color: rgba(50, 53, 73, 0.7);
+  text-align: center;
+  display: block;
+  background-color: #ffff;
 }
 
 @media (min-width: 576px) {
