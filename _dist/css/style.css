@@ -11769,6 +11769,12 @@ p {
     left: -5%;
   }
 
+  .cart-page .quantity-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .cart-page .cart__preview-item .sale-bage-wrap .sale-badge {
     width: 17px;
     height: 17px;
