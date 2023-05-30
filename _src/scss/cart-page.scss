@@ -20,6 +20,11 @@
         font-family: 'DelaGothicOne';
         color: $accent;
 
+
+        @include media-for (null, $sm){
+            text-align: center;
+        }
+
         span{
             position: absolute;
             left: -7%;
@@ -35,6 +40,10 @@
 
             @include media-for (null, $tablet){
                 left: -10%;
+            }
+
+            @include media-for (null, $sm){
+                left: -5%;
             }
         }
         h3{
@@ -184,6 +193,11 @@
                     width: 25px;
                     height: 25px;
                 }
+
+                @include media-for (null, $sm){
+                    width: 17px;
+                    height: 17px;
+                }
             }
         }
 
@@ -199,6 +213,11 @@
             font-size: 14px;
             font-weight: 300;
             margin-bottom: 8px;
+
+            @include media-for (null, $sm){
+                font-size: 10px;
+
+            }
         }
     
         
@@ -206,6 +225,10 @@
             width: 22%;
             margin-right: .5rem;
 
+            @include media-for (null, $sm){
+                width: 35%;
+
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -244,7 +267,8 @@
             width: 6rem;
 
             @include media-for (null, $sm){
-                margin-left: .5rem;
+                margin-left: auto;
+                width: 4rem;
 
             }
             .price{
@@ -253,7 +277,7 @@
                 color: $accent;
 
                 @include media-for (null, $sm){
-                    font-size: 16px;
+                    font-size: 14px;
                 }
 
             }
@@ -275,12 +299,11 @@
                 font-size: 14px; 
                 text-decoration: line-through;
                 color: rgba($color: #323549, $alpha: .7);
-
-
+                
                 @include media-for (null, $sm){
-                    font-size: 12px;
-   
+                    font-size: 10px;
                 }
+
             }
 
         }
@@ -290,12 +313,21 @@
             font-weight: 700;
             color: $accent;
             width: 6rem;
+
+            @include media-for (null, $sm){
+                font-size: 14px;
+                width: 4rem;
+            }
         }
 
         .text-span{
             color: rgba($color: #323549, $alpha: .7);
             font-size: 14px;
             font-weight: 400;
+
+            @include media-for (null, $sm){
+                font-size: 10px;
+            }
         }
 
         &:hover{

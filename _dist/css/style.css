@@ -11751,16 +11751,47 @@ p {
     width: 30px;
   }
 
+  .cart-page .title-step {
+    text-align: center;
+  }
+
+  .cart-page .title-step span {
+    left: -5%;
+  }
+
+  .cart-page .cart__preview-item .sale-bage-wrap .sale-badge {
+    width: 17px;
+    height: 17px;
+  }
+
+  .cart-page .cart__preview-item .weight {
+    font-size: 10px;
+  }
+
+  .cart-page .cart__preview-item .cart__img {
+    width: 35%;
+  }
+
   .cart-page .cart__preview-item .product__cart__info {
-    margin-left: 0.5rem;
+    margin-left: auto;
+    width: 4rem;
   }
 
   .cart-page .cart__preview-item .product__cart__info .price {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .cart-page .cart__preview-item .product__cart__info-discount .regular-price {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .cart-page .cart__preview-item .product-subtotal {
+    font-size: 14px;
+    width: 4rem;
+  }
+
+  .cart-page .cart__preview-item .text-span {
+    font-size: 10px;
   }
 }
 
