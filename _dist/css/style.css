@@ -10560,6 +10560,10 @@ p {
     right: 98%;
   }
 
+  .categories-business-lunch .card-info {
+    margin-bottom: 30px;
+  }
+
   .categories-business-lunch .card-info h3 {
     margin-top: 0px;
     font-size: 24px;
@@ -10874,13 +10878,9 @@ p {
     width: 45%;
   }
 
-  .categories-business-lunch .card-info {
-    margin-bottom: 30px;
-  }
-
   .categories-business-lunch .card-info h3 {
     margin-top: 30px;
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .menu-page {

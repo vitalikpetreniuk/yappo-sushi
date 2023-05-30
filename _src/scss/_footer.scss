@@ -85,9 +85,13 @@
            margin: 22px auto 40px;
         }
 
+        
+
         @include media-for (null, $sm){
             width: 8rem;
-         }
+        }
+
+
     }
 
     .copmpany{
