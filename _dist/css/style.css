@@ -11608,6 +11608,20 @@ p {
     padding: 35px 0 50px;
   }
 
+  .menu-page .menu-item .img-wrap {
+    width: 1.4rem;
+  }
+
+  .menu-page .menu-item .img-wrap svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-page .menu-item-sushi .img-wrap svg {
+    width: 150%;
+    height: 150%;
+  }
+
   .contacts {
     padding: 35px 0 50px;
   }
