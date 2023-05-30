@@ -153,6 +153,18 @@
         display: flex;
         padding-bottom: 1rem;
 
+        .sale-bage-wrap{
+            top: auto;
+            bottom: 0.5rem;
+            left: 1.5rem;
+
+
+            .sale-badge{
+                width: 25px;
+                height: 25px;
+            }
+        }
+
         .cart__img{
             width: 35%;
             margin-right: .5rem;

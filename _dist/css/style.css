@@ -4842,6 +4842,17 @@ p {
   padding-bottom: 1rem;
 }
 
+.cart-modal .cart__preview-item .sale-bage-wrap {
+  top: auto;
+  bottom: 0.5rem;
+  left: 1.5rem;
+}
+
+.cart-modal .cart__preview-item .sale-bage-wrap .sale-badge {
+  width: 25px;
+  height: 25px;
+}
+
 .cart-modal .cart__preview-item .cart__img {
   width: 35%;
   margin-right: 0.5rem;
