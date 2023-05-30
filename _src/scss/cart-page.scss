@@ -6,6 +6,7 @@
     }
     .breadcrumbs{
         color: $accent;
+    
     }
 
     .section__title{
@@ -56,12 +57,13 @@
             }
         }
         h3{
-            
+            font-size: 16px;
             color: $accent;
         }
     }
 
     input{
+        font-size: 14px;
         outline: none;
         margin-top: 30px;
         padding-bottom: .3rem;
@@ -90,6 +92,12 @@
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
+
+        .quantity{
+            .quantity-input{
+                width: 2rem;
+            }
+        }
         
     }
 
@@ -280,7 +288,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 6rem;
+            width: 9rem;
 
             @include media-for (null, $sm){
                 margin-left: auto;
@@ -403,7 +411,9 @@
         }
         .orange-btn{
             margin-top: 3rem;
-            padding: 19px 30px;
+            padding: 19px 0px;
+            width: 100%;
+            max-width: 277px;
         }
         .local-wrap{
             display: block;
