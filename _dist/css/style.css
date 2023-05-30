@@ -11769,7 +11769,7 @@ p {
     left: -5%;
   }
 
-  .cart-page .quantity {
+  .cart-page .product-quantity {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

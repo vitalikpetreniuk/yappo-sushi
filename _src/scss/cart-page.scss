@@ -77,6 +77,8 @@
             width: 3rem;
             margin: 0;
         }
+    }
+    .product-quantity{
         @include media-for (null, $sm){
             justify-content: center;
             width: 3rem;
