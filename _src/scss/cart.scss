@@ -32,9 +32,11 @@
     //     height: 100vh;
     // }
 
-    // @media (width: 1920px) and (height: 1200px) {
-    //     height: 100vh;
-    // }
+    @media (max-height: 830px){
+        .cart-list{
+            height: 20rem;
+        }
+    }
 
     .close-cart{
         display: none;
