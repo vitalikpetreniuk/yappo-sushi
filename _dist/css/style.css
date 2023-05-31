@@ -11917,6 +11917,10 @@ p {
     font-size: 16px;
   }
 
+  .cart-modal .cart__preview-item .cart__detail .cart__detail__header .remove-button {
+    opacity: 1;
+  }
+
   .cart-modal .cart__preview-item .cart__detail .product__cart {
     font-size: 12px;
   }
@@ -11972,6 +11976,10 @@ p {
 
   .cart-page .cart__preview-item .cart__img {
     width: 35%;
+  }
+
+  .cart-page .cart__preview-item .remove-button {
+    opacity: 1;
   }
 
   .cart-page .cart__preview-item .product__cart__info {

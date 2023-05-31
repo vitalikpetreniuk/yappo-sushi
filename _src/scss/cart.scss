@@ -234,6 +234,10 @@
                     top: .5rem;
                     cursor: pointer;
                     opacity: 0;
+
+                    @include media-for (null, $sm){
+                        opacity: 1;
+                    }
                 }
             }
 
