@@ -1564,6 +1564,15 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 main {
   position: relative;
   overflow-x: hidden;
@@ -5019,6 +5028,7 @@ p {
   text-align: center;
   display: block;
   background-color: #ffff;
+  cursor: default;
 }
 
 .cart-modal-active {

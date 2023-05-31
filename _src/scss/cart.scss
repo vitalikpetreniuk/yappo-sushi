@@ -314,11 +314,14 @@
         background-color: $text-white;
         color: rgba($color: #323549, $alpha: .7);
         margin-top: 10px;
+
         a{
             color: rgba($color: #323549, $alpha: .7); 
             text-align: center;
             display: block;
             background-color: $text-white;
+            cursor: default;
+
         }
     }
 }
