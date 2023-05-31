@@ -3049,7 +3049,6 @@ p {
   border-radius: 0% 30px 30px 0%;
   z-index: 90;
   top: calc(100vh - 330px);
-  display: none;
   background-color: #ffff;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
@@ -5387,7 +5386,7 @@ p {
 .cart-page .resault-block {
   position: -webkit-sticky;
   position: sticky;
-  top: 1rem;
+  top: 15rem;
   background-color: #EFEFEF;
   border-radius: 24px;
   padding: 30px;
@@ -10791,6 +10790,13 @@ p {
 
   .cart-modal {
     height: 94vh;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cart-page .resault-block {
+    position: relative;
+    top: auto;
   }
 }
 

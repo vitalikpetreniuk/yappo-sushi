@@ -99,7 +99,6 @@
                 width: 2rem;
             }
         }
-        
     }
 
     .select-wrap{
@@ -434,13 +433,18 @@
 
     .resault-block{
         position: sticky;
-        top: 1rem;
+        top: 15rem;
         background-color: #EFEFEF;
         border-radius: 24px;
         padding: 30px;
         max-width: 420px;
         height: 411px;
         margin: auto;
+
+        @include media-for (null, 1024px){
+            position: relative;
+            top: auto;
+        }
 
         h4{
             font-size: 20px;
