@@ -451,7 +451,8 @@ $(document).ready(function() {
 		$('body').toggleClass('overflow');
 		$('.header-center').addClass('header-center-scroll');
 		$('.btns-wrap-header-menu').removeClass('btns-wrap-header-menu-active');
-
+		$('.city-list').removeClass('city-list-active');
+		
 		if ($('.cart-modal').hasClass('cart-modal-active')) {
 			$('.widget-btns').css("left", "-100%");
 			$('#menu').removeClass("overlay");
