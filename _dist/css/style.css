@@ -2192,6 +2192,7 @@ p {
   padding: 2rem 5rem;
   opacity: 0;
   z-index: -100;
+  padding-top: 22px;
 }
 
 .header .btns-wrap-header .btns-wrap-header-menu a {
@@ -10301,6 +10302,7 @@ p {
 @media (max-width: 2099px) {
   .header .btns-wrap-header .btns-wrap-header-menu {
     padding: 2rem 2.5rem;
+    padding-top: 22px;
   }
 
   .discount-sale-page .banner-slider__slide {
@@ -12073,6 +12075,10 @@ p {
   .cart-page .cart__preview-item .remove-button {
     opacity: 1;
     top: 0;
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 
   .cart-page .cart__preview-item .name-wrap {
@@ -12098,10 +12104,6 @@ p {
 
   .cart-page .cart__preview-item .text-span {
     font-size: 10px;
-  }
-
-  .cart-page .cart__preview-item .text-span-price {
-    margin-left: 0rem;
   }
 }
 

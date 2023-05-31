@@ -337,9 +337,10 @@
 
             @include media-for (null, $sm){
                 opacity: 1;
+                top: 0;
                 top: 50%;
                 transform: translateY(-30%);
-            }
+            
             }
         }
 
