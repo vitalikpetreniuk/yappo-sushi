@@ -114,6 +114,11 @@
         padding-right: 26px;
         cursor: pointer;
 
+        @include media-for (null, $sm){
+            border-radius: 14px;
+            height: 75px;
+        }
+
         .img-wrap-local{
             display: flex;
             align-items: center;

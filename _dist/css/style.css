@@ -12019,6 +12019,11 @@ p {
     width: 3rem;
   }
 
+  .cart-page .select-wrap {
+    border-radius: 14px;
+    height: 75px;
+  }
+
   .cart-page .cart__preview-item .sale-bage-wrap .sale-badge {
     width: 17px;
     height: 17px;
