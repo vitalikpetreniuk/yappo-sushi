@@ -15,11 +15,11 @@
         position: relative;
         max-width: 1920px;
         margin: 0 auto;
-        margin-top: -35px;
+        margin-top: -65px;
 
         @include media-for (null, $sm){
             padding: 60px 0 30px;
-            
+            margin-top: -35px;
         } 
 
         a{
