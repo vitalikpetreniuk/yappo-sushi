@@ -10733,8 +10733,16 @@ p {
     border-radius: 60px;
   }
 
+  .discount-sale-page {
+    height: 74vh;
+  }
+
   .discount-sale-page .banner-slider__slide {
     height: 250px;
+  }
+
+  .discount-sale-page .slide-1::before {
+    left: -3rem;
   }
 
   .cart-modal {
@@ -10831,6 +10839,14 @@ p {
 }
 
 @media (max-width: 912px) {
+  .discount-sale-page {
+    height: auto;
+  }
+
+  .discount-sale-page .banner-slider__slide {
+    height: 370px;
+  }
+
   .cart-modal {
     height: 92vh;
   }
@@ -11857,8 +11873,12 @@ p {
     border-radius: 20px;
   }
 
+  .discount-sale-page {
+    padding: 40px 0 60px;
+  }
+
   .discount-sale-page .banner-slider__slide {
-    height: 220px;
+    height: 190px;
   }
 
   .cart-modal {

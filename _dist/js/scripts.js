@@ -435,7 +435,13 @@ $(document).ready(function() {
 	}
 
 
-
+	// categories-business-lunch
+	if (window.location.pathname === '/categories-business-lunch.html') {
+		
+		var image = $('img[src="img/icons-in-top-menu/top-menu8.svg"]');
+		
+		image.attr('src', 'img/icons-in-top-menu/top-menu8-orange.svg');
+	}
 
 
 	//cart modal
