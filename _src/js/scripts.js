@@ -490,7 +490,7 @@ $(document).ready(function() {
 
 
 	  //jq-mask
-	//   $("#phone-number-your").mask("(+380) 99-999-99-99", { placeholder: "(+380)"});
+	  $("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
 });
 
 
