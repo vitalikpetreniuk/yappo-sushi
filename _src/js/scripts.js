@@ -116,7 +116,8 @@ $(function() {
 	$('.local-wrap').on('click', function (e) {	
 		e.preventDefault();
 		$(".city-list").toggleClass('city-list-active');
-
+		$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
+		$(".burger-desck").removeClass('burger-active');
 		if ($(".city-list").hasClass('city-list-active')) {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.2)");
 		  } else {
@@ -130,6 +131,12 @@ $(function() {
 			$(".city-list").removeClass('city-list-active');
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.0)");
 		}
+
+		if (!$(e.target).closest('.btns-wrap-header-menu, .burger-desck').length) {
+			$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
+			$(".burger-desck").removeClass('burger-active');
+		}
+
 	});
 
 
