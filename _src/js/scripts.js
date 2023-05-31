@@ -473,6 +473,7 @@ $(document).ready(function() {
 	  
 	  $('.fix-cart').on('click', toggleCart);
 	  $('.cart-header').on('click', toggleCart);
+	  $('.close-cart').on('click', toggleCart);
 
 
 	//close- cart calback

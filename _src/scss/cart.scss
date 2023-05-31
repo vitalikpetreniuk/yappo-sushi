@@ -40,10 +40,11 @@
         display: none;
         position: fixed;
         top: 7rem;
-        right: 1.5rem;
+        right: -200%;
+
 
         @include media-for (null, $sm){
-            display: block;
+            display: none;
         }
     }
 
@@ -75,7 +76,7 @@
     @include media-for (null, $sm){
         width: 100%;
         height: 90vh;
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
         z-index: 101;
     }
 
@@ -354,4 +355,11 @@
 
 .cart-modal-active{
     right: 0;
+
+    .close-cart{
+        @include media-for (null, $sm){
+            display: block;
+            right: 1.5rem;
+        }
+    }
 }
