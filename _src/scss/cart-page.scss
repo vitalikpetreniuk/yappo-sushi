@@ -196,6 +196,13 @@
                 @include media-for (null, $tablet){
                     top: -10%;
                 }
+
+                .cart__preview-item{
+                    @include media-for (null, $tablet){
+                        height: 10px;
+                        align-items: center;
+                    }
+                }
             }
         }
     }
@@ -210,13 +217,29 @@
     
         .sale-bage-wrap{
             top: auto;
-            bottom: 0.5rem;
+            bottom: 0rem;
             left: 2rem;
             width: 20%;
 
-            @include media-for (null, $tablet){
+            @include media-for (null, 1700px){
                 bottom: -0.5rem;
                 left: 1rem;
+            }
+
+            @include media-for (null, 1280px){
+                bottom: -0.5rem;
+                left: 0rem;
+            }
+
+            @include media-for (null, 1200px){
+                bottom: 0rem;
+                left: 1rem;
+            }
+
+
+            @include media-for (null, $tablet){
+                bottom: -0.5rem;
+                left: .5rem;
             }
 
             .sale-badge{
@@ -225,13 +248,13 @@
                 background-size: 56%;
 
                 @include media-for (null, $tablet){
-                    // width: 25px;
-                    // height: 25px;
+                    width: 25px;
+                    height: 25px;
                 }
 
                 @include media-for (null, $sm){
-                    // width: 17px;
-                    // height: 17px;
+                    width: 17px;
+                    height: 17px;
                 }
             }
         }
@@ -261,7 +284,7 @@
             margin-right: .5rem;
 
             @include media-for (null, $sm){
-                width: 35%;
+                width: 26%;
 
             }
             img{
@@ -288,6 +311,7 @@
 
             @include media-for (null, $sm){
                 opacity: 1;
+                top: 0;
             }
         }
 
@@ -307,7 +331,7 @@
 
             @include media-for (null, $sm){
                 margin-left: auto;
-                width: 4rem;
+                width: 6rem;
 
             }
             .price{
@@ -364,8 +388,20 @@
             font-size: 14px;
             font-weight: 400;
 
+            @include media-for (null, $tablet){
+                height: 10px;     
+            }
+
             @include media-for (null, $sm){
-                font-size: 10px;
+                font-size: 10px;        
+            }
+        }
+
+        .text-span-price{
+            margin-left: 2.1rem;
+
+            @include media-for (null, $sm){
+                margin-left: 0rem;
             }
         }
 
