@@ -2811,7 +2811,6 @@ p {
 
 .pagination-wrap .pagination .current {
   font-weight: 600;
-  text-decoration: underline;
 }
 
 .pagination-wrap .btns-prew {
@@ -11297,7 +11296,7 @@ p {
   }
 
   .product__item .product__cart .btn-primary svg {
-    width: 21px;
+    width: 23px;
     height: 21px;
     display: block;
   }
@@ -11427,7 +11426,7 @@ p {
   }
 
   .filter-wrap .col-two label {
-    padding: 12px 10px;
+    padding: 12px 18px;
     width: 195px;
   }
 
