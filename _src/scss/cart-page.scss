@@ -219,6 +219,9 @@
     .cart__preview-item{
         position: relative;
         display: flex;
+        @include media-for (null, 1025px){
+            padding: 1rem 0;
+        }
     
         .sale-bage-wrap{
             top: auto;
@@ -241,11 +244,17 @@
                 left: 1rem;
             }
 
+            @include media-for (null, 1025px){
+                bottom: .5rem;
+                left: 2rem;
+                width: 28%;
+            }
+
 
             @include media-for (null, $tablet){
-                bottom: -0.5rem;
-                left: .5rem;
+                left: 1rem;
             }
+
 
             .sale-badge{
                 width: 25px;
@@ -270,6 +279,10 @@
             font-weight: 700;
             padding-top: 1rem;
             margin-bottom: 2px;
+
+            @include media-for (null, $sm){
+                padding-top: 0;
+            }
         } 
 
         .weight{
@@ -288,8 +301,12 @@
             width: 22%;
             margin-right: .5rem;
 
+            @include media-for (null, 1025px){
+                width: 28%;
+            }
+
             @include media-for (null, $sm){
-                width: 26%;
+                width: 51%;
 
             }
             img{
@@ -320,7 +337,9 @@
 
             @include media-for (null, $sm){
                 opacity: 1;
-                top: 0;
+                top: 50%;
+                transform: translateY(-30%);
+            }
             }
         }
 
@@ -416,13 +435,6 @@
             }
         }
 
-        .text-span-price{
-            // margin-left: 2.1rem;
-
-            @include media-for (null, $sm){
-                margin-left: 0rem;
-            }
-        }
 
         &:hover{
 
