@@ -5408,7 +5408,7 @@ p {
 .cart-page .resault-block {
   position: -webkit-sticky;
   position: sticky;
-  top: 15rem;
+  top: 12rem;
   background-color: #EFEFEF;
   border-radius: 24px;
   padding: 30px;
@@ -11162,6 +11162,10 @@ p {
 
   .discount-sale-page .banner-slider__slide {
     height: 370px;
+  }
+
+  .cart-page .section__title-wrap {
+    padding-left: 3rem;
   }
 
   .cart-page .title-step span {

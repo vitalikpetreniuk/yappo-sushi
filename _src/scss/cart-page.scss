@@ -5,6 +5,13 @@
     @include media-for (null, $sm){
         padding: 50px 0 60px;
     }
+
+    .section__title-wrap{
+        @include media-for (null, 822px){
+            padding-left: 3rem;
+        }
+    }
+
     .breadcrumbs{
         color: $accent;
     
@@ -474,7 +481,7 @@
 
     .resault-block{
         position: sticky;
-        top: 15rem;
+        top: 12rem;
         background-color: #EFEFEF;
         border-radius: 24px;
         padding: 30px;
