@@ -53,19 +53,15 @@ $(function() {
 	})
 
 
-	function setCartHeight() {
+		function setCartHeight() {
 		var cartList = $('.cart-list');
 		var listItem = cartList.find('li');
 		var visibleItems;
 	
 		if ($(window).width() < 768) {
+		  visibleItems = 2;
+		} else {
 		  visibleItems = 3;
-		}
-		else if  ($(window).width() < 376 ){
-			visibleItems = 2;
-		}
-		else {
-		  visibleItems = 3.7;
 		}
 	
 		var itemHeight = listItem.outerHeight();
