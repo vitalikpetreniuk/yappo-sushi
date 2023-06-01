@@ -90,7 +90,7 @@ $(function() {
 		var containerHeight = $('.cart-modal').height(); 
 		var maxHeight = containerHeight - headerHeight - footerHeight; 
 	  
-		$('.cart-list').css('max-height', maxHeight);
+		$('.cart-list').css('height', maxHeight);
 	  }
 	  
 	  $(window).on('load resize', function() {
