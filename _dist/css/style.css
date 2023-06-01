@@ -2172,6 +2172,12 @@ p {
   font-size: 12px;
 }
 
+.header .btns-wrap-header .tel,
+.header .btns-wrap-header .form-search {
+  width: 4rem;
+  text-align: center;
+}
+
 .header .btns-wrap-header .btns-wrap-header-menu {
   position: absolute;
   top: 100%;
