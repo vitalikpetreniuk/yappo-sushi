@@ -219,6 +219,7 @@
     .cart__preview-item{
         position: relative;
         display: flex;
+        padding: 1rem 0;
         @include media-for (null, 1025px){
             padding: 1rem 0;
         }
@@ -331,7 +332,7 @@
         .remove-button{
             position: absolute;
             right: 0rem;
-            top: .5rem;
+            top: 0rem;
             cursor: pointer;
             opacity: 0;
 
@@ -455,6 +456,7 @@
             text-align: center;
             display: block;
             background-color: #EFEFEF;
+            cursor: default;
         }
     }
 

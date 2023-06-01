@@ -5246,6 +5246,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem 0;
 }
 
 .cart-page .cart__preview-item .sale-bage-wrap {
@@ -5303,7 +5304,7 @@ p {
 .cart-page .cart__preview-item .remove-button {
   position: absolute;
   right: 0rem;
-  top: 0.5rem;
+  top: 0rem;
   cursor: pointer;
   opacity: 0;
 }
@@ -5386,6 +5387,7 @@ p {
   text-align: center;
   display: block;
   background-color: #EFEFEF;
+  cursor: default;
 }
 
 .cart-page .resault-block {
