@@ -498,7 +498,12 @@ $(document).ready(function() {
 	  $('.fix-cart').on('click', toggleCart);
 	  $('.cart-header').on('click', toggleCart);
 	  $('.close-cart').on('click', toggleCart);
-	  $('.local').on('click', toggleCart)
+	  
+	  $('.local').on('click', function(){
+			if ($(".cart-modal").hasClass('cart-modal-active')) {
+				toggleCart()
+			}
+	  })
 
 
 	//close- cart calback
