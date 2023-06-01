@@ -5349,12 +5349,17 @@ p {
           align-items: center;
   width: 9rem;
   margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cart-page .cart__preview-item .product__cart__info .price {
   font-weight: 700;
   font-size: 20px;
   color: #2A1A5E;
+  width: 100%;
+  text-align: right;
 }
 
 .cart-page .cart__preview-item .product__cart__info .regular-price {
@@ -11183,6 +11188,10 @@ p {
             align-items: center;
   }
 
+  .cart-page .product-list-cart ul .first-li .product-subtotal {
+    height: 22px;
+  }
+
   .cart-page .cart__preview-item .sale-bage-wrap {
     left: 1rem;
   }
@@ -12199,6 +12208,7 @@ p {
     font-size: 14px;
     margin-left: 0;
     margin-left: 0.3rem;
+    text-align: left;
   }
 
   .cart-page .cart__preview-item .product__cart__info-discount .regular-price {

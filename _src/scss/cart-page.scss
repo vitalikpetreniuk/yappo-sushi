@@ -223,6 +223,12 @@
                         align-items: center;
                     }
                 }
+                .product-subtotal {
+                    @include media-for (null, $tablet){
+                        height: 22px;
+                    }
+
+                }
             }
         }
     }
@@ -387,6 +393,7 @@
             align-items: center;
             width: 9rem;
             margin-right: auto;
+            justify-content: center;
 
             @include media-for (null, $sm){
                 
@@ -398,11 +405,13 @@
                 font-weight: 700;
                 font-size: 20px; 
                 color: $accent;
-
+                width: 100%;
+                text-align: right;
                 @include media-for (null, $sm){
                     font-size: 14px;
                     margin-left: 0;
                     margin-left: .3rem;
+                    text-align: left;
                 }
 
             }
