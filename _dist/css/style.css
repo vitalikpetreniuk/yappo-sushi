@@ -4240,6 +4240,10 @@ p {
   background-color: #d53939;
 }
 
+.resault-search .section__title:after {
+  right: 104%;
+}
+
 .categories-business-lunch {
   text-align: center;
   padding: 50px 0 80px;
@@ -10697,6 +10701,14 @@ p {
     right: 98%;
   }
 
+  .resault-search {
+    padding: 60px 0 90px;
+  }
+
+  .resault-search .section__title:after {
+    right: 105%;
+  }
+
   .categories-business-lunch .card-info {
     margin-bottom: 30px;
   }
@@ -11046,6 +11058,14 @@ p {
   .category-page .info-message p,
   .resault-search .info-message p {
     width: 45%;
+  }
+
+  .resault-search .section__title:after {
+    right: 102%;
+  }
+
+  .resault-search .section__title::before {
+    left: 106%;
   }
 
   .categories-business-lunch .card-info h3 {
