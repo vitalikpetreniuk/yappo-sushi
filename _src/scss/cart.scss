@@ -337,7 +337,7 @@
     }
 
     .orange-btn{ 
-        max-width: 277px;
+        display: none;
     }
 
 
@@ -369,6 +369,32 @@
         @include media-for (null, $sm){
             display: block;
             right: 1.5rem;
+        }
+    }
+
+    .orange-btn{ 
+        max-width: 277px;
+        position: fixed;
+        display: block;
+        width: 277px;
+        bottom: 2rem;
+        right: 4rem;
+
+
+
+        @include media-for (null, 1025px){
+            right: 3.5rem;
+            bottom: 30rem;
+        }
+
+        @include media-for (null, $tablet){
+            bottom: 10rem;
+        }
+
+        @include media-for (null, $sm){
+            bottom: 6rem;
+            left: 50%;
+            transform: translate(-50%);
         }
     }
 }
