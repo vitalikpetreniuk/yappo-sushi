@@ -56,26 +56,52 @@ $(function() {
 	})
 
 
-		function setCartHeight() {
+	// 	function setCartHeight() {
+	// 	var cartList = $('.cart-list');
+	// 	var listItem = cartList.find('li');
+	// 	var visibleItems;
+	
+	// 	if ($(window).width() < 768) {
+	// 	  visibleItems = 2;
+	// 	} else {
+	// 	  visibleItems = 3;
+	// 	}
+	
+	// 	var itemHeight = listItem.outerHeight();
+	// 	var newCartHeight = itemHeight * visibleItems;
+	// 	cartList.css('height', newCartHeight);
+	//   }
+	
+	//  
+	//   $(window).on('load resize', function() {
+	// 	setCartHeight();
+	//   });
+	
+	function setCartHeight() {
 		var cartList = $('.cart-list');
 		var listItem = cartList.find('li');
 		var visibleItems;
-	
-		if ($(window).width() < 768) {
-		  visibleItems = 2;
-		} else {
+		var windowWidth = $(window).width();
+	  
+		if (windowWidth >= 1024) {
 		  visibleItems = 3;
+		} else if (windowWidth >= 768 && windowWidth < 1024) {
+		  visibleItems = 5;
+		} else if (windowWidth >= 414 && windowWidth < 768) {
+		  visibleItems = 4;
+		} else if (windowWidth < 414) {
+		  visibleItems = 2;
 		}
-	
+	  
 		var itemHeight = listItem.outerHeight();
 		var newCartHeight = itemHeight * visibleItems;
 		cartList.css('height', newCartHeight);
 	  }
-	
-	  // Викликаємо функцію при завантаженні сторінки та при зміні розміру вікна
+	  
+	  
 	  $(window).on('load resize', function() {
 		setCartHeight();
-	  });  
+	  });
 	  
 
 	//search
