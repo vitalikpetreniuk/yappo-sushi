@@ -38,56 +38,6 @@
     //     }
     // }
 
-    @media (min-width: 1368px) and (max-width: 1600px) and (max-height: 768px) {
-        .cart-list{
-            height: 14rem;
-        }
-    }
-
-    @include media-for (null, 1367px){
-        height: 90vh;
-
-        .cart-list{
-            height: 20rem;
-        }
-    }
-
-    .close-cart{
-        display: none;
-        position: fixed;
-        top: 7rem;
-        right: -200%;
-
-
-        @include media-for (null, $sm){
-            display: none;
-        }
-    }
-
-    @include media-for (null, 1367px){
-        height: 90vh;
-
-        .cart-list{
-            height: 20rem;
-        }
-    }
-
-    @media (width: 1280px) and (height: 1024px) {
-        height: 91vh;
-    }
-
-    @media (width: 1280px) and (height: 800px) {
-        height: 89vh;
-    }
-
-    @include media-for (null, 913px){   
-        height: 92vh;
-    }
-
-    @include media-for (null, 1025px){
-        height: 94vh;
-    }
-
 
     @include media-for (null, $sm){
         width: 100%;
@@ -96,53 +46,107 @@
         z-index: 101;
     }
 
-    @media (width: 414px) and (height: 896px) {
-        height: 90vh;
-    }
 
-    @media (width: 414px) and (height: 736px) {
-        height: 90vh;
-        .cart-list{
-            height: 18rem;
-        }
-    }
+    // @media (min-width: 1368px) and (max-width: 1600px) and (max-height: 768px) {
+    //     .cart-list{
+    //         height: 14rem;
+    //     }
+    // }
 
-    @media (width: 428px) and (height: 926px) {
-        height: 90vh;
-        padding-bottom: 12rem;
-    }
+    // @include media-for (null, 1367px){
+    //     height: 90vh;
 
-    @media (width: 375px) and (height: 667px) {
-        height: 86vh;
+    //     .cart-list{
+    //         height: 20rem;
+    //     }
+    // }
 
-        .cart-list{
-            height: 14rem;
-        }
-    }
+    // .close-cart{
+    //     display: none;
+    //     position: fixed;
+    //     top: 7rem;
+    //     right: -200%;
 
-    @media (width: 360px) and (height: 740px) {
-        height: 88vh;
 
-        .cart-list{
-            height: 14rem;
-        }
-    }
+    //     @include media-for (null, $sm){
+    //         display: none;
+    //     }
+    // }
 
-    @media (width: 390px) and (height: 844px) {
-        height: 89vh;
+    // @include media-for (null, 1367px){
+    //     height: 90vh;
 
-        .cart-list{
-            height: 20rem;
-        }
-    }
+    //     .cart-list{
+    //         height: 20rem;
+    //     }
+    // }
 
-    @media (width: 320px) and (height: 533px) {
-        height: 83vh;
-        width: 100%;
-        .cart-list{
-            height: 13rem;
-        }
-    }
+    // @media (width: 1280px) and (height: 1024px) {
+    //     height: 91vh;
+    // }
+
+    // @media (width: 1280px) and (height: 800px) {
+    //     height: 89vh;
+    // }
+
+    // @include media-for (null, 913px){   
+    //     height: 92vh;
+    // }
+
+    // @include media-for (null, 1025px){
+    //     height: 94vh;
+    // }
+
+
+
+
+    // @media (width: 414px) and (height: 896px) {
+    //     height: 90vh;
+    // }
+
+    // @media (width: 414px) and (height: 736px) {
+    //     height: 90vh;
+    //     .cart-list{
+    //         height: 18rem;
+    //     }
+    // }
+
+    // @media (width: 428px) and (height: 926px) {
+    //     height: 90vh;
+    //     padding-bottom: 12rem;
+    // }
+
+    // @media (width: 375px) and (height: 667px) {
+    //     height: 86vh;
+
+    //     .cart-list{
+    //         height: 14rem;
+    //     }
+    // }
+
+    // @media (width: 360px) and (height: 740px) {
+    //     height: 88vh;
+
+    //     .cart-list{
+    //         height: 14rem;
+    //     }
+    // }
+
+    // @media (width: 390px) and (height: 844px) {
+    //     height: 89vh;
+
+    //     .cart-list{
+    //         height: 20rem;
+    //     }
+    // }
+
+    // @media (width: 320px) and (height: 533px) {
+    //     height: 83vh;
+    //     width: 100%;
+    //     .cart-list{
+    //         height: 13rem;
+    //     }
+    // }
 
 
 
@@ -375,15 +379,35 @@
 
         }
     }
+
+
 }
+
+
 
 .cart-modal-active{
     right: 0;
 
     .close-cart{
+        display: none;
         @include media-for (null, $sm){
+            position: fixed;
             display: block;
+            width: 18px;
             right: 1.2rem;
         }
+    }
+}
+
+
+.resaul-sum-wrap{
+    background-color: $text-white;
+    position: fixed;
+    width: 400px;
+    bottom: 2rem;
+
+    @include media-for (null, $sm){
+        bottom: 5rem;
+        width: 100%;
     }
 }
