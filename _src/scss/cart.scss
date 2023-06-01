@@ -34,9 +34,6 @@
         overflow-y: scroll;
         scroll-behavior: smooth;
 
-        @include media-for (null, $sm){
-            padding-bottom: 3rem;
-        }
         &::-webkit-scrollbar {
             width: 5px;
             padding-right: 5px;

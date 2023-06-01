@@ -12097,10 +12097,6 @@ p {
     z-index: 101;
   }
 
-  .cart-modal .cart-list {
-    padding-bottom: 3rem;
-  }
-
   .cart-modal .sum-wrap {
     margin: 10px 1rem 0;
   }
