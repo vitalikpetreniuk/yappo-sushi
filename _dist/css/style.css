@@ -11319,6 +11319,11 @@ p {
     font-size: 14px;
   }
 
+  .header .btns-wrap-header .tel,
+  .header .btns-wrap-header .form-search {
+    width: 2rem;
+  }
+
   .header .btns-wrap-header .btns-wrap-header-menu {
     display: none !important;
   }
