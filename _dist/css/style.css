@@ -12142,7 +12142,7 @@ p {
 
   .resaul-sum-wrap {
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
 
   .cart-page {
@@ -12254,6 +12254,12 @@ p {
 @media (max-width: 399px) {
   .filter-wrap .col-two label {
     width: 166px;
+  }
+}
+
+@media (max-width: 374px) {
+  .resaul-sum-wrap {
+    padding-bottom: 3rem;
   }
 }
 

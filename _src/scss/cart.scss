@@ -407,6 +407,9 @@
 
     @include media-for (null, $sm){
         width: 100%;
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
+    }
+    @include media-for (null, 375px){
+        padding-bottom: 3rem;
     }
 }
