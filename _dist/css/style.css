@@ -10449,6 +10449,14 @@ p {
   .cart-modal .cart-list {
     height: 20rem;
   }
+
+  .cart-modal {
+    height: 90vh;
+  }
+
+  .cart-modal .cart-list {
+    height: 20rem;
+  }
 }
 
 @media (max-width: 1294px) {
@@ -12148,6 +12156,12 @@ p {
 @media (max-width: 399px) {
   .filter-wrap .col-two label {
     width: 166px;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 1600px) and (max-height: 768px) {
+  .cart-modal .cart-list {
+    height: 14rem;
   }
 }
 
