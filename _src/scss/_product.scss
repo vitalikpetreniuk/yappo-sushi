@@ -224,6 +224,10 @@
                 color: $text-white;
                 font-weight: 700;
                 margin-right: 12px;
+
+                @include media-for (null, $sm){
+                    margin-right: 9px;
+                }
             }
         }
 
