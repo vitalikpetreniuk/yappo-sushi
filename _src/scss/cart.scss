@@ -407,7 +407,7 @@
     bottom: 2rem;
 
     @include media-for (null, $sm){
-        bottom: 5rem;
+        bottom: 6rem;
         width: 100%;
     }
 }
