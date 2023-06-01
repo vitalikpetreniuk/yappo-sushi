@@ -83,7 +83,7 @@ $(function() {
 		var visibleItems;
 		var windowWidth = $(window).width();
 	  
-		if (windowWidth >= 1024) {
+		if (windowWidth >= 1025) {
 		  visibleItems = 3;
 		} else if (windowWidth >= 768 && windowWidth < 1024) {
 		  visibleItems = 5;
