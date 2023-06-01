@@ -66,6 +66,10 @@ main{
         transition: all .9s ease-in;
         opacity: 0;
     }
+
+    @include media-for (null, 1024px){
+        // overflow-x: hidden !important;
+    }
 }
 
 button{

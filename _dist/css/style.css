@@ -10457,6 +10457,12 @@ p {
   }
 }
 
+@media (max-width: 1267px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    padding: 2rem 2.8rem;
+  }
+}
+
 @media (max-width: 1236px) {
   .product-top .storefront-product-pagination .prev {
     left: -58%;
@@ -10496,6 +10502,13 @@ p {
 @media (max-width: 1127px) {
   .product-top .storefront-product-pagination {
     display: none !important;
+  }
+}
+
+@media (max-width: 1105px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    right: 3rem;
+    padding: 2rem 2rem;
   }
 }
 
