@@ -39,7 +39,7 @@
     .img-wrap{
         img{
             @include media-for (null, $sm){
-                width: 50%;
+                // width: 50%;
     
             }
         }
