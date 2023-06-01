@@ -11252,6 +11252,7 @@ p {
   }
 
   .local-wrap .city-list {
+    padding: 16px 17px 2px 35px;
     top: -500%;
   }
 
@@ -11266,7 +11267,7 @@ p {
   .local-wrap .city-list-active {
     top: 100%;
     margin: 0 1.5rem;
-    width: 84%;
+    width: 87%;
   }
 
   .form-search .search-wrap-active form input {
