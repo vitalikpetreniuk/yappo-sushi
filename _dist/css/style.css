@@ -4846,6 +4846,7 @@ p {
 
 .cart-modal .cart-list {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .cart-modal .cart-list::-webkit-scrollbar {

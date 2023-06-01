@@ -53,7 +53,30 @@ $(function() {
 	})
 
 
-	  
+	function setCartHeight() {
+		var cartList = $('.cart-list');
+		var listItem = cartList.find('li');
+		var visibleItems;
+	
+		if ($(window).width() < 768) {
+		  visibleItems = 3;
+		}
+		else if  ($(window).width() < 376 ){
+			visibleItems = 2;
+		}
+		else {
+		  visibleItems = 3.7;
+		}
+	
+		var itemHeight = listItem.outerHeight();
+		var newCartHeight = itemHeight * visibleItems;
+		cartList.css('height', newCartHeight);
+	  }
+	
+	  // Викликаємо функцію при завантаженні сторінки та при зміні розміру вікна
+	  $(window).on('load resize', function() {
+		setCartHeight();
+	  });  
 	  
 
 	//search
@@ -515,8 +538,9 @@ $(document).ready(function() {
 	observer.observe($('.cart-modal')[0], { attributes: true, attributeFilter: ['class'] });
 
 
-	  //jq-mask
-	  $("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
+	//jq-mask
+	$("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
+
 });
 
 
