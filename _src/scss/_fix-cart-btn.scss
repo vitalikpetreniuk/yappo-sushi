@@ -17,6 +17,14 @@
         background-color: #736998;
     }
 
+    @include media-for (null, 1025px){
+        top: 170%; 
+    }
+
+    @include media-for (null, $tablet){
+        top: 130%;
+    }
+
     @include media-for (null, $sm){
         width: 50px;
         height: 50px;

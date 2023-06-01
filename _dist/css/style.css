@@ -10637,6 +10637,10 @@ p {
     height: 74vh;
   }
 
+  .fix-cart {
+    top: 170%;
+  }
+
   .filter-wrap .filter-options {
     margin-top: -300%;
   }
@@ -11042,6 +11046,10 @@ p {
 
   .page-404 .img-wrap {
     height: 160px;
+  }
+
+  .fix-cart {
+    top: 130%;
   }
 
   .popular-product,
