@@ -202,6 +202,10 @@
                     top: -10%;
                 }
 
+                @include media-for (null, $sm){
+                    display: none;
+                }
+
                 .cart__preview-item{
                     @include media-for (null, $tablet){
                         height: 10px;
@@ -214,6 +218,10 @@
 
     .pay{
         margin-top: 30px;
+
+        .radio-button-container{
+            font-size: 16px;
+        }
     }
 
     .cart__preview-item{
@@ -372,7 +380,8 @@
             @include media-for (null, $sm){
                 
                 width: 6rem;
-
+                flex-direction: row-reverse;
+                justify-content: start;
             }
             .price{
                 font-weight: 700;
@@ -381,6 +390,8 @@
 
                 @include media-for (null, $sm){
                     font-size: 14px;
+                    margin-left: 0;
+                    margin-left: .3rem;
                 }
 
             }
