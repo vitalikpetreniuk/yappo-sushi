@@ -151,28 +151,6 @@ $(function() {
 
 
 
-	///custom-select-language descctop
-
-	$('.lang-desctop').on('click', function (e) {	
-		e.preventDefault();
-		$(this).toggleClass('lang-desctop-active');
-
-	})
-
-	$('.lang-list a').on('click', function (e) {	
-		e.preventDefault();
-		const lang = $(this).data("lang");
-		$(".lang-desctop-wrap a").removeClass("active");
-		$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");
-
-		$(".lang-list a").removeClass("active");
-		$(`.lang-list a[data-lang="${lang}"]`).addClass("active");
-	})
-
-
-
-
-
 
 	//hover for svg
 
@@ -444,6 +422,24 @@ $(function() {
 
 $(document).ready(function() {
 
+		///custom-select-language descctop
+
+		$('.lang-desctop').on('click', function (e) {	
+			e.preventDefault();
+			$(this).toggleClass('lang-desctop-active');
+	
+		})
+	
+		$('.lang-list a').on('click', function (e) {	
+			e.preventDefault();
+			const lang = $(this).data("lang");
+			$(".lang-desctop-wrap a").removeClass("active");
+			$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");
+	
+			$(".lang-list a").removeClass("active");
+			$(`.lang-list a[data-lang="${lang}"]`).addClass("active");
+		})
+
 
 	var descriptionElement = $('.product-description');
 	var descriptionText = descriptionElement.text();
@@ -498,7 +494,7 @@ $(document).ready(function() {
 	  $('.fix-cart').on('click', toggleCart);
 	  $('.cart-header').on('click', toggleCart);
 	  $('.close-cart').on('click', toggleCart);
-	  
+
 	  $('.local').on('click', function(){
 			if ($(".cart-modal").hasClass('cart-modal-active')) {
 				toggleCart()
