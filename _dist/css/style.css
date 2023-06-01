@@ -2551,6 +2551,7 @@ p {
 
 .product__item .product__detail {
   text-align: center;
+  padding: 0 3rem;
 }
 
 .product__item .product__detail h3 {
@@ -2558,10 +2559,6 @@ p {
   font-size: 26px;
   color: #2A1A5E;
   margin-bottom: 11px;
-}
-
-.product__item .product__detail .cart__detail {
-  padding: 0 3rem;
 }
 
 .product__item .product__detail .cart__detail p {
@@ -11148,6 +11145,12 @@ p {
 
   .cart-page .cart__preview-item .text-span {
     height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product__item .product__detail {
+    padding: 0 2rem;
   }
 }
 
