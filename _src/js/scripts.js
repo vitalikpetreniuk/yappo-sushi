@@ -88,7 +88,7 @@ $(function() {
 		} else if (windowWidth >= 768 && windowWidth < 1024) {
 		  visibleItems = 5;
 		} else if (windowWidth >= 414 && windowWidth < 768) {
-		  visibleItems = 4;
+		  visibleItems = 3;
 		} else if (windowWidth < 414) {
 		  visibleItems = 2;
 		}
