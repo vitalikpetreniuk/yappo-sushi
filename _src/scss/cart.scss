@@ -32,11 +32,11 @@
     //     height: 100vh;
     // }
 
-    // @media (max-height: 830px){
-    //     .cart-list{
-    //         height: 20rem;
-    //     }
-    // }
+    @media (max-height: 830px){
+        .cart-list{
+            height: 20rem;
+        }
+    }
 
     .close-cart{
         display: none;
@@ -50,21 +50,11 @@
         }
     }
 
-
-
-    @media (width: 1440px) and (height: 812px) {
+    @include media-for (null, 1367px){
         height: 90vh;
 
         .cart-list{
             height: 20rem;
-        }
-    }
-
-    @media (width: 1366px) and (height: 768px) {
-        height: 90vh;
-
-        .cart-list{
-            height: 23rem;
         }
     }
 
@@ -103,14 +93,6 @@
 
     @media (width: 375px) and (height: 667px) {
         height: 86vh;
-
-        .cart-list{
-            height: 14rem;
-        }
-    }
-
-    @media (width: 375px) and (height: 812px) {
-        height: 89vh;
 
         .cart-list{
             height: 14rem;
