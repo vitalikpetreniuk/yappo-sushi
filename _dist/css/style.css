@@ -10706,7 +10706,7 @@ p {
   }
 
   .resault-search .section__title:after {
-    right: 105%;
+    right: 106%;
   }
 
   .categories-business-lunch .card-info {
@@ -11196,6 +11196,10 @@ p {
 @media (max-width: 768px) {
   .product__item .product__detail {
     padding: 0 2rem;
+  }
+
+  .resault-search .section__title:after {
+    right: 101%;
   }
 }
 

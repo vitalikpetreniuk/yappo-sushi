@@ -227,11 +227,15 @@
         &:after{
             right: 104%;
             @include media-for (null, 1025px){
-                right: 105%;
+                right: 106%;
              } 
 
              @include media-for (null, 822px){
                 right: 102%;
+             } 
+
+             @include media-for (null, 769px){
+                right: 101%;
              } 
         }
         &::before{
