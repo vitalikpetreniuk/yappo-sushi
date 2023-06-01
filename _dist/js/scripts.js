@@ -16,9 +16,12 @@ $(function() {
 				$('.header-center').addClass('header-center-scroll');
 				$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
 				$('.burger-desck').removeClass('burger-active');
+				$('.fix-cart').css('display','flex');
+				
 			  }
 			} else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
+			  $('.fix-cart').css('display','none');
 			}
 			
 			$(this).data('lastScrollTop', scrollTop);
