@@ -76,8 +76,96 @@
     }
     .slide-1::before {
         
-        @include media-for (null, 1025px){
-            left: -3rem;
+        // @include media-for (null, 1025px){
+        //     left: -3rem;
+        // }
+        // @include media-for (null, $sm){
+        //     left: -1rem;
+        // }
+    }
+
+    .slide-1{
+        &::before{
+            @include media-for (null, 1025px){
+                left: -3rem;
+             }
+            @include media-for (null, $sm){
+                width: 60px;
+            }
+        }
+    
+    
+        &::after{
+    
+            @include media-for (null, $sm){
+                width: 105px;
+            }
+        }
+    }
+    
+    .slide-2{
+        &::before{
+    
+            @include media-for (null, $sm){
+                width: 73px;
+
+            }
+        }
+    
+        a{
+            &::before{
+    
+                @include media-for (null, $sm){
+                    width: 60px;
+                }
+            } 
+        }
+    
+        &::after{
+
+    
+            @include media-for (null, $sm){
+                width: 110px;
+            }
+        }
+    }
+    
+    
+    .slide-3{
+        &::before{
+    
+            @include media-for (null, $sm){
+                width: 98px;
+            }
+        }
+    
+    
+        &::after{
+    
+            @include media-for (null, $sm){
+                width: 110px;
+            }
+        }
+    }
+    
+    
+    
+    .slide-4{
+    
+        &::before{
+    
+            @include media-for (null, $sm){
+                bottom: -0.5rem;
+                width: 71px;
+
+            }
+        }
+    
+    
+        &::after{
+            @include media-for (null, $sm){
+                width: 135px;
+            }
         }
     }
 }
