@@ -302,6 +302,13 @@
                         color: $red;
                     }
                 }
+
+                &:nth-of-type(5){
+                    label{
+                        border: 1px solid #6775D0;
+                        color: #6775D0;
+                    }
+                }
             }
         }
 

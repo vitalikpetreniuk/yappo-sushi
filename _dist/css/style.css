@@ -3392,6 +3392,11 @@ p {
   color: #D53939;
 }
 
+.filter-wrap .col-two .category-offers .filter__properties-item:nth-of-type(5) label {
+  border: 1px solid #6775D0;
+  color: #6775D0;
+}
+
 .filter-wrap .col-two .label-active {
   border: 1px solid #f45905 !important;
   background: #f45905;
