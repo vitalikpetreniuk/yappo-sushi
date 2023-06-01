@@ -459,12 +459,17 @@ $(document).ready(function() {
 
 
 	// categories-business-lunch
-	if (window.location.pathname === 'https://vitalikpetreniuk.github.io/yappo-sushi/categories-business-lunch.html') {
+	// if (window.location.pathname === '/categories-business-lunch.html') {
 		
-		var image = $('img[src="img/icons-in-top-menu/top-menu8.svg"]');
+	// 	var image = $('img[src="img/icons-in-top-menu/top-menu8.svg"]');
 		
-		image.attr('src', 'img/icons-in-top-menu/top-menu8-orange.svg');
-	}
+	// 	image.attr('src', 'img/icons-in-top-menu/top-menu8-orange.svg');
+	// }
+
+	if (window.location.pathname === '/yappo-sushi/categories-business-lunch.html') {
+		var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu8.svg"]');
+		image.src = 'img/icons-in-top-menu/top-menu8-orange.svg';
+	  }
 
 
 	//cart modal
