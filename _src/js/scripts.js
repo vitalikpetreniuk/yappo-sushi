@@ -55,47 +55,51 @@ $(function() {
 		
 	})
 
+
+
+
+	function setCartMobHeight() {
+		if ($(window).width() > 576) {
+			var headerHeight = $('.cart-title').outerHeight(); 
+			var footerHeight = $('.resaul-sum-wrap').outerHeight();
+		  
+			var containerHeight = $('.cart-modal').height(); 
+			var maxHeight = containerHeight - headerHeight - footerHeight; 
+		  
+			$('.cart-list').css('max-height', maxHeight);
+		}
+	}
 	
-	// function setCartHeight() {
-	// 	var cartList = $('.cart-list');
-	// 	var listItem = cartList.find('li');
-	// 	var visibleItems;
-	// 	var windowWidth = $(window).width();
-	  
-	// 	if (windowWidth >= 1025) {
-	// 	  visibleItems = 3;
-	// 	} else if (windowWidth >= 768 && windowWidth < 1024) {
-	// 	  visibleItems = 5;
-	// 	} else if (windowWidth >= 414 && windowWidth < 768) {
-	// 	  visibleItems = 3;
-	// 	} else if (windowWidth < 414) {
-	// 	  visibleItems = 2;
-	// 	}
-	  
-	// 	var itemHeight = listItem.outerHeight();
-	// 	var newCartHeight = itemHeight * visibleItems;
-	// 	cartList.css('height', newCartHeight);
-	//   }
-	  
-	  
-	//   $(window).on('load resize', function() {
-	// 	setCartHeight();
-	//   });
+	$(window).on('load resize', function() {
+		setCartMobHeight();
+	});
 
 
 	function setCartHeight() {
-		var headerHeight = $('.cart-title').outerHeight(); 
-		var footerHeight = $('.resaul-sum-wrap').outerHeight();
+		var cartList = $('.cart-list');
+		var listItem = cartList.find('li');
+		var visibleItems;
+		var windowWidth = $(window).width();
 	  
-		var containerHeight = $('.cart-modal').height(); 
-		var maxHeight = containerHeight - headerHeight - footerHeight; 
-	  
-		$('.cart-list').css('height', maxHeight);
-	  }
-	  
-	  $(window).on('load resize', function() {
+		if (windowWidth < 586) {
+			if (windowWidth >= 414) {
+				visibleItems = 3;
+			} else {
+				visibleItems = 2;
+			}
+		
+			var itemHeight = listItem.outerHeight();
+			var newCartHeight = itemHeight * visibleItems;
+			cartList.css('height', newCartHeight);
+		} else {
+			
+		}
+	}
+	
+	
+	$(window).on('load resize', function() {
 		setCartHeight();
-	  });
+	});
 	  
 
 	//search
