@@ -82,7 +82,7 @@ $(function() {
 		var windowWidth = $(window).width();
 	  
 		if (windowWidth < 586) {
-			if (windowWidth >= 414) {
+			if (windowWidth >= 390) {
 				visibleItems = 3;
 			} else {
 				visibleItems = 2;
