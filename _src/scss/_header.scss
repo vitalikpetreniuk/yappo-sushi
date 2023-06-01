@@ -632,6 +632,7 @@
             input{
                 border: none;
                 outline: none;
+                border-radius: 0;
                 border-bottom: 1px solid $accent;
                 width: 0;
                 transition: all .3s ease-in-out;
