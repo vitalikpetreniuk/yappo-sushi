@@ -3222,9 +3222,6 @@ p {
   text-align: left;
   position: relative;
   z-index: 2;
-  -webkit-transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
-  -o-transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
-  transition: opacity 0.4s ease, margin-top 0.4s ease, z-index 0.4s ease;
   opacity: 0;
   margin-top: -100%;
   z-index: -100;
