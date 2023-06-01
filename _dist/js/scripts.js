@@ -459,7 +459,7 @@ $(document).ready(function() {
 
 
 	// categories-business-lunch
-	if (window.location.pathname === '/categories-business-lunch.html') {
+	if (window.location.pathname === 'https://vitalikpetreniuk.github.io/yappo-sushi/categories-business-lunch.html') {
 		
 		var image = $('img[src="img/icons-in-top-menu/top-menu8.svg"]');
 		
