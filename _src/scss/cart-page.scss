@@ -10,6 +10,10 @@
         @include media-for (null, 822px){
             padding-left: 3rem;
         }
+
+        @include media-for (null, $sm){
+            padding-left: 0rem;
+        }
     }
 
     .breadcrumbs{
