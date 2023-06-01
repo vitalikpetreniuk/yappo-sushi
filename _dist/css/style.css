@@ -10317,6 +10317,10 @@ p {
     width: 7rem;
   }
 
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    padding: 2rem 3rem;
+  }
+
   .discount-sale-page .banner-slider__slide {
     height: 350px;
   }
@@ -10336,6 +10340,12 @@ p {
 @media (max-width: 1599px) {
   .discount-sale-page .banner-slider__slide {
     height: 300px;
+  }
+}
+
+@media (max-width: 1579px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    padding: 2rem 2rem;
   }
 }
 

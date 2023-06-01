@@ -332,6 +332,16 @@
                 padding-top: 22px;
             }
 
+            @include media-for (null, 1700px){
+                padding: 2rem 3rem;
+
+            }
+
+            @include media-for (null, 1580px){
+                padding: 2rem 2rem;
+
+            }
+
             @include media-for (null, 1400px){
                 width: 22%;
             }
