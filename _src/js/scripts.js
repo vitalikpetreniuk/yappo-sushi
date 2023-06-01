@@ -114,16 +114,18 @@ $(function() {
 	//local in header
 
 	$('.local-wrap').on('click', function (e) {	
+
 		e.preventDefault();
 		$(".city-list").toggleClass('city-list-active');
 		$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
 		$(".burger-desck").removeClass('burger-active');
+
 		if ($(".city-list").hasClass('city-list-active')) {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.2)");
+			toggleCart()
 		  } else {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.0)");
-		  }
-
+		}
 	})
 
 	$(document).on('click', function(e) {
@@ -496,6 +498,7 @@ $(document).ready(function() {
 	  $('.fix-cart').on('click', toggleCart);
 	  $('.cart-header').on('click', toggleCart);
 	  $('.close-cart').on('click', toggleCart);
+	  $('.local').on('click', toggleCart)
 
 
 	//close- cart calback
