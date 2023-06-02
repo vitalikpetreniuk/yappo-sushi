@@ -48,9 +48,6 @@
             color: #2A1A5E;
         }
 
-        // @media (min-height: 0px) and (max-height: 843px){
-        //     margin: 14px 0 16px;
-        // }
 
     }
 
@@ -65,10 +62,6 @@
                     margin-bottom: 18px;
                     display: block;
 
-                    // @media (min-height: 0px) and (max-height: 843px){
-                    //     margin-bottom: 10px;
-                    // }
-
                     &:hover{
                         color: $orange;
                     }
@@ -81,18 +74,12 @@
         margin: auto;
         margin-top: 35px;
 
-
-        // @media (min-height: 0px) and (max-height: 843px){
-        //     margin-top: 20px;
-        // }
     }
 
     .social-wrap{
-        margin: 20px 0 50px;
+        margin: 30px 0 35px;
         
-        // @media (min-height: 0px) and (max-height: 843px){
-        //     margin: 20px 0 20px;
-        // }
+
 
 
         a{
