@@ -5420,7 +5420,7 @@ p {
 .cart-page .resault-block {
   position: -webkit-sticky;
   position: sticky;
-  top: 12rem;
+  top: 4rem;
   background-color: #EFEFEF;
   border-radius: 24px;
   padding: 30px;

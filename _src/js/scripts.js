@@ -331,7 +331,8 @@ $(function() {
 
 	if ($('.cart-page').length > 0) {
 		$('.fix-cart').remove();
-
+		
+		$('header').css('position', 'absolute');
 		if( window.innerWidth >= 1025){
 			$('main').css('overflow','initial');
 		}
