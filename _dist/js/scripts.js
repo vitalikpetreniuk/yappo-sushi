@@ -60,50 +60,6 @@ $(function() {
 
 
 
-
-	// function setCartMobHeight() {
-	// 	if ($(window).width() > 576) {
-	// 		var headerHeight = $('.cart-title').outerHeight(); 
-	// 		var footerHeight = $('.resaul-sum-wrap').outerHeight();
-		  
-	// 		var containerHeight = $('.cart-modal').height(); 
-	// 		var maxHeight = containerHeight - headerHeight - footerHeight; 
-		  
-	// 		$('.cart-list').css('max-height', maxHeight);
-	// 	}
-	// }
-	
-	// $(window).on('load resize', function() {
-	// 	setCartMobHeight();
-	// });
-
-
-	// function setCartHeight() {
-	// 	var cartList = $('.cart-list');
-	// 	var listItem = cartList.find('li');
-	// 	var visibleItems;
-	// 	var windowWidth = $(window).width();
-	  
-	// 	if (windowWidth < 586) {
-	// 		if (windowWidth >= 390) {
-	// 			visibleItems = 2;
-	// 		} else {
-	// 			visibleItems = 2;
-	// 		}
-		
-	// 		var itemHeight = listItem.outerHeight();
-	// 		var newCartHeight = itemHeight * visibleItems;
-	// 		cartList.css('height', newCartHeight);
-	// 	} else {
-			
-	// 	}
-	// }
-	
-	
-	// $(window).on('load resize', function() {
-	// 	setCartHeight();
-	// });
-
 	  
 
 	//search
@@ -593,6 +549,25 @@ $(document).ready(function() {
 	$("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
 
 });
+
+
+// $(window).on('load resize', function() {
+// 	var $categoryList = $('.header__category ul');
+// 	var $activeLink = $categoryList.find('.link-category-active');
+  
+// 	if ($activeLink.length > 0) {
+// 	  var containerWidth = $categoryList.width();
+// 	  var activeLinkWidth = $activeLink.outerWidth();
+// 	  var activeLinkOffset = $activeLink.offset().left - $categoryList.offset().left;
+// 	  var scrollLeft = activeLinkOffset - (containerWidth / 2) + (activeLinkWidth / 2);
+  
+// 	  if (scrollLeft > 0) {
+// 		$categoryList.scrollLeft(scrollLeft);
+// 	  } else {
+// 		$categoryList.scrollLeft(0);
+// 	  }
+// 	}
+//   });
 
 
 
