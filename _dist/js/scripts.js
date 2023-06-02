@@ -551,7 +551,7 @@ $(document).ready(function() {
 });
 
 
-// $(window).on('load resize', function() {
+$(window).on('load resize', function() {
 // 	var $categoryList = $('.header__category ul');
 // 	var $activeLink = $categoryList.find('.link-category-active');
   
@@ -567,7 +567,26 @@ $(document).ready(function() {
 // 		$categoryList.scrollLeft(0);
 // 	  }
 // 	}
-//   });
+
+  // Функція для встановлення висоти блоку $('.page-404')
+  function setPageHeight() {
+    var windowHeight = $(window).height();
+    var headerHeight = $('.header').outerHeight();
+    var footerHeight = $('.footer').outerHeight();
+
+    var pageHeight = windowHeight - headerHeight - footerHeight;
+    $('.page-404').css('min-height', pageHeight + 'px');
+  }
+
+  setPageHeight(); // Викликати функцію один раз при завантаженні сторінки
+
+  $(window).resize(setPageHeight);
+
+
+
+});
+
+
 
 
 
