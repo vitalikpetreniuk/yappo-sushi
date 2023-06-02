@@ -568,7 +568,7 @@ $(window).on('load resize', function() {
 // 	  }
 // 	}
 
-  // Функція для встановлення висоти блоку $('.page-404')
+  // height $('.page-404')
   function setPageHeight() {
     var windowHeight = $(window).height();
     var headerHeight = $('.header').outerHeight();
@@ -578,7 +578,7 @@ $(window).on('load resize', function() {
     $('.page-404').css('min-height', pageHeight + 'px');
   }
 
-  setPageHeight(); // Викликати функцію один раз при завантаженні сторінки
+  setPageHeight(); 
 
   $(window).resize(setPageHeight);
 
