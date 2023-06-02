@@ -4840,7 +4840,6 @@ p {
   transition: opacity 0.5s ease-in;
   z-index: -100;
   overflow-y: auto;
-  margin-top: -1px;
   opacity: 0;
 }
 

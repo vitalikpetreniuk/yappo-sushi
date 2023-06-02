@@ -51,7 +51,7 @@ $(function() {
 		$('.burger').removeClass('burger-active')
 		$('.cart-modal').removeClass('cart-modal-active')
 		$('body').removeClass('overflow');
-
+		$('.fix-cart').css('opacity', '1');	
 		
 	})
 
@@ -531,6 +531,7 @@ $(document).ready(function() {
 			$('main').addClass('put-up');
 			$('main').removeClass('for-main-overflow ');
 			$('.header-center').addClass('header-center-scroll');
+			$('.fix-cart').css('opacity', '0');
 
 			setTimeout(()=>{
 				var headerTopHeight = $('.header-top').outerHeight();
@@ -555,8 +556,7 @@ $(document).ready(function() {
 		} else {
 			$('.widget-btns').css("left", "0");
 			$('main').removeClass('put-up');
-			$('.header-center').removeClass('header-center-scroll');
-						
+			$('.header-center').removeClass('header-center-scroll');	
 		
 		}	
 
