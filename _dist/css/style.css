@@ -4827,7 +4827,6 @@ p {
 
 .cart-modal {
   position: fixed;
-  top: 0;
   overflow-y: hidden;
   height: 100%;
   width: 400px;
