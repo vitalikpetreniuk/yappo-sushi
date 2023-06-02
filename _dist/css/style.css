@@ -4872,6 +4872,10 @@ p {
   padding-right: 5px;
 }
 
+.cart-modal .cart-list li:last-child .line {
+  display: none;
+}
+
 .cart-modal .sum-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
