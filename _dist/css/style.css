@@ -4830,7 +4830,7 @@ p {
   overflow-y: hidden;
   height: 100%;
   width: 400px;
-  right: 0%;
+  right: -200%;
   padding-top: 25px;
   background-color: #ffff;
   height: 100vh;
