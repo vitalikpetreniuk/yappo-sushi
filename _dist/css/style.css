@@ -11002,6 +11002,10 @@ p {
     border-radius: 0 0 20px 20px;
   }
 
+  .form-search .search-wrap-active form input {
+    width: 10rem;
+  }
+
   .footer .ul-one {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -11359,8 +11363,16 @@ p {
     width: 87%;
   }
 
+  .form-search .search-wrap {
+    top: -5px;
+  }
+
+  .form-search .search-wrap-active {
+    right: 0px;
+  }
+
   .form-search .search-wrap-active form input {
-    width: 7rem;
+    width: 9rem;
   }
 
   .footer {

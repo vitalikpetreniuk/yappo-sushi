@@ -653,6 +653,9 @@
         opacity: 0;
         z-index: -1;
 
+        @include media-for (null, $sm){
+            top:-5px;
+        }
         form{
             display: flex;
 
@@ -679,16 +682,21 @@
         opacity: 1;
         right: 20px;
         z-index: 10;
-
+        @include media-for (null, $sm){
+            right: 0px;
+        }
         form{
             height: auto;
 
             input{
                 width: 13rem;
-      
+                
+                @include media-for (null, $tablet){
+                    width: 10rem;
+                }
 
                 @include media-for (null, $sm){
-                    width: 7rem;
+                    width: 9rem;
                 }
             }
         }
