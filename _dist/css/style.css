@@ -2108,7 +2108,7 @@ p {
 
 .header .header-bottom .header__category ul a:hover .сhat-bubbles-wrap {
   opacity: 1;
-  z-index: 50;
+  z-index: 100;
   height: auto;
 }
 
@@ -5042,7 +5042,7 @@ p {
 .cart-modal-active {
   right: 0;
   opacity: 1;
-  z-index: 100;
+  z-index: 99;
 }
 
 .cart-modal-active .close-cart {
