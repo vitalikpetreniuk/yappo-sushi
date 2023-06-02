@@ -5055,7 +5055,7 @@ p {
 .resaul-sum-wrap {
   background-color: #ffff;
   bottom: 0rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -11477,7 +11477,7 @@ p {
     height: 50px;
     bottom: calc(100vh - 240px);
     right: 10px;
-    display: none;
+    display: none !important;
   }
 
   .filter-btn-wrap {

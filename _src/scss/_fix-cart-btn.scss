@@ -31,7 +31,7 @@
         height: 50px;
         bottom: calc(100vh - 240px);
         right: 10px;
-        display: none;
+        display: none !important;
     }
 
     .cart{
