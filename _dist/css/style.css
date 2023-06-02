@@ -10876,7 +10876,7 @@ p {
 
   .cart-page .resault-block {
     position: relative;
-    top: auto;
+    top: 0 !important;
   }
 }
 

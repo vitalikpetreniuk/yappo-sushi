@@ -504,7 +504,7 @@
 
         @include media-for (null, 1024px){
             position: relative;
-            top: auto;
+            top: 0 !important;
         }
 
         h4{
