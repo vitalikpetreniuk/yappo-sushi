@@ -83,7 +83,7 @@
         width: 12%;
         height: 100%;
         z-index: 50;
-        @include media-for (null, $sm){
+        @include media-for (null, 1025px){
             display: none;
         }
     }

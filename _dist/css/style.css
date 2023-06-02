@@ -10658,6 +10658,11 @@ p {
     margin-top: -300%;
   }
 
+  .top-slider .swiper-button-prev,
+  .top-slider .swiper-button-next {
+    display: none;
+  }
+
   .section-pay .img-wrap h2 {
     font-size: 20px;
     top: 1rem;
@@ -11486,6 +11491,15 @@ p {
     display: block;
   }
 
+  .widget-btns .widget-btn {
+    width: 50px;
+    height: 55px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 0.3rem;
+  }
+
   .fix-cart {
     width: 50px;
     height: 50px;
@@ -11580,11 +11594,6 @@ p {
 
   .top-slider .banner-slider__slide img {
     border-radius: 20px;
-  }
-
-  .top-slider .swiper-button-prev,
-  .top-slider .swiper-button-next {
-    display: none;
   }
 
   .slide-1::before {

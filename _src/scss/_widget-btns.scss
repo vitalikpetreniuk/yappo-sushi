@@ -17,6 +17,7 @@
     @include media-for (null, $sm){
         top: calc(100vh - 220px);
         display: block;
+
     }
 
     .widget-btn{
@@ -28,6 +29,13 @@
         justify-content: center;
         cursor: pointer;
         z-index: 20;
+
+        @include media-for (null, $sm){
+            width: 50px;
+            height: 55px;
+            justify-content: flex-start;
+            margin-left: .3rem;
+        }
 
 
         
