@@ -206,10 +206,10 @@ $(function() {
 			centeredSlides: true,
 			loop: true,
 			simulateTouch: true,
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev',
-			// },
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 			speed: 1000,
 			autoplay: {
 				delay: 5000,

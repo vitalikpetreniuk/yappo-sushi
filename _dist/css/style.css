@@ -3527,6 +3527,7 @@ p {
 }
 
 .top-slider .banner-slider {
+  position: relative;
   padding: 120px 0 80px;
   overflow-y: visible;
   position: relative;
@@ -3591,17 +3592,18 @@ p {
 .top-slider .swiper-button-prev,
 .top-slider .swiper-button-next {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+  top: 0%;
+  width: 12%;
+  height: 100%;
+  z-index: 50;
 }
 
 .top-slider .swiper-button-prev {
-  left: 40%;
+  left: 0;
+}
+
+.top-slider .swiper-button-next {
+  right: 0;
 }
 
 .slide-1::before {
