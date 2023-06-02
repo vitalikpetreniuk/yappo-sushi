@@ -2405,7 +2405,7 @@ p {
   position: absolute;
   right: 0;
   background-color: #ffff;
-  top: 0;
+  top: -3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2443,7 +2443,7 @@ p {
 
 .form-search .search-wrap-active {
   opacity: 1;
-  right: 0;
+  right: 20px;
   z-index: 10;
 }
 

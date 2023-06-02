@@ -645,7 +645,7 @@
         position: absolute;
         right: 0;
         background-color: $text-white;
-        top: 0;
+        top: -3px;
         display: flex;
         align-items: center;
         transition: all .3s ease-in-out; 
@@ -677,7 +677,7 @@
 
     .search-wrap-active{
         opacity: 1;
-        right: 0;
+        right: 20px;
         z-index: 10;
 
         form{
