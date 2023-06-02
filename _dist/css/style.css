@@ -3103,9 +3103,6 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
   display: none;
 }
 
@@ -4842,7 +4839,7 @@ p {
   -webkit-transition: right 0.2s ease-in-out;
   -o-transition: right 0.2s ease-in-out;
   transition: right 0.2s ease-in-out;
-  z-index: 100;
+  z-index: 50;
   overflow-y: auto;
   margin-top: -1px;
 }
