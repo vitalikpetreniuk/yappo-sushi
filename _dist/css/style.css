@@ -11582,6 +11582,11 @@ p {
     border-radius: 20px;
   }
 
+  .top-slider .swiper-button-prev,
+  .top-slider .swiper-button-next {
+    display: none;
+  }
+
   .slide-1::before {
     width: 72px;
     height: 28px;
