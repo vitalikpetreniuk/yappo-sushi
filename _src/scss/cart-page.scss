@@ -494,13 +494,13 @@
 
     .resault-block{
         position: sticky;
-        top: 13rem;
         background-color: #EFEFEF;
         border-radius: 24px;
         padding: 30px;
         max-width: 420px;
         height: 411px;
         margin: auto;
+        transition: top .2s ease-in-out;
 
         @include media-for (null, 1024px){
             position: relative;

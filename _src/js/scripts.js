@@ -17,10 +17,13 @@ $(function() {
 				$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
 				$('.burger-desck').removeClass('burger-active');
 				$('.fix-cart').css('display','flex');
+
+				$('.resault-block').css('top','8rem');
 				
 			  }
 			} else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
+			  $('.resault-block').css('top','14rem');
 			  $('.fix-cart').css('display','none');
 			}
 			
