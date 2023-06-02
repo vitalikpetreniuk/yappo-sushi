@@ -4,13 +4,13 @@
     overflow-y: hidden;
     height: 100%;
     width: 400px;
-    right: -200%;
+    right: 00%;
     padding-top: 25px;
     background-color: $text-white;
     height: 100vh;
     border-top: 1px solid $bg-gray;
      transition: opacity .5s ease-in;
-    z-index: 100;
+    z-index: -100;
     overflow-y: auto;
     margin-top: -1px;
     opacity: 0;
@@ -260,6 +260,7 @@
 .cart-modal-active{
     right: 0;
     opacity: 1;
+    z-index: 100;
     .close-cart{
         display: none;
         @include media-for (null, $sm){

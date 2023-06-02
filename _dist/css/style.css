@@ -4831,7 +4831,7 @@ p {
   overflow-y: hidden;
   height: 100%;
   width: 400px;
-  right: -200%;
+  right: 0%;
   padding-top: 25px;
   background-color: #ffff;
   height: 100vh;
@@ -4839,7 +4839,7 @@ p {
   -webkit-transition: opacity 0.5s ease-in;
   -o-transition: opacity 0.5s ease-in;
   transition: opacity 0.5s ease-in;
-  z-index: 100;
+  z-index: -100;
   overflow-y: auto;
   margin-top: -1px;
   opacity: 0;
@@ -5043,6 +5043,7 @@ p {
 .cart-modal-active {
   right: 0;
   opacity: 1;
+  z-index: 100;
 }
 
 .cart-modal-active .close-cart {
