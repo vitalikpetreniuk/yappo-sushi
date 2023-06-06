@@ -12,9 +12,10 @@
     z-index: -100;
 
     @include media-for (null, $sm){  
-        height: 100vh;
         padding-top: 82px;
         margin-top: -4px;
+        height: auto;
+        padding-bottom: 0 !important;
     }
 
     &::-webkit-scrollbar {
@@ -49,11 +50,15 @@
 
 
     .footer-modal{
-        margin-top: 130px;
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
+
+        @include media-for (null, $sm){  
+            position: relative !important;
+            margin-top: 50px;
+        }
     }
 }
 

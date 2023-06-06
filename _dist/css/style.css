@@ -3565,7 +3565,6 @@ p {
 }
 
 .modal-search .footer-modal {
-  margin-top: 130px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -11679,9 +11678,15 @@ p {
   }
 
   .modal-search {
-    height: 100vh;
     padding-top: 82px;
     margin-top: -4px;
+    height: auto;
+    padding-bottom: 0 !important;
+  }
+
+  .modal-search .footer-modal {
+    position: relative !important;
+    margin-top: 50px;
   }
 
   .top-slider {
