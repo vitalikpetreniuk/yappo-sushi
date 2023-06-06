@@ -11336,7 +11336,7 @@ p {
 @media (max-width: 575px) {
   body {
     overflow-x: hidden;
-    padding-top: 175px;
+    padding-top: 175px !important;
     overscroll-behavior-block: none;
   }
 

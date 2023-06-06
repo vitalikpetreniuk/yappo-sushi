@@ -91,7 +91,14 @@ $(function() {
 		$('.cart-modal').removeClass('cart-modal-active')
 		$('body').removeClass('overflow');
 		$('.fix-cart').css('opacity', '1');	
+		$('body').css('padding-top', '201.5px');
 		
+		if( window.innerWidth >= 600){
+			$('body').css('padding-top', '201.5px');
+		}
+		else{
+			$('body').css('padding-top', '175.5px');
+		}
 	})
 
 
@@ -530,7 +537,7 @@ $(document).ready(function() {
 				const productListHeight = cartModalHeight - (resaulBottomHeight + modatTitleHeight)
 				
 			
-			
+				$('body').css('padding-top', headerHeight + 'px');
 				$('.cart-modal').outerHeight(cartModalHeight);
 				$('.cart-modal').css('top', headerHeight + 'px');
 			
@@ -541,7 +548,6 @@ $(document).ready(function() {
 			$('.widget-btns').css("left", "0");
 			$('main').removeClass('put-up');
 			$('.header-center').removeClass('header-center-scroll');	
-		
 		}	
 
 	  }
