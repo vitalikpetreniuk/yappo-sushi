@@ -80,7 +80,7 @@ $(function() {
 		} else {
 			$(".btn-open-search").css('display','block')
 			$(".close-open-search").css('display','none')
-
+			$('main').removeClass('for-main-overflow');
 		}
 	})
 
