@@ -603,7 +603,28 @@ $(document).ready(function() {
 		}, 4000);
 	});
 
+
+
+
+
+	//we-got-success
+
+	$('.resault-block .orange-btn').click(function(e) {
+		e.preventDefault()
+		$('.we-got-success').addClass('we-got-success-active');
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		$('body').css('overflow', 'hidden');
+		setTimeout(function() {
+			 $('.we-got-success').removeClass('we-got-success-active');
+			 $('body').css('overflow', 'auto');
+		}, 3000);
+	});
+
+
+
+
 	//jq-mask
+
 	$("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
 
 

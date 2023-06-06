@@ -15,6 +15,7 @@
     padding: 26px 30px 26px 50px;
     opacity: 0;
     z-index: -100;
+    display: none;
 
     @include media-for (null, $tablet){  
         width: 90%;
@@ -58,4 +59,5 @@
 .added-success-active{
     opacity: 1;
     z-index: 50;
+    display: block;
 }
