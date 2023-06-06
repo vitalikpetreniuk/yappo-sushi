@@ -40,26 +40,23 @@ $(function() {
 	//modal search
 
 	$('.form-search-btn').on('click', function () {	
+		var footerHeight = $('.footer').outerHeight();
+		$('.modal-search').css('padding-bottom', footerHeight + 'px');
+	
 		$('.modal-search').toggleClass('modal-search-active');
 		$('main').toggleClass('for-main-overflow');
+
+
 		
 		if ($('.modal-search').hasClass('modal-search-active')) {
 			$(".btn-open-search").css('display','none'),
-			$(".close-open-search").css('display','block'),
+			$(".close-open-search").css('display','block')
 
-			$("footer").css({
-				"position": "fixed",
-				"bottom": "0",
-				"width": "100%",
-				"z-index": "50",
-			});
+
 		} else {
 			$(".btn-open-search").css('display','block')
 			$(".close-open-search").css('display','none')
 
-			$("footer").css({
-				"position": "relative",
-			});
 		}
 	})
 

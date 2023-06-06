@@ -8,7 +8,7 @@
     overflow-y: scroll;
     z-index: 50;
     text-align: center;
-    padding-top: 190px;
+    padding-top: 150px;
     opacity: 0;
     z-index: -100;
 
@@ -21,6 +21,14 @@
         border-bottom: 1px solid $accent;
         outline: none;
         text-align: center;
+    }
+
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
