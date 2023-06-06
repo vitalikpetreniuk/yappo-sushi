@@ -594,28 +594,26 @@ $(document).ready(function() {
 	observer.observe($('.cart-modal')[0], { attributes: true, attributeFilter: ['class'] });
 
 
+	//added-success
+
+	$('.btn-primary').click(function() {
+		$('.added-success').addClass('added-success-active');
+		setTimeout(function() {
+			 $('.added-success').removeClass('added-success-active');
+		}, 4000);
+	});
+
 	//jq-mask
 	$("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
+
+
 
 });
 
 
 $(window).on('load resize', function() {
-// 	var $categoryList = $('.header__category ul');
-// 	var $activeLink = $categoryList.find('.link-category-active');
-  
-// 	if ($activeLink.length > 0) {
-// 	  var containerWidth = $categoryList.width();
-// 	  var activeLinkWidth = $activeLink.outerWidth();
-// 	  var activeLinkOffset = $activeLink.offset().left - $categoryList.offset().left;
-// 	  var scrollLeft = activeLinkOffset - (containerWidth / 2) + (activeLinkWidth / 2);
-  
-// 	  if (scrollLeft > 0) {
-// 		$categoryList.scrollLeft(scrollLeft);
-// 	  } else {
-// 		$categoryList.scrollLeft(0);
-// 	  }
-// 	}
+
+
 
   // height $('.page-404')
   function setPageHeight() {
