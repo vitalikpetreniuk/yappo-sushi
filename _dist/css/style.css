@@ -3638,7 +3638,9 @@ p {
 .added-success-active {
   opacity: 1;
   z-index: 50;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .we-got-success {
