@@ -30,7 +30,7 @@ $(function() {
 			else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
 			  $('.resault-block').css('top','14rem');
-			  $('.fix-cart').css('display','none');
+			//   $('.fix-cart').css('display','none');
 			}
 			
 			$(this).data('lastScrollTop', scrollTop);
