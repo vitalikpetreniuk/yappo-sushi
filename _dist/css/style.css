@@ -1540,10 +1540,6 @@ body {
   padding-top: 201.5px;
 }
 
-body::-webkit-scrollbar {
-  width: 0;
-}
-
 body::before {
   position: absolute;
   content: "";

@@ -10,9 +10,9 @@ body{
     padding-top: 201.5px;
 
 
-    &::-webkit-scrollbar {
-        width: 0;
-    }
+    // &::-webkit-scrollbar {
+    //     width: 0;
+    // }
     &::before{
         position: absolute;
         content: '';
