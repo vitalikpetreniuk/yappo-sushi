@@ -11,15 +11,39 @@
     opacity: 0;
     z-index: -100;
 
+    @include media-for (null, $sm){  
+        height: 100vh;
+        padding-top: 82px;
+        margin-top: -4px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
     input{
         max-width: 1027px;
-        width: 100%;
+        width: 80%;
         height: 35px;
         background: none;
         border: none;
         border-bottom: 1px solid $accent;
         outline: none;
         text-align: center;
+
+        @include media-for (null, 1705px){  
+            width: 80%;
+        }
+
+        @include media-for (null, 1560px){  
+            width: 80%;
+        }
+
+        @include media-for (null, 1025px){  
+            width: 60%;
+        }
+
+
     }
 
 
