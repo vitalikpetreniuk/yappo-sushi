@@ -556,8 +556,8 @@ $(document).ready(function() {
 				
 			
 				$('body').css('padding-top', headerHeight + 'px');
-				$('.cart-modal').outerHeight(cartModalHeight);
-				$('.cart-modal').css('top', headerHeight + 'px');
+				$('.cart-modal').outerHeight(cartModalHeight + 4 + 'px');
+				$('.cart-modal').css('top', headerHeight + -4 +'px');
 			
 				$('.cart-list').outerHeight(productListHeight - 50);
 			},200)			
