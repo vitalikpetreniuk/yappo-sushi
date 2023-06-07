@@ -3769,6 +3769,10 @@ p {
   margin-left: 0.3rem;
 }
 
+.we-got-success .we-got-success-block .right-col .chek-list span {
+  display: block;
+}
+
 .we-got-success .we-got-success-block .right-col .data,
 .we-got-success .we-got-success-block .right-col .pay,
 .we-got-success .we-got-success-block .right-col .all-price-text {

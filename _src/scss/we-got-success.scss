@@ -122,7 +122,10 @@
                 .number{
                     margin-left: .3rem;
                 }
-                
+                span{
+                    display: block;
+                }
+
                 @include media-for (null, $sm){
                     font-size: 14px;
                 }
