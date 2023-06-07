@@ -153,7 +153,7 @@ $(function() {
 
 	$('.filter__checkgroup-title input').on('change', function () {
 		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
-		console.log('click')
+		// console.log('click')
 	});
 
 
@@ -451,7 +451,7 @@ $(function() {
 	
 	$('.select-dropdown__list-item').on('click', function() {
 		var itemValue = $(this).data('value');
-		console.log(itemValue);
+		// console.log(itemValue);
 		
 		var parentDropdown = $(this).closest('.select-dropdown');
 		var dropdownButton = parentDropdown.find('.select-dropdown__button span');
