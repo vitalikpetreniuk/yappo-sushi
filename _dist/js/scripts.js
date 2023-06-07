@@ -48,7 +48,7 @@ $(function() {
 		
 		  }
 		  
-		  if (currentScroll < previousScroll) {
+		  if (currentScroll < 500) {
 			$('.fix-cart').css('display', 'none'); 
 		  }
 		  
