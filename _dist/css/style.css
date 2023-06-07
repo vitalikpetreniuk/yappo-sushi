@@ -3748,7 +3748,8 @@ p {
   font-weight: 400;
   font-family: "DelaGothicOne";
   margin-bottom: 10px;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  width: 100%;
 }
 
 .we-got-success .we-got-success-block .right-col .data,
