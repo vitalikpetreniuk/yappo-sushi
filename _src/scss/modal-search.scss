@@ -32,7 +32,7 @@
         border: none;
         border-bottom: 1px solid $accent;
         outline: none;
-        text-align: center;
+        
 
         @include media-for (null, 1705px){  
             width: 80%;

@@ -1,5 +1,7 @@
 .we-got-success{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba($color: #000000, $alpha: .2);
@@ -28,6 +30,10 @@
         margin: 0 auto;
         text-align: center;
         color: $accent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
 
         @include media-for (null, $tablet){
             width: 90%;
@@ -151,7 +157,7 @@
 }
 
 .we-got-success-active{
-    z-index: 50;
+    z-index: 200;
     opacity: 1;
     display: block;
 }

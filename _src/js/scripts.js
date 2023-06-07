@@ -624,11 +624,18 @@ $(document).ready(function() {
 		$('.we-got-success').addClass('we-got-success-active');
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('body').css('overflow', 'hidden');
-		setTimeout(function() {
-			 $('.we-got-success').removeClass('we-got-success-active');
-			 $('body').css('overflow', 'auto');
-		}, 3000);
+		// setTimeout(function() {
+		// 	 $('.we-got-success').removeClass('we-got-success-active');
+		// 	 $('body').css('overflow', 'auto');
+		// }, 3000);
 	});
+
+	$('.we-got-success').click(function() {
+			$(this).removeClass('we-got-success-active');
+			$('body').css('overflow', 'auto');
+	});
+
+
 
 
 	// togle for ask section
