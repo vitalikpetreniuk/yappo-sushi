@@ -3776,7 +3776,8 @@ p {
 
 .we-got-success .we-got-success-block .right-col .data,
 .we-got-success .we-got-success-block .right-col .pay,
-.we-got-success .we-got-success-block .right-col .all-price-text {
+.we-got-success .we-got-success-block .right-col .all-price-text,
+.we-got-success .we-got-success-block .right-col .tel {
   display: block;
   color: #2A1A5E;
   font-size: 14px;
@@ -12013,6 +12014,7 @@ p {
 
   .we-got-success .we-got-success-block {
     width: 80%;
+    background-color: #ffff;
   }
 
   .we-got-success .we-got-success-block p {
@@ -12052,7 +12054,8 @@ p {
 
   .we-got-success .we-got-success-block .right-col .data,
   .we-got-success .we-got-success-block .right-col .pay,
-  .we-got-success .we-got-success-block .right-col .all-price-text {
+  .we-got-success .we-got-success-block .right-col .all-price-text,
+  .we-got-success .we-got-success-block .right-col .tel {
     font-size: 13px;
     margin-bottom: 0px;
   }
