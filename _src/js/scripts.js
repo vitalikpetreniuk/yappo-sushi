@@ -422,6 +422,19 @@ $(function() {
 	  });
 
 
+	  
+
+	  $('.link-category').each(function() {
+		var link = $(this);
+		var href = link.attr('href');
+		var currentPageURL = window.location.href;
+		
+		if (currentPageURL === href) {
+		  link.addClass('link-category-active');
+		}
+	  });
+
+
 
 	//quantity-input
 	  
