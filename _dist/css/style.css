@@ -12409,6 +12409,10 @@ p {
     padding: 60px 0 30px;
   }
 
+  .accordion-section .accordion .accordion-item button[aria-expanded=true] {
+    border-radius: 22px;
+  }
+
   .accordion-section .accordion button {
     padding: 15px 25px;
   }
