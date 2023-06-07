@@ -5320,7 +5320,7 @@ p {
           justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 1rem;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 
 .cart-modal .sum-wrap span {
@@ -12676,7 +12676,7 @@ p {
 
   .resaul-sum-wrap {
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
 
   .cart-page {
@@ -12797,7 +12797,7 @@ p {
 
 @media (max-width: 374px) {
   .resaul-sum-wrap {
-    padding-bottom: 0.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 
