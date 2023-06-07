@@ -622,7 +622,7 @@ $(document).ready(function() {
 	$('.resault-block .orange-btn').click(function(e) {
 		e.preventDefault()
 		$('.we-got-success').addClass('we-got-success-active');
-		$("html, body").animate({ scrollTop: 0 }, "slow");
+		// $("html, body").animate({ scrollTop: 0 }, "slow");
 		$('body').css('overflow', 'hidden');
 		// setTimeout(function() {
 		// 	 $('.we-got-success').removeClass('we-got-success-active');
