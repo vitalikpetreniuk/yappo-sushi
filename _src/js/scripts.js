@@ -153,7 +153,21 @@ $(function() {
 
 	$('.filter__checkgroup-title input').on('change', function () {
 		$(this).closest(".filter__checkgroup-title").toggleClass('label-active');
-		// console.log('click')
+		
+	});
+
+	$('.category-wrap-filter  .filter__checkgroup-title').on('change',function() {
+		var radioButton = $(this);
+  
+		if (radioButton.hasClass('label-active')) {
+		  var imageSrc = radioButton.find('img').attr('src');
+		  var newImageSrc = imageSrc.replace('.svg', '-white.svg');
+		  radioButton.find('img').attr('src', newImageSrc);
+		} else {
+		  var imageSrc = radioButton.find('img').attr('src');
+		  var newImageSrc = imageSrc.replace('-white.svg', '.svg');
+		  radioButton.find('img').attr('src', newImageSrc);
+		}
 	});
 
 
