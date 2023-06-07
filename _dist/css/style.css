@@ -4666,7 +4666,7 @@ p {
 .accordion-section .accordion .accordion-item {
   border: 1px solid #2A1A5E;
   margin-bottom: 18px;
-  border-radius: 24px;
+  border-radius: 26px;
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
@@ -4729,6 +4729,19 @@ p {
   background-color: #2A1A5E;
 }
 
+.accordion-section .accordion button .span-plus::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  width: 7px;
+  height: 1px;
+  background-color: #2A1A5E;
+}
+
 .accordion-section .accordion .accordion-item-active {
   background-color: #2A1A5E;
 }
@@ -4741,18 +4754,18 @@ p {
   border: 1px solid #ffff;
 }
 
-.accordion-section .accordion .accordion-item-active .span-plus::before {
-  background-color: #ffff;
+.accordion-section .accordion .accordion-item-active .span-plus::after {
+  display: none;
 }
 
-.accordion-section .accordion .accordion-item-active .span-plus::after {
+.accordion-section .accordion .accordion-item-active .span-plus::before {
   position: absolute;
   content: "";
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-      -ms-transform: translate(-50%, -50%) rotate(90deg);
-          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 7px;
   height: 1px;
   background-color: #ffff;
@@ -12397,6 +12410,10 @@ p {
   }
 
   .accordion-section .accordion button {
+    padding: 15px 25px;
+  }
+
+  .accordion-section .accordion button[aria-expanded=true] + .accordion-content {
     padding: 15px 25px;
   }
 

@@ -10,7 +10,7 @@
         .accordion-item {
           border: 1px solid $accent;
           margin-bottom: 18px;
-          border-radius: 24px;  
+          border-radius: 26px;  
           transition: none;
 
 
@@ -64,6 +64,17 @@
                     height: 1px;
                     background-color: $accent;
                 }
+
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%) rotate(90deg);
+                    width: 7px;
+                    height: 1px;
+                    background-color: $accent;
+                }
             }
        
         }
@@ -75,15 +86,15 @@
             }
             .span-plus{
                 border: 1px solid $text-white;
-                &::before{
-                    background-color: $text-white;
-                }
                 &::after{
+                    display: none;
+                }
+                &::before{
                     position: absolute;
                     content: '';
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%) rotate(90deg);
+                    transform: translate(-50%,-50%);
                     width: 7px;
                     height: 1px;
                     background-color: $text-white;
@@ -101,6 +112,10 @@
                 // transition: all 200ms linear;
                 will-change: opacity, max-height;
                 padding: 38px 0  54px 44px;
+
+                @include media-for (null, $sm){
+                    padding: 15px 25px;
+                }
             }
         }
 
