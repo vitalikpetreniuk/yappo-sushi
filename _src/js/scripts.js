@@ -519,14 +519,14 @@ $(document).ready(function() {
 		var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu8.svg"]');
 		image.src = 'img/icons-in-top-menu/top-menu8-orange.svg';
 
-		var chatBubble = $(image).prev().find("сhat-bubbles p");
+		var chatBubble = $(image).closest("сhat-bubbles p");
 		chatBubble.css("color", "#f45905");
 	  }
 
 	  if (window.location.pathname === '/yappo-sushi/product-page.html') {
 		var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu1.svg"]');
 		image.src = 'img/icons-in-top-menu/top-menu1-orange.svg';
-		var chatBubble = $(image).prev().find("сhat-bubbles p");
+		var chatBubble = $(image).closest("сhat-bubbles p");
   		chatBubble.css("color", "#f45905");
 	  }
 
