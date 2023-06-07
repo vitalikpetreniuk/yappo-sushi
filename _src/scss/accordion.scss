@@ -1,21 +1,19 @@
 .accordion-section{
     padding: 126px 0 110px; 
 
-    .accordion {
-        
-        @include media-for (null, $tablet){
-            
-        }
+    @include media-for (null, $sm){
+        padding: 60px 0 30px; 
+    }
 
-        @include media-for (null, $sm){
-            
-        }
+    .accordion {
 
         .accordion-item {
           border: 1px solid $accent;
           margin-bottom: 18px;
           border-radius: 24px;  
           transition: none;
+
+
 
           button[aria-expanded='true'] {
             border: 1px solid $accent;
@@ -35,6 +33,10 @@
             background: none;
             outline: none;
             width: 100%;
+
+            @include media-for (null, $sm){
+                padding: 15px 25px;
+            }
 
             h4{
                 font-size: 16px;
@@ -98,7 +100,7 @@
                 max-height: 100%;
                 // transition: all 200ms linear;
                 will-change: opacity, max-height;
-                padding: 38px 100px  54px 44px;
+                padding: 38px 0  54px 44px;
             }
         }
 
@@ -110,12 +112,19 @@
             will-change: opacity, max-height;
 
             p{
-               font-size: 14px;
-               font-weight: 300;
+                width: 70%;
+                font-size: 14px;
+                font-weight: 300;
                 color: $text-black;
+                margin-bottom: 25px;
 
-               @include media-for (null, $sm){
+                @include media-for (null, $tablet){
+                    width: 90%;
+                }
+
+                @include media-for (null, $sm){
                     font-size: 13px;
+                    width: 100%;
                 }
             }
         }

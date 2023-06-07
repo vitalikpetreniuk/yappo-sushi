@@ -4762,7 +4762,7 @@ p {
   opacity: 1;
   max-height: 100%;
   will-change: opacity, max-height;
-  padding: 38px 100px 54px 44px;
+  padding: 38px 0 54px 44px;
 }
 
 .accordion-section .accordion .accordion-content {
@@ -4773,9 +4773,11 @@ p {
 }
 
 .accordion-section .accordion .accordion-content p {
+  width: 70%;
   font-size: 14px;
   font-weight: 300;
   color: #262730;
+  margin-bottom: 25px;
 }
 
 .privacy-policy,
@@ -11513,6 +11515,10 @@ p {
     margin: 100px 0px 45px;
   }
 
+  .accordion-section .accordion .accordion-content p {
+    width: 90%;
+  }
+
   .privacy-policy,
   .return-policy,
   .public-offer {
@@ -12340,8 +12346,17 @@ p {
     margin-bottom: 7rem;
   }
 
+  .accordion-section {
+    padding: 60px 0 30px;
+  }
+
+  .accordion-section .accordion button {
+    padding: 15px 25px;
+  }
+
   .accordion-section .accordion .accordion-content p {
     font-size: 13px;
+    width: 100%;
   }
 
   .privacy-policy,
