@@ -660,9 +660,6 @@ $(document).ready(function() {
 
 	items.forEach(item => item.addEventListener('click', toggleAccordion));
 
-	//jq-mask
-
-	$("#phone-number-your").mask("+38 (999) 999-99-99", { placeholder: "+38 (___) ___-__-__"});
 
 
 
