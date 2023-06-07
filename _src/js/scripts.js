@@ -65,7 +65,7 @@ $(function() {
 		var pageHeight = windowHeight - headerHeight;
 
 		$('.modal-search').css('min-height', pageHeight + 4 + 'px');
-		$('.modal-search').css('padding-bottom', footerHeight + 130 + 'px');
+		$('.modal-search').css('padding-bottom', footerHeight + 230 + 'px');
 
 		$('.modal-search').toggleClass('modal-search-active');
 		$('main').toggleClass('for-main-overflow');
