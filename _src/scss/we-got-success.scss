@@ -109,7 +109,7 @@
                 font-weight: 400;
                 font-family: 'DelaGothicOne';
                 margin-bottom: 10px;
-
+                white-space: nowrap;
                 @include media-for (null, $sm){
                     font-size: 18px;
                 }
