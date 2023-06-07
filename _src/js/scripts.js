@@ -603,6 +603,11 @@ $(document).ready(function() {
 		}, 4000);
 	});
 
+	$('.added-success .orange-btn').click(function() {
+		toggleCart()
+		$('.added-success').removeClass('added-success-active');
+	});
+
 
 
 
