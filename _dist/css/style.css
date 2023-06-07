@@ -3751,6 +3751,10 @@ p {
   white-space: nowrap !important;
   width: 100%;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .we-got-success .we-got-success-block .right-col .data,

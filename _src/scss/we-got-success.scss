@@ -112,6 +112,10 @@
                 white-space: nowrap !important;
                 width: 100%;
                 display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              
                 @include media-for (null, $sm){
                     font-size: 14px;
                 }
