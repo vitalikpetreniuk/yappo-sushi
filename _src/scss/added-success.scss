@@ -3,19 +3,19 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 806px;
+    max-width: 706px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: $text-white;
     box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
-    padding: 1rem;
+    
     border-radius: 40px;
-    padding: 26px 30px 26px 50px;
-    opacity: 0;
-    z-index: -100;
-    display: none;
+    padding: 16px 20px 16px 35px;
+    opacity: 1;
+    z-index: 100;
+    // display: none;
 
     @include media-for (null, $tablet){  
         width: 90%;
@@ -48,8 +48,9 @@
 
     .orange-btn{
         margin: 0;
-        width: 303px;
-
+        width: 280px;
+        padding: 14px 0;
+        
         @include media-for (null, $tablet){  
             width: 250px;
         }
