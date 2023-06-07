@@ -2159,6 +2159,10 @@ p {
   fill: #F45905;
 }
 
+.header .header-bottom .header__category ul .link-category-active p {
+  color: #f45905;
+}
+
 .header .header-bottom .header__category ul li:first-child a {
   display: -webkit-box;
   display: -ms-flexbox;
