@@ -10919,10 +10919,6 @@ p {
     width: 6.8rem;
   }
 
-  .header .header-bottom .header__category ul a {
-    width: 6.7rem;
-  }
-
   .widget-btns {
     top: calc(100vh - 200px);
   }
