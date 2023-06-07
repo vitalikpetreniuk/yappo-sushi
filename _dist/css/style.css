@@ -3743,6 +3743,13 @@ p {
   height: 100%;
 }
 
+.we-got-success .we-got-success-block .right-col .right-col-title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
 .we-got-success .we-got-success-block .right-col h4 {
   font-size: 20px;
   font-weight: 400;
