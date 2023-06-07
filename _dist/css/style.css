@@ -5567,6 +5567,10 @@ p {
   margin: 0;
 }
 
+.cart-page .quantity .plus {
+  padding-bottom: 1px;
+}
+
 .cart-page .product-quantity {
   margin-right: auto;
 }
@@ -12695,6 +12699,10 @@ p {
 
   .cart-page .title-step span {
     left: -5%;
+  }
+
+  .cart-page .quantity .minus {
+    padding-bottom: 2px;
   }
 
   .cart-page .product-quantity {

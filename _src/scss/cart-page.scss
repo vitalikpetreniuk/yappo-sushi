@@ -91,6 +91,15 @@
             width: 3rem;
             margin: 0;
         }
+
+        @include media-for (null, $sm){
+            .minus {
+                padding-bottom: 2px;
+            }
+        }
+        .plus {
+            padding-bottom: 1px;
+        }
     }
     .product-quantity{
         margin-right: auto;
