@@ -13,9 +13,9 @@
     
     border-radius: 40px;
     padding: 16px 20px 16px 35px;
-    opacity: 1;
-    z-index: 100;
-    // display: none;
+    opacity: 0;
+    z-index: -100;
+    display: none;
 
     @include media-for (null, $tablet){  
         width: 90%;
@@ -50,7 +50,7 @@
         margin: 0;
         width: 280px;
         padding: 14px 0;
-        
+
         @include media-for (null, $tablet){  
             width: 250px;
         }
