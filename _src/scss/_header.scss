@@ -135,10 +135,10 @@
                 overflow-x: auto;
                 justify-content: space-between;
 
-                // &::-webkit-scrollbar {
-                //     width: 0;
-                //     height: 0;
-                // }
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
                 
                 
                 a{
@@ -170,6 +170,31 @@
                     // @include media-for (null, 1100px){
                     //     width: 4.8rem;
                     // }
+
+                    @include media-for (null, 1430px){
+                        width: 7.5rem;
+                    }
+
+                    @include media-for (null, 1367px){
+                        width: 6.8rem;
+                    }
+
+                    @include media-for (null, 1367px){
+                        width: 6.7rem;
+                    }
+
+                    @include media-for (null, 1025px){
+                        width: 6.6rem;
+                    }
+
+                    @include media-for (null, 822px){
+                        width: 6.2rem;
+                    }
+
+                    @include media-for (null, 769px){
+                        width: 6.5rem;
+                    }
+                    
 
 
                     // @include media-for (null, 950px){
