@@ -3771,6 +3771,7 @@ p {
 
 .we-got-success .we-got-success-block .right-col .chek-list span {
   display: block;
+  height: 20px;
 }
 
 .we-got-success .we-got-success-block .right-col .data,
