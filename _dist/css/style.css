@@ -12676,7 +12676,7 @@ p {
 
   .resaul-sum-wrap {
     width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   .cart-page {
@@ -12797,7 +12797,7 @@ p {
 
 @media (max-width: 374px) {
   .resaul-sum-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
