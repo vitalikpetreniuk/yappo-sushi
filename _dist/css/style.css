@@ -10848,12 +10848,6 @@ p {
   }
 }
 
-@media (max-width: 1429px) {
-  .header .header-bottom .header__category ul a {
-    width: 7.5rem;
-  }
-}
-
 @media (max-width: 1416px) {
   .contacts .form-wrap {
     margin: 240px 0px 30px;
@@ -10916,7 +10910,7 @@ p {
 
 @media (max-width: 1366px) {
   .header .header-bottom .header__category ul a {
-    width: 6.8rem;
+    width: 6rem;
   }
 
   .widget-btns {
