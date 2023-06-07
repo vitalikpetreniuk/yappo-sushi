@@ -626,7 +626,27 @@ $(document).ready(function() {
 	});
 
 
+	// togle for ask section
 
+	const items = document.querySelectorAll(".accordion button");
+
+	function toggleAccordion() {
+	const itemToggle = this.getAttribute('aria-expanded');
+
+		for (i = 0; i < items.length; i++) {
+			items[i].setAttribute('aria-expanded', 'false');
+			$('.accordion-item, button').removeClass("accordion-item-active");
+			
+		}
+		
+		if (itemToggle == 'false') {
+			this.setAttribute('aria-expanded', 'true');
+			$(this).addClass("accordion-item-active")
+			
+		}
+	}
+
+	items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 	//jq-mask
 

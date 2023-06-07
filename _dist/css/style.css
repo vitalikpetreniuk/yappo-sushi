@@ -4659,6 +4659,125 @@ p {
   width: 170px;
 }
 
+.accordion-section {
+  padding: 126px 0 110px;
+}
+
+.accordion-section .accordion .accordion-item {
+  border: 1px solid #2A1A5E;
+  margin-bottom: 18px;
+  border-radius: 24px;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.accordion-section .accordion .accordion-item button[aria-expanded=true] {
+  border: 1px solid #2A1A5E;
+  border-radius: 24px;
+  border-top: none;
+}
+
+.accordion-section .accordion button {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px 25px 23px 40px;
+  border-bottom: 1px solid #DCDCDC;
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+}
+
+.accordion-section .accordion button h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2A1A5E;
+  font-family: "DelaGothicOne";
+  margin: 0;
+}
+
+.accordion-section .accordion button .span-plus {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid #2A1A5E;
+}
+
+.accordion-section .accordion button .span-plus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 7px;
+  height: 1px;
+  background-color: #2A1A5E;
+}
+
+.accordion-section .accordion .accordion-item-active {
+  background-color: #2A1A5E;
+}
+
+.accordion-section .accordion .accordion-item-active h4 {
+  color: #ffff;
+}
+
+.accordion-section .accordion .accordion-item-active .span-plus {
+  border: 1px solid #ffff;
+}
+
+.accordion-section .accordion .accordion-item-active .span-plus::before {
+  background-color: #ffff;
+}
+
+.accordion-section .accordion .accordion-item-active .span-plus::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  width: 7px;
+  height: 1px;
+  background-color: #ffff;
+}
+
+.accordion-section .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 100%;
+  will-change: opacity, max-height;
+  padding: 38px 100px 54px 44px;
+}
+
+.accordion-section .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  will-change: opacity, max-height;
+}
+
+.accordion-section .accordion .accordion-content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #262730;
+}
+
 .privacy-policy,
 .return-policy,
 .public-offer {
@@ -12219,6 +12338,10 @@ p {
 
   .contacts .form-wrap .form-bottom .select-dropdown {
     margin-bottom: 7rem;
+  }
+
+  .accordion-section .accordion .accordion-content p {
+    font-size: 13px;
   }
 
   .privacy-policy,
