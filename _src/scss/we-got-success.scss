@@ -3,10 +3,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba($color: #000000, $alpha: .2);
-    z-index: 100;
-    opacity: 1;
+    z-index: -100;
+    opacity: 0;
     padding-top: 92px;
-    // display: none;
+    display: none;
 
     @include media-for (null, 1400px){
         padding-top: 60px;
