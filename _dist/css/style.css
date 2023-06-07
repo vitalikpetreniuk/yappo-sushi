@@ -3691,10 +3691,9 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: -100;
-  opacity: 0;
+  z-index: 100;
+  opacity: 1;
   padding-top: 92px;
-  display: none;
 }
 
 .we-got-success .we-got-success-block {
@@ -11987,13 +11986,17 @@ p {
     font-size: 16px;
   }
 
+  .we-got-success .we-got-success-block {
+    width: 75%;
+  }
+
   .we-got-success .we-got-success-block p {
     font-size: 12px;
   }
 
   .we-got-success .we-got-success-block .left-col {
-    padding: 26px 0 37px;
-    border-radius: 35px 0 0 35px;
+    padding: 18px 0 15px;
+    border-radius: 0 0 35px 35px;
   }
 
   .we-got-success .we-got-success-block .left-col h3 {
@@ -12014,8 +12017,8 @@ p {
   }
 
   .we-got-success .we-got-success-block .right-col {
-    padding: 26px 0 37px;
-    border-radius: 0px 35px 35px 0px;
+    padding: 15px 0 18px;
+    border-radius: 35px 35px 0px 0px;
   }
 
   .we-got-success .we-got-success-block .right-col h4 {
@@ -12026,11 +12029,11 @@ p {
   .we-got-success .we-got-success-block .right-col .pay,
   .we-got-success .we-got-success-block .right-col .all-price-text {
     font-size: 13px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
 
   .we-got-success .we-got-success-block .right-col .pay {
-    margin-bottom: 48px;
+    margin-bottom: 28px;
   }
 
   .top-slider {
