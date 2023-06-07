@@ -3,10 +3,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba($color: #000000, $alpha: .2);
-    z-index: -100;
-    opacity: 0;
+    z-index: 100;
+    opacity: 1;
     padding-top: 92px;
-    display: none;
+    // display: none;
 
     @include media-for (null, 1400px){
         padding-top: 60px;
@@ -32,41 +32,81 @@
         @include media-for (null, $tablet){
             width: 90%;
         }
+        @include media-for (null, $sm){
+           
+        }
 
         p{
             font-size: 14px;
+            @include media-for (null, $sm){
+                font-size: 12px;
+            }
         }
 
         .left-col{
-            padding: 46px 0 57px;;
+            padding: 46px 0 57px;
             border-radius: 50px 0 0 50px;
             background-color: $text-white;
             height: 100%;
+
+            @include media-for (null, $sm){
+                // border-radius: 50px 50px 0px 0px;
+                padding: 26px 0 37px;
+                border-radius: 35px 0 0 35px;
+            }
 
             h3{
                 font-weight: 400;
                 font-size: 16px;
                 font-family: 'DelaGothicOne';
                 margin-bottom: 14px;
+
+                @include media-for (null, $sm){
+                    font-size: 14px;
+                }
             }
     
             p{
                 margin-bottom: 40px;
                 font-weight: 300;
+
+                @include media-for (null, $sm){
+                    margin-bottom: 20px;
+                }
+            }
+
+            .img-wrap{
+                @include media-for (null, $sm){
+                    width: 40%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
         }
         .right-col{
-            padding: 46px 0 57px;;
+            padding: 46px 0 57px;
             background-color: #F6F6F6;
             border-radius: 0px 50px 50px 0px;
             text-align: center;
             height: 100%;
+
+            @include media-for (null, $sm){
+                // border-radius: 0px 0px 50px 50px;
+                padding: 26px 0 37px;
+                border-radius: 0px 35px 35px 0px;
+            }
 
             h4{
                 font-size: 20px;
                 font-weight: 400;
                 font-family: 'DelaGothicOne';
                 margin-bottom: 10px;
+
+                @include media-for (null, $sm){
+                    font-size: 18px;
+                }
             }
 
             .data, .pay,.all-price-text{
@@ -75,6 +115,11 @@
                 font-size: 14px;
                 font-weight: 300;
                 margin-bottom: 7px;
+
+                @include media-for (null, $sm){
+                    font-size: 13px;
+                    margin-bottom: 4px;
+                }
             }
 
             a{
@@ -87,6 +132,10 @@
 
             .pay{
                 margin-bottom: 98px;
+
+                @include media-for (null, $sm){
+                    margin-bottom: 48px;
+                }
             }
             .all-price-text{
                 margin-bottom: 3px;
