@@ -35,6 +35,8 @@ $(function() {
 			$(this).data('lastScrollTop', scrollTop);
 		});
 
+		
+
 	
 
 		var previousScroll = 0;
@@ -473,20 +475,6 @@ $(function() {
 	  }
 
 
-	  $(window).on('resize', function() {
-		if ($(window).width() <= 1024) {
-		  var $activeElement = $(".link-category-active");
-		  var containerWidth = $(".header__category ul").width();
-		  var activeElementWidth = $activeElement.outerWidth();
-		  var activeElementLeft = $activeElement.position().left;
-		  var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
-		  
-		  $(".header__category ul").scrollLeft(scrollLeft);
-		} else {
-		  $(".header__category ul").scrollLeft(0);
-		}
-	  });
-
 	//quantity-input
 	  
 	var quantityInputs = document.querySelectorAll('.quantity-input');
@@ -744,6 +732,7 @@ $(document).ready(function() {
 });
 
 
+
 $(window).on('load resize', function() {
 
 
@@ -763,6 +752,18 @@ $(window).on('load resize', function() {
   $(window).resize(setPageHeight);
 
 
+
+  if ($(window).width() <= 1024) {
+	var $activeElement = $(".link-category-active");
+	var containerWidth = $(".header__category ul").width();
+	var activeElementWidth = $activeElement.outerWidth();
+	var activeElementLeft = $activeElement.position().left;
+	var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
+	
+	$(".header__category ul").scrollLeft(scrollLeft);
+  } else {
+	$(".header__category ul").scrollLeft(0);
+  }
 
 });
 
