@@ -2159,14 +2159,6 @@ p {
   fill: #F45905;
 }
 
-.header .header-bottom .header__category ul .link-category-active {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .header .header-bottom .header__category ul .link-category-active p {
   color: #f45905;
 }

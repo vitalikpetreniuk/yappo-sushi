@@ -753,17 +753,21 @@ $(window).on('load resize', function() {
 
 
 
-//   if ($(window).width() <= 1024) {
-// 	var $activeElement = $(".link-category-active");
-// 	var containerWidth = $(".header__category ul").width();
-// 	var activeElementWidth = $activeElement.outerWidth();
-// 	var activeElementLeft = $activeElement.position().left;
-// 	var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
+  if ($(window).width() <= 1024) {
+	var $activeElement = $(".link-category-active");
+	if ($activeElement.length === 0) {
+	  return;
+	}
 	
-// 	$(".header__category ul").scrollLeft(scrollLeft);
-//   } else {
-// 	$(".header__category ul").scrollLeft(0);
-//   }
+	var containerWidth = $(".header__category ul").width();
+	var activeElementWidth = $activeElement.outerWidth();
+	var activeElementLeft = $activeElement.position().left;
+	var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
+	
+	$(".header__category ul").scrollLeft(scrollLeft);
+  } else {
+	$(".header__category ul").scrollLeft(0);
+  }
 
 });
 
