@@ -528,9 +528,29 @@ $(function() {
 	});
 
 
-	$('.select-wrap').on('click', function() {
-		$(".select-dropdown__list").toggleClass('active');
+	$('.select-wrap, .wrap-center').on('click', function() {
 		$(".arrow-rotate").toggleClass('arrow-active-rotate');
+		
+		var selectWrap = $(this);
+		var dropdownList = selectWrap.find('.select-dropdown__list');
+		
+		selectWrap.toggleClass('active');
+		dropdownList.toggleClass('active');
+	});
+	
+	$('.select-dropdown__list-item').on('click', function() {
+		var itemCity = $(this).find('.city').text();
+		var itemRegion = $(this).find('.region').text();
+		
+		var parentDropdown = $(this).closest('.select-dropdown');
+		var dropdownButton = parentDropdown.find('.select-dropdown__button');
+		var dropdownCity = dropdownButton.find('.city');
+		var dropdownRegion = dropdownButton.find('.region');
+		
+		dropdownCity.text(itemCity);
+		dropdownRegion.text(itemRegion);
+		
+		$('.select-wrap, .select-dropdown__list').removeClass('active');
 	});
 
 
