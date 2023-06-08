@@ -775,7 +775,7 @@ $(document).ready(function() {
 		var icon = $(this).find("span");
 	  
 		$(".slide-header").not(this).next().slideUp();
-		$(".slide-header").not(this).find("span").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+		$(".slide-header").not(this).removeClass("accordion-item-active").find("span").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 	  
 		if (icon.hasClass("glyphicon-chevron-down")) {
 		  $(this).addClass("accordion-item-active");
