@@ -749,25 +749,48 @@ $(document).ready(function() {
 
 	// togle for ask section
 
-	const items = document.querySelectorAll(".accordion button");
+	// const items = document.querySelectorAll(".accordion button");
 
-	function toggleAccordion() {
-	const itemToggle = this.getAttribute('aria-expanded');
+	// function toggleAccordion() {
+	// const itemToggle = this.getAttribute('aria-expanded');
 
-		for (i = 0; i < items.length; i++) {
-			items[i].setAttribute('aria-expanded', 'false');
-			$('.accordion-item, button').removeClass("accordion-item-active");
+	// 	for (i = 0; i < items.length; i++) {
+	// 		items[i].setAttribute('aria-expanded', 'false');
+	// 		$('.accordion-item, button').removeClass("accordion-item-active");
 			
-		}
+	// 	}
 		
-		if (itemToggle == 'false') {
-			this.setAttribute('aria-expanded', 'true');
-			$(this).addClass("accordion-item-active")
+	// 	if (itemToggle == 'false') {
+	// 		this.setAttribute('aria-expanded', 'true');
+	// 		$(this).addClass("accordion-item-active")
 			
-		}
-	}
+	// 	}
+	// }
 
-	items.forEach(item => item.addEventListener('click', toggleAccordion));
+	// items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+	$(".slide-header").click(function(e) {
+		var icon = $(this).find("span");
+	  
+		$(".slide-header").not(this).next().slideUp();
+		$(".slide-header").not(this).find("span").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+	  
+		if (icon.hasClass("glyphicon-chevron-down")) {
+		  $(this).addClass("accordion-item-active");
+		  icon.removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+		} else {
+		  $(this).addClass("accordion-item-active");
+		  icon.removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+		}
+	  
+		$(this).next().slideToggle(function() {
+		  if (!$(this).is(":visible")) {
+			$(this).prev().removeClass("accordion-item-active");
+		  }
+		});
+	  });
 
 });
 

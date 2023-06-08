@@ -4754,28 +4754,23 @@ p {
 }
 
 .accordion-section {
-  padding: 126px 0 110px;
+  padding: 116px 0 110px;
 }
 
-.accordion-section .accordion .accordion-item {
+.accordion-section .slide-header {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.accordion-section .slide-wrap {
   border: 1px solid #2A1A5E;
+  border-radius: 27px;
   margin-bottom: 18px;
-  border-radius: 26px;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
 }
 
-.accordion-section .accordion .accordion-item button[aria-expanded=true] {
-  border: 1px solid #2A1A5E;
-  border-radius: 24px;
-  border-top: none;
-}
-
-.accordion-section .accordion button {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
+.accordion-section .slide-header {
+  position: relative;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4786,14 +4781,14 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 23px 25px 23px 40px;
-  border-bottom: 1px solid #DCDCDC;
-  border: none;
-  background: none;
-  outline: none;
-  width: 100%;
+  border-radius: 26px;
 }
 
-.accordion-section .accordion button h4 {
+.accordion-section .slide-header .glyphicon {
+  position: absolute;
+}
+
+.accordion-section .slide-header h4 {
   font-size: 16px;
   font-weight: 400;
   color: #2A1A5E;
@@ -4801,7 +4796,7 @@ p {
   margin: 0;
 }
 
-.accordion-section .accordion button .span-plus {
+.accordion-section .slide-header .span-plus {
   position: relative;
   display: block;
   width: 18px;
@@ -4810,7 +4805,7 @@ p {
   border: 1px solid #2A1A5E;
 }
 
-.accordion-section .accordion button .span-plus::before {
+.accordion-section .slide-header .span-plus::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -4823,7 +4818,7 @@ p {
   background-color: #2A1A5E;
 }
 
-.accordion-section .accordion button .span-plus::after {
+.accordion-section .slide-header .span-plus::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -4836,23 +4831,38 @@ p {
   background-color: #2A1A5E;
 }
 
-.accordion-section .accordion .accordion-item-active {
-  background-color: #2A1A5E;
+.accordion-section .slide-content {
+  display: none;
+  padding: 38px 0 54px 44px;
 }
 
-.accordion-section .accordion .accordion-item-active h4 {
+.accordion-section .slide-content p {
+  width: 70%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #262730;
+  margin-bottom: 25px;
+}
+
+.accordion-section .accordion-item-active {
+  background-color: #2A1A5E;
+  border-bottom: 1px solid #2A1A5E;
+  border-radius: 26px;
+}
+
+.accordion-section .accordion-item-active h4 {
   color: #ffff;
 }
 
-.accordion-section .accordion .accordion-item-active .span-plus {
+.accordion-section .accordion-item-active .span-plus {
   border: 1px solid #ffff;
 }
 
-.accordion-section .accordion .accordion-item-active .span-plus::after {
+.accordion-section .accordion-item-active .span-plus::after {
   display: none;
 }
 
-.accordion-section .accordion .accordion-item-active .span-plus::before {
+.accordion-section .accordion-item-active .span-plus::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -4863,28 +4873,6 @@ p {
   width: 7px;
   height: 1px;
   background-color: #ffff;
-}
-
-.accordion-section .accordion button[aria-expanded=true] + .accordion-content {
-  opacity: 1;
-  max-height: 100%;
-  will-change: opacity, max-height;
-  padding: 38px 0 54px 44px;
-}
-
-.accordion-section .accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  will-change: opacity, max-height;
-}
-
-.accordion-section .accordion .accordion-content p {
-  width: 70%;
-  font-size: 14px;
-  font-weight: 300;
-  color: #262730;
-  margin-bottom: 25px;
 }
 
 .privacy-policy,
@@ -11608,7 +11596,7 @@ p {
     margin: 100px 0px 45px;
   }
 
-  .accordion-section .accordion .accordion-content p {
+  .accordion-section .slide-content p {
     width: 90%;
   }
 
@@ -12489,19 +12477,16 @@ p {
     padding: 60px 0 30px;
   }
 
-  .accordion-section .accordion .accordion-item button[aria-expanded=true] {
+  .accordion-section .slide-header {
+    padding: 15px 25px;
+  }
+
+  .accordion-section .slide-content {
+    padding: 15px 25px;
     border-radius: 22px;
   }
 
-  .accordion-section .accordion button {
-    padding: 15px 25px;
-  }
-
-  .accordion-section .accordion button[aria-expanded=true] + .accordion-content {
-    padding: 15px 25px;
-  }
-
-  .accordion-section .accordion .accordion-content p {
+  .accordion-section .slide-content p {
     font-size: 13px;
     width: 100%;
   }
