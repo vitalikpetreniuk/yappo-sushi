@@ -370,25 +370,30 @@ $(function() {
 	//при посадці стерти,це тестове
 	
 	var miniCartCount = $(".mini-cart-count");
-    miniCartCount.text("+");
 
 	$(".btn-primary").click(function(e) {
-		e.preventDefault();
-		var miniCartCount = $(".mini-cart-count");
-		var randomNumber = Math.floor(Math.random() * 99) + 1;
-		miniCartCount.text(randomNumber);
-	});
-
-	$(".btn-primary").click(function(e) {
-		e.preventDefault();
-		var miniCartCount = $(".mini-cart-count");
-		var count = parseInt(miniCartCount.text());
-		
-		if (count > 0) {
-			$(".speech").addClass("speech-active");
-		} else {
-			$(".speech").removeClass("speech-active");
-		}
+	  e.preventDefault();
+	  var randomNumber = Math.floor(Math.random() * 10) + 1;
+	  var countText = randomNumber > 9 ? "9+" : randomNumber.toString();
+	  miniCartCount.text(countText);
+	
+	  if (randomNumber > 0) {
+		$(".speech").addClass("speech-active");
+		miniCartCount.css({
+		  "background": "#F45905",
+		  "background-repeat": "initial",
+		  "background-position": "initial",
+		  "background-size": "initial"
+		});
+	  } else {
+		$(".speech").removeClass("speech-active");
+		miniCartCount.css({
+		  "background": "url(../img/plus-mini-cart.svg) #F45905",
+		  "background-repeat": "no-repeat",
+		  "background-position": "50% 50%",
+		  "background-size": "45%"
+		});
+	  }
 	});
 	////
 
