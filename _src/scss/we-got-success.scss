@@ -125,7 +125,10 @@
                 }
                 span{
                     display: block;
-                    height: 20px;
+
+                    @include media-for (null, $sm){
+                        height: 20px;
+                    }
                 }
 
                 @include media-for (null, $sm){

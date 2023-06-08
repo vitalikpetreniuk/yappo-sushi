@@ -3780,7 +3780,6 @@ p {
 
 .we-got-success .we-got-success-block .right-col .chek-list span {
   display: block;
-  height: 20px;
 }
 
 .we-got-success .we-got-success-block .right-col .data,
@@ -12075,6 +12074,10 @@ p {
   .we-got-success .we-got-success-block .right-col {
     padding: 15px 0 18px;
     border-radius: 35px 35px 0px 0px;
+  }
+
+  .we-got-success .we-got-success-block .right-col .chek-list span {
+    height: 20px;
   }
 
   .we-got-success .we-got-success-block .right-col .chek-list {
