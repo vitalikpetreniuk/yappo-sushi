@@ -31,7 +31,7 @@
         @include media-for (null, $sm){
             text-align: center;
             margin: auto;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -597,4 +597,66 @@
             }
         }
     }
+
+    .delivery {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        @include media-for (null, $sm){
+            margin-bottom: 2rem;
+        }
+
+        .radio-button-container {
+            position: relative;
+            padding: 0;
+
+            &:first-child{
+                margin-right: 7rem;
+                @include media-for (null, $sm){
+                    margin-right: 2rem;
+                }
+            }
+
+            & input:checked ~ .checkmark {
+                background-color: $accent !important;
+                color: $text-white !important;
+            }
+            
+            .checkmark {
+                display: block;
+                border-radius: 24px;
+                text-transform: uppercase;
+                color: $accent;
+                padding: 19px 0px;
+                font-size: 16px;
+                font-weight: 700;
+                background-color: $text-white;
+                border: 1px solid $accent;
+                position: relative;
+                top: auto;
+                left: auto;
+                height: auto;
+                width: 204px;
+                text-align: center;
+                @include media-for (null, $sm){
+                    width: 130px;
+                }
+
+                @include media-for (null, $sm){
+                    font-size: 14px;
+                    border-radius: 20px;
+                    padding: 13px 0px;
+                }
+        
+                &::after,
+                &::before{
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+    
+
 }

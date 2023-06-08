@@ -555,7 +555,27 @@ $(function() {
 
 
 	
-
+	//cart page delivery
+	var deliveryLabel = $('.delivery-label input');
+	var selfPickupLabel = $('.self-pickup-label input');
+	var streetInput = $('.street');
+	var entranceInput = $('.entrance');
+	var apartmentInput = $('.apartment');
+  
+	deliveryLabel.on('click', handleRadioChange);
+	selfPickupLabel.on('click', handleRadioChange);
+  
+	function handleRadioChange() {
+	  if (selfPickupLabel.is(':checked')) {
+		streetInput.hide();
+		entranceInput.hide();
+		apartmentInput.hide();
+	  } else {
+		streetInput.show();
+		entranceInput.show();
+		apartmentInput.show();
+	  }
+	}
 })
 
 
@@ -597,6 +617,9 @@ $(document).ready(function() {
 		descriptionElement.text(descriptionText + '...');
 	  }
 	}
+
+
+
 
 
 	// categories-business-lunch
@@ -745,9 +768,6 @@ $(document).ready(function() {
 	}
 
 	items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
-
 
 });
 
