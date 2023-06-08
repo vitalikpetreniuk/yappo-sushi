@@ -475,7 +475,7 @@ $(function() {
 
 	  $(window).on('resize', function() {
 		if ($(window).width() <= 1024) {
-		  var $activeElement = $("li .link-category-active");
+		  var $activeElement = $(".link-category-active");
 		  var containerWidth = $(".header__category ul").width();
 		  var activeElementWidth = $activeElement.outerWidth();
 		  var activeElementLeft = $activeElement.position().left;
