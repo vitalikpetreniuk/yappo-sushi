@@ -752,7 +752,7 @@ $(window).on('load resize', function() {
   $(window).resize(setPageHeight);
 
 
-
+  
   if ($(window).width() <= 1024) {
 	var $activeElement = $(".link-category-active");
 	if ($activeElement.length === 0) {

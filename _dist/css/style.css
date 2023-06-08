@@ -1523,7 +1523,7 @@ progress {
 
 @font-face {
   font-family: "DelaGothicOne";
-  src: url("../fonts/DelaGothicOne-Regular.ttf") format("truetype"), url("../fonts/DelaGothicOne-Regular.woff") format("woff"), url("../fonts/DelaGothicOne-Regular.woff2") format("woff2");
+  src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
