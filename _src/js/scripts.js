@@ -23,7 +23,7 @@ $(function() {
 
 				$('.resault-block').css('top','8rem');
 
-				$('.form-wrap').css('top','6rem');
+				$('.form-wrap').css('top','3.8rem');
 			  }
 
 			} 
