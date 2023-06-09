@@ -10977,6 +10977,12 @@ p {
   }
 }
 
+@media (max-width: 1299px) {
+  .header .header-bottom .header__category ul a {
+    width: 6.3rem;
+  }
+}
+
 @media (max-width: 1294px) {
   .no-product-wrap .no-product {
     width: 250px;

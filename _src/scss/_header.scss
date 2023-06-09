@@ -179,6 +179,10 @@
                         width: 6rem;
                     }
 
+                    @include media-for (null, 1300px){
+                        width: 6.3rem;
+                    }
+
 
                     @include media-for (null, 1025px){
                         width: 6.6rem;
