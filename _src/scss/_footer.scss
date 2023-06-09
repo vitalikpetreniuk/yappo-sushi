@@ -3,7 +3,6 @@
     color: $text-white;
     background-color: $accent;
     padding: 24px 0 28px;
-
     @include media-for (null, $sm){  
         text-align: center;
         top: 100%;

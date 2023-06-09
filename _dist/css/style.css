@@ -3652,6 +3652,7 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .modal-search-active {
@@ -11550,6 +11551,10 @@ p {
 
   .fix-cart {
     top: 130%;
+  }
+
+  .modal-search {
+    padding-bottom: 430px;
   }
 
   .modal-search .form-wrap {

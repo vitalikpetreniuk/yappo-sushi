@@ -10,12 +10,17 @@
     z-index: -100;
     display: none;
 
+    @include media-for (null, $tablet){  
+        padding-bottom: 430px;
+    }
+
     @include media-for (null, $sm){  
         padding-top: 92px;
         margin-top: -4px;
         height: auto;
         padding-bottom: 0 !important;
     }
+    
 
     &::-webkit-scrollbar {
         width: 0;
@@ -78,7 +83,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-
+        z-index: 100;
         @include media-for (null, $sm){  
             position: relative !important;
             margin-top: 50px;
