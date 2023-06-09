@@ -11553,6 +11553,7 @@ p {
 
   .fix-cart {
     top: 130%;
+    display: none !important;
   }
 
   .modal-search {

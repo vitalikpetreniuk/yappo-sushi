@@ -24,6 +24,7 @@
 
     @include media-for (null, $tablet){
         top: 130%;
+        display: none !important;
     }
 
     @include media-for (null, $sm){
