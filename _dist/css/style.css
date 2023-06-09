@@ -2634,6 +2634,11 @@ p {
   font-size: 26px;
   color: #2A1A5E;
   margin-bottom: 11px;
+  height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .product__item .product__detail .cart__detail p {
@@ -11915,6 +11920,7 @@ p {
   .product__item .product__detail h3 {
     margin-bottom: 17px;
     font-size: 16px;
+    height: 1.5rem;
   }
 
   .product__item .product__detail .cart__detail p {
