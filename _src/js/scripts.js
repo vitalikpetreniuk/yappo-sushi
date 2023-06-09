@@ -402,7 +402,9 @@ $(function() {
 
 
 
-	  // click  on header menu
+	// click  on header menu
+
+
 	//   var originalPaths = [];
 	//   var selectedElement = null;
 	  
@@ -441,38 +443,7 @@ $(function() {
 		}
 	  });
 
-	// 	$('.link-category').each(function() {
-	// 	var link = $(this);
-	// 	var href = link.attr('href');
-	// 	var currentPageURL = window.location.href;
-		
-	// 	if (currentPageURL === href) {
-	// 	  link.addClass('link-category-active');
-	// 	  changeImage(link);
-	// 	}
-	//   });
 
-	//   $('.link-category').click(function() {
-	// 	changeImage($(this));
-	//   });
-	  
-	//   function changeImage(link) {
-	// 	var index = $('.link-category').index(link);
-	// 	var currentPath = link.find('.image-category').attr('src');
-	  
-	// 	if (selectedElement !== null) {
-	// 	  var previousPath = $(selectedElement).find('.image-category').attr('src');
-	// 	  $(selectedElement).find('.image-category').attr('src', previousPath.replace('-orange.svg', '.svg'));
-	// 	}
-	  
-	// 	if (currentPath === originalPaths[index]) {
-	// 	  link.find('.image-category').attr('src', originalPaths[index].replace('.svg', '-orange.svg'));
-	// 	  selectedElement = link.get(0);
-	// 	} else {
-	// 	  selectedElement = null;
-	// 	  link.find('.image-category').attr('src', originalPaths[index]);
-	// 	}
-	//   }
 
 
 	//quantity-input
