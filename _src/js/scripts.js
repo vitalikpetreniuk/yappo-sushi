@@ -731,12 +731,8 @@ $(document).ready(function() {
 	$('.resault-block .orange-btn').click(function(e) {
 		e.preventDefault()
 		$('.we-got-success').addClass('we-got-success-active');
-		// $("html, body").animate({ scrollTop: 0 }, "slow");
 		$('body').css('overflow', 'hidden');
-		// setTimeout(function() {
-		// 	 $('.we-got-success').removeClass('we-got-success-active');
-		// 	 $('body').css('overflow', 'auto');
-		// }, 3000);
+
 	});
 
 	$('.we-got-success').click(function() {
@@ -748,27 +744,6 @@ $(document).ready(function() {
 
 
 	// togle for ask section
-
-	// const items = document.querySelectorAll(".accordion button");
-
-	// function toggleAccordion() {
-	// const itemToggle = this.getAttribute('aria-expanded');
-
-	// 	for (i = 0; i < items.length; i++) {
-	// 		items[i].setAttribute('aria-expanded', 'false');
-	// 		$('.accordion-item, button').removeClass("accordion-item-active");
-			
-	// 	}
-		
-	// 	if (itemToggle == 'false') {
-	// 		this.setAttribute('aria-expanded', 'true');
-	// 		$(this).addClass("accordion-item-active")
-			
-	// 	}
-	// }
-
-	// items.forEach(item => item.addEventListener('click', toggleAccordion));
-
 
 
 	$(".slide-header").click(function(e) {
