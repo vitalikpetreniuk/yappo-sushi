@@ -97,11 +97,13 @@ $(function() {
 			$(".btn-open-search").css('display','none'),
 			$(".close-open-search").css('display','block')
 			$("html, body").animate({ scrollTop: 0 }, "slow");
+			$('.fix-cart').css('display','none');
 
 		} else {
 			$(".btn-open-search").css('display','block')
 			$(".close-open-search").css('display','none')
 			$('main').removeClass('for-main-overflow');
+			$('.fix-cart').css('display','flex');
 		}
 	})
 
