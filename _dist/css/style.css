@@ -3604,9 +3604,7 @@ p {
 .modal-search {
   position: absolute;
   width: 100%;
-  background: url(../img/bg-search.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #F3F3F3;
   overflow-y: scroll;
   z-index: 50;
   text-align: center;
