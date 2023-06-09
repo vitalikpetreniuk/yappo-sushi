@@ -2423,9 +2423,6 @@ p {
   bottom: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 
 .lang-desctop .lang-list .lang-opener {
