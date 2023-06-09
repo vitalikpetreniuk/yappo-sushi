@@ -23,7 +23,7 @@
 
     .form-wrap{
         position: fixed;
-        top: 10rem;
+        top: 7rem;
         width: 100%;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -35,10 +35,12 @@
         padding-top: 6.5rem;
         transition: all .1s ease-in;
 
+        @include media-for (null, $tablet){  
+            top:8.5rem;
+        }
 
         @include media-for (null, $sm){  
-            height: 6rem;
-            padding-top: 2.5rem;
+            top:5.5rem;
         }
 
     }

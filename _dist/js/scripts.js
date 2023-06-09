@@ -23,7 +23,15 @@ $(function() {
 
 				$('.resault-block').css('top','8rem');
 
-				$('.form-wrap').css('top','3.8rem');
+
+				if($(window).width() <= 600){
+					$('.form-wrap').css('top','0.8rem');
+				}else if ($(window).width() <= 822){
+					$('.form-wrap').css('top','0.8rem');
+				}
+				else{
+					$('.form-wrap').css('top','0.8rem');
+				}
 			  }
 
 			} 
@@ -31,7 +39,16 @@ $(function() {
 			else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
 			  $('.resault-block').css('top','14rem');
-			  $('.form-wrap').css('top','10rem');
+			 
+
+				if($(window).width() <= 600){
+					$('.form-wrap').css('top','5.5rem');
+				}else if ($(window).width() <= 822){
+					$('.form-wrap').css('top','8.5rem');
+				}
+				else{
+					$('.form-wrap').css('top','7rem');
+				}
 			}
 			
 			$(this).data('lastScrollTop', scrollTop);

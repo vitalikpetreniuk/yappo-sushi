@@ -3620,7 +3620,7 @@ p {
 
 .modal-search .form-wrap {
   position: fixed;
-  top: 10rem;
+  top: 7rem;
   width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -11552,6 +11552,10 @@ p {
     top: 130%;
   }
 
+  .modal-search .form-wrap {
+    top: 8.5rem;
+  }
+
   .added-success {
     width: 90%;
   }
@@ -12091,8 +12095,7 @@ p {
   }
 
   .modal-search .form-wrap {
-    height: 6rem;
-    padding-top: 2.5rem;
+    top: 5.5rem;
   }
 
   .modal-search .footer-modal {
