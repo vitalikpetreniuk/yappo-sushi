@@ -30,7 +30,7 @@ $(function() {
 					$('.form-wrap').css('top','0.8rem');
 				}
 				else{
-					$('.form-wrap').css('top','0.8rem');
+					$('.form-wrap').css('top','1.8rem');
 				}
 			  }
 
@@ -379,7 +379,6 @@ $(function() {
 	if ($('.cart-page').length > 0) {
 		$('.fix-cart').remove();
 		
-		// $('header').css('position', 'absolute');
 		if( window.innerWidth >= 1025){
 			$('main').css('overflow','initial');
 		}
