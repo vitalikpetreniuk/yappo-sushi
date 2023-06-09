@@ -283,6 +283,11 @@
                         } 
                   
                     }
+                    .image-category-active{
+                        display: none;
+                    }
+
+
 
                     &:hover{
                         background: $bg-gray-opacity;
@@ -301,10 +306,19 @@
                     &:hover a .category__img svg path {
                         fill: $orange;
                     }
+
+
                 }
                 .link-category-active{
                     p{
                         color: #f45905;
+                    }
+
+                    .cotegory_img{
+                        display: none;
+                    }
+                    .image-category-active{
+                        display: block;
                     }
                 }
                 

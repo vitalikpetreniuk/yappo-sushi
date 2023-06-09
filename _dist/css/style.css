@@ -2145,6 +2145,10 @@ p {
           justify-content: center;
 }
 
+.header .header-bottom .header__category ul a .image-category-active {
+  display: none;
+}
+
 .header .header-bottom .header__category ul a:hover {
   background: rgba(217, 217, 217, 0.19);
 }
@@ -2161,6 +2165,14 @@ p {
 
 .header .header-bottom .header__category ul .link-category-active p {
   color: #f45905;
+}
+
+.header .header-bottom .header__category ul .link-category-active .cotegory_img {
+  display: none;
+}
+
+.header .header-bottom .header__category ul .link-category-active .image-category-active {
+  display: block;
 }
 
 .header .header-bottom .header__category ul li:first-child a {
