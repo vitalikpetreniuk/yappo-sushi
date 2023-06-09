@@ -522,6 +522,7 @@ $(function() {
 		dropdownRegion.text(itemRegion);
 		
 		$('.select-wrap, .select-dropdown__list').removeClass('active');
+		$(".arrow-rotate").removeClass('arrow-active-rotate');
 	});
 
 
