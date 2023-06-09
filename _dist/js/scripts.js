@@ -647,7 +647,9 @@ $(document).ready(function() {
 			$('main').removeClass('for-main-overflow ');
 			$('.header-center').addClass('header-center-scroll');
 			$('.fix-cart').css('opacity', '0');
-
+			$('.modal-search').removeClass('modal-search-active');
+			$(".btn-open-search").css('display','block')
+			$(".close-open-search").css('display','none')
 			setTimeout(()=>{
 				var headerTopHeight = $('.header-top').outerHeight();
 				var headerBottomHeight = $('.header-bottom').outerHeight();
