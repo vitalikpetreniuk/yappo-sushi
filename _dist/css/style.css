@@ -3625,6 +3625,7 @@ p {
   border: none;
   border-bottom: 1px solid #2A1A5E;
   outline: none;
+  border-radius: 0;
 }
 
 .modal-search .footer-modal {

@@ -32,6 +32,7 @@
         border: none;
         border-bottom: 1px solid $accent;
         outline: none;
+        border-radius: 0;
         
 
         @include media-for (null, 1705px){  
