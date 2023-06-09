@@ -12916,6 +12916,12 @@ p {
 
 @media (max-width: 399px) {
   .filter-wrap .col-two label {
+    width: 174px;
+  }
+}
+
+@media (max-width: 386px) {
+  .filter-wrap .col-two label {
     width: 166px;
   }
 }

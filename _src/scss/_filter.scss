@@ -272,6 +272,10 @@
             } 
 
             @include media-for (null, 400px){
+                width: 174px;
+            } 
+
+            @include media-for (null, 387px){
                 width: 166px;
             } 
         }
