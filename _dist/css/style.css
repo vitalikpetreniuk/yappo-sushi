@@ -2770,13 +2770,13 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 49px;
-  height: 49px;
+  width: 48px;
+  height: 48px;
   background-color: #FF671D;
   cursor: pointer;
   background: url(../img/discount.svg), #FF671D;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 60%;
   background-position: 50% 50%;
   margin-bottom: 13px;
 }
@@ -2802,22 +2802,29 @@ p {
 .hot-sale {
   background: url(../img/hot.svg), #D53939;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   background-position: 50% 50%;
 }
 
 .new-sale {
   background: url(../img/new.svg), #2A1A5E;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   background-position: 50% 50%;
 }
 
 .vegaterian-sale {
   background: url(../img/vegaterian.svg), #507849;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   background-position: 50% 50%;
+}
+
+.popular-sale {
+  background: url(../img/popular.svg), #6775D0;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 60% 50%;
 }
 
 .no-product-wrap {
