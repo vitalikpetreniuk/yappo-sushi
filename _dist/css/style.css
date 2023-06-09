@@ -3299,6 +3299,8 @@ p {
   font-size: 16px;
   font-family: "DelaGothicOne";
   color: #2A1A5E;
+  position: relative;
+  z-index: 10;
 }
 
 .filter-wrap .filter-options {
