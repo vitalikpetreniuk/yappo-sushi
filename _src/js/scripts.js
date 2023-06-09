@@ -227,11 +227,11 @@ $(function() {
 	//hover for svg
 
 	$('.hover-effect-svg').hover(function() {
-		$(this).find('[fill="#2A1A5E"]').attr('fill', '#736998');
-		$(this).find('[stroke="#2A1A5E"]').attr('stroke', '#736998');
+		$(this).find('[fill="#2A1A5E"]').attr('fill', '#3F2E77');
+		$(this).find('[stroke="#2A1A5E"]').attr('stroke', '#3F2E77');
 	}, function() {
-		$(this).find('[fill="#736998"]').attr('fill', '#2A1A5E');
-		$(this).find('[stroke="#736998"]').attr('stroke', '#2A1A5E');
+		$(this).find('[fill="#3F2E77"]').attr('fill', '#2A1A5E');
+		$(this).find('[stroke="#3F2E77"]').attr('stroke', '#2A1A5E');
 	});
 
 
