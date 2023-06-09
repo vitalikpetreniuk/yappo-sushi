@@ -2773,7 +2773,7 @@ p {
   cursor: pointer;
   background: url(../img/discount.svg), #FF671D;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 55%;
   background-position: 50% 50%;
   margin-bottom: 13px;
 }
@@ -2799,7 +2799,7 @@ p {
 .hot-sale {
   background: url(../img/hot.svg), #D53939;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 55%;
   background-position: 50% 50%;
 }
 
