@@ -22,7 +22,8 @@ $(function() {
 				
 
 				$('.resault-block').css('top','8rem');
-				
+
+				$('.form-wrap').css('top','6rem');
 			  }
 
 			} 
@@ -30,6 +31,7 @@ $(function() {
 			else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
 			  $(".header-center").removeClass("header-center-scroll");
 			  $('.resault-block').css('top','14rem');
+			  $('.form-wrap').css('top','10rem');
 			}
 			
 			$(this).data('lastScrollTop', scrollTop);
