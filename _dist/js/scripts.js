@@ -351,7 +351,7 @@ $(function() {
 		"display": "none",
 	});
 
-	
+   	
 
 	//discount-card
 
@@ -401,20 +401,10 @@ $(function() {
 	
 	  if (randomNumber > 0) {
 		$(".speech").addClass("speech-active");
-		miniCartCount.css({
-		  "background": "#F45905",
-		  "background-repeat": "initial",
-		  "background-position": "initial",
-		  "background-size": "initial"
-		});
+		miniCartCount.addClass('mini-cart-count-active');
 	  } else {
 		$(".speech").removeClass("speech-active");
-		miniCartCount.css({
-		  "background": "url(../img/plus-mini-cart.svg) #F45905",
-		  "background-repeat": "no-repeat",
-		  "background-position": "50% 50%",
-		  "background-size": "45%"
-		});
+		miniCartCount.removeClass('mini-cart-count-active');
 	  }
 	});
 	////

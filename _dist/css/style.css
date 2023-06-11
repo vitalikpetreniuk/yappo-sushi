@@ -3262,10 +3262,10 @@ p {
 
 .cart .mini-cart-count {
   position: absolute;
-  bottom: 0px;
-  width: 16px;
-  height: 16px;
-  right: 17px;
+  bottom: 1px;
+  width: 10px;
+  height: 10px;
+  right: 11px;
   border-radius: 100%;
   background-color: #F45905;
   color: #ffff;
@@ -3281,12 +3281,20 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   background: url(../img/plus-mini-cart.svg), #F45905;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 45%;
+  background-size: 6px;
+}
+
+.cart .mini-cart-count-active {
+  background: #F45905 !important;
+  background-repeat: initial !important;
+  width: 15px;
+  height: 15px;
+  right: 14px;
 }
 
 .filter-btn-wrap {
