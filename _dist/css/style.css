@@ -2399,7 +2399,7 @@ p {
   text-align: center;
 }
 
-.lang-desctop .lang-desctop-wrap .active {
+.lang-desctop .lang-desctop-wrap .wpml-ls-current-language {
   display: block;
 }
 
@@ -2431,7 +2431,7 @@ p {
   padding: 0;
 }
 
-.lang-desctop .lang-list .active {
+.lang-desctop .lang-list .wpml-ls-current-language {
   display: none;
 }
 

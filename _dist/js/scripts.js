@@ -578,11 +578,11 @@ $(document).ready(function() {
 		$('.lang-list a').on('click', function (e) {	
 			e.preventDefault();
 			const lang = $(this).data("lang");
-			$(".lang-desctop-wrap a").removeClass("active");
-			$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");
+			$(".lang-desctop-wrap a").removeClass("wpml-ls-current-language");
+			$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("wpml-ls-current-language");
 	
-			$(".lang-list a").removeClass("active");
-			$(`.lang-list a[data-lang="${lang}"]`).addClass("active");
+			$(".lang-list a").removeClass("wpml-ls-current-language");
+			$(`.lang-list a[data-lang="${lang}"]`).addClass("wpml-ls-current-language");
 		})
 
 
