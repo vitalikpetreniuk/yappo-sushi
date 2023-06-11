@@ -5614,6 +5614,34 @@ p {
   cursor: default;
 }
 
+.cart-modal .cart-empty {
+  text-align: center;
+  color: #2A1A5E;
+  padding: 60% 0 50%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-modal .cart-empty h5 {
+  font-family: "DelaGothicOne";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cart-modal .cart-empty p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .cart-modal-active {
   right: 0;
   opacity: 1;
@@ -12909,6 +12937,14 @@ p {
     display: none;
   }
 
+  .cart-modal .cart-empty h5 {
+    font-size: 14px;
+  }
+
+  .cart-modal .cart-empty p {
+    font-size: 13px;
+  }
+
   .cart-modal-active .close-cart {
     position: fixed;
     display: block;
@@ -13148,5 +13184,12 @@ p {
 
   #menu .bottom-nav {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-height: 0px) and (max-height: 900px) {
+  .cart-modal .cart-empty {
+    padding: 34% 0 28%;
+    height: 92%;
   }
 }
