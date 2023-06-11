@@ -728,7 +728,8 @@ $(document).ready(function() {
 
 	//modal city
 
-  	$('.modal-city ul li a').click(function() {
+  	$('.modal-city ul li a').click(function(e) {
+		e.preventDefault()
 		$('.modal-city ul li a').removeClass("active")
 		$(this).addClass('active');
 
