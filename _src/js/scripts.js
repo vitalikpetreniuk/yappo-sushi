@@ -481,31 +481,31 @@ $(function() {
 	});
 
 
-	$('.select-wrap, .wrap-center').on('click', function() {
-		$(".arrow-rotate").toggleClass('arrow-active-rotate');
+	// $('.select-wrap, .wrap-center').on('click', function() {
+	// 	$(".arrow-rotate").toggleClass('arrow-active-rotate');
 		
-		var selectWrap = $(this);
-		var dropdownList = selectWrap.find('.select-dropdown__list');
+	// 	var selectWrap = $(this);
+	// 	var dropdownList = selectWrap.find('.select-dropdown__list');
 		
-		selectWrap.toggleClass('active');
-		dropdownList.toggleClass('active');
-	});
+	// 	selectWrap.toggleClass('active');
+	// 	dropdownList.toggleClass('active');
+	// });
 	
-	$('.select-dropdown__list-item').on('click', function() {
-		var itemCity = $(this).find('.city').text();
-		var itemRegion = $(this).find('.region').text();
+	// $('.select-dropdown__list-item').on('click', function() {
+	// 	var itemCity = $(this).find('.city').text();
+	// 	var itemRegion = $(this).find('.region').text();
 		
-		var parentDropdown = $(this).closest('.select-dropdown');
-		var dropdownButton = parentDropdown.find('.select-dropdown__button');
-		var dropdownCity = dropdownButton.find('.city');
-		var dropdownRegion = dropdownButton.find('.region');
+	// 	var parentDropdown = $(this).closest('.select-dropdown');
+	// 	var dropdownButton = parentDropdown.find('.select-dropdown__button');
+	// 	var dropdownCity = dropdownButton.find('.city');
+	// 	var dropdownRegion = dropdownButton.find('.region');
 		
-		dropdownCity.text(itemCity);
-		dropdownRegion.text(itemRegion);
+	// 	dropdownCity.text(itemCity);
+	// 	dropdownRegion.text(itemRegion);
 		
-		$('.select-wrap, .select-dropdown__list').removeClass('active');
-		$(".arrow-rotate").removeClass('arrow-active-rotate');
-	});
+	// 	$('.select-wrap, .select-dropdown__list').removeClass('active');
+	// 	$(".arrow-rotate").removeClass('arrow-active-rotate');
+	// });
 
 
 	
@@ -731,12 +731,29 @@ $(document).ready(function() {
   	$('.modal-city ul li a').click(function() {
 		$('.modal-city ul li a').removeClass("active")
 		$(this).addClass('active');
+
+		var activeText = $('.modal-city ul li a.active').text();
+		$('.select-wrap .city').text(activeText);
 	});
 
 	$('.modal-city .orange-btn').click(function(e) {
 		e.preventDefault()
 		$('.modal-city-wrap').addClass("modal-city-wrap-none")
+		$('.modal-city-wrap').removeClass("modal-city-wrap-cart-active")
 	});
+
+	//modal city cart
+
+	$('.select-wrap').click(function() {
+		$('.modal-city-wrap-cart').addClass("modal-city-wrap-cart-active")
+	});
+
+
+
+	// $('.modal-city-wrap-cart .modal-city .orange-btn').click(function(e) {
+	// 	e.preventDefault()
+	// 	$('.modal-city-wrap').removeClass("modal-city-wrap-cart-active")
+	// });
 
 
 

@@ -6155,6 +6155,18 @@ p {
   display: none;
 }
 
+.cart-page .modal-city-wrap-cart {
+  z-index: -100;
+  opacity: 0;
+  display: none;
+}
+
+.cart-page .modal-city-wrap-cart-active {
+  z-index: 100;
+  opacity: 1;
+  display: block;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
