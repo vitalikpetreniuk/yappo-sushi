@@ -1860,9 +1860,12 @@ p {
 }
 
 .сhat-bubbles > :first-child:before {
-  width: 6px;
-  height: 3px;
-  left: 26px;
+  left: 20px;
+  border-top: 11px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 12px solid #ffff;
+  background: none;
 }
 
 .сhat-bubbles > :first-child:after {
@@ -11292,6 +11295,9 @@ p {
     right: 26px;
     width: 12px;
     height: 1px;
+    rotate: 271deg;
+    border-top: 11px solid transparent;
+    border-left: 13px solid #ffff;
   }
 
   .product__item .сhat-bubbles > :first-child:after {
@@ -11395,6 +11401,9 @@ p {
     right: 26px;
     width: 12px;
     height: 1px;
+    rotate: 271deg;
+    border-top: 11px solid transparent;
+    border-left: 13px solid #ffff;
   }
 
   .product-top .product-img-wrap .сhat-bubbles > :first-child:after {

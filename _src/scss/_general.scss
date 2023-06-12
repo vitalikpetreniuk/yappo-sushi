@@ -391,9 +391,12 @@ p{
       bottom: 100%;
     }
     & >:first-child:before {
-      width: 6px;
-      height: 3px;
-      left: 26px;
+        left: 20px;
+        border-top: 11px solid transparent;
+        border-right: 0 solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 12px solid #ffff;
+        background: none;
     }
     & >:first-child:after {
       width: 5px;
