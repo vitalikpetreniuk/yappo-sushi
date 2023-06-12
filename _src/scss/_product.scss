@@ -499,10 +499,21 @@
             color: $accent;
             font-size: 14px;
             font-weight: 300;
+            margin-right: .4rem;
+
+        }
+
+        li{
+            &:last-child{
+                a{
+                    margin-right: 0;
+                }
+            }
         }
 
         .current{
             font-weight: 600;
+            text-decoration: underline;
         }
     }
 

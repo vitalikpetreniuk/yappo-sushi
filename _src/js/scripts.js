@@ -757,7 +757,13 @@ $(document).ready(function() {
 	// });
 
 
-
+	console.log($('.sale-bage-wrap'))
+	$('.sale-bage-wrap').click(function(e) {
+		// e.stopPropagation()
+		// e.stopImmediatePropagation()
+		e.preventDefault()
+		console.log('click')
+	});
 });
 
 

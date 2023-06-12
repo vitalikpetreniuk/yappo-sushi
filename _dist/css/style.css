@@ -2900,10 +2900,16 @@ p {
   color: #2A1A5E;
   font-size: 14px;
   font-weight: 300;
+  margin-right: 0.4rem;
+}
+
+.pagination-wrap .pagination li:last-child a {
+  margin-right: 0;
 }
 
 .pagination-wrap .pagination .current {
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .pagination-wrap .btns-prew {
