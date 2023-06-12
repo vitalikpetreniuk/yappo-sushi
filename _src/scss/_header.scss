@@ -134,10 +134,14 @@
                 overflow: hidden;
                 overflow-x: auto;
                 justify-content: space-between;
-
+                scrollbar-width: none; 
+                -ms-overflow-style: none; 
                 &::-webkit-scrollbar {
                     width: 0;
                     height: 0;
+                    display: none;   
+                     scrollbar-width: none; 
+                    -ms-overflow-style: none; 
                 }
                 
                 
@@ -176,7 +180,7 @@
                     // }
 
                     @include media-for (null, 1367px){
-                        width: 6rem;
+                        width: 5.7rem;
                     }
 
                     @include media-for (null, 1300px){
@@ -440,6 +444,8 @@
 
             @include media-for (null, 1400px){
                 width: 22%;
+                padding: 2rem 4rem;
+                padding-right: 2rem;
             }
 
             @include media-for (null, 1268px){
@@ -450,17 +456,29 @@
                 right: 3rem;
             }
 
-            @include media-for (null, 1106px){
-                right: 3rem;
-                padding: 2rem 2rem;
-            }
+            // @include media-for (null, 1106px){
+            //     right: 3rem;
+            //     padding: 2rem 2rem;
+            // }
 
             @include media-for (null, 1025px){
-                right: 2rem;
+                padding: 2rem 1.8rem;
+                padding-right: .5rem;
             }
 
             @include media-for (null, $tablet){
+                padding: 2rem 2rem;
+                padding-right: 1rem;
                 width: 30%;
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    width: 45%;
+                }
             }
 
             @include media-for (null, $sm){

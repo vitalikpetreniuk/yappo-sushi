@@ -2078,11 +2078,16 @@ p {
   overflow: hidden;
   overflow-x: auto;
   justify-content: space-between;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .header .header-bottom .header__category ul::-webkit-scrollbar {
   width: 0;
   height: 0;
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .header .header-bottom .header__category ul a {
@@ -2258,6 +2263,21 @@ p {
   opacity: 0;
   z-index: -100;
   padding-top: 22px;
+}
+
+.header .btns-wrap-header .btns-wrap-header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .btns-wrap-header .btns-wrap-header-menu ul li {
+  width: 45%;
 }
 
 .header .btns-wrap-header .btns-wrap-header-menu a {
@@ -11072,6 +11092,8 @@ p {
 @media (max-width: 1399px) {
   .header .btns-wrap-header .btns-wrap-header-menu {
     width: 22%;
+    padding: 2rem 4rem;
+    padding-right: 2rem;
   }
 
   .local-wrap .local {
@@ -11125,7 +11147,7 @@ p {
 
 @media (max-width: 1366px) {
   .header .header-bottom .header__category ul a {
-    width: 6rem;
+    width: 5.7rem;
   }
 
   .widget-btns {
@@ -11209,20 +11231,14 @@ p {
   }
 }
 
-@media (max-width: 1105px) {
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    right: 3rem;
-    padding: 2rem 2rem;
-  }
-}
-
 @media (max-width: 1024px) {
   .header .header-bottom .header__category ul a {
     width: 6.6rem;
   }
 
   .header .btns-wrap-header .btns-wrap-header-menu {
-    right: 2rem;
+    padding: 2rem 1.8rem;
+    padding-right: 0.5rem;
   }
 
   .product__item {
@@ -11324,7 +11340,7 @@ p {
   }
 
   .modal-search input {
-    width: 60%;
+    width: 90%;
   }
 
   .we-got-success {
@@ -11626,6 +11642,8 @@ p {
   }
 
   .header .btns-wrap-header .btns-wrap-header-menu {
+    padding: 2rem 2rem;
+    padding-right: 1rem;
     width: 30%;
   }
 
@@ -12256,6 +12274,10 @@ p {
 
   .modal-search .form-wrap {
     top: 5.5rem;
+  }
+
+  .modal-search .form-wrap button {
+    display: none;
   }
 
   .modal-search .footer-modal {

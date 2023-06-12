@@ -48,6 +48,12 @@
             top:5.5rem;
         }
 
+        button{
+            @include media-for (null, $sm){  
+                display: none;
+            }
+        }
+
     }
 
     input{
@@ -71,11 +77,12 @@
         }
 
         @include media-for (null, 1025px){  
-            width: 60%;
+            width: 90%;
         }
 
 
     }
+    
 
 
     .footer-modal{
