@@ -12,7 +12,7 @@ $(function() {
 
 			
 			
-			if (scrollTop > lastScrollTop && scrollTop - lastScrollTop > 5) {
+			if (scrollTop > lastScrollTop && scrollTop - lastScrollTop > 10) {
 			  if ($("#menu").hasClass('overlay')) {
 				
 			  } else {
