@@ -578,20 +578,20 @@ $(document).ready(function() {
 
 	// categories-business-lunch
 
-	if (window.location.pathname === '/yappo-sushi/categories-business-lunch.html') {
-		var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu8.svg"]');
-		image.src = 'img/icons-in-top-menu/top-menu8-orange.svg';
+	// if (window.location.pathname === '/yappo-sushi/categories-business-lunch.html') {
+	// 	var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu8.svg"]');
+	// 	image.src = 'img/icons-in-top-menu/top-menu8-orange.svg';
 
-		var chatBubble = $(image).closest("сhat-bubbles p");
-		chatBubble.css("color", "#f45905");
-	  }
+	// 	var chatBubble = $(image).closest("сhat-bubbles p");
+	// 	chatBubble.css("color", "#f45905");
+	//   }
 
-	  if (window.location.pathname === '/yappo-sushi/product-page.html') {
-		var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu1.svg"]');
-		image.src = 'img/icons-in-top-menu/top-menu1-orange.svg';
-		var chatBubble = $(image).closest("сhat-bubbles p");
-  		chatBubble.css("color", "#f45905");
-	  }
+	//   if (window.location.pathname === '/yappo-sushi/product-page.html') {
+	// 	var image = document.querySelector('img[src="img/icons-in-top-menu/top-menu1.svg"]');
+	// 	image.src = 'img/icons-in-top-menu/top-menu1-orange.svg';
+	// 	var chatBubble = $(image).closest("сhat-bubbles p");
+  	// 	chatBubble.css("color", "#f45905");
+	//   }
 
 
 	//cart modal
