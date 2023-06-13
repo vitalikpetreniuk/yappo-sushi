@@ -4162,18 +4162,12 @@ p {
   background: url(../img/fish-decor-slide4.svg);
 }
 
-.popular-product,
-.news-product,
-.rols-prosuct,
-.sets-prosuct {
+.product-section {
   padding: 60px 0 70px;
   text-align: center;
 }
 
-.popular-product .btn-blue,
-.news-product .btn-blue,
-.rols-prosuct .btn-blue,
-.sets-prosuct .btn-blue {
+.product-section .btn-blue {
   margin-top: 35px;
 }
 
@@ -11769,10 +11763,7 @@ p {
     width: 90%;
   }
 
-  .popular-product,
-  .news-product,
-  .rols-prosuct,
-  .sets-prosuct {
+  .product-section {
     padding: 50px 0 50px;
   }
 
@@ -12464,17 +12455,11 @@ p {
     height: 30px;
   }
 
-  .popular-product,
-  .news-product,
-  .rols-prosuct,
-  .sets-prosuct {
+  .product-section {
     padding: 40px 0 30px;
   }
 
-  .popular-product .btn-blue,
-  .news-product .btn-blue,
-  .rols-prosuct .btn-blue,
-  .sets-prosuct .btn-blue {
+  .product-section .btn-blue {
     margin-top: 28px;
     width: 218px;
     height: 49px;
