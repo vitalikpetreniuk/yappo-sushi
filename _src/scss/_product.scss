@@ -387,6 +387,10 @@
             height: auto;
         }
     }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 
 .hot-sale{

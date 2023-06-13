@@ -2832,6 +2832,10 @@ p {
   height: auto;
 }
 
+.sale-badge:last-child {
+  margin-bottom: 0;
+}
+
 .hot-sale {
   background: url(../img/hot.svg), #D53939;
   background-repeat: no-repeat;
@@ -4181,7 +4185,8 @@ p {
   font-family: "DelaGothicOne";
 }
 
-.section-delivery button {
+.section-delivery a {
+  display: inline-block;
   padding: 20px 60px;
   margin-top: 20px;
 }
@@ -12486,7 +12491,7 @@ p {
     line-height: 1.4;
   }
 
-  .section-delivery button {
+  .section-delivery a {
     margin: 24px auto 50px;
   }
 
