@@ -2718,6 +2718,12 @@ p {
   font-size: 14px;
 }
 
+.product__item .product__cart .product__cart-info-block .weight {
+  color: rgba(50, 53, 73, 0.7);
+  font-weight: 300;
+  font-size: 14px;
+}
+
 .product__item .product__cart .product__cart__info-discount {
   position: relative;
   width: 10rem;
