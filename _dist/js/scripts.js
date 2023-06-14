@@ -645,21 +645,6 @@ $(document).ready(function() {
 	observer.observe($('.cart-modal')[0], { attributes: true, attributeFilter: ['class'] });
 
 
-	//added-success
-
-	$('.btn-primary').click(function() {
-		$('.added-success').addClass('added-success-active');
-		setTimeout(function() {
-			 $('.added-success').removeClass('added-success-active');
-		}, 4000);
-	});
-
-	$('.added-success .orange-btn').click(function() {
-		toggleCart()
-		$('.added-success').removeClass('added-success-active');
-	});
-
-
 
 
 

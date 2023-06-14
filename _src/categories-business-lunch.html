@@ -425,6 +425,22 @@
 	<script src="libs/jquery.js"></script>
 	
 	<script src="js/scripts.min.js"></script>
+
+	<script>
+		//added-success
+
+		$('.btn-primary').click(function() {
+			$('.added-success').addClass('added-success-active');
+				setTimeout(function() {
+					$('.added-success').removeClass('added-success-active');
+			}, 4000);
+		});
+
+		$('.added-success .orange-btn').click(function() {
+			toggleCart()
+			$('.added-success').removeClass('added-success-active');
+		});
+	</script>
 </body>
 
 </html>
