@@ -2830,6 +2830,26 @@
 			toggleCart()
 			$('.added-success').removeClass('added-success-active');
 		});
+
+
+        //при посадці стерти,це тестове
+            var miniCartCount = $(".mini-cart-count");
+
+            $(".btn-primary").click(function(e) {
+            e.preventDefault();
+            var randomNumber = Math.floor(Math.random() * 10) + 1;
+            var countText = randomNumber > 9 ? "9+" : randomNumber.toString();
+            miniCartCount.text(countText);
+
+            if (randomNumber > 0) {
+                $(".speech").addClass("speech-active");
+                miniCartCount.addClass('mini-cart-count-active');
+            } else {
+                $(".speech").removeClass("speech-active");
+                miniCartCount.removeClass('mini-cart-count-active');
+            }
+            });
+                ////
 	</script>
 </body>
 

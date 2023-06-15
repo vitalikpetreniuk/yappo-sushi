@@ -389,27 +389,6 @@ $(function() {
 
 
 
-	//при посадці стерти,це тестове
-	
-	var miniCartCount = $(".mini-cart-count");
-
-	$(".btn-primary").click(function(e) {
-	  e.preventDefault();
-	  var randomNumber = Math.floor(Math.random() * 10) + 1;
-	  var countText = randomNumber > 9 ? "9+" : randomNumber.toString();
-	  miniCartCount.text(countText);
-	
-	  if (randomNumber > 0) {
-		$(".speech").addClass("speech-active");
-		miniCartCount.addClass('mini-cart-count-active');
-	  } else {
-		$(".speech").removeClass("speech-active");
-		miniCartCount.removeClass('mini-cart-count-active');
-	  }
-	});
-	////
-
-
 
 
 	// click  on header menu
@@ -606,15 +585,15 @@ $(document).ready(function() {
 
 	  }
 	  
-	  $('.fix-cart').on('click', toggleCart);
-	  $('.cart-header').on('click', toggleCart);
-	  $('.close-cart').on('click', toggleCart);
-
-	  $('.local').on('click', function(){
-			if ($(".cart-modal").hasClass('cart-modal-active')) {
-				toggleCart()
-			}
-	  })
+	  $(document).on('click', '.fix-cart', toggleCart);
+	  $(document).on('click', '.cart-header', toggleCart);
+	  $(document).on('click', '.close-cart', toggleCart);
+	  
+	  $(document).on('click', '.local', function() {
+		if ($('.cart-modal').hasClass('cart-modal-active')) {
+		  toggleCart();
+		}
+	  });
 
 
 	  
