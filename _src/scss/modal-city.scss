@@ -63,11 +63,25 @@
                         font-size: 13px;
                         padding: 13px 0;
                     } 
+
+                    .adress{
+                        color: $accent;
+                        font-size: 12px;
+                        font-weight: 300;
+                        display: block;
+                        text-transform: none;
+                        @include media-for (null, $sm){
+                            font-size: 10px;
+                        }
+                    }
                 }
 
                 .active{
                     background-color: $accent;
                     color: $text-white;
+                    .adress{
+                        color: $text-white;
+                    }
                 }
             }
         }

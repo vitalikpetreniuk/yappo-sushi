@@ -208,20 +208,33 @@ $(function() {
 
 	//local in header
 
-	$('.local-wrap').on('click', function (e) {	
+	// $('.local-wrap').on('click', function (e) {	
 
+	// 	e.preventDefault();
+	// 	$( ".city-list").toggleClass('city-list-active');
+	// 	$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
+	// 	$(".burger-desck").removeClass('burger-active');
+
+	// 	if ($(".city-list").hasClass('city-list-active')) {
+	// 		$('.local-wrap').css("background", "rgba(0, 0, 0, 0.2)");
+	// 		toggleCart()
+	// 	  } else {
+	// 		$('.local-wrap').css("background", "rgba(0, 0, 0, 0.0)");
+	// 	}
+	// })
+	$(document).on('click', '.local-wrap', function(e) {
 		e.preventDefault();
-		$( ".city-list").toggleClass('city-list-active');
+		$(".city-list").toggleClass('city-list-active');
 		$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
 		$(".burger-desck").removeClass('burger-active');
-
+	
 		if ($(".city-list").hasClass('city-list-active')) {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.2)");
-			toggleCart()
-		  } else {
+			// toggleCart();
+		} else {
 			$('.local-wrap').css("background", "rgba(0, 0, 0, 0.0)");
 		}
-	})
+	});
 
 	$(document).on('click', function(e) {
 		if (!$(e.target).closest('.local-wrap').length) {
@@ -497,21 +510,20 @@ $(document).ready(function() {
 
 		///custom-select-language descctop
 
-		$('.lang-desctop').on('click', function (e) {	
+		$('.lang-desctop').on('click', function (e) {
 			e.preventDefault();
 			$(this).toggleClass('lang-desctop-active');
-	
-		})
-	
-		$('.lang-list a').on('click', function (e) {	
-			e.preventDefault();
+		});
+		
+		$('.lang-list a').on('click', function (e) {
+			e.stopPropagation();
 			const lang = $(this).data("lang");
 			$(".lang-desctop-wrap a").removeClass("wpml-ls-current-language");
 			$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("wpml-ls-current-language");
-	
+		
 			$(".lang-list a").removeClass("wpml-ls-current-language");
 			$(`.lang-list a[data-lang="${lang}"]`).addClass("wpml-ls-current-language");
-		})
+		});
 
 
 	var descriptionElement = $('.product-description');
