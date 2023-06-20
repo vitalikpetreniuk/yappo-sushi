@@ -122,7 +122,7 @@ function js() {
 	.pipe(dest(path.build.js))
 	// .pipe(dest(path.docs.js))
 	.pipe(uglify({
-		toplevel: true
+		toplevel: false
 	}))
 	.pipe(rename({
 		extname: '.min.js'

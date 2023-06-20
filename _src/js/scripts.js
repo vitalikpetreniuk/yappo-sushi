@@ -211,7 +211,7 @@ $(function() {
 	$('.local-wrap').on('click', function (e) {	
 
 		e.preventDefault();
-		$(".city-list").toggleClass('city-list-active');
+		$( ".city-list").toggleClass('city-list-active');
 		$(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
 		$(".burger-desck").removeClass('burger-active');
 
@@ -464,16 +464,15 @@ $(function() {
 
 	
 	//cart page delivery
-	var deliveryLabel = $('.delivery-label input');
-	var selfPickupLabel = $('.self-pickup-label input');
-	var streetInput = $('.street');
-	var entranceInput = $('.entrance');
-	var apartmentInput = $('.apartment');
-  
-	deliveryLabel.on('click', handleRadioChange);
-	selfPickupLabel.on('click', handleRadioChange);
-  
+	$(document).on('click', '.delivery-label input, .self-pickup-label input', handleRadioChange);
+
 	function handleRadioChange() {
+	  var deliveryLabel = $(this).closest('.delivery-label');
+	  var selfPickupLabel = $(this).closest('.self-pickup-label');
+	  var streetInput = deliveryLabel.find('.street');
+	  var entranceInput = deliveryLabel.find('.entrance');
+	  var apartmentInput = deliveryLabel.find('.apartment');
+	
 	  if (selfPickupLabel.is(':checked')) {
 		streetInput.hide();
 		entranceInput.hide();
@@ -608,19 +607,21 @@ $(document).ready(function() {
 
 	//modal city
 
-  	$('.modal-city ul li a').click(function(e) {
-		e.preventDefault()
-		$('.modal-city ul li a').removeClass("active")
+	$(document).on('click', '.modal-city ul li a', function(event) {
+		event.preventDefault();
+		$('.modal-city ul li a').removeClass("active");
 		$(this).addClass('active');
-
-		var activeText = $('.modal-city ul li a.active').text();
+	  
+		var activeText = $(this).text();
 		$('.select-wrap .city').text(activeText);
 	});
-
-	$('.modal-city .orange-btn').click(function(e) {
-		e.preventDefault()
-		$('.modal-city-wrap').addClass("modal-city-wrap-none")
-		$('.modal-city-wrap').removeClass("modal-city-wrap-cart-active")
+	
+	$('.modal-city .orange-btn').click(function(event) {
+		event.preventDefault();
+		$('.modal-city-wrap').addClass("modal-city-wrap-none");
+		$('.modal-city-wrap').removeClass("modal-city-wrap-cart-active");
+	
+		$('form').submit();
 	});
 
 	//modal city cart
@@ -704,7 +705,7 @@ $(window).on('load resize', function() {
 		$('.cart-modal').toggleClass('cart-modal-active');
 		$('body').toggleClass('overflow');
 		$('.btns-wrap-header-menu').removeClass('btns-wrap-header-menu-active');
-		$('.city-list').removeClass('city-list-active');
+		
 	
 		if ($('.cart-modal').hasClass('cart-modal-active')) {
 			$('.widget-btns').css("left", "-100%");
