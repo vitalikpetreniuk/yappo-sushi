@@ -5716,8 +5716,8 @@ p {
   padding: 70px 0 120px;
 }
 
-.cart-page .breadcrumbs {
-  color: #2A1A5E;
+.cart-page .btn-back {
+  margin-right: 1rem;
 }
 
 .cart-page .section__title {
@@ -13022,6 +13022,10 @@ p {
 
   .cart-page .section__title-wrap {
     padding-left: 0rem;
+  }
+
+  .cart-page .btn-back {
+    display: none;
   }
 
   .cart-page .section__title {
