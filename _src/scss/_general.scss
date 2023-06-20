@@ -546,3 +546,75 @@ p{
         transition: all ease-in-out .3s;
     }
 }
+
+
+
+
+
+//pagination-wrap
+
+.pagination-wrap{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pagination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        a{
+            color: $accent;
+            font-size: 14px;
+            font-weight: 300;
+            margin-right: .4rem;
+
+        }
+
+        li{
+            &:last-child{
+                a{
+                    margin-right: 0;
+                }
+            }
+ 
+        }
+
+        .current{
+            font-weight: 600;
+            text-decoration: underline;
+            font-size: 14px;
+            margin-right: 0.4rem;
+        }
+    }
+
+    .page-item{
+        .prev {
+            margin-right: 1rem;
+        }
+        .next{
+            margin-left: 1rem;
+        }
+
+        .dots{
+            margin-right: 0.4rem;
+        }
+
+        &:nth-last-child(2) {
+            a{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .btns-prew{
+        margin-right: 1rem;
+    }
+
+    .btns-next{
+        margin-left: 1rem;
+    }
+
+}

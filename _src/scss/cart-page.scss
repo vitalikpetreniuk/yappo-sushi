@@ -518,6 +518,18 @@
             top: 0 !important;
         }
 
+        .shop_table{
+            flex-direction: column;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
+
         h4{
             font-size: 20px;
             font-weight: 400;
@@ -533,6 +545,10 @@
             font-size: 20px;
             font-weight: 400;
             color: $accent;
+        }
+
+        hr {
+            width: 100%;
         }
 
         .order-total{
@@ -552,7 +568,7 @@
             max-width: 277px;
         }
         .local-wrap{
-            display: block;
+            display: block !important;
         }
     }
 

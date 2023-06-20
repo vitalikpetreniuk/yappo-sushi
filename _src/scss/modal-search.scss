@@ -56,6 +56,44 @@
 
     }
 
+    .probox{
+        height: auto !important;
+        max-width: 1027px;
+        width: 56% !important;
+        margin: auto !important;
+
+        // @include media-for (null, 1705px){  
+        //     width: 80% !important;
+        // }
+
+        // @include media-for (null, 1560px){  
+        //     width: 60% !important;
+        // }
+
+        @include media-for (null, 1367px){  
+            width: 65% !important;
+        }
+
+        @include media-for (null, 1025px){  
+            width: 95% !important;
+        }
+        .proinput{
+            height: auto !important;
+            width: 100% !important;
+        }
+        .orig{
+            margin-bottom: 60px !important;
+            max-width: 1027px !important;
+            height: 35px !important;
+            background: none !important;
+            border: none !important;
+            border-bottom: 1px solid #716794 !important;
+            outline: none !important;
+            border-radius: 0 !important;
+            
+        }
+    }
+
     input{
         margin-bottom: 60px;
         max-width: 1027px;
