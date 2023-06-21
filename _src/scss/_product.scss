@@ -37,6 +37,7 @@
 
 
     .product__image{
+        display: block;
         border-radius: 50px 50px 0px 0px;
         text-align: center;
         overflow: hidden;
@@ -108,7 +109,8 @@
                text-overflow: ellipsis;
 
                @include media-for (null, $sm){
-                    display: none;
+                    // display: none;
+                    font-size: 13px;
                 } 
            } 
         }

@@ -2801,6 +2801,7 @@ p {
 }
 
 .product__item .product__image {
+  display: block;
   border-radius: 50px 50px 0px 0px;
   text-align: center;
   overflow: hidden;
@@ -12324,7 +12325,7 @@ p {
   }
 
   .product__item .product__detail .cart__detail p {
-    display: none;
+    font-size: 13px;
   }
 
   .product__item .product__cart {
