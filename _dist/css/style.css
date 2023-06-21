@@ -2074,6 +2074,94 @@ p {
   margin-left: 1rem;
 }
 
+.woocommerce-order {
+  width: 30%;
+  margin: auto;
+  max-width: 540px;
+  background-color: #efefef;
+  border-radius: 24px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.woocommerce-order .woocommerce-thankyou-order-received {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "DelaGothicOne";
+  margin-bottom: 14px;
+  margin-bottom: 1.5rem;
+  color: #2a1a5e;
+}
+
+.woocommerce-order h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a1a5e;
+  font-family: "DelaGothicOne";
+  margin-top: 30px;
+}
+
+.woocommerce-order .order_details li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(50, 53, 73, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.woocommerce-order .order_details li strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a1a5e;
+}
+
+.woocommerce-order .shop_table {
+  margin: 0;
+  width: 100%;
+}
+
+.woocommerce-order .shop_table th {
+  color: rgba(50, 53, 73, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.woocommerce-order .shop_table a {
+  color: rgba(50, 53, 73, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.woocommerce-order .shop_table .product-total {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a1a5e;
+  text-align: right;
+}
+
+.woocommerce-order .shop_table tfoot td {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a1a5e;
+  text-align: right;
+}
+
+.woocommerce-order p {
+  font-size: 14px;
+  color: rgba(50, 53, 73, 0.7);
+}
+
+.woocommerce-order address {
+  font-size: 14px;
+  color: rgba(50, 53, 73, 0.7);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -11241,6 +11329,10 @@ p {
 }
 
 @media (max-width: 1366px) {
+  .woocommerce-order {
+    width: 100%;
+  }
+
   .header .header-bottom .header__category ul a {
     width: 5.7rem;
   }
@@ -12087,6 +12179,40 @@ p {
 
   .breadcrumbs {
     display: none;
+  }
+
+  .woocommerce-order {
+    width: 94%;
+    padding: 20px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+  }
+
+  .woocommerce-order .woocommerce-thankyou-order-received {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .woocommerce-order h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .woocommerce-order .order_details li {
+    margin-bottom: 3px;
+  }
+
+  .woocommerce-order .order_details li strong {
+    font-size: 14px;
+  }
+
+  .woocommerce-order .shop_table .product-total {
+    font-size: 14px;
+  }
+
+  .woocommerce-order .shop_table tfoot td {
+    font-size: 14px;
   }
 
   .header .header-top {
