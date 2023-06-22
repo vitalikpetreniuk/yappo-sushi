@@ -89,7 +89,14 @@
 
         button{
             width: 262px;
+
+            &:disabled {
+                opacity: 0.5; 
+                cursor: not-allowed;
+            }
         }
+
+        
     }
 
 
