@@ -546,7 +546,8 @@ $(document).ready(function() {
 	$(document).on('click', '.fix-cart', toggleCart);
 	$(document).on('click', '.cart-header', toggleCart);
 	$(document).on('click', '.close-cart', toggleCart);
-	$(document).on('click', '.added-success .orange-btn', toggleCart);
+	$(document).on('click', '.added-success > .orange-btn', toggleCart);
+	
 
 	$(document).on('click', '.local', function() {
 	if ($('.cart-modal').hasClass('cart-modal-active')) {
