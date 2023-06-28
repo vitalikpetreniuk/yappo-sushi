@@ -20,7 +20,7 @@
         border-radius: 32px;
         box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
     }
-    
+
     @include media-for (null, $sm){
         margin-bottom: 10px;
         border-radius: 30px;
@@ -28,7 +28,7 @@
 
     &:hover{
         box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
-        
+
         .btn-primary{
             opacity: 1 !important;
             z-index: 10 !important;
@@ -63,11 +63,11 @@
 
         img{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             height: 100%;
-            
+
             @include media-for (null, $sm){
-               
+
             }
         }
 
@@ -78,12 +78,12 @@
         padding: 0 3rem;
 
         @include media-for (null, 769px){
-            padding: 0 2rem;  
+            padding: 0 2rem;
         }
-        
+
         h3{
            font-weight: 700;
-           font-size: 26px; 
+           font-size: 26px;
            color: $accent;
             margin-bottom: 11px;
             height: 2rem;
@@ -100,7 +100,7 @@
 
         .cart__detail{
            p{
-               color: #262730; 
+               color: #262730;
                font-weight: 300;
                font-size: 14px;
                height: 1.5rem;
@@ -111,8 +111,8 @@
                @include media-for (null, $sm){
                     // display: none;
                     font-size: 13px;
-                } 
-           } 
+                }
+           }
         }
 
     }
@@ -125,7 +125,7 @@
             margin: 15px 0 15px;
         }
 
-        @include media-for (null, $sm){   
+        @include media-for (null, $sm){
             margin: 15px 0 20px;
         }
 
@@ -138,13 +138,13 @@
 
                 .price{
                     font-weight: 700;
-                    font-size: 24px; 
+                    font-size: 24px;
                     color: $accent;
 
                     @include media-for (null, $sm){
                         font-size: 16px;
                     }
-    
+
                 }
                 .regular-price{
                     display: none;
@@ -181,7 +181,7 @@
                 top: 14%;
                 left: 0;
                 font-weight: 300;
-                font-size: 14px; 
+                font-size: 14px;
                 color: rgba($color: #323549, $alpha: .7);
                 text-decoration: line-through;
                 display: block !important;
@@ -260,7 +260,7 @@
             transform: translateX(-60%);
         }
     }
-    
+
     .сhat-bubbles {
 
         @include media-for (null, 1025px){
@@ -269,12 +269,12 @@
 
         P{
             @include media-for (null, 1025px){
-                
+
             }
         }
-    
 
-    
+
+
         &:before{
 
           @include media-for (null, 1025px){
@@ -298,7 +298,7 @@
                 transform: rotateY(-160deg);
             }
         }
-      
+
 
         & >:first-child:before {
 
@@ -362,7 +362,7 @@
     @include media-for (null, 1025px){
         right: 0px;
         top: 0px;
-    } 
+    }
 
     @include media-for (null, 1025px){
         width: 36px;
@@ -370,12 +370,12 @@
         img{
             width: 26px;
         }
-    } 
+    }
 
     @include media-for (null, $sm){
         right: 0;
         top: 0;
-    } 
+    }
 
     img{
         width: 2rem;
@@ -446,7 +446,7 @@
     @include media-for (null, 1025px){
         border-radius: 32px;
     }
-    
+
     @include media-for (null, $sm){
         border-radius: 30px;
     }
@@ -465,7 +465,7 @@
         text-align: center;
         border-radius: 0 0 55px 55px;
         z-index: 10;
-        
+
 
         @include media-for (null, $mid-desktop){
             width: 260px;

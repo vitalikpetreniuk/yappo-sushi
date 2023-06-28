@@ -259,30 +259,26 @@
         @include media-for (null, 1025px){
             padding: 1rem 0;
         }
-    
+
         .sale-bage-wrap{
             top: auto;
-            bottom: .4rem;
-            left: 2rem;
+            bottom: 1.5rem;
+            left: 1rem;
             width: 20%;
 
             @include media-for (null, 1700px){
-                bottom: -0.5rem;
                 left: 1rem;
             }
 
             @include media-for (null, 1280px){
-                bottom: -0.5rem;
                 left: 0rem;
             }
 
             @include media-for (null, 1200px){
-                bottom: 0rem;
                 left: 1rem;
             }
 
             @include media-for (null, 1025px){
-                bottom: .5rem;
                 left: 2rem;
                 width: 28%;
             }
@@ -296,7 +292,12 @@
             .sale-badge{
                 width: 25px;
                 height: 25px;
+                margin: 0;
                 background-size: 56%;
+
+                &:not(:first-child) {
+                    display: none;
+                }
 
                 @include media-for (null, $tablet){
                     width: 25px;
@@ -320,7 +321,7 @@
             @include media-for (null, $sm){
                 padding-top: 0;
             }
-        } 
+        }
 
         .weight{
             font-size: 14px;
@@ -332,8 +333,8 @@
 
             }
         }
-    
-        
+
+
         .cart__img{
             width: 22%;
             margin-right: .5rem;
@@ -377,7 +378,7 @@
                 // top: 0;
                 // top: 50%;
                 // transform: translateY(-30%);
-            
+
             }
         }
 
@@ -407,14 +408,14 @@
             justify-content: center;
 
             @include media-for (null, $sm){
-                
+
                 width: 6rem;
                 flex-direction: row-reverse;
                 justify-content: start;
             }
             .price{
                 font-weight: 700;
-                font-size: 20px; 
+                font-size: 20px;
                 color: $accent;
                 width: 100%;
                 text-align: right;
@@ -441,10 +442,10 @@
             .regular-price{
                 display: block;
                 font-weight: 300;
-                font-size: 14px; 
+                font-size: 14px;
                 text-decoration: line-through;
                 color: rgba($color: #323549, $alpha: .7);
-                
+
                 @include media-for (null, $sm){
                     font-size: 10px;
                 }
@@ -471,11 +472,11 @@
             font-weight: 400;
 
             @include media-for (null, $tablet){
-                height: 10px;     
+                height: 10px;
             }
 
             @include media-for (null, $sm){
-                font-size: 10px;        
+                font-size: 10px;
             }
         }
 
@@ -494,7 +495,7 @@
         color: rgba($color: #323549, $alpha: .7);
         margin-top: 10px;
         a{
-            color: rgba($color: #323549, $alpha: .7); 
+            color: rgba($color: #323549, $alpha: .7);
             text-align: center;
             display: block;
             background-color: #EFEFEF;
@@ -533,7 +534,7 @@
         h4{
             font-size: 20px;
             font-weight: 400;
-            color: $accent; 
+            color: $accent;
             font-family: 'DelaGothicOne';
         }
         .text-span{
@@ -585,7 +586,7 @@
         h4{
             font-size: 16px;
             font-weight: 400;
-            color: $accent; 
+            color: $accent;
             font-family: 'DelaGothicOne';
             margin: 0;
         }
@@ -637,7 +638,7 @@
                 background-color: $accent !important;
                 color: $text-white !important;
             }
-            
+
             .checkmark {
                 display: block;
                 border-radius: 24px;
@@ -661,7 +662,7 @@
                     border-radius: 20px;
                     padding: 13px 0px;
                 }
-        
+
                 &::after,
                 &::before{
                     display: none;
@@ -671,20 +672,20 @@
 
 
     }
-    
 
 
 
 
-    .modal-city-wrap-cart{
+
+    .modal-city-wrap {
         z-index: -100;
         opacity: 0;
         display: none;
     }
+}
 
-    .modal-city-wrap-cart-active{
-        z-index: 100;
-        opacity: 1;
-        display: block;
-    }
+.modal-city-wrap.modal-city-wrap-cart-active{
+    z-index: 100 !important;
+    opacity: 1 !important;
+    display: block !important;
 }

@@ -2,10 +2,12 @@
     position: relative;
     color: $text-white;
     background-color: $accent;
-    padding: 24px 0 28px;
-    @include media-for (null, $sm){  
+    padding: 24px 0 54px;
+    @include media-for (null, $sm){
         text-align: center;
         top: 100%;
+
+        padding-bottom: 80px;
     }
 
 
@@ -16,10 +18,10 @@
 
     ul{
         display: flex;
-        
+
         li{
             white-space: nowrap;
-            
+
             a{
                 font-weight: 400;
                 font-size: 12px;
@@ -86,7 +88,7 @@
            margin: 22px auto 40px;
         }
 
-        
+
 
         @include media-for (null, $sm){
             width: 8rem;
@@ -102,6 +104,24 @@
                 margin: auto;
             }
         }
-        
+
     }
 }
+.footer-modal {
+    display: none;
+}
+
+.helpcrunch-iframe-wrapper iframe {
+    z-index: 98 !important;
+}
+.rngst_phone_button {
+    margin-bottom: 0 !important;
+    bottom: 6px !important;
+
+    @include media-for (null, $sm){
+        margin-right: 0 !important;
+    }
+}
+
+
+

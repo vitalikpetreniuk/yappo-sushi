@@ -12,6 +12,7 @@
     z-index: -100;
     overflow-y: auto;
     opacity: 0;
+    box-sizing: border-box;
 
 
 
@@ -130,7 +131,7 @@
                 font-weight: 700;
                 padding-top: 1rem;
                 margin-bottom: 2px;
-            } 
+            }
 
             .cart__detail__header{
                 position: relative;
@@ -154,7 +155,7 @@
                 padding-right: 1rem;
                 @include media-for (null, $sm){
                     font-size: 12px;
-   
+
                 }
                 .product__cart__info{
                     display: flex;
@@ -163,17 +164,17 @@
 
                     @include media-for (null, $sm){
                         margin-left: .5rem;
-       
+
                     }
                     .price{
                         font-weight: 700;
-                        font-size: 20px; 
+                        font-size: 20px;
                         color: $accent;
-    
+
                         @include media-for (null, $sm){
                             font-size: 16px;
                         }
-        
+
                     }
                     .regular-price{
                         display: none;
@@ -186,21 +187,21 @@
                         color: #FF671D !important;
                         margin-left: .5rem;
                     }
-        
+
                     .regular-price{
                         display: block;
                         font-weight: 300;
-                        font-size: 14px; 
+                        font-size: 14px;
                         text-decoration: line-through;
                         color: rgba($color: #323549, $alpha: .7);
 
-        
+
                         @include media-for (null, $sm){
                             font-size: 12px;
-           
+
                         }
                     }
-        
+
                 }
             }
 
@@ -210,7 +211,7 @@
                 input{
                     @include media-for (null, $sm){
                         width: 30px;
-       
+
                     }
                 }
             }
@@ -233,9 +234,9 @@
         }
     }
 
-    .orange-btn{ 
+    .orange-btn{
         max-width: 277px;
-        
+
     }
 
 
@@ -250,7 +251,7 @@
         }
 
         a{
-            color: rgba($color: #323549, $alpha: .7); 
+            color: rgba($color: #323549, $alpha: .7);
             text-align: center;
             display: block;
             background-color: $text-white;
