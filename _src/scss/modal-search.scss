@@ -269,6 +269,7 @@
 
             .price{
                 color: #FF671D !important;
+                text-align: center;
             }
 
             .regular-price{
@@ -308,6 +309,7 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                text-align: center;
 
                 @include media-for (null, 1025px){
                     font-size: 24px;

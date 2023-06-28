@@ -3961,6 +3961,7 @@ body .rngst_phone_button {
 
 .asp_w.asp_r .results .product__item .product__cart__info-discount .price {
   color: #FF671D !important;
+  text-align: center;
 }
 
 .asp_w.asp_r .results .product__item .product__cart__info-discount .regular-price {
@@ -3991,6 +3992,7 @@ body .rngst_phone_button {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  text-align: center;
 }
 
 .asp_w.asp_r .results .product__item .product__detail .cart__detail p {
