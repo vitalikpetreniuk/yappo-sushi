@@ -144,7 +144,7 @@ p{
 .for-main-overflow{
     height: 20vh;
     opacity: 0;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .put-up{
