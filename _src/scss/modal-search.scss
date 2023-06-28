@@ -258,6 +258,37 @@
 
         }
 
+        .product__cart__info-discount{
+            position: relative;
+            width: 10rem;
+            margin: auto;
+
+            @include media-for (null, $sm){
+                width: 8rem;
+            }
+
+            .price{
+                color: #FF671D !important;
+            }
+
+            .regular-price{
+                position: absolute;
+                top: 14%;
+                left: 0;
+                font-weight: 300;
+                font-size: 14px;
+                color: rgba($color: #323549, $alpha: .7);
+                text-decoration: line-through;
+                display: block !important;
+
+                @include media-for (null, $sm){
+                    font-size: 14px;
+                    top: 4%;
+                }
+            }
+
+        }
+
         .product__detail{
             text-align: center;
             padding: 0 3rem;
@@ -276,6 +307,7 @@
                 overflow: hidden;
                 -o-text-overflow: ellipsis;
                 text-overflow: ellipsis;
+                text-align: center;
             @include media-for (null, $sm){
                     margin-bottom: 17px;
                     font-size: 16px;
@@ -284,20 +316,20 @@
             }
 
             .cart__detail{
-            p{
-                color: #262730;
-                font-weight: 300;
-                font-size: 14px;
-                height: 1.5rem;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                p{
+                    color: #262730;
+                    font-weight: 300;
+                    font-size: 14px;
+                    height: 1.5rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
-                @include media-for (null, $sm){
-                        // display: none;
-                        font-size: 13px;
-                    }
-            }
+                    @include media-for (null, $sm){
+                            // display: none;
+                            font-size: 13px;
+                        }
+                }
             }
 
         }
