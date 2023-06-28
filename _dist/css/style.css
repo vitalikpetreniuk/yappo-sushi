@@ -6535,6 +6535,7 @@ p {
   right: 0;
   width: 100%;
   margin: 0;
+  height: 0.5px;
 }
 
 .cart-page .cart__preview-item .name-wrap {
