@@ -2006,6 +2006,10 @@ p {
   transition: all ease-in-out 0.3s;
 }
 
+.rngst_phone_button {
+  z-index: 50 !important;
+}
+
 .pagination-wrap {
   margin-top: 35px;
   display: -webkit-box;
@@ -4302,7 +4306,7 @@ p {
 
 .added-success-active {
   opacity: 1;
-  z-index: 50;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
