@@ -5505,8 +5505,12 @@ p {
   display: block;
   width: 18px;
   height: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
   border-radius: 100%;
   border: 1px solid #2A1A5E;
+  margin-left: 1rem;
 }
 
 .accordion-section .slide-header .span-plus::before {
