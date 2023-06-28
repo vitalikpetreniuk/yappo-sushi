@@ -2006,7 +2006,7 @@ p {
   transition: all ease-in-out 0.3s;
 }
 
-.rngst_phone_button {
+body .rngst_phone_button {
   z-index: 50 !important;
 }
 
