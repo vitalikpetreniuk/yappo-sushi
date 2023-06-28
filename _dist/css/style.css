@@ -2486,11 +2486,13 @@ p {
   font-size: 13px;
   padding-left: 1.7rem;
   white-space: nowrap;
+  color: #ffff;
 }
 
 .local-wrap .local span {
   font-weight: 600;
   margin: 0 0.5rem;
+  color: #ffff;
 }
 
 .local-wrap .city-list {
@@ -6631,6 +6633,10 @@ p {
   -webkit-transition: top 0.2s ease-in-out;
   -o-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
+}
+
+.cart-page .resault-block .local-wrap .local span {
+  color: rgba(50, 53, 73, 0.7);
 }
 
 .cart-page .resault-block .shop_table {

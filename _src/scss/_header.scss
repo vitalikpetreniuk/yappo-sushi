@@ -532,6 +532,7 @@
         font-size: 13px;
         padding-left: 1.7rem;
         white-space: nowrap;
+        color: $text-white;
 
         @include media-for (null, 1460px){
             padding-left: 1rem;
@@ -555,6 +556,7 @@
         span{
             font-weight: 600;
             margin: 0 .5rem;
+            color: $text-white;
         }
         
     }
