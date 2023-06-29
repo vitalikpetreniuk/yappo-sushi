@@ -755,3 +755,37 @@ body .rngst_phone_button {
         color: rgba(50,53,73,.7);
     }
 }
+
+
+
+.banner-slider_preview .banner-slider__slide {
+    width: 47.8%;
+    height: 100%;
+}
+.banner-slider_preview .banner-slider__slide:first-child {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-slider_preview .banner-slider__slide:not(:first-child) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+@media (max-width: 1023.98px) {
+    
+    .banner-slider_preview .banner-slider__slide {
+        width: 56.8%;
+    }
+}
+@media (max-width: 768px) {
+    
+    .banner-slider_preview .banner-slider__slide {
+        width: 67.6%;
+    }
+}
+@media (max-width: 550px) {
+    
+    .banner-slider_preview .banner-slider__slide {
+        width: 82.1%;
+    }
+}

@@ -136,6 +136,9 @@
         }
     }
 }
+.asp_r{
+    z-index: 50;
+}
 
 
 .asp_w.asp_r .results{
@@ -248,7 +251,7 @@
 
             img{
                 width: 100%;
-                object-fit: cover;
+                object-fit: contain;
                 height: 100%;
 
                 @include media-for (null, $sm){
@@ -363,6 +366,7 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    text-align: center;
 
                     @include media-for (null, $sm){
                             // display: none;
