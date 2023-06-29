@@ -1694,6 +1694,10 @@ p {
   font-weight: 300;
 }
 
+.categories-business-lunch .section__title {
+  margin: 0;
+}
+
 .section__title {
   position: relative;
   display: inline-block;
@@ -6041,7 +6045,6 @@ body .rngst_phone_button {
   border-radius: 55px;
   position: relative;
   max-width: 1920px;
-  height: 500px;
 }
 
 .discount-sale-page .banner-slider__slide a {
@@ -6053,7 +6056,6 @@ body .rngst_phone_button {
 
 .discount-sale-page .banner-slider__slide a img {
   width: 100%;
-  height: 100%;
 }
 
 .discount-sale-page .banner-slider__slide {
@@ -11727,12 +11729,6 @@ body .rngst_phone_button {
   }
 }
 
-@media (max-width: 2099px) {
-  .discount-sale-page .banner-slider__slide {
-    height: 400px;
-  }
-}
-
 @media (max-width: 1704px) {
   .modal-search input {
     width: 80%;
@@ -11745,18 +11741,8 @@ body .rngst_phone_button {
     padding: 22px 1rem 2rem;
   }
 
-  .discount-sale-page .banner-slider__slide {
-    height: 350px;
-  }
-
   .cart-page .cart__preview-item .sale-bage-wrap {
     left: 1rem;
-  }
-}
-
-@media (max-width: 1599px) {
-  .discount-sale-page .banner-slider__slide {
-    height: 300px;
   }
 }
 
@@ -12399,10 +12385,6 @@ body .rngst_phone_button {
     height: 74vh;
   }
 
-  .discount-sale-page .banner-slider__slide {
-    height: 250px;
-  }
-
   .discount-sale-page .slide-1::before {
     left: -3rem;
   }
@@ -12492,10 +12474,6 @@ body .rngst_phone_button {
 @media (max-width: 912px) {
   .discount-sale-page {
     height: auto;
-  }
-
-  .discount-sale-page .banner-slider__slide {
-    height: 370px;
   }
 }
 
@@ -12756,10 +12734,6 @@ body .rngst_phone_button {
   .news-page .news-other .item .info-wrap {
     left: 14px;
     bottom: 14px;
-  }
-
-  .discount-sale-page .banner-slider__slide {
-    height: 370px;
   }
 
   .cart-page .section__title-wrap {
@@ -13906,10 +13880,6 @@ body .rngst_phone_button {
 
   .discount-sale-page {
     padding: 40px 0 60px;
-  }
-
-  .discount-sale-page .banner-slider__slide {
-    height: 190px;
   }
 
   .discount-sale-page .slide-1::before {
