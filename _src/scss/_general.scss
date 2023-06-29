@@ -145,6 +145,8 @@ p{
     height: 20vh;
     opacity: 0;
     overflow: hidden !important;
+
+    
 }
 
 .put-up{
@@ -554,7 +556,12 @@ body .rngst_phone_button {
     z-index: 50 !important;
 }
 
-
+.no-touch{
+    margin-top: 0 !important;
+}
+.touch{
+    margin-top: 0 !important;  
+}
 
 
 

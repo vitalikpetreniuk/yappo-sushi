@@ -138,7 +138,7 @@
 
         @include media-for (null, $sm){
             border-radius: 14px;
-            height: 75px;
+            height: auto;
         }
 
         .img-wrap-local{
@@ -514,7 +514,7 @@
         border-radius: 24px;
         padding: 30px;
         max-width: 420px;
-        height: 411px;
+        min-height: 411px;
         margin: auto;
         transition: top .2s ease-in-out;
 
@@ -523,6 +523,7 @@
                 color: rgba(50,53,73,.7);
             }
         }
+
 
         @include media-for (null, 1024px){
             position: relative;
@@ -539,6 +540,35 @@
                 align-items: center;
                 width: 100%;
             }
+        }
+
+        .payment{
+            display: block;
+
+        }
+        .pay{
+            
+
+            @include media-for (null, $sm){
+                padding: 0;
+            }
+
+            label{
+                margin-bottom: 0;
+                &:first-child{
+                    margin-right: 1.5rem;
+                }
+                @include media-for (null, 1450px){
+                    font-size: 13px;
+                }
+            }
+        }
+        .col-12{
+            padding: 0 !important;
+        }
+
+        .radio-button-container {
+            white-space: nowrap;
         }
 
         h4{

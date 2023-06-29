@@ -2010,6 +2010,14 @@ body .rngst_phone_button {
   z-index: 50 !important;
 }
 
+.no-touch {
+  margin-top: 0 !important;
+}
+
+.touch {
+  margin-top: 0 !important;
+}
+
 .pagination-wrap {
   margin-top: 35px;
   display: -webkit-box;
@@ -6668,7 +6676,7 @@ body .rngst_phone_button {
   border-radius: 24px;
   padding: 30px;
   max-width: 420px;
-  height: 411px;
+  min-height: 411px;
   margin: auto;
   -webkit-transition: top 0.2s ease-in-out;
   -o-transition: top 0.2s ease-in-out;
@@ -6701,6 +6709,26 @@ body .rngst_phone_button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.cart-page .resault-block .payment {
+  display: block;
+}
+
+.cart-page .resault-block .pay label {
+  margin-bottom: 0;
+}
+
+.cart-page .resault-block .pay label:first-child {
+  margin-right: 1.5rem;
+}
+
+.cart-page .resault-block .col-12 {
+  padding: 0 !important;
+}
+
+.cart-page .resault-block .radio-button-container {
+  white-space: nowrap;
 }
 
 .cart-page .resault-block h4 {
@@ -11720,6 +11748,12 @@ body .rngst_phone_button {
   }
 }
 
+@media (max-width: 1449px) {
+  .cart-page .resault-block .pay label {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 1440px) {
   .cart-page .product-list-cart ul .first-li {
     top: -5%;
@@ -13969,7 +14003,7 @@ body .rngst_phone_button {
 
   .cart-page .select-wrap {
     border-radius: 14px;
-    height: 75px;
+    height: auto;
   }
 
   .cart-page .product-list-cart ul .first-li {
@@ -14035,6 +14069,10 @@ body .rngst_phone_button {
 
   .cart-page .cart__preview-item .text-span {
     font-size: 10px;
+  }
+
+  .cart-page .resault-block .pay {
+    padding: 0;
   }
 
   .cart-page .delivery {
