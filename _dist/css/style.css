@@ -6103,6 +6103,27 @@ body .helpcrunch-iframe-wrapper {
           box-sizing: border-box;
 }
 
+.cart-modal .widget_shopping_cart_content {
+  height: 90% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.cart-modal .widget_shopping_cart_content .cart-list {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+}
+
+.cart-modal .widget_shopping_cart_content .orange-btn {
+  padding: 19px 20px;
+}
+
 .cart-modal h4 {
   font-size: 16px;
   font-weight: 400;

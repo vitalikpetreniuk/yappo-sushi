@@ -14,7 +14,20 @@
     opacity: 0;
     box-sizing: border-box;
 
+    .widget_shopping_cart_content{
+        height: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
 
+        .cart-list{
+            flex: 1 1 auto !important;
+        }
+
+        .orange-btn {
+            padding: 19px 20px;
+
+        }
+    }
 
 
     @include media-for (null, $sm){

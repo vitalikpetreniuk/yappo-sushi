@@ -1,4 +1,4 @@
-var $ = jQuery;
+var $ = jQuery;	
 
 
 
@@ -756,8 +756,8 @@ $(window).on('load resize', function() {
 		$('body').css('padding-top', headerHeight + 'px');
 		$('.cart-modal').outerHeight(cartModalHeight + 4 + 'px');
 		$('.cart-modal').css('top', headerHeight + -4 +'px');
-		$('.cart-list').outerHeight(productListHeight - 125);
-		console.log($('.cart-list').outerHeight())
+		// $('.cart-list').outerHeight(productListHeight - 125);
+		// console.log($('.cart-list').outerHeight())
 	}
 
 
