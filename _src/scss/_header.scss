@@ -409,6 +409,20 @@
                 width: 2rem;
             }
         }
+        .tel{
+            svg{
+                path{
+                    fill: #2A1A5E;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #3f2e77;
+                    }
+                }
+            }
+        }
 
 
         .btns-wrap-header-menu{

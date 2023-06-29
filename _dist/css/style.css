@@ -2405,6 +2405,14 @@ body .rngst_phone_button {
   text-align: center;
 }
 
+.header .btns-wrap-header .tel svg path {
+  fill: #2A1A5E;
+}
+
+.header .btns-wrap-header .tel:hover svg path {
+  fill: #3f2e77;
+}
+
 .header .btns-wrap-header .btns-wrap-header-menu {
   position: absolute;
   top: 100%;
