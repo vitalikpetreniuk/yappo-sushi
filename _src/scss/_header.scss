@@ -422,62 +422,78 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 5rem;
+            padding: 22px 1rem 2rem;
             opacity: 0;
             z-index: -100;
             padding-top: 22px;
+            height: 0;
 
-            @include media-for (null, 2100px){
-                padding: 2rem 4rem;
-                padding-top: 22px;
-            }
+            // @include media-for (null, 2100px){
+            //     padding: 22px 1rem 2rem;
+            // }
 
             @include media-for (null, 1700px){
-                padding: 2rem 3rem;
+                width: 18%;
+                padding: 22px 1rem 2rem;
 
             }
 
-            @include media-for (null, 1580px){
-                padding: 2rem 2rem;
+            // @include media-for (null, 1580px){
+            //     padding: 2rem 2rem;
 
-            }
+            // }
 
-            @include media-for (null, 1400px){
+            @include media-for (null, 1500px){
                 width: 22%;
-                padding: 2rem 4rem;
-                padding-right: 2rem;
+                // padding: 2rem 4rem;
+                // padding-right: 2rem;
             }
 
-            @include media-for (null, 1268px){
-                padding: 2rem 2.8rem;
+            @include media-for (null, 1232px){
+                // padding: 2rem 2.8rem;
+                width: 24%;
             }
 
             @include media-for (null, 1200px){
-                right: 3rem;
+                right: 2rem;
+                width: 24%;
             }
 
-            // @include media-for (null, 1106px){
-            //     right: 3rem;
-            //     padding: 2rem 2rem;
-            // }
+            @include media-for (null, 1133px){
+                right: 2rem;
+                width: 26%;
+            }
 
-            @include media-for (null, 1025px){
-                padding: 2rem 1.8rem;
-                padding-right: .5rem;
+            @include media-for (null, 1039px){
+                width: 28%;
+            }
+
+            @include media-for (null, 1000px){
+                padding: 2rem 0.5rem 2rem 1rem;
+                width: 29%;
+            }
+
+            @include media-for (null, 911px){
+                width: 31%;
             }
 
             @include media-for (null, $tablet){
-                padding: 2rem 2rem;
-                padding-right: 1rem;
-                width: 30%;
+                padding: 2rem 1rem 2rem 1rem;
+                width: 36%;
+                right: 1rem;
             }
 
             ul{
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                height: 0;
                 li{
-                    width: 45%;
+                    width: 49%;
+
+                    a{
+                        display: none;
+                    }
                 }
             }
 
@@ -500,6 +516,15 @@
         .btns-wrap-header-menu-active{
             opacity: 1;
             z-index: 10;
+            height: auto;
+            ul{
+                height: auto;
+                li{
+                    a{
+                        display: block;
+                    }
+                }
+            }
         }
     }
 

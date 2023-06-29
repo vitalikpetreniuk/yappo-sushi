@@ -2422,10 +2422,11 @@ body .rngst_phone_button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 5rem;
+  padding: 22px 1rem 2rem;
   opacity: 0;
   z-index: -100;
   padding-top: 22px;
+  height: 0;
 }
 
 .header .btns-wrap-header .btns-wrap-header-menu ul {
@@ -2437,10 +2438,15 @@ body .rngst_phone_button {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 0;
 }
 
 .header .btns-wrap-header .btns-wrap-header-menu ul li {
-  width: 45%;
+  width: 49%;
+}
+
+.header .btns-wrap-header .btns-wrap-header-menu ul li a {
+  display: none;
 }
 
 .header .btns-wrap-header .btns-wrap-header-menu a {
@@ -2456,6 +2462,15 @@ body .rngst_phone_button {
 .header .btns-wrap-header .btns-wrap-header-menu-active {
   opacity: 1;
   z-index: 10;
+  height: auto;
+}
+
+.header .btns-wrap-header .btns-wrap-header-menu-active ul {
+  height: auto;
+}
+
+.header .btns-wrap-header .btns-wrap-header-menu-active ul li a {
+  display: block;
 }
 
 .header-fixed {
@@ -11641,11 +11656,6 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 2099px) {
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 4rem;
-    padding-top: 22px;
-  }
-
   .discount-sale-page .banner-slider__slide {
     height: 400px;
   }
@@ -11659,7 +11669,8 @@ body .rngst_phone_button {
 
 @media (max-width: 1699px) {
   .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 3rem;
+    width: 18%;
+    padding: 22px 1rem 2rem;
   }
 
   .discount-sale-page .banner-slider__slide {
@@ -11677,12 +11688,6 @@ body .rngst_phone_button {
   }
 }
 
-@media (max-width: 1579px) {
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 2rem;
-  }
-}
-
 @media (max-width: 1559px) {
   .modal-search input {
     width: 60%;
@@ -11692,6 +11697,12 @@ body .rngst_phone_button {
 @media (max-width: 1529px) {
   .local-wrap .city-list {
     padding: 16px 6px 5px 25px;
+  }
+}
+
+@media (max-width: 1499px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    width: 22%;
   }
 }
 
@@ -11714,12 +11725,6 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 1399px) {
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    width: 22%;
-    padding: 2rem 4rem;
-    padding-right: 2rem;
-  }
-
   .local-wrap .local {
     padding-left: 1.7rem;
   }
@@ -11828,15 +11833,15 @@ body .rngst_phone_button {
   }
 }
 
-@media (max-width: 1267px) {
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 2.8rem;
-  }
-}
-
 @media (max-width: 1236px) {
   .product-top .storefront-product-pagination .prev {
     left: -58%;
+  }
+}
+
+@media (max-width: 1231px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    width: 24%;
   }
 }
 
@@ -11861,7 +11866,8 @@ body .rngst_phone_button {
   }
 
   .header .btns-wrap-header .btns-wrap-header-menu {
-    right: 3rem;
+    right: 2rem;
+    width: 24%;
   }
 
   .local-wrap .city-list {
@@ -11882,20 +11888,28 @@ body .rngst_phone_button {
   }
 }
 
+@media (max-width: 1132px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    right: 2rem;
+    width: 26%;
+  }
+}
+
 @media (max-width: 1127px) {
   .product-top .storefront-product-pagination {
     display: none !important;
   }
 }
 
+@media (max-width: 1038px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    width: 28%;
+  }
+}
+
 @media (max-width: 1024px) {
   .header .header-bottom .header__category ul a {
     width: 6.6rem;
-  }
-
-  .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 1.8rem;
-    padding-right: 0.5rem;
   }
 
   .product__item {
@@ -12346,6 +12360,13 @@ body .rngst_phone_button {
   }
 }
 
+@media (max-width: 999px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    padding: 2rem 0.5rem 2rem 1rem;
+    width: 29%;
+  }
+}
+
 @media (max-width: 992px) {
   .product-top .product-img-wrap {
     height: auto;
@@ -12394,6 +12415,12 @@ body .rngst_phone_button {
   }
 }
 
+@media (max-width: 910px) {
+  .header .btns-wrap-header .btns-wrap-header-menu {
+    width: 31%;
+  }
+}
+
 @media (max-width: 821px) {
   .section__title {
     font-size: 20px;
@@ -12413,9 +12440,9 @@ body .rngst_phone_button {
   }
 
   .header .btns-wrap-header .btns-wrap-header-menu {
-    padding: 2rem 2rem;
-    padding-right: 1rem;
-    width: 30%;
+    padding: 2rem 1rem 2rem 1rem;
+    width: 36%;
+    right: 1rem;
   }
 
   .local-wrap .city-list {
