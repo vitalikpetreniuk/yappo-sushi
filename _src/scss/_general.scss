@@ -145,8 +145,6 @@ p{
     height: 20vh;
     opacity: 0;
     overflow: hidden !important;
-
-    
 }
 
 .put-up{
@@ -557,7 +555,12 @@ p{
 
 //btn call
 body .rngst_phone_button {
-    z-index: 51 !important;
+    z-index: 31 !important;
+}
+
+body .helpcrunch-iframe-wrapper{
+    position: relative !important;
+    z-index: 30 !important;
 }
 
 .no-touch{
@@ -793,3 +796,5 @@ body .rngst_phone_button {
         width: 82.1%;
     }
 }
+
+

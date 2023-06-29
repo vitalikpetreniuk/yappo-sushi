@@ -2011,7 +2011,12 @@ p {
 }
 
 body .rngst_phone_button {
-  z-index: 51 !important;
+  z-index: 31 !important;
+}
+
+body .helpcrunch-iframe-wrapper {
+  position: relative !important;
+  z-index: 30 !important;
 }
 
 .no-touch {
@@ -2830,6 +2835,12 @@ body .rngst_phone_button {
 .footer-modal p {
   font-size: 12px;
   text-align: center;
+}
+
+.footer .social-wrap,
+.footer-modal .social-wrap {
+  position: relative;
+  z-index: 40;
 }
 
 .footer-modal {
@@ -6045,6 +6056,7 @@ body .rngst_phone_button {
   border-radius: 55px;
   position: relative;
   max-width: 1920px;
+  height: auto !important;
 }
 
 .discount-sale-page .banner-slider__slide a {
