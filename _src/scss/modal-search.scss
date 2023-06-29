@@ -136,8 +136,15 @@
         }
     }
 }
+
 .asp_r{
-    z-index: 50;
+    z-index: 50 !important;
+}
+
+.asp_w.asp_r .asp_nores {
+    justify-content: center;
+    background: #f3f3f3 !important;
+    box-shadow: 0 0px 0px 0px #dfdfdf !important;
 }
 
 
@@ -203,7 +210,9 @@
         //     padding-top: 15px;
         // }
 
-
+        .wc-forward{
+            display: none;
+        }
         @include media-for (null, 1025px){
             border-radius: 32px;
             box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);

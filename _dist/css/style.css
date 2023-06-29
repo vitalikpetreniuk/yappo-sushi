@@ -2007,7 +2007,7 @@ p {
 }
 
 body .rngst_phone_button {
-  z-index: 50 !important;
+  z-index: 51 !important;
 }
 
 .no-touch {
@@ -3924,7 +3924,16 @@ body .rngst_phone_button {
 }
 
 .asp_r {
-  z-index: 50;
+  z-index: 50 !important;
+}
+
+.asp_w.asp_r .asp_nores {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3f3f3 !important;
+  -webkit-box-shadow: 0 0px 0px 0px #dfdfdf !important;
+          box-shadow: 0 0px 0px 0px #dfdfdf !important;
 }
 
 .asp_w.asp_r .results {
@@ -3976,6 +3985,10 @@ body .rngst_phone_button {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   background-color: #ffff;
   margin-bottom: 30px;
+}
+
+.asp_w.asp_r .results .product__item .wc-forward {
+  display: none;
 }
 
 .asp_w.asp_r .results .product__item:hover {
