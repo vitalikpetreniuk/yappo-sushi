@@ -499,6 +499,53 @@ $(function() {
 
 
 
+
+	//for tab and tel disription product
+	var $customTooltip;
+
+	$('[title]').click(function(e) {
+	  e.stopPropagation(); 
+  
+	  if ($(window).width() < 768) {
+		var tooltipText = $(this).attr('title');
+		var $productItem = $(this).closest('.product__item');
+  
+		if ($customTooltip && $customTooltip.is(':visible')) {
+		  if ($(this).is($customTooltip.prevTarget)) {
+			
+			$customTooltip.remove();
+			$customTooltip = null;
+		  } else {
+			
+			var newTooltipText = $(this).attr('title');
+			$customTooltip.find('.tooltip-content').text(newTooltipText);
+			$customTooltip.prevTarget = this;
+		  }
+		} else {
+		  
+		  $customTooltip = $('<div>')
+			.attr('id', 'custom-tooltip')
+			.addClass('custom-tooltip')
+			.append($('<div>').addClass('tooltip-content').text(tooltipText));
+  
+		  $productItem.append($customTooltip);
+		  $customTooltip.prevTarget = this;
+		  $customTooltip.show();
+		}
+	  }
+	});
+  
+	$(document).click(function() {
+	  if ($customTooltip && $customTooltip.is(':visible')) {
+		$customTooltip.remove();
+		$customTooltip = null;
+	  }
+	});
+  
+	$customTooltip && $customTooltip.click(function(e) {
+	  e.stopPropagation();
+	});
+
 })
 
 
