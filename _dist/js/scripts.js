@@ -299,48 +299,10 @@ $(function() {
 
 	// top-slider
 
-	if($('.swiper').length) {
 
-		new Swiper('.banner-slider', {
+	if ($(".swiper").length) { const banner_slider = new Swiper(".banner-slider",{slidesPerView:1.2,spaceBetween:40,centeredSlides:!0,loop:!0,simulateTouch:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},speed:1e3,autoplay:{delay:5e3,stopOnLastSlide:!0,disableOnInteraction:!1},breakpoints:{425:{},550:{spaceBetween:100,slidesPerView:1.4},768:{spaceBetween:150,slidesPerView:1.6},1024:{spaceBetween:250,slidesPerView:1.8},1700:{spaceBetween:400,slidesPerView:2}},on:{init:function(){$('.banner-slider').removeClass('banner-slider_preview');},},})}
 
-			slidesPerView: 1.2,
-			spaceBetween: 40,
-			centeredSlides: true,
-			loop: true,
-			simulateTouch: true,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			speed: 1000,
-			autoplay: {
-				delay: 5000,
-				stopOnLastSlide: true,
-				disableOnInteraction: false,
-			},
-			breakpoints: {
-				425: {
-					// spaceBetween: 50,
-				},
-				550: {
-					spaceBetween: 100,
-					slidesPerView: 1.4,
-				},
-				768: {
-					spaceBetween: 150,
-					slidesPerView: 1.6,
-				},
-				1024: {
-					spaceBetween: 250,
-					slidesPerView: 1.8,
-				},
-				1700: {
-					spaceBetween: 400,
-					slidesPerView: 2,
-				},
-			},
-		})
-	}
+
 
 
 
@@ -501,7 +463,7 @@ $(function() {
 
 
 	//for tab and tel disription product
-	
+
 	var $customTooltip;
 	var $lastTooltipElement;
 	
@@ -595,7 +557,11 @@ $(document).ready(function() {
 	$(document).on('click', '.fix-cart', toggleCart);
 	$(document).on('click', '.cart-header', toggleCart);
 	$(document).on('click', '.close-cart', toggleCart);
-	$(document).on('click', '.added-success > .orange-btn', toggleCart);
+	$(document).on('click', '.added-success > .orange-btn', function() {
+		toggleCart;
+	  
+		$('.added-success').removeClass('added-success-active');
+	  });
 	
 
 	$(document).on('click', '.local', function() {
@@ -809,6 +775,9 @@ $(window).on('load resize', function() {
 		// console.log($('.cart-list').outerHeight())
 	}
 
+
+
+	
 
 
 
