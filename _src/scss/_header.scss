@@ -32,6 +32,15 @@
             // padding: 8px 10px 8px 1.7rem;
         }
 
+        .col-md-5{
+            opacity: 0;
+
+            @include media-for (null, $sm){
+                opacity: 1;
+                
+            }
+        }
+
     }
 
     .logo{

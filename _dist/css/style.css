@@ -2252,6 +2252,10 @@ body .helpcrunch-iframe-wrapper {
   font-weight: 300;
 }
 
+.header .header-top .col-md-5 {
+  opacity: 0;
+}
+
 .header .logo a img {
   width: 100%;
 }
@@ -3173,6 +3177,7 @@ body .helpcrunch-iframe-wrapper {
   text-align: center;
   border-radius: 0 0 55px 55px;
   z-index: 10;
+  color: white;
 }
 
 .page-404 {
@@ -3363,10 +3368,6 @@ body .helpcrunch-iframe-wrapper {
 
 #menu .social-wrap a {
   margin-right: 15px;
-}
-
-#menu .social-wrap a:first-child {
-  margin-top: 0.3rem;
 }
 
 #menu .bottom-nav {
@@ -4350,6 +4351,7 @@ body .helpcrunch-iframe-wrapper {
   text-align: center;
   border-radius: 0 0 55px 55px;
   z-index: 10;
+  color: white;
 }
 
 .modal-search-active {
@@ -12939,6 +12941,10 @@ body .helpcrunch-iframe-wrapper {
   .header .header-top {
     font-size: 12px;
     padding: 10px 0;
+  }
+
+  .header .header-top .col-md-5 {
+    opacity: 1;
   }
 
   .header .header-center {

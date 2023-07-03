@@ -467,7 +467,7 @@ $(function() {
 	var $customTooltip;
 	var $lastTooltipElement;
 	
-	$(document).on('click', '[title]', function(e) {
+	$(document).on('click', 'p[title]', function(e) {
 	  e.stopPropagation();
 	
 	  if ($(window).width() < 768) {
