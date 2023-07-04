@@ -328,6 +328,12 @@ $(function() {
 		"display": "none",
 	});
 
+	if ($('.no-product-wrap').length) {
+		$('.product__image > img').css({
+		  "object-fit": "cover"
+		});
+	}
+
 
 
 	//discount-card

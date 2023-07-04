@@ -3367,6 +3367,8 @@ body .helpcrunch-iframe-wrapper {
 }
 
 #menu .social-wrap a {
+  width: 2rem;
+  height: 2rem;
   margin-right: 15px;
 }
 
