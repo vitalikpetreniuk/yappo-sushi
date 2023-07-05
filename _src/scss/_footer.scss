@@ -91,11 +91,11 @@
         }
 
 
-
-        @include media-for (null, $sm){
-            width: 8rem;
+        a{
+            width: 3rem;
+            height: 2rem;
+            display: block;
         }
-
 
     }
 

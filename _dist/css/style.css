@@ -2871,6 +2871,13 @@ body .helpcrunch-iframe-wrapper {
   z-index: 40;
 }
 
+.footer .social-wrap a,
+.footer-modal .social-wrap a {
+  width: 3rem;
+  height: 2rem;
+  display: block;
+}
+
 .footer-modal {
   display: none;
 }
@@ -13030,11 +13037,6 @@ body .helpcrunch-iframe-wrapper {
     text-align: center;
     top: 100%;
     padding-bottom: 80px;
-  }
-
-  .footer .social-wrap,
-  .footer-modal .social-wrap {
-    width: 8rem;
   }
 
   .rngst_phone_button {
