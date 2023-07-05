@@ -328,11 +328,11 @@ $(function() {
 		"display": "none",
 	});
 
-	if ($('.no-product-wrap').length) {
-		$('.product__image > img').css({
-		  "object-fit": "cover"
-		});
-	}
+	// if ($('.no-product-wrap').length) {
+	// 	$('.product__image > img').css({
+	// 	  "object-fit": "cover"
+	// 	});
+	// }
 
 
 

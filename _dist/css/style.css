@@ -4932,6 +4932,7 @@ body .helpcrunch-iframe-wrapper {
   display: block;
   margin: auto;
   width: 100%;
+  height: auto;
 }
 
 .product-top .product-img-wrap .сhat-bubbles-wrap {
