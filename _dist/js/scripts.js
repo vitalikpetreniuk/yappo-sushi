@@ -318,7 +318,7 @@ $(function() {
 		"border": "1px solid rgba(42, 26, 94, 0.4)",
 		"box-shadow": "0px 4px 15px 0px rgba(0, 0, 0, 0)"
 	});
-
+А
 	$(".no-product ").parent(".no-product-wrap").parent(" .product__item").css({
 		"pointer-events": "none",
 		"z-index": "0",
@@ -351,8 +351,8 @@ $(function() {
 	//click in page-404
 
 	$('.cursor-pointer').click(function() {
-		window.location.href = 'https://vitalikpetreniuk.github.io/yappo-sushi/';
-	});
+		window.location.href = window.location.origin;
+	  });
 
 	if ($('.page-404,.contacts,.about-us,.privacy-policy,.return-policy,.public-offer').length > 0) {
 		$('.fix-cart').remove();
