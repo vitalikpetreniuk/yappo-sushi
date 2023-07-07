@@ -4924,6 +4924,7 @@ body .helpcrunch-iframe-wrapper {
 .product-top .product-img-wrap a {
   display: block;
   text-align: center;
+  height: 100%;
 }
 
 .product-top .product-img-wrap a img {
