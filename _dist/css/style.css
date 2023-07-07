@@ -12576,6 +12576,10 @@ body .helpcrunch-iframe-wrapper {
     font-size: 20px;
   }
 
+  .breadcrumbs {
+    display: none;
+  }
+
   .header .header-bottom .container-fluid,
   .header .header-bottom .container-sm,
   .header .header-bottom .container-md,
@@ -12926,10 +12930,6 @@ body .helpcrunch-iframe-wrapper {
     font-size: 14px;
     padding: 17px 50px;
     border-radius: 20px;
-  }
-
-  .breadcrumbs {
-    display: none;
   }
 
   .woocommerce-order {
