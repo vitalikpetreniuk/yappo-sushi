@@ -5036,6 +5036,23 @@ body .helpcrunch-iframe-wrapper {
   transition: all 0.2s ease-in;
 }
 
+.product-top .storefront-product-pagination .prev .row {
+  -webkit-box-align: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+}
+
+.product-top .storefront-product-pagination .prev .row .column-right {
+  position: relative;
+  padding-top: 3.7rem;
+}
+
+.product-top .storefront-product-pagination .prev .row .column-right .section__title {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
 .product-top .storefront-product-pagination .card-produc-block {
   z-index: 1;
 }

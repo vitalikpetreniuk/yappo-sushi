@@ -303,6 +303,23 @@
 
         }
 
+        .prev{
+            .row{
+                align-items: stretch !important;
+                .column-right{
+                    position: relative;
+                    padding-top: 3.7rem;
+
+                    .section__title{
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                    
+                    }
+                }
+            }
+        }
+
         .card-produc-block{
             z-index: 1;
         }
