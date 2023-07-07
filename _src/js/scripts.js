@@ -347,12 +347,8 @@ $(function() {
 
 
 
+	//remove blocks
 
-	//click in page-404
-
-	$('.cursor-pointer').click(function() {
-		window.location.href = window.location.origin + '/';
-	  });
 
 	if ($('.page-404,.contacts,.about-us,.privacy-policy,.return-policy,.public-offer').length > 0) {
 		$('.fix-cart').remove();
@@ -783,7 +779,11 @@ $(window).on('load resize', function() {
 
 
 
+	//click in page-404
 	
+	$('.cursor-pointer').click(function() {
+		window.location.href = window.location.origin;
+	});
 
 
 
