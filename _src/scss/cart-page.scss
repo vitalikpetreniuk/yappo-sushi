@@ -729,3 +729,9 @@
     opacity: 1 !important;
     display: block !important;
 }
+
+
+.cart-page .woocommerce-error{margin-left:4%;}
+@media (max-width:600px){
+    .cart-page .woocommerce-error{margin-left:0%;}
+}

@@ -7019,6 +7019,10 @@ body .helpcrunch-iframe-wrapper {
   display: block !important;
 }
 
+.cart-page .woocommerce-error {
+  margin-left: 4%;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -12884,6 +12888,12 @@ body .helpcrunch-iframe-wrapper {
 
   .resault-search .section__title:after {
     right: 101%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-page .woocommerce-error {
+    margin-left: 0%;
   }
 }
 
