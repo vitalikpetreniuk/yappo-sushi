@@ -786,5 +786,16 @@ $(window).on('load resize', function() {
 	});
 
 
+	//fix cart total prise
+	setInterval(function() {
+		var count = parseInt($('.mini-cart-count').text());
+		if (count > 0) {
+		  $('.speech').addClass('speech-active');
+		} else {
+		  $('.speech').removeClass('speech-active');
+		}
+	  }, 1000);
+
+
 
 
