@@ -4963,11 +4963,18 @@ body .helpcrunch-iframe-wrapper {
   color: #262730;
 }
 
-.product-top .price {
+.product-top .product__cart__info {
   font-size: 26px;
   color: #2A1A5E;
   font-weight: 700;
   margin-bottom: 22px;
+}
+
+.product-top .product__cart__info .regular-price {
+  color: rgba(50, 53, 73, 0.7);
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: line-through;
 }
 
 .product-top .button {
@@ -13635,7 +13642,7 @@ body .helpcrunch-iframe-wrapper {
             flex-direction: row-reverse;
   }
 
-  .product-top .price {
+  .product-top .product__cart__info {
     margin: 0;
     font-size: 20px;
   }

@@ -796,6 +796,24 @@ $(window).on('load resize', function() {
 		}
 	  }, 1000);
 
+	
+	//for chat
+	function checkElement() {
+		if ($('.helpcrunch-iframe-wrapper iframe').length > 0) {
+	
+		  $('.header').css('z-index', 20);
+		} else {
+	
+		  $('.header').css('z-index', 100);
+		}
+	}
+	
+	  
+	$(window).on('load resize', function() {
+		if ($(window).width() <= 768) {
+			setInterval(checkElement, 500);
+		}
+	});
 
 
 

@@ -187,7 +187,7 @@
         }
     }
 
-    .price{
+    .product__cart__info{
         font-size: 26px;
         color: $accent;
         font-weight: 700;
@@ -197,6 +197,27 @@
             margin: 0;
             font-size: 20px;
         }
+
+        .regular-price{
+            color: rgba(50,53,73,.7);
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+    }
+
+
+
+    .price{
+        // font-size: 26px;
+        // color: $accent;
+        // font-weight: 700;
+        // margin-bottom: 22px;
+
+        // @include media-for (null, $sm){
+        //     margin: 0;
+        //     font-size: 20px;
+        // }
     }
 
 
