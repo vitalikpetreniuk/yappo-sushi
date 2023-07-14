@@ -12582,6 +12582,12 @@ body .helpcrunch-iframe-wrapper {
   }
 }
 
+@media (max-width: 822px) {
+  .footer .social-wrap {
+    z-index: 28 !important;
+  }
+}
+
 @media (max-width: 821px) {
   .section__title {
     font-size: 20px;
